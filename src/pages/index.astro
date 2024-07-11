@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Button from '../components/Button.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -39,36 +39,13 @@ import Card from '../components/Card.astro';
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
 		
-		<div class="bg-taylor-swift-500 rounded-[100px] flex flex-col gap-2 items-center justify-center shrink-0 h-10 w- relative overflow-hidden">
-			<div class="pt-2.5 pr-6 pb-2.5 pl-6 flex flex-row gap-2 items-center justify-center self-stretch flex-1 relative">
-				<div class="text-taylor-swift-50 text-center font-m3-label-large-font-family text-m3-label-large-font-size leading-m3-label-large-line-height font-m3-label-large-font-weight relative flex items-center justify-center"
-				style="letter-spacing: var(--m3-label-large-letter-spacing, 0.1px)">
-					Inicio
-				</div>
-			</div>
-		</div>
 
 
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+
+		<ul>
+			<Button
+				href="#inicio"
+				button="Inicio"
 			/>
 		</ul>
 	</main>
