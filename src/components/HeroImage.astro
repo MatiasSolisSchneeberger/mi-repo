@@ -30,10 +30,40 @@ const capitalizedEra = capitalizeFirstLetter(era);
     }
     ]} >
     <div class="flex flex-col gap-space-200 items-center justify-center shrink-0 relative space-y-2 overflow-hidden">
-        <div class="text-midnights-400 text-center font-display-large-font-family text-display-large-font-size leading-display-large-line-height font-display-large-font-weight relative self-stretch" style="letter-spacing: var(--display-large-letter-spacing, -1px)">
+        <div class:list={[
+            "text-center font-display-large-font-family text-display-large-font-size leading-display-large-line-height font-display-large-font-weight relative self-stretch",
+            {
+                'text-debut-400-original': era === 'debut',
+                'text-fearless-400': era === 'fearless',
+                'text-speak-now-400-original': era === 'speak-now',
+                'text-red-400': era === 'red',
+                'text-1989-400': era === '1989',
+                'text-reputation-400': era === 'reputation',
+                'text-lover-400': era === 'lover',
+                'text-folklore-400': era === 'folklore',
+                'text-evermore-400': era === 'evermore',
+                'text-midnights-400': era === 'midnights',
+                'text-TTPD-400': era === 'TTPD',
+            }
+            ]} style="letter-spacing: var(--display-large-letter-spacing, -1px)">
         Swifties Eras Tour
         </div>
-        <div class="text-midnights-400 text-center font-display-large-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight relative self-stretch flex items-center justify-center" style="mix-blend-mode: color-dodge">
+        <div class:list={[
+            "text-center font-display-large-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight relative self-stretch flex items-center justify-center",
+            {
+                'text-debut-400-original': era === 'debut',
+                'text-fearless-400': era === 'fearless',
+                'text-speak-now-400-original': era === 'speak-now',
+                'text-red-400': era === 'red',
+                'text-1989-400': era === '1989',
+                'text-reputation-400': era === 'reputation',
+                'text-lover-400': era === 'lover',
+                'text-folklore-400': era === 'folklore',
+                'text-evermore-400': era === 'evermore',
+                'text-midnights-400': era === 'midnights',
+                'text-TTPD-400': era === 'TTPD',
+            }
+            ]} style="mix-blend-mode: color-dodge">
         {capitalizedEra}
         </div>
     </div>
