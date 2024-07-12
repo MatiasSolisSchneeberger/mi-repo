@@ -1,10 +1,13 @@
 ---
 import Header from '../components/Header.astro';
+import '@fontsource-variable/rubik';
+
 interface Props {
 	title: string;
+	era: string;
 }
 
-const { title } = Astro.props;
+const { title , era } = Astro.props;
 ---
 
 <!doctype html>
@@ -15,187 +18,19 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<!-- Tipografías -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
 		<title>{title}</title>
 	</head>
 	<body>
-		<Header/>
+		<Header era={era}/>
 		<main>
 			<slot />
 		</main>
 	</body>
 </html>
 <style is:global>
-	:root {
-		/* Debut */
-		--debut-50: #f2f7f2;
-		--debut-100: #e1edde;
-		--debut-200: #c3dac0;
-		--debut-300: #96c095;
-		--debut-400-original: #7cac7c;
-		--debut-500: #478249;
-		--debut-600: #346737;
-		--debut-700: #2a522e;
-		--debut-800: #234225;
-		--debut-900: #1d371f;
-		--debut-950: #101e12;
-
-		/* Fearless */
-		--fearless-50: #fdf6ed;
-		--fearless-100: #f8e6cd;
-		--fearless-200: #f1c996;
-		--fearless-300-original: #e89f4f;
-		--fearless-400: #e58b3a;
-		--fearless-500: #dd6b23;
-		--fearless-600: #c34c1c;
-		--fearless-700: #a2341b;
-		--fearless-800: #842a1c;
-		--fearless-900: #6d241a;
-		--fearless-950: #3e0f0a;
-
-		/* Speak Now */
-		--speak-now-50: #f8f6f9;
-		--speak-now-100: #f3eff4;
-		--speak-now-200: #e9dfeb;
-		--speak-now-300: #dac5dc;
-		--speak-now-400-original: #c7a8ca;
-		--speak-now-500: #ae83b1;
-		--speak-now-600: #9b679b;
-		--speak-now-700: #835382;
-		--speak-now-800: #6d476b;
-		--speak-now-900: #5d3e5d;
-		--speak-now-950: #362135;
-
-		/* Red */
-		--red-50: #fcf4f4;
-		--red-100: #f9ebea;
-		--red-200: #f3d9d8;
-		--red-300: #eab8b7;
-		--red-400: #dd8f90;
-		--red-500: #cd666a;
-		--red-600: #b74751;
-		--red-700: #993742;
-		--red-800-original: #7a2e39;
-		--red-900: #6f2c38;
-		--red-950: #3d141b;
-
-		/* 1989 */
-		---1989-50: #f1fafe;
-		---1989-100: #e2f4fc;
-		---1989-200-original: #b5e5f8;
-		---1989-300: #85d7f4;
-		---1989-400: #44c2ec;
-		---1989-500: #1cabdb;
-		---1989-600: #0e8abb;
-		---1989-700: #0d6e97;
-		---1989-800: #0f5e7d;
-		---1989-900: #124d68;
-		---1989-950: #0c3145;
-
-		/* reputation */
-		--reputation-50: #f8f7f8;
-		--reputation-100: #efefef;
-		--reputation-200: #dcdbdc;
-		--reputation-300: #bebbbc;
-		--reputation-400: #9a9697;
-		--reputation-500-original: #746f70;
-		--reputation-600: #676263;
-		--reputation-700: #545051;
-		--reputation-800: #484444;
-		--reputation-900: #3e3c3c;
-		--reputation-950: #292829;
-
-		/* lover */
-		--lover-50: #fdf2f6;
-		--lover-100: #fbe8f0;
-		--lover-200: #fad0e2;
-		--lover-300-original: #f7b0cc;
-		--lover-400: #f076a4;
-		--lover-500: #e74d82;
-		--lover-600: #d52d5f;
-		--lover-700: #b91d47;
-		--lover-800: #991b3b;
-		--lover-900: #801b35;
-		--lover-950: #4e091a;
-
-		/* folklore */
-		--folklore-50: #f7f6f5;
-		--folklore-100: #ecebe8;
-		--folklore-200-original: #cdc9c1;
-		--folklore-300: #c0bbb1;
-		--folklore-400: #a69d91;
-		--folklore-500: #94887b;
-		--folklore-600: #877a6f;
-		--folklore-700: #71665d;
-		--folklore-800: #5d544f;
-		--folklore-900: #4d4641;
-		--folklore-950: #282422;
-
-		/* evermore */
-		--evermore-50: #f9f6f3;
-		--evermore-100: #f1ebe3;
-		--evermore-200: #e2d5c6;
-		--evermore-300-original: #c5ac90;
-		--evermore-400: #ba997d;
-		--evermore-500: #ac8263;
-		--evermore-600: #9f7157;
-		--evermore-700: #845c4a;
-		--evermore-800: #6c4c40;
-		--evermore-900: #584036;
-		--evermore-950: #2f201b;
-
-		/* midnights */
-		--midnights-50: #f2f7fc;
-		--midnights-100: #e2ecf7;
-		--midnights-200: #ccdef1;
-		--midnights-300: #aac9e6;
-		--midnights-400: #81add9;
-		--midnights-500: #6392ce;
-		--midnights-600: #4f79c1;
-		--midnights-700: #4567b0;
-		--midnights-800: #3d5590;
-		--midnights-900: #354873;
-		--midnights-950-original: #242e47;
-
-		/* TTPD */
-		--ttpd-50: #f5f3f1;
-		--ttpd-100: #e5e3dc;
-		--ttpd-200: #cdc9bb;
-		--ttpd-300: #b0a894;
-		--ttpd-400-original: #998d75;
-		--ttpd-500: #8b7d67;
-		--ttpd-600: #766858;
-		--ttpd-700: #605348;
-		--ttpd-800: #534740;
-		--ttpd-900: #493f3a;
-		--ttpd-950: #29221f;
-
-		/* mashup */
-		--mashup-50: #fef3f2;
-		--mashup-100: #fee5e2;
-		--mashup-200: #ffcfc9;
-		--mashup-300: #fdada4;
-		--mashup-400: #f97e70;
-		--mashup-500: #f15442;
-		--mashup-600: #de3724;
-		--mashup-700: #cd2f1d;
-		--mashup-800: #9a271a;
-		--mashup-900: #80261c;
-		--mashup-950: #460f09;
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
 </style>

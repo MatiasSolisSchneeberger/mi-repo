@@ -1,12 +1,36 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			backgroundImage:{
+				'fondos-midnights': "radial-gradient(closest-side, rgba(61, 85, 144, 0.75) 0%, rgba(61, 85, 144, 0) 100%), linear-gradient(to left, rgba(61, 85, 144, 0.25), rgba(61, 85, 144, 0.25)), url('/src/images/Fondos/10.Midnights.png')",
+				
+				'fondos-debut': "radial-gradient(closest-side, rgba(35, 66, 37, 0.75) 0%, rgba(35, 66, 37, 0) 100%), linear-gradient(to left, rgba(35, 66, 37, 0.25), rgba(35, 66, 37, 0.25)), url('/src/images/Fondos/01.Debut.png')",
+
+        		'fondos-fearless': "radial-gradient(closest-side,rgba(132, 42, 28, 0.75) 0%,rgba(132, 42, 28, 0) 100%), linear-gradient(to left, rgba(132, 42, 28, 0.25), rgba(132, 42, 28, 0.25)), url('/src/images/Fondos/02.Fearless.png')",
+
+        		'fondos-speak-now': "radial-gradient(closest-side,rgba(109, 71, 107, 0.75) 0%,rgba(109, 71, 107, 0) 100%), linear-gradient(to left, rgba(109, 71, 107, 0.25), rgba(109, 71, 107, 0.25)), url('/src/images/Fondos/03.SpeakNow.png')",
+
+        		'fondos-red': "radial-gradient(closest-side,rgba(122, 46, 57, 0.75) 0%,rgba(122, 46, 57, 0) 100%), linear-gradient(to left, rgba(122, 46, 57, 0.25), rgba(122, 46, 57, 0.25)), url('/src/images/Fondos/03.Red.png')",
+
+        		'fondos-1989': "radial-gradient(closest-side,rgba(15, 94, 125, 0.75) 0%,rgba(15, 94, 125, 0) 100%), linear-gradient(to left, rgba(15, 94, 125, 0.25), rgba(15, 94, 125, 0.25)), url('/src/images/Fondos/05.1989.png')",
+
+        		'fondos-reputation': "radial-gradient(closest-side,rgba(72, 68, 68, 0.75) 0%,rgba(72, 68, 68, 0) 100%), linear-gradient(to left, rgba(72, 68, 68, 0.25), rgba(72, 68, 68, 0.25)), url('/src/images/Fondos/06.Reputation.png')",
+
+        		'fondos-lover': "radial-gradient(closest-side,rgba(153, 27, 59, 0.75) 0%,rgba(153, 27, 59, 0) 100%), linear-gradient(to left, rgba(153, 27, 59, 0.25), rgba(153, 27, 59, 0.25)), url('/src/images/Fondos/07.Lover.png')",
+
+        		'fondos-folklore': "radial-gradient(closest-side,rgba(93, 84, 79, 0.75) 0%,rgba(93, 84, 79, 0) 100%), linear-gradient(to left, rgba(93, 84, 79, 0.25), rgba(93, 84, 79, 0.25)), url('/src/images/Fondos/08.Folklore.png')",
+
+        		'fondos-evermore': "radial-gradient(closest-side,rgba(108, 76, 64, 0.75) 0%,rgba(108, 76, 64, 0) 100%), linear-gradient(to left, rgba(108, 76, 64, 0.25), rgba(108, 76, 64, 0.25)), url('/src/images/Fondos/09.Evermore.png')",
+
+        		'fondos-midnights': "radial-gradient(closest-side,rgba(61, 85, 144, 0.75) 0%,rgba(61, 85, 144, 0) 100%), linear-gradient(to left, rgba(61, 85, 144, 0.25), rgba(61, 85, 144, 0.25)), url('/src/images/Fondos/10.Midnights.png')",
+
+        		'fondos-TTPD': "radial-gradient(closest-side,rgba(83, 71, 64, 0.75) 0%,rgba(0, 0, 0, 0) 100%), linear-gradient(to left, rgba(83, 71, 64, 0.25), rgba(83, 71, 64, 0.25)), url('/src/images/Fondos/11.TTPD.png');",
+			},
 			colors: {
-				"taylor-swift-500": "#478249",
-				"taylor-swift-50": "#f2f7f2",
-						/* Debut */
+				/* Debut */
 				"debut-50": "#f2f7f2",
 				"debut-100": "#e1edde",
 				"debut-200": "#c3dac0",
@@ -161,27 +185,37 @@ export default {
 				"mashup-800": "#9a271a",
 				"mashup-900": "#80261c",
 				"mashup-950": "#460f09",
-
-				fontFamily: {
-					"m3-label-large-font-family": "Roboto-Medium, sans-serif",
-					"label-large-font": "Roboto-Medium, sans-serif",
-				},
-				fontSize: {
+			},
+			fontFamily: {
+				'display-large-font-family': ['Rubik Variable, sans-serif'],
+        		'm3-label-large-font-family': ['Rubik Variable, sans-serif'],
+        		'label-large-font': ['Rubik Variable, sans-serif'],
+			},
+			fontSize: {
+				"display-large-font-size": "72px",
 				"m3-label-large-font-size": "14px",
+				"headline-small-size": "24px",
 				"label-large-size": "14px",
-				},
-				fontWeight: {
+			},
+			fontWeight: {
+				"display-large-font-weight": "700",
+				"headline-small-font-weight": "500",
 				"m3-label-large-font-weight": "500",
-				},
-				lineHeight: {
+			},
+			lineHeight: {
+				"display-large-line-height": "64px",
+				"headline-small-line-height": "32px",
 				"m3-label-large-line-height": "20px",
+				"display-large-line-height": "64px",
+				"headline-small-line-height": "32px",
 				"label-large-line-height": "20px",
-				},
-				letterSpacing: {
+			},
+			letterSpacing: {
+				"headline-small-tracking": "",
 				"label-large-tracking": "0.1px",
-				},
+			},
+			
 		},
 	},
-},
 	plugins: [],
 }

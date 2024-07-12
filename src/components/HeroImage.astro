@@ -1,0 +1,47 @@
+---
+import Button from '../components/Button.astro';
+interface Props {
+	era: string;
+}
+
+const { era } = Astro.props;
+
+function capitalizeFirstLetter(str: string): string {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+const capitalizedEra = capitalizeFirstLetter(era);
+---
+
+<div class:list={[
+    "pt-space-4000 px-56 pb-space-4000 flex flex-col gap-space-800 items-center justify-center self-stretch shrink-0 w-auto relative py-32 space-y-8  bg-cover bg-no-repeat",
+    {
+        'bg-fondos-debut': era === 'debut',
+        'bg-fondos-fearless': era === 'fearless',
+        'bg-fondos-speak-now': era === 'speak-now',
+        'bg-fondos-red': era === 'red',
+        'bg-fondos-1989': era === '1989',
+        'bg-fondos-reputation': era === 'reputation',
+        'bg-fondos-lover': era === 'lover',
+        'bg-fondos-folklore': era === 'folklore',
+        'bg-fondos-evermore': era === 'evermore',
+        'bg-fondos-midnights': era === 'midnights',
+        'bg-fondos-TTPD': era === 'TTPD',
+    }
+    ]} >
+    <div class="flex flex-col gap-space-200 items-center justify-center shrink-0 relative space-y-2 overflow-hidden">
+        <div class="text-midnights-400 text-center font-display-large-font-family text-display-large-font-size leading-display-large-line-height font-display-large-font-weight relative self-stretch" style="letter-spacing: var(--display-large-letter-spacing, -1px)">
+        Swifties Eras Tour
+        </div>
+        <div class="text-midnights-400 text-center font-display-large-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight relative self-stretch flex items-center justify-center" style="mix-blend-mode: color-dodge">
+        {capitalizedEra}
+        </div>
+    </div>
+    <div class="flex flex-row gap-space-400 items-center justify-center shrink-0 relative space-x-4">
+        <Button era={era} button='Canciones' href='#Canciones' />
+        <Button era={era} button='Conciertos' href='#Conciertos'/>
+    </div>
+</div>
+    
+<style>
+</style>
