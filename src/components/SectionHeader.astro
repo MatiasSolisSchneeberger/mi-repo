@@ -1,0 +1,57 @@
+---
+import Button from "./Button.astro";
+import ButtonIcon from "./ButtonIcon.astro";
+
+interface Props {
+	era: string;
+    titulo: string;
+    texto: string;
+}
+
+const { era , titulo , texto } = Astro.props;
+---
+<section
+    class = "flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative"
+>
+    <h2
+    class:list = {[
+        "text-center font-display-medium-font-family text-display-medium-font-size leading-display-medium-line-height font-display-medium-font-weight relative self-stretch",
+        {
+            "text-debut-900": era === "debut",
+            "text-fearless-900": era === "fearless",
+            "text-speak-now-900": era === "speak-now",
+            "text-red-900": era === "red",
+            "text-1989-900": era === "1989",
+            "text-reputation-900": era === "reputation",
+            "text-lover-900": era === "lover",
+            "text-folklore-900": era === "folklore",
+            "text-evermore-900": era === "evermore",
+            "text-midnights-900": era === "midnights",
+            "text-TTPD-900": era === "TTPD",
+        }
+    ]}
+    >
+        {titulo}
+    </h2>
+    <p
+    class:list = {[
+        "text-center font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative self-stretch",
+        {
+            "text-debut-900": era === "debut",
+            "text-fearless-900": era === "fearless",
+            "text-speak-now-900": era === "speak-now",
+            "text-red-900": era === "red",
+            "text-1989-900": era === "1989",
+            "text-reputation-900": era === "reputation",
+            "text-lover-900": era === "lover",
+            "text-folklore-900": era === "folklore",
+            "text-evermore-900": era === "evermore",
+            "text-midnights-900": era === "midnights",
+            "text-TTPD-900": era === "TTPD",
+        }
+        ]}
+    style = "letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+    >
+        {texto}
+    </p>
+</section>

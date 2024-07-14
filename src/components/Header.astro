@@ -9,29 +9,29 @@ const { era } = Astro.props;
 ---
 
 
-<div  class:list={[
-        "pt-4 pb-4 flex flex-row items-center self-stretch shrink-0 h-auto relative w-screen justify-between px-10",
+<div  class:list = {[
+        "pt-4 pb-4 flex flex-row items-center self-stretch shrink-0 h-auto relative w-full justify-between px-10 ",
         {
-            "bg-debut-900": era === "debut",
-            "bg-fearless-900": era === "fearless",
-            "bg-speak-now-900": era === "speak-now",
-            "bg-red-900": era === "red",
-            "bg-1989-900": era === "1989",
-            "bg-reputation-900": era === "reputation",
-            "bg-lover-900": era === "lover",
-            "bg-folklore-900": era === "folklore",
-            "bg-evermore-900": era === "evermore",
-            "bg-midnights-900": era === "midnights",
-            "bg-TTPD-900": era === "TTPD",
+            "bg-debut-900": era=== "debut",
+            "bg-fearless-900": era=== "fearless",
+            "bg-speak-now-900": era=== "speak-now",
+            "bg-red-900": era=== "red",
+            "bg-1989-900": era=== "1989",
+            "bg-reputation-900": era=== "reputation",
+            "bg-lover-900": era=== "lover",
+            "bg-folklore-900": era=== "folklore",
+            "bg-evermore-900": era=== "evermore",
+            "bg-midnights-900": era=== "midnights",
+            "bg-TTPD-900": era=== "TTPD",
 
         }
     ]}>
     
-    <Logo/>
+    <Logo href = "#Inicio"/>
 
-    <div class="flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
-        <Button era = {era} href="#Inicio" button='Inicio'/>
-        <Button era = {era} href="#Canciones" button='Canciones'/>
-        <Button era = {era} href="#Conciertos" button='Conciertos'/>
+    <div class = "flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
+        <Button era = {era} href = "#Inicio" button = 'Inicio'/>
+        <Button era = {era} href = "#Canciones" button = 'Canciones'/>
+        <Button era = {era} href = "#Conciertos" button = 'Conciertos'/>
     </div>
 </div>

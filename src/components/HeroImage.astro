@@ -4,17 +4,17 @@ interface Props {
 	era: string;
 }
 
-const { era } = Astro.props;
-
+const { era }  =  Astro.props;
+/* pasar a mayuscula la primera letra */
 function capitalizeFirstLetter(str: string): string {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-const capitalizedEra = capitalizeFirstLetter(era);
+const capitalizedEra  =  capitalizeFirstLetter(era);
 ---
 
-<div class:list={[
-    "pt-space-4000 px-56 pb-space-4000 flex flex-col gap-space-800 items-center justify-center self-stretch shrink-0 w-auto relative py-32 space-y-8  bg-cover bg-no-repeat",
+<div class:list = {[
+    "pt-space-4000 px-56 pb-space-4000 flex flex-col gap-space-800 items-center justify-center self-stretch shrink-0 w-auto relative py-40 space-y-8 bg-cover bg-no-repeat",
     {
         'bg-fondos-debut': era === 'debut',
         'bg-fondos-fearless': era === 'fearless',
@@ -29,13 +29,13 @@ const capitalizedEra = capitalizeFirstLetter(era);
         'bg-fondos-TTPD': era === 'TTPD',
     }
     ]} >
-    <div class="flex flex-col gap-space-200 items-center justify-center shrink-0 relative space-y-2 overflow-hidden">
-        <div class:list={[
+    <div class = "flex flex-col gap-space-200 items-center justify-center shrink-0 relative space-y-2 overflow-hidden">
+        <div class:list = {[
             "text-center font-display-large-font-family text-display-large-font-size leading-display-large-line-height font-display-large-font-weight relative self-stretch",
             {
-                'text-debut-400-original': era === 'debut',
+                'text-debut-400': era === 'debut',
                 'text-fearless-400': era === 'fearless',
-                'text-speak-now-400-original': era === 'speak-now',
+                'text-speak-now-400': era === 'speak-now',
                 'text-red-400': era === 'red',
                 'text-1989-400': era === '1989',
                 'text-reputation-400': era === 'reputation',
@@ -45,15 +45,15 @@ const capitalizedEra = capitalizeFirstLetter(era);
                 'text-midnights-400': era === 'midnights',
                 'text-TTPD-400': era === 'TTPD',
             }
-            ]} style="letter-spacing: var(--display-large-letter-spacing, -1px)">
+            ]} style = "letter-spacing: var(--display-large-letter-spacing, -1px)">
         Swifties Eras Tour
         </div>
-        <div class:list={[
-            "text-center font-display-large-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight relative self-stretch flex items-center justify-center",
+        <div class:list = {[
+            "text-center font-headline-small-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight relative self-stretch flex items-center justify-center",
             {
-                'text-debut-400-original': era === 'debut',
+                'text-debut-400': era === 'debut',
                 'text-fearless-400': era === 'fearless',
-                'text-speak-now-400-original': era === 'speak-now',
+                'text-speak-now-400': era === 'speak-now',
                 'text-red-400': era === 'red',
                 'text-1989-400': era === '1989',
                 'text-reputation-400': era === 'reputation',
@@ -63,13 +63,13 @@ const capitalizedEra = capitalizeFirstLetter(era);
                 'text-midnights-400': era === 'midnights',
                 'text-TTPD-400': era === 'TTPD',
             }
-            ]} style="mix-blend-mode: color-dodge">
+            ]} style = "mix-blend-mode: color-dodge">
         {capitalizedEra}
         </div>
     </div>
-    <div class="flex flex-row gap-space-400 items-center justify-center shrink-0 relative space-x-4">
-        <Button era={era} button='Canciones' href='#Canciones' />
-        <Button era={era} button='Conciertos' href='#Conciertos'/>
+    <div class = "flex flex-row gap-space-400 items-center justify-center shrink-0 relative space-x-4">
+        <Button era = {era} button = 'Canciones' href = '#Canciones' />
+        <Button era = {era} button = 'Conciertos' href = '#Conciertos'/>
     </div>
 </div>
     

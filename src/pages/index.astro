@@ -2,12 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
 import HeroImage from '../components/HeroImage.astro';
+import SectionCanciones from '../components/SectionCanciones.astro';
 
-const era = 'reputation'
+const era = 'midnights'
 ---
 
 <Layout title = "Swifties Eras Tour" era = {era}>
 	<HeroImage era = {era}/>
+	<SectionCanciones era = {era}>
 </Layout>
 
 <style>

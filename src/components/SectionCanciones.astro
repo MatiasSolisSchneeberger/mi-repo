@@ -1,0 +1,452 @@
+---
+import Button from "./Button.astro";
+import ButtonIcon from "./ButtonIcon.astro";
+import SectionHeader from "./SectionHeader.astro";
+import Chip from "./Chip.astro";
+import TarjetaCancion from "./TarjetaCancion.astro";
+
+interface Props {
+	era: string;
+}
+
+const { era }  =  Astro.props;
+---
+
+<article id="Canciones" class:list = {[
+    "py-12 px-48 space-y-6",
+    {
+        "bg-debut-100":         era === "debut",
+        "bg-fearless-100":      era === "fearless",
+        "bg-speak-now-100":     era === "speak-now",
+        "bg-red-100":           era === "red",
+        "bg-1989-100":          era === "1989",
+        "bg-reputation-100":    era === "reputation",
+        "bg-lover-100":         era === "lover",
+        "bg-folklore-100":      era === "folklore",
+        "bg-evermore-100":      era === "evermore",
+        "bg-midnights-100":     era === "midnights",
+        "bg-TTPD-100":          era === "TTPD",
+    }
+    ]}>
+    <!-- Titulo -->
+    <SectionHeader era  =  {era} titulo  =  "Canciones Sorpresas" texto  =  "Estas fueron las canciones sorpresas que hubieron hasta ahora en “The Eras Tour”"/>
+    <!-- Botontes/Etiquetas -->
+    <section class  =  "flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+        <!-- Botones -->
+        <div class="rounded-3xl flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative">
+            <h3 class:list  =  {[
+                "text-center font-headline-medium-font-family text-headline-medium-font-size leading-headline-medium-line-height font-headline-medium-font-weight relative self-stretch",
+                {
+                    "text-debut-900":       era === "debut",
+                    "text-fearless-900":    era === "fearless",
+                    "text-speak-now-900":   era === "speak-now",
+                    "text-red-900":         era === "red",
+                    "text-1989-900":        era === "1989",
+                    "text-reputation-900":  era === "reputation",
+                    "text-lover-900":       era === "lover",
+                    "text-folklore-900":    era === "folklore",
+                    "text-evermore-900":    era === "evermore",
+                    "text-midnights-900":   era === "midnights",
+                    "text-TTPD-900":        era === "TTPD",
+                }
+                ]}>
+                Eras
+            </h3>
+            <div class = "flex flex-row gap-3 items-center justify-center flex-wrap self-stretch shrink-0 relative">
+                <ButtonIcon 
+                    href = "#debut"      
+                    button = "Taylor Swift"                    
+                    era = "debut"      
+                    src = "src/images/Emojis/01.taylorswift.png"/>
+                <ButtonIcon 
+                    href = "#fearless"   
+                    button = "Fearless"                        
+                    era = "fearless"   
+                    src = "src/images/Emojis/02.fearless.png"/>
+                <ButtonIcon 
+                    href = "#speak-now"  
+                    button = "Speak Now"                       
+                    era = "speak-now"  
+                    src = "src/images/Emojis/03.speaknow.png"/>
+                <ButtonIcon 
+                    href = "#red"        
+                    button = "Red"                             
+                    era = "red"        
+                    src = "src/images/Emojis/04.red.png"/>
+                <ButtonIcon 
+                    href = "#1989"       
+                    button = "1989"                            
+                    era = "1989"       
+                    src = "src/images/Emojis/05.1989.png"/>
+                <ButtonIcon 
+                    href = "#reputation" 
+                    button = "Reputation"                      
+                    era = "reputation" 
+                    src = "src/images/Emojis/06.reputation.png"/>
+                <ButtonIcon 
+                    href = "#lover"      
+                    button = "Lover"                           
+                    era = "lover"      
+                    src = "src/images/Emojis/07.lover.png"/>
+                <ButtonIcon 
+                    href = "#folklore"   
+                    button = "Folklore"                        
+                    era = "folklore"   
+                    src = "src/images/Emojis/08.folklore.png"/>
+                <ButtonIcon 
+                    href = "#evermore"   
+                    button = "Evermore"                        
+                    era = "evermore"   
+                    src = "src/images/Emojis/09.evermore.png"/>
+                <ButtonIcon 
+                    href = "#midnights"  
+                    button = "Midnights"                       
+                    era = "midnights"  
+                    src = "src/images/Emojis/10.midnights.png"/>
+                <ButtonIcon 
+                    href = "#TTPD"       
+                    button = "The Tortured Poets Department"   
+                    era = "TTPD"       
+                    src = "src/images/Emojis/11.TTPD.png"/>
+                <ButtonIcon 
+                    href = "#Mashups"    
+                    button = "Mashups"                         
+                    era = "MashUp"     
+                    src = "src/images/Emojis/12.MashUp.png"/>
+            </div>
+        </div>
+        <!-- Etiquetas -->
+        <div class = "rounded-3xl flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative">
+            <h3 class:list  =  {[
+                "text-center font-headline-medium-font-family text-headline-medium-font-size leading-headline-medium-line-height font-headline-medium-font-weight relative self-stretch",
+                {
+                    "text-debut-900":       era === "debut",
+                    "text-fearless-900":    era === "fearless",
+                    "text-speak-now-900":   era === "speak-now",
+                    "text-red-900":         era === "red",
+                    "text-1989-900":        era === "1989",
+                    "text-reputation-900":  era === "reputation",
+                    "text-lover-900":       era === "lover",
+                    "text-folklore-900":    era === "folklore",
+                    "text-evermore-900":    era === "evermore",
+                    "text-midnights-900":   era === "midnights",
+                    "text-TTPD-900":        era === "TTPD",
+                }
+                ]}>
+            Etiquetas
+            </h3>
+            <div class = "flex flex-row gap-3 items-center justify-center flex-wrap self-stretch shrink-0 relative">
+                <Chip chip="Setlist"            era="fearless"      src="src/images/Emojis/15.setlist.png"/>
+                <Chip chip="Guitarra"           era="red"           src="src/images/Emojis/16.guitarra.png"/>
+                <Chip chip="Piano"              era="folklore"      src="src/images/Emojis/13.piano.png"/>
+                <Chip chip="Mashups"            era="reputation"    src="src/images/Emojis/12.MashUp.png"/>
+                <Chip chip="Cantante Sorpresa"  era="debut"         src="src/images/Emojis/17.cantante.png"/>
+            </div>
+        </div>
+
+    </section>
+    <!-- TarjetasCanciones -->
+    <section class="flex flex-row gap-6 items-center justify-center flex-wrap self-stretch shrink-0 relative py-0">
+        <TarjetaCancion/>
+        <div
+class="flex flex-col gap-0 items-center justify-center flex-1 min-w-[300px] max-w-[388px] relative"
+style="
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+"
+>
+    <div
+        class="bg-taylor-swift-200 rounded-tl-[22px] rounded-tr-[22px] pt-2.5 pr-2.5 pb-1.5 pl-2.5 flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative"
+    >
+        <header
+        class="bg-taylor-swift-400-original rounded-xl p-2 flex flex-col gap-0 items-center justify-center self-stretch shrink-0 h-[72px] relative"
+        >
+        <img
+            class="bg-logo-debut self-stretch flex-1 relative"
+            style="object-fit: cover"
+            src="taylor-swift-album-2006-10.png"
+        />
+        </header>
+        <article
+        class="bg-disco-debut rounded-xl flex flex-col items-center justify-end self-stretch shrink-0 relative overflow-hidden"
+        style="
+            background: url(portadas-eras-tour0.png) center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        "
+        >
+        <img
+            class="self-stretch shrink-0 h-[350px] relative"
+            style="
+            background: var(
+                --taylor-debut,
+                linear-gradient(to left, #96c095, #96c095)
+            );
+            backdrop-filter: var(--blur-portada-disco-backdrop-filter, blur(5px));
+            object-fit: cover;
+            "
+            src="taylor-swift-10.png"
+        />
+        </article>
+    </div>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset0.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset1.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset2.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset3.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset4.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset5.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset6.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset7.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset8.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset9.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset10.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset11.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset12.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset13.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <div
+        class="bg-taylor-swift-200 pt-[5px] pr-2.5 pb-[5px] pl-2.5 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-start justify-center self-stretch shrink-0 h-[auto] relative overflow-visible"
+        src="horizontal-full-width0.svg"
+        />
+    </div>
+    <article
+        class="bg-taylor-swift-200 pt-1 pr-2.5 pb-1 pl-[42px] flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden"
+    >
+        <img
+        class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 w-px h-[auto] relative overflow-visible"
+        src="vertical-middle-inset14.svg"
+        />
+        <div
+        class="text-taylor-swift-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative"
+        style="letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
+        >
+        Cancion
+        </div>
+    </article>
+    <div
+        class="bg-taylor-swift-200 rounded-br-[22px] rounded-bl-[22px] pt-3 pr-2.5 pb-2.5 pl-2.5 flex flex-row gap-2.5 items-start justify-end self-stretch shrink-0 relative"
+    >
+        <div
+        class="bg-taylor-swift-400-original rounded-[100px] flex flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden"
+        >
+        <div
+            class="pt-2.5 pr-6 pb-2.5 pl-4 flex flex-row gap-2 items-center justify-center self-stretch flex-1 relative"
+        >
+            <img
+            class="shrink-0 w-[18px] h-[18px] relative overflow-visible"
+            src="icon0.svg"
+            />
+            <div
+            class="text-taylor-swift-800 text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center"
+            style="letter-spacing: var(--title-small-letter-spacing, 0.1px)"
+            >
+            Label
+            </div>
+        </div>
+        </div>
+        <div
+        class="bg-taylor-swift-600 rounded-[30px] flex flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden"
+        >
+        <div
+            class="pt-2.5 pr-6 pb-2.5 pl-4 flex flex-row gap-2 items-center justify-center self-stretch flex-1 relative"
+        >
+            <img
+            class="shrink-0 w-[18px] h-[18px] relative overflow-visible"
+            src="icon1.svg"
+            />
+            <div
+            class="text-taylor-swift-100 text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center"
+            style="letter-spacing: var(--title-small-letter-spacing, 0.1px)"
+            >
+            Mas info
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+    </section>
+</article>

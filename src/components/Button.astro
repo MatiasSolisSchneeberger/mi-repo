@@ -7,9 +7,9 @@ interface Props {
 	era: string;
 }
 
-const { href, button, era } = Astro.props;
+const { href, button, era }  =  Astro.props;
 ---
-<button class:list={[
+<button class:list = {[
 		"rounded-[100px] flex flex-col gap-2 items-center justify-center shrink-0 h-10 w- relative overflow-hidden",
 		{
 			"bg-debut-600 hover:bg-debut-500": era === "debut",
@@ -17,7 +17,7 @@ const { href, button, era } = Astro.props;
 			"bg-speak-now-600 hover:bg-speak-now-500": era === "speak-now",
 			"bg-red-600 hover:bg-red-500": era === "red",
 			"bg-1989-600 hover:bg-1989-500": era === "1989",
-			"bg-reputation-600 hover:bg-reputation-500-original": era === "reputation",
+			"bg-reputation-600 hover:bg-reputation-500": era === "reputation",
 			"bg-lover-600 hover:bg-lover-500": era === "lover",
 			"bg-folklore-600 hover:bg-folklore-500": era === "folklore",
 			"bg-evermore-600 hover:bg-evermore-500": era === "evermore",
@@ -26,8 +26,8 @@ const { href, button, era } = Astro.props;
 			
 		}
 	]}>
-	<a href={href} class:list={[
-		"pt-2.5 pr-6 pb-2.5 pl-6 flex-row gap-2 self-stretch flex-1 text-taylor-swift-50 text-center font-m3-label-large-font-family text-m3-label-large-font-size leading-m3-label-large-line-height font-m3-label-large-font-weight relative flex items-center justify-center",
+	<a href = {href} class:list = {[
+		"flex-row gap-2 self-stretch flex-1 text-taylor-swift-50 text-center font-title-small-font-family text-m3-label-large-font-size leading-m3-label-large-line-height font-m3-label-large-font-weight relative flex items-center justify-center text-reputation-50 py-2.5 px-6",
 		{
 			"text-debut-50": era === "debut",
 			"text-fearless-50": era === "fearless",
