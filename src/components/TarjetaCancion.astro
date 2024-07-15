@@ -8,17 +8,19 @@ style="
     0px 1px 2px 0px rgba(0, 0, 0, 0.3);
 ">
     <header class="w-full flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative">
-        <div class="bg-debut-400 rounded-xl p-2 flex flex-col gap-0 items-center justify-center self-stretch shrink-0 h-[72px] relative">
+        <!-- logo -->
+        <div class="bg-debut-400 rounded-2xl p-2 flex flex-col gap-0 items-center justify-center self-stretch shrink-0 h-[72px] relative">
             <img
             class="bg-logo-debut self-stretch flex-1 relative h-full w-full"
             style="object-fit: contain"
             src="src/images/Logos-Discos/01-Logo-Debut.png"
             />        
         </div>
+        <!-- Taylor -->
         <div class="bg-[url('src/images/Portadas-Discos/01-Portada-TaylorSwift.jpg')] bg-cover bg-center rounded-xl flex flex-col items-center justify-end self-stretch shrink-0 relative overflow-hidden">
-            <div class="backdrop-blur-sm w-full h-full flex justify-center rounded-xl" style="background: linear-gradient(to left, #96c095, #96c095)">
-                <img class="self-center relativeself-stretch shrink-0 h-[350px] relative " src="src/images/Fotos/01-Taylor---Swift.png" alt="" >
+            <div class="backdrop-blur-none w-full h-full flex justify-center rounded-xl absolute" style="background: linear-gradient(to left, #96c095, #96c095); mix-blend-mode: multiply; z-index: 1">
             </div>
+            <img class="self-center relativeself-stretch shrink-0 relative backdrop-blur-sm h-full w-full rounded-xl" src="src/images/Fotos/01-TaylorSwift.png" alt="" style="z-index: 0;">
         </div>
     </header>
     <section class="w-full">
