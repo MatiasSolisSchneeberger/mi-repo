@@ -1,0 +1,23 @@
+---
+interface Props {
+
+	src: string | null;
+}
+
+const { src }  =  Astro.props;
+
+---
+<div class=" pt-1 pb-1 flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden">
+    <!-- Emojie -->
+    <img class:list={[
+		"shrink-0 w-6 h-6 relative",
+		{
+			"opacity-0": src === null,
+		}
+		]} 
+		src={src} alt="" style="object-fit: cover">
+    <!-- Divider Vertical -->
+    <div class="w-0.5 h-full bg-debut-900 rounded-sm"></div>
+    <!-- Cancion -->
+    <p class="text-debut-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative">TTPD</p>
+</div>
