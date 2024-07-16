@@ -1,0 +1,60 @@
+---
+interface Props {
+	href: string;
+	era: string;
+	icono: string | null;
+}
+
+const { href , era , icono }  =  Astro.props;
+---
+<a href = {href} class:list = {[
+		"rounded-[100px] flex flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden",
+		{
+			"bg-debut-300 hover:bg-debut-400": era === "debut",
+			"bg-fearless-300 hover:bg-fearless-400": era === "fearless",
+			"bg-speakNow-300 hover:bg-speakNow-400": era === "speakNow",
+			"bg-red-300 hover:bg-red-400": era === "red",
+			"bg-1989-300 hover:bg-1989-400": era === "1989",
+			"bg-reputation-300 hover:bg-reputation-400": era === "reputation",
+			"bg-lover-300 hover:bg-lover-400": era === "lover",
+			"bg-folklore-300 hover:bg-folklore-400": era === "folklore",
+			"bg-evermore-300 hover:bg-evermore-400": era === "evermore",
+			"bg-midnights-300 hover:bg-midnights-400": era === "midnights",
+			"bg-TTPD-300 hover:bg-TTPD-400": era === "TTPD",
+			"bg-mashup-300 hover:bg-mashup-400": era === "mashup",
+			
+		}
+	]}>
+	<div class:list = {[
+		"py-2.5 flex flex-row gap-2 items-center justify-center self-stretch flex-1 relative",
+		{
+			"pl-4 pr-6": icono === "Izq",
+			"px-6": icono === null,
+			"pl-6 pr-4": icono === "Der",
+		}
+		]}>
+		<slot name="before"/>
+
+		<p  class:list = {[
+			"text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
+		{
+			"text-debut-800": 		era === "debut",
+			"text-fearless-800": 	era === "fearless",
+			"text-speakNow-800": 	era === "speakNow",
+			"text-red-800": 			era === "red",
+			"text-1989-800": 		era === "1989",
+			"text-reputation-800": 	era === "reputation",
+			"text-lover-800": 		era === "lover",
+			"text-folklore-800": 	era === "folklore",
+			"text-evermore-800": 	era === "evermore",
+			"text-midnights-800": 	era === "midnights",
+			"text-TTPD-800": 		era === "TTPD",
+			"text-mashup-800": 		era === "mashup",
+		}
+		]}
+		style = "letter-spacing: var(--title-small-letter-spacing, 0.1px)">
+			<slot/>
+		</p>
+		<slot name="after"/>
+	</div>
+</a>

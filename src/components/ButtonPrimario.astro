@@ -1,0 +1,60 @@
+---
+interface Props {
+	href: string;
+	era: string;
+	icono: string | null;
+}
+
+const { href , era , icono }  =  Astro.props;
+---
+<a href = {href} class:list = {[
+		"rounded-[100px] flex flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden",
+		{
+			"bg-debut-600 hover:bg-debut-500": era === "debut",
+			"bg-fearless-600 hover:bg-fearless-500": era === "fearless",
+			"bg-speakNow-600 hover:bg-speakNow-500": era === "speakNow",
+			"bg-red-600 hover:bg-red-500": era === "red",
+			"bg-1989-600 hover:bg-1989-500": era === "1989",
+			"bg-reputation-600 hover:bg-reputation-500": era === "reputation",
+			"bg-lover-600 hover:bg-lover-500": era === "lover",
+			"bg-folklore-600 hover:bg-folklore-500": era === "folklore",
+			"bg-evermore-600 hover:bg-evermore-500": era === "evermore",
+			"bg-midnights-600 hover:bg-midnights-500": era === "midnights",
+			"bg-TTPD-600 hover:bg-TTPD-500": era === "TTPD",
+			"bg-mashup-600 hover:bg-mashup-500": era === "mashup",
+			
+		}
+	]}>
+	<div class:list = {[
+		"py-2.5 flex flex-row gap-2 items-center justify-center self-stretch flex-1 relative",
+		{
+			"pl-4 pr-6": icono === "Izq",
+			"px-6": icono === null,
+			"pl-6 pr-4": icono === "Der",
+		}
+		]}>
+		<slot name="before"/>
+
+		<p  class:list = {[
+			"text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
+		{
+			"text-debut-50": 		era === "debut",
+			"text-fearless-50": 	era === "fearless",
+			"text-speakNow-50": 	era === "speakNow",
+			"text-red-50": 			era === "red",
+			"text-1989-50": 		era === "1989",
+			"text-reputation-50": 	era === "reputation",
+			"text-lover-50": 		era === "lover",
+			"text-folklore-50": 	era === "folklore",
+			"text-evermore-50": 	era === "evermore",
+			"text-midnights-50": 	era === "midnights",
+			"text-TTPD-50": 		era === "TTPD",
+			"text-mashup-50": 		era === "mashup",
+		}
+		]}
+		style = "letter-spacing: var(--title-small-letter-spacing, 0.1px)">
+			<slot/>
+		</p>
+		<slot name="after"/>
+	</div>
+</a>

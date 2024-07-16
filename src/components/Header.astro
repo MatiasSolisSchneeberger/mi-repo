@@ -1,6 +1,6 @@
 ---
 import Logo from './Logo.astro';
-import Button from '../components/Button.astro';
+import ButtonPrimario from './ButtonPrimario.astro';
 interface Props {
 	era: string;
 }
@@ -14,7 +14,7 @@ const { era } = Astro.props;
         {
             "bg-debut-900": era=== "debut",
             "bg-fearless-900": era=== "fearless",
-            "bg-speak-now-900": era=== "speak-now",
+            "bg-speakNow-900": era=== "speakNow",
             "bg-red-900": era=== "red",
             "bg-1989-900": era=== "1989",
             "bg-reputation-900": era=== "reputation",
@@ -27,11 +27,20 @@ const { era } = Astro.props;
         }
     ]}>
     
-    <Logo href = "#Inicio"/>
+    <Logo era = {era} />
 
     <div class = "flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
-        <Button era = {era} href = "#Inicio" button = 'Inicio'/>
-        <Button era = {era} href = "#Canciones" button = 'Canciones'/>
-        <Button era = {era} href = "#Conciertos" button = 'Conciertos'/>
+        <ButtonPrimario era = {era} href = "#Inicio" icono={null}>
+            Inicio
+        </ButtonPrimario>
+
+        <ButtonPrimario era = {era} href = "#Canciones" icono={null}>
+            Canciones
+        </ButtonPrimario>
+
+        <ButtonPrimario era = {era} href = "#Conciertos" icono={null}>
+            #Conciertos
+        </ButtonPrimario>
+
     </div>
 </div>

@@ -1,9 +1,11 @@
 ---
-import Button from "./Button.astro";
-import ButtonIcon from "./ButtonIcon.astro";
+import ButtonPrimario from "./ButtonPrimario.astro";
 import SectionHeader from "./SectionHeader.astro";
 import Chip from "./Chip.astro";
 import TarjetaCancion from "./TarjetaCancion.astro";
+import Cancion from "./Cancion.astro";
+import Emojie from "./Emojie.astro";
+import CancionesDebut from "./CancionesDebut.astro";
 
 interface Props {
 	era: string;
@@ -17,7 +19,7 @@ const { era }  =  Astro.props;
     {
         "bg-debut-100":         era === "debut",
         "bg-fearless-100":      era === "fearless",
-        "bg-speak-now-100":     era === "speak-now",
+        "bg-speakNow-100":      era === "speakNow",
         "bg-red-100":           era === "red",
         "bg-1989-100":          era === "1989",
         "bg-reputation-100":    era === "reputation",
@@ -29,9 +31,9 @@ const { era }  =  Astro.props;
     }
     ]}>
     <!-- Titulo -->
-    <SectionHeader era  =  {era} titulo  =  "Canciones Sorpresas" texto  =  "Estas fueron las canciones sorpresas que hubieron hasta ahora en “The Eras Tour”"/>
+    <SectionHeader era={era} titulo = "Canciones Sorpresas" texto = "Estas fueron las canciones sorpresas que hubieron hasta ahora en “The Eras Tour”"/>
     <!-- Botontes/Etiquetas -->
-    <section class  =  "flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+    <section class = "flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
         <!-- Botones -->
         <div class="rounded-3xl flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative">
             <h3 class:list  =  {[
@@ -39,7 +41,7 @@ const { era }  =  Astro.props;
                 {
                     "text-debut-900":       era === "debut",
                     "text-fearless-900":    era === "fearless",
-                    "text-speak-now-900":   era === "speak-now",
+                    "text-speakNow-900":    era === "speakNow",
                     "text-red-900":         era === "red",
                     "text-1989-900":        era === "1989",
                     "text-reputation-900":  era === "reputation",
@@ -52,67 +54,68 @@ const { era }  =  Astro.props;
                 ]}>
                 Eras
             </h3>
+            <!-- Botones de las eras -->
             <div class = "flex flex-row gap-3 items-center justify-center flex-wrap self-stretch shrink-0 relative">
-                <ButtonIcon 
-                    href = "#debut"      
-                    button = "Taylor Swift"                    
-                    era = "debut"      
-                    src = "src/images/Emojis/01.taylorswift.png"/>
-                <ButtonIcon 
-                    href = "#fearless"   
-                    button = "Fearless"                        
-                    era = "fearless"   
-                    src = "src/images/Emojis/02.fearless.png"/>
-                <ButtonIcon 
-                    href = "#speak-now"  
-                    button = "Speak Now"                       
-                    era = "speak-now"  
-                    src = "src/images/Emojis/03.speaknow.png"/>
-                <ButtonIcon 
-                    href = "#red"        
-                    button = "Red"                             
-                    era = "red"        
-                    src = "src/images/Emojis/04.red.png"/>
-                <ButtonIcon 
-                    href = "#1989"       
-                    button = "1989"                            
-                    era = "1989"       
-                    src = "src/images/Emojis/05.1989.png"/>
-                <ButtonIcon 
-                    href = "#reputation" 
-                    button = "Reputation"                      
-                    era = "reputation" 
-                    src = "src/images/Emojis/06.reputation.png"/>
-                <ButtonIcon 
-                    href = "#lover"      
-                    button = "Lover"                           
-                    era = "lover"      
-                    src = "src/images/Emojis/07.lover.png"/>
-                <ButtonIcon 
-                    href = "#folklore"   
-                    button = "Folklore"                        
-                    era = "folklore"   
-                    src = "src/images/Emojis/08.folklore.png"/>
-                <ButtonIcon 
-                    href = "#evermore"   
-                    button = "Evermore"                        
-                    era = "evermore"   
-                    src = "src/images/Emojis/09.evermore.png"/>
-                <ButtonIcon 
-                    href = "#midnights"  
-                    button = "Midnights"                       
-                    era = "midnights"  
-                    src = "src/images/Emojis/10.midnights.png"/>
-                <ButtonIcon 
-                    href = "#TTPD"       
-                    button = "The Tortured Poets Department"   
-                    era = "TTPD"       
-                    src = "src/images/Emojis/11.TTPD.png"/>
-                <ButtonIcon 
-                    href = "#Mashups"    
-                    button = "Mashups"                         
-                    era = "MashUp"     
-                    src = "src/images/Emojis/12.MashUp.png"/>
+                <ButtonPrimario era="debut" href="/" icono="Izq"> 
+                    <Emojie emojie="debut" slot="before"/>
+                    Taylor Swift 
+                </ButtonPrimario>
+                
+                <ButtonPrimario era="fearless" href="/" icono="Izq"> 
+                    <Emojie emojie="fearless" slot="before"/>
+                    Fearless 
+                </ButtonPrimario>
+                
+                <ButtonPrimario era="speakNow" href="/" icono="Izq"> 
+                    <Emojie emojie="speakNow" slot="before"/>
+                    Speak Now 
+                </ButtonPrimario>
+                
+                <ButtonPrimario era="red" href="/" icono="Izq"> 
+                    <Emojie emojie="red" slot="before"/>
+                    Red 
+                </ButtonPrimario>
+                
+                <ButtonPrimario era="1989" href="/" icono="Izq"> 
+                    <Emojie emojie="1989" slot="before"/>
+                    1989
+                </ButtonPrimario>
+                
+                <ButtonPrimario era="reputation" href="/" icono="Izq"> 
+                    <Emojie emojie="reputation" slot="before"/>
+                    Reputation
+                </ButtonPrimario>
+                
+                <ButtonPrimario era="lover" href="/" icono="Izq"> 
+                    <Emojie emojie="lover" slot="before"/>
+                    Lover
+                </ButtonPrimario>
+                
+                <ButtonPrimario era="folklore" href="/" icono="Izq"> 
+                    <Emojie emojie="folklore" slot="before"/>
+                    Folklore
+                </ButtonPrimario>
+                
+                <ButtonPrimario era="evermore" href="/" icono="Izq"> 
+                    <Emojie emojie="evermore" slot="before"/>
+                    Evermore 
+                </ButtonPrimario>
+                
+                <ButtonPrimario era="midnights" href="/" icono="Izq"> 
+                    <Emojie emojie="midnights" slot="before"/>
+                    Midnights 
+                </ButtonPrimario>
+                
+                <ButtonPrimario era="TTPD" href="/" icono="Izq"> 
+                    <Emojie emojie="TTPD" slot="before"/>
+                    The Tortured Poets Department 
+                </ButtonPrimario>
+                
+                <ButtonPrimario era="mashup" href="/" icono="Izq"> 
+                    <Emojie emojie="mashup" slot="before"/>
+                    Mashups 
+                </ButtonPrimario>
+
             </div>
         </div>
         <!-- Etiquetas -->
@@ -122,7 +125,7 @@ const { era }  =  Astro.props;
                 {
                     "text-debut-900":       era === "debut",
                     "text-fearless-900":    era === "fearless",
-                    "text-speak-now-900":   era === "speak-now",
+                    "text-speakNow-900":   era === "speakNow",
                     "text-red-900":         era === "red",
                     "text-1989-900":        era === "1989",
                     "text-reputation-900":  era === "reputation",
@@ -131,23 +134,50 @@ const { era }  =  Astro.props;
                     "text-evermore-900":    era === "evermore",
                     "text-midnights-900":   era === "midnights",
                     "text-TTPD-900":        era === "TTPD",
+                    "text-mashup-900":        era === "mashup",
                 }
                 ]}>
             Etiquetas
             </h3>
+            <!-- Etiquetas -->
             <div class = "flex flex-row gap-3 items-center justify-center flex-wrap self-stretch shrink-0 relative">
-                <Chip chip="Setlist"            era="fearless"      src="src/images/Emojis/15.setlist.png"/>
-                <Chip chip="Guitarra"           era="red"           src="src/images/Emojis/16.guitarra.png"/>
-                <Chip chip="Piano"              era="folklore"      src="src/images/Emojis/13.piano.png"/>
-                <Chip chip="Mashups"            era="reputation"    src="src/images/Emojis/12.MashUp.png"/>
-                <Chip chip="Cantante Sorpresa"  era="debut"         src="src/images/Emojis/17.cantante.png"/>
+                <Chip era="red" icono="Izq">
+                    <Emojie emojie="guitarra" slot="before"/>
+                    Guitarra
+                </Chip>
+                <Chip era="folklore" icono="Izq">
+                    <Emojie emojie="piano" slot="before"/>
+                    Piano
+                </Chip>
+                <Chip era="fearless" icono="Izq">
+                    <Emojie emojie="setlist" slot="before"/>
+                    Setlist
+                </Chip>
+                <Chip era="debut" icono="Izq">
+                    <Emojie emojie="cantante" slot="before"/>
+                    Cantante Sorpresa
+                </Chip>
+                <Chip era="evermore" icono="Izq">
+                    <Emojie emojie="pelicula" slot="before"/>
+                    Pelicula
+                </Chip>
+                <Chip era="reputation" icono="Izq">
+                    <Emojie emojie="mashups" slot="before"/>
+                    Mashup
+                </Chip>
             </div>
         </div>
-
     </section>
+
     <!-- TarjetasCanciones -->
     <section class="flex flex-row gap-6 items-center justify-center flex-wrap self-stretch shrink-0 relative py-0">
-        <TarjetaCancion/>
         
+        <TarjetaCancion eraTarjeta="debut" album="">
+            <CancionesDebut/>
+        </TarjetaCancion>
+
+        <TarjetaCancion eraTarjeta="fearless" album="">
+
+        </TarjetaCancion>
     </section>
 </article>

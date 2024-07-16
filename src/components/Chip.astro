@@ -1,13 +1,10 @@
 ---
-import type { string } from 'astro/zod';
-
 interface Props {
-	chip: string;
+	icono: string | null;
 	era: string;
-	src: string;
 }
 
-const { chip, era , src } = Astro.props;
+const { icono , era } = Astro.props;
 ---
 <chip
     class:list = {[
@@ -15,7 +12,7 @@ const { chip, era , src } = Astro.props;
         {
             "bg-debut-200       border-debut-600":      era === "debut",
             "bg-fearless-200    border-fearless-600":   era === "fearless",
-            "bg-speak-now-200   border-speak-now-600":  era === "speak-now",
+            "bg-speakNow-200   border-speakNow-600":  era === "speakNow",
             "bg-red-200         border-red-600":        era === "red",
             "bg-1989-200        border-1989-600":       era === "1989",
             "bg-reputation-200  border-reputation-600": era === "reputation",
@@ -33,26 +30,27 @@ const { chip, era , src } = Astro.props;
     "
 >
     <button
-        class = "pt-1.5 pr-4 pb-1.5 pl-2 flex flex-row gap-2 items-center justify-center shrink-0 h-8 relative"
+        class:list = {[
+            "pt-1.5 pb-1.5 flex flex-row gap-2 items-center justify-center shrink-0 h-8 relative",
+            {
+                "pl-2 pr-4": icono === "Izq",
+                "px-4": icono === null,
+                "pl-4 pr-2": icono === "Der",
+            }
+        ]}
     >
-        <icon class = "shrink-0 w-[18px] h-[18px] relative">
-            <img
-                class = "w-[100%] h-[100%] absolute right-[0%] left-[0%] bottom-[0%] top-[0%]"
-                style = "object-fit: cover"
-                src = {src}
-                alt = {src}
-            />
-        </icon>
+        <slot name="before"/>
+        
         <a
-            class:list = {[
-                "text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
-                {
-                    "text-debut-900":       era === "debut",
-                    "text-fearless-900":    era === "fearless",
-                    "text-speak-now-900":   era === "speak-now",
-                    "text-red-900":         era === "red",
-                    "text-1989-900":        era === "1989",
-                    "text-reputation-900":  era === "reputation",
+        class:list = {[
+            "text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
+            {
+                "text-debut-900":       era === "debut",
+                "text-fearless-900":    era === "fearless",
+                "text-speakNow-900":   era === "speakNow",
+                "text-red-900":         era === "red",
+                "text-1989-900":        era === "1989",
+                "text-reputation-900":  era === "reputation",
                     "text-lover-900":       era === "lover",
                     "text-folklore-900":    era === "folklore",
                     "text-evermore-900":    era === "evermore",
@@ -62,7 +60,9 @@ const { chip, era , src } = Astro.props;
                 ]}
             style = "letter-spacing: var(--title-small-letter-spacing, 0.1px)"
         >
-            {chip}
+            <slot/>
         </a>
+
+        <slot name="after">
     </button>
 </chip>

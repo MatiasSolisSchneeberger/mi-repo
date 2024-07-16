@@ -1,29 +1,149 @@
 ---
+import ButtonPrimario from "./ButtonPrimario.astro";
+import ButtonSecundario from "./ButtonSecundario.astro";
 import Cancion from "./Cancion.astro";
+import InfoSvg from "./InfoSvg.astro";
+import SpotifySvg from "./SpotifySvg.astro";
+
+interface Props {
+	eraTarjeta: string;
+    album: string;
+}
+
+const { eraTarjeta , album } = Astro.props;
+
+const imageLogo: { [key: string]: string } = {
+    debut:      "/src/images/Logos-Discos/01-Logo-Debut.png",
+    fearless:   "/src/images/Logos-Discos/02-Logo-Fearless.png",
+    speakNow:   "/src/images/Logos-Discos/03-Logo-SpeakNow.png",
+    red:        "/src/images/Logos-Discos/03-Logo-Red.png",
+    "1989":     "/src/images/Logos-Discos/05-Logo-1989.png",
+    reputation: "/src/images/Logos-Discos/06-Logo-Reputation.png",
+    lover:      "/src/images/Logos-Discos/07-Logo-Lover.png",
+    folklore:   "/src/images/Logos-Discos/08-Logo-Folklore.png",
+    evermore:   "/src/images/Logos-Discos/09-Logo-Evermore.png",
+    midnights:  "/src/images/Logos-Discos/10-Logo-Midnights.png",
+    TTPD:       "/src/images/Logos-Discos/11-Logo-TTPD.png",
+    mashups:    "/src/images/Logos-Discos/11-Logo-Mashups.png",
+};
+const imageTaylor: { [key: string]: string } = {
+    debut:      "/src/images/Fotos/01-TaylorSwift.png",
+    fearless:   "/src/images/Fotos/02-Fearless.png",
+    speakNow:   "/src/images/Fotos/03-SpeakNow.png",
+    red:        "/src/images/Fotos/03-Red.png",
+    "1989":     "/src/images/Fotos/05-1989.png",
+    reputation: "/src/images/Fotos/06-Reputation.png",
+    lover:      "/src/images/Fotos/07-Lover.png",
+    folklore:   "/src/images/Fotos/08-Folklore.png",
+    evermore:   "/src/images/Fotos/09-Evermore.png",
+    midnights:  "/src/images/Fotos/10-Midnights.png",
+    TTPD:       "/src/images/Fotos/11-TTPD.png",
+    mashups:    "/src/images/Fotos/11-Mashups.png",
+};
+
+// Obtener la imagen correspondiente al eraTarjeta
+const logo = imageLogo[eraTarjeta] || "/src/images/Emojis/cross-mark_274c.png";
+const taylor = imageTaylor[eraTarjeta] || "/src/images/Emojis/cross-mark_274c.png";
 
 ---
-<article class="bg-debut-200 rounded-3xl flex-wrap self-stretch shrink-0 overflow-hidden flex flex-col gap-0 items-center justify-center flex-1 min-w-[300px] max-w-[388px] relative shadow-xl shadow-black px-2.5 py-2.5"
+<article class:list={[
+    " rounded-3xl flex-wrap self-stretch shrink-0 overflow-hidden flex flex-col gap-0 items-center justify-center flex-1 min-w-[300px] max-w-[388px] relative shadow-xl shadow-black px-2.5 space-y-2.5 py-2.5",
+    {
+        'bg-debut-200':         eraTarjeta === 'debut',
+        'bg-fearless-200':      eraTarjeta === 'fearless',
+        'bg-speakNow-200':      eraTarjeta === 'speakNow',
+        'bg-red-200':           eraTarjeta === 'red',
+        'bg-1989-200':          eraTarjeta === '1989',
+        'bg-reputation-200':    eraTarjeta === 'reputation',
+        'bg-lover-200':         eraTarjeta === 'lover',
+        'bg-folklore-200':      eraTarjeta === 'folklore',
+        'bg-evermore-200':      eraTarjeta === 'evermore',
+        'bg-midnights-200':     eraTarjeta === 'midnights',
+        'bg-TTPD-200':          eraTarjeta === 'TTPD',
+        'bg-mashup-200':        eraTarjeta === 'mashup',
+    }
+    ]}
 style="
     box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15),
     0px 1px 2px 0px rgba(0, 0, 0, 0.3);
 ">
-    <header class="w-full flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative">
+    <header class="w-full flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative space-y-2.5">
         <!-- logo -->
-        <div class="bg-debut-400 rounded-2xl p-2 flex flex-col gap-0 items-center justify-center self-stretch shrink-0 h-[72px] relative">
+        <div class:list={[
+            "rounded-2xl p-2 flex flex-col gap-0 items-center justify-center self-stretch shrink-0 h-[72px] relative",
+            {
+                'bg-debut-400':         eraTarjeta === 'debut',
+                'bg-fearless-400':      eraTarjeta === 'fearless',
+                'bg-speakNow-400':      eraTarjeta === 'speakNow',
+                'bg-red-400':           eraTarjeta === 'red',
+                'bg-1989-400':          eraTarjeta === '1989',
+                'bg-reputation-400':    eraTarjeta === 'reputation',
+                'bg-lover-400':         eraTarjeta === 'lover',
+                'bg-folklore-400':      eraTarjeta === 'folklore',
+                'bg-evermore-400':      eraTarjeta === 'evermore',
+                'bg-midnights-400':     eraTarjeta === 'midnights',
+                'bg-TTPD-400':          eraTarjeta === 'TTPD',
+                'bg-mashup-400':        eraTarjeta === 'mashup',
+            }
+            ]}>
             <img
             class="bg-logo-debut self-stretch flex-1 relative h-full w-full"
             style="object-fit: contain"
-            src="src/images/Logos-Discos/01-Logo-Debut.png"
+            src={logo}
             />        
         </div>
         <!-- Taylor -->
-        <div class="bg-[url('src/images/Portadas-Discos/01-Portada-TaylorSwift.jpg')] bg-cover bg-center rounded-xl flex flex-col items-center justify-end self-stretch shrink-0 relative overflow-hidden">
-            <div class="backdrop-blur-none w-full h-full flex justify-center rounded-xl absolute" style="background: linear-gradient(to left, #96c095, #96c095); mix-blend-mode: multiply; z-index: 1">
+        <div class:list={[
+            " bg-cover bg-center rounded-xl flex flex-col items-center justify-end self-stretch shrink-0 relative overflow-hidden",
+            {
+                "bg-[url('src/images/Portadas-Discos/01-Portada-TaylorSwift.jpg')]":    eraTarjeta === 'debut',
+                "bg-[url('src/images/Portadas-Discos/02-Portada-Fearless.jpg')]":       eraTarjeta === 'fearless',
+                "bg-[url('src/images/Portadas-Discos/03-Portada-SpeakNow.jpg')]":       eraTarjeta === 'speakNow',
+                "bg-[url('src/images/Portadas-Discos/04-Portada-Red.jpg')]":            eraTarjeta === 'red',
+                "bg-[url('src/images/Portadas-Discos/05-Portada-1989.jpg')]":           eraTarjeta === '1989',
+                "bg-[url('src/images/Portadas-Discos/06-Portada-Reputation.jpg')]":     eraTarjeta === 'reputation',
+                "bg-[url('src/images/Portadas-Discos/07-Portada-Lover.jpg')]":          eraTarjeta === 'lover',
+                "bg-[url('src/images/Portadas-Discos/08-Portada-Folklore.jpg')]":       eraTarjeta === 'folklore',
+                "bg-[url('src/images/Portadas-Discos/09-Portada-Evermore.jpg')]":       eraTarjeta === 'evermore',
+                "bg-[url('src/images/Portadas-Discos/10-Portada-Midnights.jpg')]":      eraTarjeta === 'midnights',
+                "bg-[url('src/images/Portadas-Discos/11-Portada-TTPD.jpg')]":           eraTarjeta === 'TTPD',
+            }
+            ]}>
+            <div class:list={[
+                "backdrop-blur-none w-full h-full flex justify-center rounded-xl absolute mix-blend-multiply z-10",
+            {
+                'bg-debut-400':         eraTarjeta === 'debut',
+                'bg-fearless-400':      eraTarjeta === 'fearless',
+                'bg-speakNow-400':      eraTarjeta === 'speakNow',
+                'bg-red-400':           eraTarjeta === 'red',
+                'bg-1989-400':          eraTarjeta === '1989',
+                'bg-reputation-400':    eraTarjeta === 'reputation',
+                'bg-lover-400':         eraTarjeta === 'lover',
+                'bg-folklore-400':      eraTarjeta === 'folklore',
+                'bg-evermore-400':      eraTarjeta === 'evermore',
+                'bg-midnights-400':     eraTarjeta === 'midnights',
+                'bg-TTPD-400':          eraTarjeta === 'TTPD',
+                'bg-mashup-400':        eraTarjeta === 'mashup',
+            }
+            ]}>
             </div>
-            <img class="self-center relativeself-stretch shrink-0 relative backdrop-blur-sm h-full w-full rounded-xl" src="src/images/Fotos/01-TaylorSwift.png" alt="" style="z-index: 0;">
+            <img class="self-center relativeself-stretch shrink-0 relative backdrop-blur-sm h-full w-full rounded-xl z-0" src={taylor} alt="">
         </div>
     </header>
+    <!-- Canciones -->
     <section class="w-full">
-        <Cancion src={null}/>
+        <slot />
+    </section>
+    <!-- seccion de botones -->
+    <section class="w-full flex justify-end space-x-2.5">
+        <ButtonSecundario era = {eraTarjeta} href={album} icono="Izq">
+            <SpotifySvg era={eraTarjeta} slot="before"/>
+            Spotify
+        </ButtonSecundario>
+        <ButtonPrimario era={eraTarjeta} href="#Inicio" icono="Izq">
+            <InfoSvg era={eraTarjeta} slot="before"/>
+            Mas info
+        </ButtonPrimario>
+
     </section>
 </article>

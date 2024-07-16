@@ -1,0 +1,31 @@
+---
+interface Props {
+	emojie: string;
+}
+
+const { emojie } = Astro.props;
+
+const imageEmojie: { [key: string]: string } = {
+    debut:      "src/images/Emojis/01.taylorswift.png",
+    fearless:   "src/images/Emojis/02.fearless.png",
+    speakNow:   "src/images/Emojis/03.speakNow.png",
+    red:        "src/images/Emojis/04.red.png",
+    "1989":     "src/images/Emojis/05.1989.png",
+    reputation: "src/images/Emojis/06.reputation.png",
+    lover:      "src/images/Emojis/07.lover.png",
+    folklore:   "src/images/Emojis/08.folklore.png",
+    evermore:   "src/images/Emojis/09.evermore.png",
+    midnights:  "src/images/Emojis/10.midnights.png",
+    TTPD:       "src/images/Emojis/11.TTPD.png",
+    mashup:     "src/images/Emojis/12.MashUp.png",
+    piano:      "src/images/Emojis/13.piano.png",
+    pelicula:   "src/images/Emojis/14.Película.png",
+    setlist:    "src/images/Emojis/15.setlist.png",
+    guitarra:   "src/images/Emojis/16.guitarra.png",
+    cantante:   "src/images/Emojis/17.cantante.png",
+};
+
+const imagen = imageEmojie[emojie] || "/src/images/Emojis/cross-mark_274c.png"
+---
+
+<img src={imagen} class="w-[18px] h-[18px] relative" alt={imageEmojie[emojie]}/>

@@ -10,7 +10,7 @@ export default {
 
 				'fondos-fearless': 'radial-gradient(closest-side,rgba(132, 42, 28, 0.75) 0%,rgba(132, 42, 28, 0) 100%), linear-gradient(to left, rgba(132, 42, 28, 0.25), rgba(132, 42, 28, 0.25)), url("/src/images/Fondos/02.Fearless.png")',
 				
-				'fondos-speak-now': 'radial-gradient(closest-side,rgba(109, 71, 107, 0.75) 0%,rgba(109, 71, 107, 0) 100%), linear-gradient(to left, rgba(109, 71, 107, 0.25), rgba(109, 71, 107, 0.25)), url("/src/images/Fondos/03.SpeakNow.png")',
+				'fondos-speakNow': 'radial-gradient(closest-side,rgba(109, 71, 107, 0.75) 0%,rgba(109, 71, 107, 0) 100%), linear-gradient(to left, rgba(109, 71, 107, 0.25), rgba(109, 71, 107, 0.25)), url("/src/images/Fondos/03.SpeakNow.png")',
 				
 				'fondos-red': 'radial-gradient(closest-side,rgba(122, 46, 57, 0.75) 0%,rgba(122, 46, 57, 0) 100%), linear-gradient(to left, rgba(122, 46, 57, 0.25), rgba(122, 46, 57, 0.25)), url("/src/images/Fondos/03.Red.png")',
 				
@@ -59,17 +59,17 @@ export default {
 				'fearless-950': '#3e0f0a',
 
 				/* Speak Now */
-				'speak-now-50': '#f8f6f9',
-				'speak-now-100': '#f3eff4',
-				'speak-now-200': '#e9dfeb',
-				'speak-now-300': '#dac5dc',
-				'speak-now-400': '#c7a8ca',
-				'speak-now-500': '#ae83b1',
-				'speak-now-600': '#9b679b',
-				'speak-now-700': '#835382',
-				'speak-now-800': '#6d476b',
-				'speak-now-900': '#5d3e5d',
-				'speak-now-950': '#362135',
+				'speakNow-50': '#f8f6f9',
+				'speakNow-100': '#f3eff4',
+				'speakNow-200': '#e9dfeb',
+				'speakNow-300': '#dac5dc',
+				'speakNow-400': '#c7a8ca',
+				'speakNow-500': '#ae83b1',
+				'speakNow-600': '#9b679b',
+				'speakNow-700': '#835382',
+				'speakNow-800': '#6d476b',
+				'speakNow-900': '#5d3e5d',
+				'speakNow-950': '#362135',
 
 				/* Red */
 				'red-50': '#fcf4f4',

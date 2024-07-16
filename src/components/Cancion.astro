@@ -1,23 +1,53 @@
 ---
 interface Props {
-
-	src: string | null;
+	eraTarjeta: string;
 }
 
-const { src }  =  Astro.props;
+const { eraTarjeta }  =  Astro.props;
 
 ---
-<div class=" pt-1 pb-1 flex flex-row gap-2 items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden">
+<div class="pt-1 pb-1 flex flex-row items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden space-x-2">
     <!-- Emojie -->
-    <img class:list={[
-		"shrink-0 w-6 h-6 relative",
-		{
-			"opacity-0": src === null,
-		}
-		]} 
-		src={src} alt="" style="object-fit: cover">
+	<slot name="before"/>
     <!-- Divider Vertical -->
-    <div class="w-0.5 h-full bg-debut-900 rounded-sm"></div>
+    <div class:list={[
+		"w-0.5 h-full rounded-sm",
+		{
+			"bg-debut-900":         eraTarjeta === "debut",
+			"bg-fearless-900":      eraTarjeta === "fearless",
+			"bg-speakNow-900":     	eraTarjeta === "speakNow",
+			"bg-red-900":           eraTarjeta === "red",
+			"bg-1989-900":          eraTarjeta === "1989",
+			"bg-reputation-900":    eraTarjeta === "reputation",
+			"bg-lover-900":         eraTarjeta === "lover",
+			"bg-folklore-900":      eraTarjeta === "folklore",
+			"bg-evermore-900":      eraTarjeta === "evermore",
+			"bg-midnights-900":     eraTarjeta === "midnights",
+			"bg-TTPD-900":          eraTarjeta === "TTPD",
+			"bg-mashup-900":        eraTarjeta === "mashup",
+		}
+	]}></div>
     <!-- Cancion -->
-    <p class="text-debut-900 text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative">TTPD</p>
+    <p class:list={[
+		"text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative",
+		{
+			"text-debut-900":       eraTarjeta === "debut",
+			"text-fearless-900":    eraTarjeta === "fearless",
+			"text-speakNow-900":   	eraTarjeta === "speakNow",
+			"text-red-900":         eraTarjeta === "red",
+			"text-1989-900":        eraTarjeta === "1989",
+			"text-reputation-900":  eraTarjeta === "reputation",
+			"text-lover-900":       eraTarjeta === "lover",
+			"text-folklore-900":    eraTarjeta === "folklore",
+			"text-evermore-900":    eraTarjeta === "evermore",
+			"text-midnights-900":   eraTarjeta === "midnights",
+			"text-TTPD-900":        eraTarjeta === "TTPD",
+			"text-mashup-900":      eraTarjeta === "mashup",
+		}
+		]}>
+			<slot/>
+		</p>
+
+	<!-- Emojie Adicionales -->
+	<slot name="after"/>
 </div>
