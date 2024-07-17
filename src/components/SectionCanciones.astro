@@ -6,7 +6,7 @@ import TarjetaCancion from "./TarjetaCancion.astro";
 import Cancion from "./Cancion.astro";
 import Emojie from "./Emojie.astro";
 import CancionesDebut from "./CancionesDebut.astro";
-
+import {eras} from "../data/canciones.json"
 interface Props {
 	era: string;
 }
@@ -15,7 +15,7 @@ const { era }  =  Astro.props;
 ---
 
 <article id="Canciones" class:list = {[
-    "py-12 px-48 space-y-6",
+    "py-12 px-32 space-y-6 ",
     {
         "bg-debut-100":         era === "debut",
         "bg-fearless-100":      era === "fearless",
@@ -56,62 +56,62 @@ const { era }  =  Astro.props;
             </h3>
             <!-- Botones de las eras -->
             <div class = "flex flex-row gap-3 items-center justify-center flex-wrap self-stretch shrink-0 relative">
-                <ButtonPrimario era="debut" href="/" icono="Izq"> 
+                <ButtonPrimario era="debut" href="#debut" icono="Izq"> 
                     <Emojie emojie="debut" slot="before"/>
                     Taylor Swift 
                 </ButtonPrimario>
                 
-                <ButtonPrimario era="fearless" href="/" icono="Izq"> 
+                <ButtonPrimario era="fearless" href="#fearless" icono="Izq"> 
                     <Emojie emojie="fearless" slot="before"/>
                     Fearless 
                 </ButtonPrimario>
                 
-                <ButtonPrimario era="speakNow" href="/" icono="Izq"> 
+                <ButtonPrimario era="speakNow" href="#speakNow" icono="Izq"> 
                     <Emojie emojie="speakNow" slot="before"/>
                     Speak Now 
                 </ButtonPrimario>
                 
-                <ButtonPrimario era="red" href="/" icono="Izq"> 
+                <ButtonPrimario era="red" href="#red" icono="Izq"> 
                     <Emojie emojie="red" slot="before"/>
                     Red 
                 </ButtonPrimario>
                 
-                <ButtonPrimario era="1989" href="/" icono="Izq"> 
+                <ButtonPrimario era="1989" href="#1989" icono="Izq"> 
                     <Emojie emojie="1989" slot="before"/>
                     1989
                 </ButtonPrimario>
                 
-                <ButtonPrimario era="reputation" href="/" icono="Izq"> 
+                <ButtonPrimario era="reputation" href="#reputation" icono="Izq"> 
                     <Emojie emojie="reputation" slot="before"/>
                     Reputation
                 </ButtonPrimario>
                 
-                <ButtonPrimario era="lover" href="/" icono="Izq"> 
+                <ButtonPrimario era="lover" href="#lover" icono="Izq"> 
                     <Emojie emojie="lover" slot="before"/>
                     Lover
                 </ButtonPrimario>
                 
-                <ButtonPrimario era="folklore" href="/" icono="Izq"> 
+                <ButtonPrimario era="folklore" href="#folklore" icono="Izq"> 
                     <Emojie emojie="folklore" slot="before"/>
                     Folklore
                 </ButtonPrimario>
                 
-                <ButtonPrimario era="evermore" href="/" icono="Izq"> 
+                <ButtonPrimario era="evermore" href="#evermore" icono="Izq"> 
                     <Emojie emojie="evermore" slot="before"/>
                     Evermore 
                 </ButtonPrimario>
                 
-                <ButtonPrimario era="midnights" href="/" icono="Izq"> 
+                <ButtonPrimario era="midnights" href="#midnights" icono="Izq"> 
                     <Emojie emojie="midnights" slot="before"/>
                     Midnights 
                 </ButtonPrimario>
                 
-                <ButtonPrimario era="TTPD" href="/" icono="Izq"> 
+                <ButtonPrimario era="TTPD" href="#TTPD" icono="Izq"> 
                     <Emojie emojie="TTPD" slot="before"/>
                     The Tortured Poets Department 
                 </ButtonPrimario>
                 
-                <ButtonPrimario era="mashup" href="/" icono="Izq"> 
+                <ButtonPrimario era="mashup" href="#mashup" icono="Izq"> 
                     <Emojie emojie="mashup" slot="before"/>
                     Mashups 
                 </ButtonPrimario>
@@ -125,7 +125,7 @@ const { era }  =  Astro.props;
                 {
                     "text-debut-900":       era === "debut",
                     "text-fearless-900":    era === "fearless",
-                    "text-speakNow-900":   era === "speakNow",
+                    "text-speakNow-900":    era === "speakNow",
                     "text-red-900":         era === "red",
                     "text-1989-900":        era === "1989",
                     "text-reputation-900":  era === "reputation",
@@ -134,7 +134,7 @@ const { era }  =  Astro.props;
                     "text-evermore-900":    era === "evermore",
                     "text-midnights-900":   era === "midnights",
                     "text-TTPD-900":        era === "TTPD",
-                    "text-mashup-900":        era === "mashup",
+                    "text-mashup-900":      era === "mashup",
                 }
                 ]}>
             Etiquetas
@@ -162,7 +162,7 @@ const { era }  =  Astro.props;
                     Pelicula
                 </Chip>
                 <Chip era="reputation" icono="Izq">
-                    <Emojie emojie="mashups" slot="before"/>
+                    <Emojie emojie="no" slot="before"/>
                     Mashup
                 </Chip>
             </div>
@@ -171,13 +171,29 @@ const { era }  =  Astro.props;
 
     <!-- TarjetasCanciones -->
     <section class="flex flex-row gap-6 items-center justify-center flex-wrap self-stretch shrink-0 relative py-0">
-        
-        <TarjetaCancion eraTarjeta="debut" album="">
-            <CancionesDebut/>
-        </TarjetaCancion>
-
-        <TarjetaCancion eraTarjeta="fearless" album="">
-
-        </TarjetaCancion>
+        {
+            eras.map(({ nombre , Spotify , canciones}) => {
+                return (
+                    <TarjetaCancion eraTarjeta={nombre} album={Spotify} >
+                        {
+                            canciones.map(({title , etiquetas}) =>{
+                                    return (
+                                        <Cancion
+                                        eraTarjeta={nombre};
+                                        cancion={title};
+                                        emojiePrincipal={etiquetas.principal};
+                                        emojie2={etiquetas.segundo};
+                                        emojie3={etiquetas.tercer};
+                                        emojie4={etiquetas.cuarto};
+                                        emojie5={etiquetas.quinto};
+                                        emojie6={etiquetas.sexto};/>
+                                    )
+                                }                                
+                            )
+                            }
+                    </TarjetaCancion>
+                )
+            })
+        }
     </section>
 </article>

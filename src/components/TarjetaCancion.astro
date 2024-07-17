@@ -16,7 +16,7 @@ const imageLogo: { [key: string]: string } = {
     debut:      "/src/images/Logos-Discos/01-Logo-Debut.png",
     fearless:   "/src/images/Logos-Discos/02-Logo-Fearless.png",
     speakNow:   "/src/images/Logos-Discos/03-Logo-SpeakNow.png",
-    red:        "/src/images/Logos-Discos/03-Logo-Red.png",
+    red:        "/src/images/Logos-Discos/04-Logo-Red.png",
     "1989":     "/src/images/Logos-Discos/05-Logo-1989.png",
     reputation: "/src/images/Logos-Discos/06-Logo-Reputation.png",
     lover:      "/src/images/Logos-Discos/07-Logo-Lover.png",
@@ -24,13 +24,13 @@ const imageLogo: { [key: string]: string } = {
     evermore:   "/src/images/Logos-Discos/09-Logo-Evermore.png",
     midnights:  "/src/images/Logos-Discos/10-Logo-Midnights.png",
     TTPD:       "/src/images/Logos-Discos/11-Logo-TTPD.png",
-    mashups:    "/src/images/Logos-Discos/11-Logo-Mashups.png",
+    mashup:     "/src/images/Logos-Discos/12-Logo-Mashups.png",
 };
 const imageTaylor: { [key: string]: string } = {
     debut:      "/src/images/Fotos/01-TaylorSwift.png",
     fearless:   "/src/images/Fotos/02-Fearless.png",
     speakNow:   "/src/images/Fotos/03-SpeakNow.png",
-    red:        "/src/images/Fotos/03-Red.png",
+    red:        "/src/images/Fotos/04-Red.png",
     "1989":     "/src/images/Fotos/05-1989.png",
     reputation: "/src/images/Fotos/06-Reputation.png",
     lover:      "/src/images/Fotos/07-Lover.png",
@@ -38,7 +38,7 @@ const imageTaylor: { [key: string]: string } = {
     evermore:   "/src/images/Fotos/09-Evermore.png",
     midnights:  "/src/images/Fotos/10-Midnights.png",
     TTPD:       "/src/images/Fotos/11-TTPD.png",
-    mashups:    "/src/images/Fotos/11-Mashups.png",
+    mashup:     "/src/images/Fotos/12-Mashup.png",
 };
 
 // Obtener la imagen correspondiente al eraTarjeta
@@ -46,8 +46,8 @@ const logo = imageLogo[eraTarjeta] || "/src/images/Emojis/cross-mark_274c.png";
 const taylor = imageTaylor[eraTarjeta] || "/src/images/Emojis/cross-mark_274c.png";
 
 ---
-<article class:list={[
-    " rounded-3xl flex-wrap self-stretch shrink-0 overflow-hidden flex flex-col gap-0 items-center justify-center flex-1 min-w-[300px] max-w-[388px] relative shadow-xl shadow-black px-2.5 space-y-2.5 py-2.5",
+<article id={eraTarjeta} class:list={[
+    " rounded-3xl flex-wrap self-start shrink-0 overflow-hidden flex flex-col gap-0 justify-center flex-1 min-w-[300px] max-w-[388px] relative shadow-xl shadow-black px-2.5 space-y-2.5 py-2.5",
     {
         'bg-debut-200':         eraTarjeta === 'debut',
         'bg-fearless-200':      eraTarjeta === 'fearless',
@@ -94,23 +94,23 @@ style="
         </div>
         <!-- Taylor -->
         <div class:list={[
-            " bg-cover bg-center rounded-xl flex flex-col items-center justify-end self-stretch shrink-0 relative overflow-hidden",
+            " h-[350px] bg-cover bg-center rounded-xl flex flex-col items-center justify-end self-stretch shrink-0 relative overflow-hidden",
             {
-                "bg-[url('src/images/Portadas-Discos/01-Portada-TaylorSwift.jpg')]":    eraTarjeta === 'debut',
-                "bg-[url('src/images/Portadas-Discos/02-Portada-Fearless.jpg')]":       eraTarjeta === 'fearless',
-                "bg-[url('src/images/Portadas-Discos/03-Portada-SpeakNow.jpg')]":       eraTarjeta === 'speakNow',
-                "bg-[url('src/images/Portadas-Discos/04-Portada-Red.jpg')]":            eraTarjeta === 'red',
-                "bg-[url('src/images/Portadas-Discos/05-Portada-1989.jpg')]":           eraTarjeta === '1989',
-                "bg-[url('src/images/Portadas-Discos/06-Portada-Reputation.jpg')]":     eraTarjeta === 'reputation',
-                "bg-[url('src/images/Portadas-Discos/07-Portada-Lover.jpg')]":          eraTarjeta === 'lover',
-                "bg-[url('src/images/Portadas-Discos/08-Portada-Folklore.jpg')]":       eraTarjeta === 'folklore',
-                "bg-[url('src/images/Portadas-Discos/09-Portada-Evermore.jpg')]":       eraTarjeta === 'evermore',
-                "bg-[url('src/images/Portadas-Discos/10-Portada-Midnights.jpg')]":      eraTarjeta === 'midnights',
-                "bg-[url('src/images/Portadas-Discos/11-Portada-TTPD.jpg')]":           eraTarjeta === 'TTPD',
+                "bg-[url('src/images/Portadas-Discos/01-Portada-TaylorSwift.png')]":    eraTarjeta === 'debut',
+                "bg-[url('src/images/Portadas-Discos/02-Portada-Fearless.png')]":       eraTarjeta === 'fearless',
+                "bg-[url('src/images/Portadas-Discos/03-Portada-SpeakNow.png')]":       eraTarjeta === 'speakNow',
+                "bg-[url('src/images/Portadas-Discos/04-Portada-Red.png')]":            eraTarjeta === 'red',
+                "bg-[url('src/images/Portadas-Discos/05-Portada-1989.png')]":           eraTarjeta === '1989',
+                "bg-[url('src/images/Portadas-Discos/06-Portada-Reputation.png')]":     eraTarjeta === 'reputation',
+                "bg-[url('src/images/Portadas-Discos/07-Portada-Lover.png')]":          eraTarjeta === 'lover',
+                "bg-[url('src/images/Portadas-Discos/08-Portada-Folklore.png')]":       eraTarjeta === 'folklore',
+                "bg-[url('src/images/Portadas-Discos/09-Portada-Evermore.png')]":       eraTarjeta === 'evermore',
+                "bg-[url('src/images/Portadas-Discos/10-Portada-Midnights.png')]":      eraTarjeta === 'midnights',
+                "bg-[url('src/images/Portadas-Discos/11-Portada-TTPD.png')]":           eraTarjeta === 'TTPD',
             }
             ]}>
             <div class:list={[
-                "backdrop-blur-none w-full h-full flex justify-center rounded-xl absolute mix-blend-multiply z-10",
+                "w-full h-full flex justify-center rounded-xl absolute mix-blend-multiply z-20",
             {
                 'bg-debut-400':         eraTarjeta === 'debut',
                 'bg-fearless-400':      eraTarjeta === 'fearless',
@@ -125,14 +125,14 @@ style="
                 'bg-TTPD-400':          eraTarjeta === 'TTPD',
                 'bg-mashup-400':        eraTarjeta === 'mashup',
             }
-            ]}>
-            </div>
-            <img class="self-center relativeself-stretch shrink-0 relative backdrop-blur-sm h-full w-full rounded-xl z-0" src={taylor} alt="">
+            ]}></div>
+            <img class="self-center relativeself-stretch shrink-0 relative rounded-xl h-full z-10" src={taylor} alt="">
+            <div class="backdrop-blur-sm w-full h-full flex justify-center rounded-xl absolute mix-blend-multiply z-1"></div>
         </div>
     </header>
     <!-- Canciones -->
-    <section class="w-full">
-        <slot />
+    <section class="flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative w-full">
+        <slot/>
     </section>
     <!-- seccion de botones -->
     <section class="w-full flex justify-end space-x-2.5">
@@ -140,7 +140,7 @@ style="
             <SpotifySvg era={eraTarjeta} slot="before"/>
             Spotify
         </ButtonSecundario>
-        <ButtonPrimario era={eraTarjeta} href="#Inicio" icono="Izq">
+        <ButtonPrimario era={eraTarjeta} href="/" icono="Izq">
             <InfoSvg era={eraTarjeta} slot="before"/>
             Mas info
         </ButtonPrimario>

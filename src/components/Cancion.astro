@@ -1,15 +1,24 @@
 ---
+import Emojie from './Emojie.astro';
+
 interface Props {
 	eraTarjeta: string;
+	cancion: string;
+	emojiePrincipal: string;
+	emojie2: string;
+	emojie3: string;
+	emojie4: string;
+	emojie5: string;
+	emojie6: string;
 }
 
-const { eraTarjeta }  =  Astro.props;
+const { eraTarjeta , cancion , emojiePrincipal , emojie2 , emojie3 , emojie4 , emojie5 , emojie6 }  =  Astro.props;
 
 ---
 <div class="pt-1 pb-1 flex flex-row items-center justify-start self-stretch shrink-0 h-8 relative overflow-hidden space-x-2">
-    <!-- Emojie -->
-	<slot name="before"/>
-    <!-- Divider Vertical -->
+	<!-- Emojie Principal -->
+	<Emojie emojie={emojiePrincipal}/>
+	<!-- Divider Vertical -->
     <div class:list={[
 		"w-0.5 h-full rounded-sm",
 		{
@@ -45,9 +54,13 @@ const { eraTarjeta }  =  Astro.props;
 			"text-mashup-900":      eraTarjeta === "mashup",
 		}
 		]}>
-			<slot/>
-		</p>
+		{cancion}
+	</p>
 
 	<!-- Emojie Adicionales -->
-	<slot name="after"/>
+	<Emojie emojie={emojie2}/>
+	<Emojie emojie={emojie3}/>
+	<Emojie emojie={emojie4}/>
+	<Emojie emojie={emojie5}/>
+	<Emojie emojie={emojie6}/>
 </div>
