@@ -3,7 +3,7 @@ export interface tarjetasCanciones {
 }
 
 interface eras {
-    "nombre": string
+    "albums": string
     "logo": string
     "foto": string
     "emojie": string
@@ -12,9 +12,16 @@ interface eras {
     "Spotify": string
     "masInfo": string
     "canciones": Array<canciones>
+    "extras": Array<extras>
 }
 
 interface canciones{
+    title: string
+    info: Array<info>
+    cantado: boolean
+    etiquetas: Array<etiquetas>
+}
+interface extras{
     title: string
     fechas: Array<fechas>
     cantado: boolean
@@ -30,9 +37,21 @@ interface etiquetas{
     sexto: string
 }
 
-interface fechas{
+interface info{
     tipo: string
-    dia: string
-    mes: string
-    año: string
+    fecha: Array<fecha>
+    cantSorp: string
+    instrumento: string
+    lugar: Array<lugar>
+}
+
+interface fecha{
+    dia: number | null
+    mes: number | null
+    año: number | null
+}
+interface lugar{
+    país: string
+    ciudad: string
+    estado: string
 }

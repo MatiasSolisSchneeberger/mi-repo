@@ -27,9 +27,7 @@ export default {
 				'fondos-midnights': 'radial-gradient(closest-side,rgba(61, 85, 144, 0.75) 0%,rgba(61, 85, 144, 0) 100%), linear-gradient(to left, rgba(61, 85, 144, 0.25), rgba(61, 85, 144, 0.25)), url("/src/images/Fondos/10.Midnights.png")',
 				
 				'fondos-TTPD': 'radial-gradient(closest-side,rgba(83, 71, 64, 0.75) 0%,rgba(0, 0, 0, 0) 100%), linear-gradient(to left, rgba(83, 71, 64, 0.25), rgba(83, 71, 64, 0.25)), url("/src/images/Fondos/11.TTPD.png")',
-				'taylor-debut': 'linear-gradient(to left, #96c095, #96c095)',	
-
-				/*  */
+				
 			},
 			colors: {
 				/* Debut */
@@ -187,6 +185,10 @@ export default {
 				'mashup-800': '#9a271a',
 				'mashup-900': '#80261c',
 				'mashup-950': '#460f09',
+
+				/* Ahora */
+				"schemes-error": "#b3261e",
+				"schemes-error-container": "#f9dedc",
 			},
 			fontFamily: {
 				"display-large-font-family": "Rubik Variable, sans-serif",

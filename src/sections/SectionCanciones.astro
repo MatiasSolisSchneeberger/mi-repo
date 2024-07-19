@@ -1,12 +1,13 @@
 ---
-import ButtonPrimario from "./ButtonPrimario.astro";
-import SectionHeader from "./SectionHeader.astro";
-import Chip from "./Chip.astro";
-import TarjetaCancion from "./TarjetaCancion.astro";
-import Cancion from "./Cancion.astro";
-import Emojie from "./Emojie.astro";
-import CancionesDebut from "./CancionesDebut.astro";
-import {eras} from "../data/canciones.json"
+import ButtonPrimario from "../components/ButtonPrimario.astro";
+import Title from "../components/Title.astro";
+import Chip from "../components/Chip.astro";
+import TarjetaCancion from "../components/TarjetaCancion.astro";
+import Cancion from "../components/Cancion.astro";
+import Emojie from "../components/Emojie.astro";
+
+import {eras} from "../data/songs.json"
+
 interface Props {
 	era: string;
 }
@@ -31,7 +32,7 @@ const { era }  =  Astro.props;
     }
     ]}>
     <!-- Titulo -->
-    <SectionHeader era={era} titulo = "Canciones Sorpresas" texto = "Estas fueron las canciones sorpresas que hubieron hasta ahora en “The Eras Tour”"/>
+    <Title era={era} titulo = "Canciones Sorpresas" texto = "Estas fueron las canciones sorpresas que hubieron hasta ahora en “The Eras Tour”."/>
     <!-- Botontes/Etiquetas -->
     <section class = "flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
         <!-- Botones -->
@@ -172,14 +173,14 @@ const { era }  =  Astro.props;
     <!-- TarjetasCanciones -->
     <section class="flex flex-row gap-6 items-center justify-center flex-wrap self-stretch shrink-0 relative py-0">
         {
-            eras.map(({ nombre , Spotify , canciones}) => {
+            eras.map(({ albums , Spotify , canciones }) => {
                 return (
-                    <TarjetaCancion eraTarjeta={nombre} album={Spotify} >
+                    <TarjetaCancion eraTarjeta={albums} album={Spotify} >
                         {
                             canciones.map(({title , etiquetas}) =>{
                                     return (
                                         <Cancion
-                                        eraTarjeta={nombre};
+                                        eraTarjeta={albums};
                                         cancion={title};
                                         emojiePrincipal={etiquetas.principal};
                                         emojie2={etiquetas.segundo};
@@ -190,10 +191,11 @@ const { era }  =  Astro.props;
                                     )
                                 }                                
                             )
-                            }
+                        }
                     </TarjetaCancion>
                 )
             })
         }
+        
     </section>
 </article>
