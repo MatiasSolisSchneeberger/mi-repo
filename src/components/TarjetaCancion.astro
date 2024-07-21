@@ -47,7 +47,7 @@ const taylor = imageTaylor[eraTarjeta] || "/src/images/Emojis/cross-mark_274c.pn
 
 ---
 <article id={eraTarjeta} class:list={[
-    " rounded-3xl flex-wrap self-start shrink-0 overflow-hidden flex flex-col gap-0 justify-center flex-1 min-w-[300px] max-w-[388px] relative shadow-xl shadow-black px-2.5 space-y-2.5 py-2.5",
+    "rounded-3xl flex-wrap self-start shrink-0 overflow-hidden flex flex-col gap-0 justify-center flex-1 min-w-[300px] max-w-[388px] relative shadow-xl shadow-black px-2.5 space-y-2.5 py-2.5",
     {
         'bg-debut-200':         eraTarjeta === 'debut',
         'bg-fearless-200':      eraTarjeta === 'fearless',
@@ -94,7 +94,7 @@ style="
         </div>
         <!-- Taylor -->
         <div class:list={[
-            " h-[350px] bg-cover bg-center rounded-xl flex flex-col items-center justify-end self-stretch shrink-0 relative overflow-hidden",
+            "h-[350px] bg-cover bg-center rounded-xl flex flex-col items-center justify-end self-stretch shrink-0 relative overflow-hidden",
             {
                 "bg-[url('src/images/Portadas-Discos/01-Portada-TaylorSwift.png')]":    eraTarjeta === 'debut',
                 "bg-[url('src/images/Portadas-Discos/02-Portada-Fearless.png')]":       eraTarjeta === 'fearless',
@@ -126,7 +126,7 @@ style="
                 'bg-mashup-400':        eraTarjeta === 'mashup',
             }
             ]}></div>
-            <img class="self-center relativeself-stretch shrink-0 relative rounded-xl h-full z-10" src={taylor} alt="">
+            <img class="hover:scale-125 self-center relativeself-stretch shrink-0 relative rounded-xl h-full z-10" src={taylor} alt="">
             <div class="backdrop-blur-sm w-full h-full flex justify-center rounded-xl absolute mix-blend-multiply z-1"></div>
         </div>
     </header>
