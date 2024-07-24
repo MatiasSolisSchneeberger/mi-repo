@@ -13,37 +13,37 @@ interface Props {
 const { eraTarjeta , album } = Astro.props;
 
 const imageLogo: { [key: string]: string } = {
-    debut:      "/src/images/Logos-Discos/01-Logo-Debut.png",
-    fearless:   "/src/images/Logos-Discos/02-Logo-Fearless.png",
-    speakNow:   "/src/images/Logos-Discos/03-Logo-SpeakNow.png",
-    red:        "/src/images/Logos-Discos/04-Logo-Red.png",
-    "1989":     "/src/images/Logos-Discos/05-Logo-1989.png",
-    reputation: "/src/images/Logos-Discos/06-Logo-Reputation.png",
-    lover:      "/src/images/Logos-Discos/07-Logo-Lover.png",
-    folklore:   "/src/images/Logos-Discos/08-Logo-Folklore.png",
-    evermore:   "/src/images/Logos-Discos/09-Logo-Evermore.png",
-    midnights:  "/src/images/Logos-Discos/10-Logo-Midnights.png",
-    TTPD:       "/src/images/Logos-Discos/11-Logo-TTPD.png",
-    mashup:     "/src/images/Logos-Discos/12-Logo-Mashups.png",
+    debut:      "/public/images/Logos-Discos/01-Logo-Debut.png",
+    fearless:   "/public/images/Logos-Discos/02-Logo-Fearless.png",
+    speakNow:   "/public/images/Logos-Discos/03-Logo-SpeakNow.png",
+    red:        "/public/images/Logos-Discos/04-Logo-Red.png",
+    "1989":     "/public/images/Logos-Discos/05-Logo-1989.png",
+    reputation: "/public/images/Logos-Discos/06-Logo-Reputation.png",
+    lover:      "/public/images/Logos-Discos/07-Logo-Lover.png",
+    folklore:   "/public/images/Logos-Discos/08-Logo-Folklore.png",
+    evermore:   "/public/images/Logos-Discos/09-Logo-Evermore.png",
+    midnights:  "/public/images/Logos-Discos/10-Logo-Midnights.png",
+    TTPD:       "/public/images/Logos-Discos/11-Logo-TTPD.png",
+    mashup:     "/public/images/Logos-Discos/12-Logo-Mashups.png",
 };
 const imageTaylor: { [key: string]: string } = {
-    debut:      "/src/images/Fotos/01-TaylorSwift.png",
-    fearless:   "/src/images/Fotos/02-Fearless.png",
-    speakNow:   "/src/images/Fotos/03-SpeakNow.png",
-    red:        "/src/images/Fotos/04-Red.png",
-    "1989":     "/src/images/Fotos/05-1989.png",
-    reputation: "/src/images/Fotos/06-Reputation.png",
-    lover:      "/src/images/Fotos/07-Lover.png",
-    folklore:   "/src/images/Fotos/08-Folklore.png",
-    evermore:   "/src/images/Fotos/09-Evermore.png",
-    midnights:  "/src/images/Fotos/10-Midnights.png",
-    TTPD:       "/src/images/Fotos/11-TTPD.png",
-    mashup:     "/src/images/Fotos/12-Mashup.png",
+    debut:      "/public/images/Fotos/01-TaylorSwift.png",
+    fearless:   "/public/images/Fotos/02-Fearless.png",
+    speakNow:   "/public/images/Fotos/03-SpeakNow.png",
+    red:        "/public/images/Fotos/04-Red.png",
+    "1989":     "/public/images/Fotos/05-1989.png",
+    reputation: "/public/images/Fotos/06-Reputation.png",
+    lover:      "/public/images/Fotos/07-Lover.png",
+    folklore:   "/public/images/Fotos/08-Folklore.png",
+    evermore:   "/public/images/Fotos/09-Evermore.png",
+    midnights:  "/public/images/Fotos/10-Midnights.png",
+    TTPD:       "/public/images/Fotos/11-TTPD.png",
+    mashup:     "/public/images/Fotos/12-Mashup.png",
 };
 
 // Obtener la imagen correspondiente al eraTarjeta
-const logo = imageLogo[eraTarjeta] || "/src/images/Emojis/cross-mark_274c.png";
-const taylor = imageTaylor[eraTarjeta] || "/src/images/Emojis/cross-mark_274c.png";
+const logo = imageLogo[eraTarjeta] || "/public/images/Emojis/cross-mark_274c.png";
+const taylor = imageTaylor[eraTarjeta] || "/public/images/Emojis/cross-mark_274c.png";
 
 ---
 <article id={eraTarjeta} class:list={[
@@ -93,17 +93,17 @@ const taylor = imageTaylor[eraTarjeta] || "/src/images/Emojis/cross-mark_274c.pn
         <div class:list={[
             "group transition ease-in-out delay-0 duration-200 h-[350px]  bg-cover bg-center rounded-xl flex flex-col items-center justify-end self-stretch shrink-0 relative overflow-hidden",
             {
-                "bg-[url('src/images/Portadas-Discos/01-Portada-TaylorSwift.png')]":    eraTarjeta === 'debut',
-                "bg-[url('src/images/Portadas-Discos/02-Portada-Fearless.png')]":       eraTarjeta === 'fearless',
-                "bg-[url('src/images/Portadas-Discos/03-Portada-SpeakNow.png')]":       eraTarjeta === 'speakNow',
-                "bg-[url('src/images/Portadas-Discos/04-Portada-Red.png')]":            eraTarjeta === 'red',
-                "bg-[url('src/images/Portadas-Discos/05-Portada-1989.png')]":           eraTarjeta === '1989',
-                "bg-[url('src/images/Portadas-Discos/06-Portada-Reputation.png')]":     eraTarjeta === 'reputation',
-                "bg-[url('src/images/Portadas-Discos/07-Portada-Lover.png')]":          eraTarjeta === 'lover',
-                "bg-[url('src/images/Portadas-Discos/08-Portada-Folklore.png')]":       eraTarjeta === 'folklore',
-                "bg-[url('src/images/Portadas-Discos/09-Portada-Evermore.png')]":       eraTarjeta === 'evermore',
-                "bg-[url('src/images/Portadas-Discos/10-Portada-Midnights.png')]":      eraTarjeta === 'midnights',
-                "bg-[url('src/images/Portadas-Discos/11-Portada-TTPD.png')]":           eraTarjeta === 'TTPD',
+                "bg-[url('public/images/Portadas-Discos/01-Portada-TaylorSwift.png')]":    eraTarjeta === 'debut',
+                "bg-[url('public/images/Portadas-Discos/02-Portada-Fearless.png')]":       eraTarjeta === 'fearless',
+                "bg-[url('public/images/Portadas-Discos/03-Portada-SpeakNow.png')]":       eraTarjeta === 'speakNow',
+                "bg-[url('public/images/Portadas-Discos/04-Portada-Red.png')]":            eraTarjeta === 'red',
+                "bg-[url('public/images/Portadas-Discos/05-Portada-1989.png')]":           eraTarjeta === '1989',
+                "bg-[url('public/images/Portadas-Discos/06-Portada-Reputation.png')]":     eraTarjeta === 'reputation',
+                "bg-[url('public/images/Portadas-Discos/07-Portada-Lover.png')]":          eraTarjeta === 'lover',
+                "bg-[url('public/images/Portadas-Discos/08-Portada-Folklore.png')]":       eraTarjeta === 'folklore',
+                "bg-[url('public/images/Portadas-Discos/09-Portada-Evermore.png')]":       eraTarjeta === 'evermore',
+                "bg-[url('public/images/Portadas-Discos/10-Portada-Midnights.png')]":      eraTarjeta === 'midnights',
+                "bg-[url('public/images/Portadas-Discos/11-Portada-TTPD.png')]":           eraTarjeta === 'TTPD',
             }
             ]}>
             <div class:list={[
