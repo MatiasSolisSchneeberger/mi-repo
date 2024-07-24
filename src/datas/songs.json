@@ -1068,20 +1068,20 @@
                     "title": "We Were Happy",
                     "info": [
                         {
-                            "tipo": null,
+                            "tipo": "dia 1",
                             "fecha": {
-                                "dia": null,
-                                "mes": null,
-                                "año": null
+                                "dia": 23,
+                                "mes": 7,
+                                "año": 2023
                             },
                             "cantSorp": null,
-                            "instrumento": null,
+                            "instrumento": "piano",
                             "lugar": null
                         }
                     ],
                     "etiquetas": {
-                        "principal": "sinCantar",
-                        "segundo": "N/A",
+                        "principal": "piano",
+                        "segundo": "mashup",
                         "tercer": "N/A",
                         "cuarto": "N/A",
                         "quinto": "N/A",
