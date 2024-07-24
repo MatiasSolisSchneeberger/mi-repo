@@ -24,7 +24,6 @@ interface canciones{
 interface extras{
     title: string
     fechas: Array<fechas>
-    cantado: boolean
     etiquetas: Array<etiquetas>
 }
 
@@ -38,20 +37,15 @@ interface etiquetas{
 }
 
 interface info{
-    tipo: string
+    tipo: string | null
     fecha: Array<fecha>
-    cantSorp: string
-    instrumento: string
-    lugar: Array<lugar>
+    cantSorp: string | null
+    instrumento: string | null
+    lugar: string | null
 }
 
 interface fecha{
     dia: number | null
     mes: number | null
     año: number | null
-}
-interface lugar{
-    país: string
-    ciudad: string
-    estado: string
 }

@@ -7,10 +7,8 @@ interface Props {
 
 const { era } = Astro.props;
 ---
-
-
-<div  class:list = {[
-        "pt-4 pb-4 flex flex-row items-center self-stretch shrink-0 h-auto relative w-full justify-between px-10 ",
+<header  class:list = {[
+        "fixed pt-4 pb-4 flex flex-row items-center self-stretch shrink-0 h-auto z-50 w-full justify-between px-10 ",
         {
             "bg-debut-900": era=== "debut",
             "bg-fearless-900": era=== "fearless",
@@ -43,4 +41,4 @@ const { era } = Astro.props;
         </ButtonPrimario>
 
     </div>
-</div>
+</header>

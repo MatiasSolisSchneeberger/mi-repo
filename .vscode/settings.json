@@ -1,15 +1,59 @@
 {
     "cSpell.words": [
+        "Accor",
+        "Acrisure",
+        "Anfield",
         "astro",
+        "Beabadoobee",
+        "Bernabéu",
+        "Bridgers",
+        "Cruyff",
+        "Défense",
+        "Edimburgo",
         "emojie",
+        "Estádio",
+        "Estocolmo",
         "Favourite",
         "fondos",
+        "Foxborough",
+        "GEHA",
+        "Griff",
+        "Groupama",
+        "Haim",
+        "Hamburgo",
+        "Happel",
+        "Indianápolis",
+        "Johan",
+        "Letzigrund",
+        "Lisboa",
+        "Londres",
+        "Louta",
+        "Lyno",
         "Maren",
+        "Mette",
+        "MUNA",
+        "Múnich",
+        "Narodowy",
+        "Nilton",
+        "Olympiastadion",
+        "OWENN",
+        "pais",
         "Paradisea",
+        "Paramore",
+        "Paycor",
+        "setlist",
+        "Sídney",
         "Sorp",
+        "Stadion",
+        "Superdome",
         "tailwindcss",
         "taylorswift",
-        "TTPD"
+        "TTPD",
+        "Varsovia",
+        "Veltins",
+        "Viena",
+        "Volksparkstadion",
+        "Zúrich"
     ],
     "IDX.aI.enableInlineCompletion": true,
     "IDX.aI.enableCodebaseIndexing": true,
@@ -21,6 +65,12 @@
         "markdown",
         "latex",
         "plaintext",
-        "json"
-    ]
+        "json",
+        "astro"
+    ],
+    "spellright.parserByClass": {
+        "astro": {
+            "parser": "markdown"
+        }
+    }
 }

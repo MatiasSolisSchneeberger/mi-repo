@@ -14,8 +14,8 @@ function capitalizeFirstLetter(str: string): string {
 const capitalizedEra  =  capitalizeFirstLetter(era);
 ---
 
-<div class:list = {[
-    "pt-space-4000 px-56 pb-space-4000 flex flex-col gap-space-800 items-center justify-center self-stretch shrink-0 w-auto relative py-40 space-y-8 bg-cover bg-no-repeat bg-center",
+<div id="Inicio" class:list = {[
+    "px-56 flex flex-col items-center justify-center self-stretch shrink-0 w-auto relative py-40 space-y-8 bg-cover bg-no-repeat bg-center",
     {
         'bg-fondos-debut': era === 'debut',
         'bg-fondos-fearless': era === 'fearless',
@@ -30,6 +30,18 @@ const capitalizedEra  =  capitalizeFirstLetter(era);
         'bg-fondos-TTPD': era === 'TTPD',
     }
     ]} >
+    <div class:list={[
+        {"hidden": era === 'TTPD'}
+        ]}>
+        <p class=`text-${era}-400 text-center font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight absolute left-[30px] bottom-[30px]`>
+            © Disney. All rights reserved.</p>
+    </div>
+    <div class:list={[
+        {"hidden": era !== 'TTPD'}
+        ]}>
+        <p class=`text-${era}-400 text-center font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight absolute left-[30px] bottom-[30px]`>
+            © Taylor Swift, from her official YouTube channel.</p>
+    </div>
     <div class = "flex flex-col gap-space-200 items-center justify-center shrink-0 relative space-y-2 overflow-hidden">
         <div class:list = {[
             "text-center font-display-large-font-family text-display-large-font-size leading-display-large-line-height font-display-large-font-weight relative self-stretch",
@@ -50,7 +62,7 @@ const capitalizedEra  =  capitalizeFirstLetter(era);
         Swifties Eras Tour
         </div>
         <div class:list = {[
-            "text-center font-headline-small-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight relative self-stretch flex items-center justify-center",
+            "text-center font-headline-small-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight relative self-stretch flex items-center justify-center capitalize ",
             {
                 'text-debut-400': era === 'debut',
                 'text-fearless-400': era === 'fearless',
@@ -65,7 +77,7 @@ const capitalizedEra  =  capitalizeFirstLetter(era);
                 'text-TTPD-400': era === 'TTPD',
             }
             ]} style = "mix-blend-mode: color-dodge">
-        {capitalizedEra}
+        {era}
         </div>
     </div>
     <div class = "flex flex-row gap-space-400 items-center justify-center shrink-0 relative space-x-4">

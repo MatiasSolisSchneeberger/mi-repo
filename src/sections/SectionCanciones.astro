@@ -7,6 +7,7 @@ import Cancion from "../components/Cancion.astro";
 import Emojie from "../components/Emojie.astro";
 
 import {eras} from "../datas/songs.json"
+import CancionMashup from "../components/CancionMashup.astro";
 
 interface Props {
 	era: string;
@@ -163,7 +164,7 @@ const { era }  =  Astro.props;
                     Pelicula
                 </Chip>
                 <Chip era="reputation" icono="Izq">
-                    <Emojie emojie="no" slot="before"/>
+                    <Emojie emojie="mashup" slot="before"/>
                     Mashup
                 </Chip>
             </div>
@@ -173,7 +174,7 @@ const { era }  =  Astro.props;
     <!-- TarjetasCanciones -->
     <section class="flex flex-row gap-6 items-center justify-center flex-wrap self-stretch shrink-0 relative py-0">
         {
-            eras.map(({ albums , Spotify , canciones }) => {
+            eras.map(({ albums , Spotify , canciones , extras}) => {
                 return (
                     <TarjetaCancion eraTarjeta={albums} album={Spotify} >
                         {
@@ -192,10 +193,55 @@ const { era }  =  Astro.props;
                                 }                                
                             )
                         }
+                        {
+                            extras.length > 0 && <div class:list={[
+                                "w-full rounded-sm h-0.5",
+                                {
+                                    "bg-debut-900":         albums === "debut",
+                                    "bg-fearless-900":      albums === "fearless",
+                                    "bg-speakNow-900":     	albums === "speakNow",
+                                    "bg-red-900":           albums === "red",
+                                    "bg-1989-900":          albums === "1989",
+                                    "bg-reputation-900":    albums === "reputation",
+                                    "bg-lover-900":         albums === "lover",
+                                    "bg-folklore-900":      albums === "folklore",
+                                    "bg-evermore-900":      albums === "evermore",
+                                    "bg-midnights-900":     albums === "midnights",
+                                    "bg-TTPD-900":          albums === "TTPD",
+                                    "bg-mashup-900":        albums === "mashup",
+                                }
+                            ]}></div>
+                        }
+                        {
+                            extras.map(({ title, etiquetas }) => {
+                                return (
+                                <Cancion
+                                    eraTarjeta={albums}
+                                    cancion={title}
+                                    emojiePrincipal={etiquetas.principal}
+                                    emojie2={etiquetas.segundo}
+                                    emojie3={etiquetas.tercer}
+                                    emojie4={etiquetas.cuarto}
+                                    emojie5={etiquetas.quinto}
+                                    emojie6={etiquetas.sexto}
+                                />
+                                )
+                            })
+                        }
                     </TarjetaCancion>
                 )
             })
         }
-        <p class="bg-gradient-to-r from-debut-500 to-fearless-500 text-transparent bg-clip-text leading-normal">hola</p>
+        <CancionMashup 
+            fromEra= "debut"
+            viaEra= "null"
+            toEra= "red"
+            cancion= "Our Song x All too well"
+            emojiePrincipal= ""
+            emojie2= ""
+            emojie3= ""
+            emojie4= ""
+            emojie5= ""
+            emojie6= ""/>
     </section>
 </article>

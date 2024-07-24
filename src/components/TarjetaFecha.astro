@@ -1,0 +1,378 @@
+---
+import CiudadSvg from './svg/CiudadSvg.astro';
+import LocationSvg from './svg/LocationSvg.astro';
+import MicrofonoSvg from './svg/MicrofonoSvg.astro';
+import StadiumSvg from './svg/StadiumSvg.astro';
+
+interface Props {
+    estado: string
+	eraFecha: string;
+    dia: string;
+    mes: string;
+    año: string;
+    pais: string;
+    ciudad: string;
+    estadio: string;
+    telonero: string;
+}
+
+const { estado , eraFecha , dia , mes , año , pais , ciudad , estadio , telonero } = Astro.props
+---
+
+<article class:list={["rounded-3xl p-3 flex flex-row gap-2.5 items-center justify-start flex-1 h-40 min-w-[325px] relative overflow-hidden",
+    {
+        'bg-debut-200':      estado === 'pasado' && eraFecha === 'debut',        
+        'bg-fearless-200':   estado === 'pasado' && eraFecha === 'fearless',        
+        'bg-speakNow-200':   estado === 'pasado' && eraFecha === 'speakNow',        
+        'bg-red-200':        estado === 'pasado' && eraFecha === 'red',        
+        'bg-1989-200':       estado === 'pasado' && eraFecha === '1989',        
+        'bg-reputation-200': estado === 'pasado' && eraFecha === 'reputation',        
+        'bg-lover-200':      estado === 'pasado' && eraFecha === 'lover',        
+        'bg-folklore-200':   estado === 'pasado' && eraFecha === 'folklore',        
+        'bg-evermore-200':   estado === 'pasado' && eraFecha === 'evermore',        
+        'bg-midnights-200':  estado === 'pasado' && eraFecha === 'midnights',        
+        'bg-TTPD-200':       estado === 'pasado' && eraFecha === 'TTPD',        
+    },
+    {
+        'bg-debut-300':      estado === 'ahora' && eraFecha === 'debut',
+        'bg-fearless-300':   estado === 'ahora' && eraFecha === 'fearless',
+        'bg-speakNow-300':   estado === 'ahora' && eraFecha === 'speakNow',
+        'bg-red-300':        estado === 'ahora' && eraFecha === 'red',
+        'bg-1989-300':       estado === 'ahora' && eraFecha === '1989',
+        'bg-reputation-300': estado === 'ahora' && eraFecha === 'reputation',
+        'bg-lover-300':      estado === 'ahora' && eraFecha === 'lover',
+        'bg-folklore-300':   estado === 'ahora' && eraFecha === 'folklore',
+        'bg-evermore-300':   estado === 'ahora' && eraFecha === 'evermore',
+        'bg-midnights-300':  estado === 'ahora' && eraFecha === 'midnights',
+        'bg-TTPD-300':       estado === 'ahora' && eraFecha === 'TTPD',
+    },
+    {
+        'bg-debut-300':      estado === 'futuro' && eraFecha === 'debut',        
+        'bg-fearless-300':   estado === 'futuro' && eraFecha === 'fearless',        
+        'bg-speakNow-300':   estado === 'futuro' && eraFecha === 'speakNow',        
+        'bg-red-300':        estado === 'futuro' && eraFecha === 'red',        
+        'bg-1989-300':       estado === 'futuro' && eraFecha === '1989',        
+        'bg-reputation-300': estado === 'futuro' && eraFecha === 'reputation',        
+        'bg-lover-300':      estado === 'futuro' && eraFecha === 'lover',        
+        'bg-folklore-300':   estado === 'futuro' && eraFecha === 'folklore',        
+        'bg-evermore-300':   estado === 'futuro' && eraFecha === 'evermore',        
+        'bg-midnights-300':  estado === 'futuro' && eraFecha === 'midnights',        
+        'bg-TTPD-300':       estado === 'futuro' && eraFecha === 'TTPD',             
+    }
+]}>
+    <div class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 relative rounded-lg  overflow-hidden">
+        <div class:list={[
+            "bg-schemes-error rounded-tl-xl rounded-tr-xl pr-3.5 pl-3.5 flex flex-col gap-0 items-center justify-start shrink-0 w-full relative overflow-hidden",
+            {
+                'hidden': estado !== 'ahora'
+            }
+            ]}>
+            <div
+                class="text-schemes-error-container text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative self-stretch"
+                style="letter-spacing: var(--title-small-letter-spacing, 0.1px)"
+            >
+                Ahora
+            </div>
+        </div>
+        <div class:list={[
+            'pr-3.5 pl-3.5 flex flex-col gap-0 items-center justify-center flex-1 relative overflow-hidden',
+            {
+                'bg-debut-300':      estado === 'pasado' && eraFecha === 'debut',        
+                'bg-fearless-300':   estado === 'pasado' && eraFecha === 'fearless',        
+                'bg-speakNow-300':   estado === 'pasado' && eraFecha === 'speakNow',        
+                'bg-red-300':        estado === 'pasado' && eraFecha === 'red',        
+                'bg-1989-300':       estado === 'pasado' && eraFecha === '1989',        
+                'bg-reputation-300': estado === 'pasado' && eraFecha === 'reputation',        
+                'bg-lover-300':      estado === 'pasado' && eraFecha === 'lover',        
+                'bg-folklore-300':   estado === 'pasado' && eraFecha === 'folklore',        
+                'bg-evermore-300':   estado === 'pasado' && eraFecha === 'evermore',        
+                'bg-midnights-300':  estado === 'pasado' && eraFecha === 'midnights',        
+                'bg-TTPD-300':       estado === 'pasado' && eraFecha === 'TTPD',        
+            },
+            {
+                'bg-debut-600':      estado === 'ahora' && eraFecha === 'debut',
+                'bg-fearless-600':   estado === 'ahora' && eraFecha === 'fearless',
+                'bg-speakNow-600':   estado === 'ahora' && eraFecha === 'speakNow',
+                'bg-red-600':        estado === 'ahora' && eraFecha === 'red',
+                'bg-1989-600':       estado === 'ahora' && eraFecha === '1989',
+                'bg-reputation-600': estado === 'ahora' && eraFecha === 'reputation',
+                'bg-lover-600':      estado === 'ahora' && eraFecha === 'lover',
+                'bg-folklore-600':   estado === 'ahora' && eraFecha === 'folklore',
+                'bg-evermore-600':   estado === 'ahora' && eraFecha === 'evermore',
+                'bg-midnights-600':  estado === 'ahora' && eraFecha === 'midnights',
+                'bg-TTPD-600':       estado === 'ahora' && eraFecha === 'TTPD',
+            },
+            {
+                'bg-debut-600':      estado === 'futuro' && eraFecha === 'debut',        
+                'bg-fearless-600':   estado === 'futuro' && eraFecha === 'fearless',        
+                'bg-speakNow-600':   estado === 'futuro' && eraFecha === 'speakNow',        
+                'bg-red-600':        estado === 'futuro' && eraFecha === 'red',        
+                'bg-1989-600':       estado === 'futuro' && eraFecha === '1989',        
+                'bg-reputation-600': estado === 'futuro' && eraFecha === 'reputation',        
+                'bg-lover-600':      estado === 'futuro' && eraFecha === 'lover',        
+                'bg-folklore-600':   estado === 'futuro' && eraFecha === 'folklore',        
+                'bg-evermore-600':   estado === 'futuro' && eraFecha === 'evermore',        
+                'bg-midnights-600':  estado === 'futuro' && eraFecha === 'midnights',        
+                'bg-TTPD-600':       estado === 'futuro' && eraFecha === 'TTPD',             
+            }
+            ]}>
+            
+            <p class:list = {['text-left font-display-small-font-family text-display-small-font-size leading-display-small-line-height font-display-small-font-weight relativ',
+                {
+                    'text-debut-200':      eraFecha === 'debut',        
+                    'text-fearless-200':   eraFecha === 'fearless',        
+                    'text-speakNow-200':   eraFecha === 'speakNow',        
+                    'text-red-200':        eraFecha === 'red',        
+                    'text-1989-200':       eraFecha === '1989',        
+                    'text-reputation-200': eraFecha === 'reputation',        
+                    'text-lover-200':      eraFecha === 'lover',        
+                    'text-folklore-200':   eraFecha === 'folklore',        
+                    'text-evermore-200':   eraFecha === 'evermore',        
+                    'text-midnights-200':  eraFecha === 'midnights',        
+                    'text-TTPD-200':       eraFecha === 'TTPD',
+                }
+            ]}>
+                {dia}
+            </p>
+
+            <p class:list = {['text-left font-display-small-font-family text-display-small-font-size leading-display-small-line-height font-display-small-font-weight relative',
+                {
+                    'text-debut-200':      eraFecha === 'debut',        
+                    'text-fearless-200':   eraFecha === 'fearless',        
+                    'text-speakNow-200':   eraFecha === 'speakNow',        
+                    'text-red-200':        eraFecha === 'red',        
+                    'text-1989-200':       eraFecha === '1989',        
+                    'text-reputation-200': eraFecha === 'reputation',        
+                    'text-lover-200':      eraFecha === 'lover',        
+                    'text-folklore-200':   eraFecha === 'folklore',        
+                    'text-evermore-200':   eraFecha === 'evermore',        
+                    'text-midnights-200':  eraFecha === 'midnights',        
+                    'text-TTPD-200':       eraFecha === 'TTPD',
+                }
+            ]}>
+                {mes}
+            </p>
+
+            <p class:list = {[' text-left font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative',
+                {
+                    'text-debut-200':      eraFecha === 'debut',        
+                    'text-fearless-200':   eraFecha === 'fearless',        
+                    'text-speakNow-200':   eraFecha === 'speakNow',        
+                    'text-red-200':        eraFecha === 'red',        
+                    'text-1989-200':       eraFecha === '1989',        
+                    'text-reputation-200': eraFecha === 'reputation',        
+                    'text-lover-200':      eraFecha === 'lover',        
+                    'text-folklore-200':   eraFecha === 'folklore',        
+                    'text-evermore-200':   eraFecha === 'evermore',        
+                    'text-midnights-200':  eraFecha === 'midnights',        
+                    'text-TTPD-200':       eraFecha === 'TTPD',
+                }
+            ]}>
+                {año}
+            </p>
+
+        </div>
+    </div>
+
+    <div class="flex flex-col items-start justify-between self-stretch shrink-0 relative overflow-hidden">
+        <div class="flex flex-row gap-[5px] items-center justify-start shrink-0 relative">
+            <CiudadSvg era={eraFecha} estado={estado}/>
+            <p class:list = {['text-left font-headline-medium-font-family text-headline-medium-font-size leading-headline-medium-line-height font-headline-medium-font-weight relative',
+            {
+                'text-debut-300':      estado === 'pasado' && eraFecha === 'debut',        
+                'text-fearless-300':   estado === 'pasado' && eraFecha === 'fearless',        
+                'text-speakNow-300':   estado === 'pasado' && eraFecha === 'speakNow',        
+                'text-red-300':        estado === 'pasado' && eraFecha === 'red',        
+                'text-1989-300':       estado === 'pasado' && eraFecha === '1989',        
+                'text-reputation-300': estado === 'pasado' && eraFecha === 'reputation',        
+                'text-lover-300':      estado === 'pasado' && eraFecha === 'lover',        
+                'text-folklore-300':   estado === 'pasado' && eraFecha === 'folklore',        
+                'text-evermore-300':   estado === 'pasado' && eraFecha === 'evermore',        
+                'text-midnights-300':  estado === 'pasado' && eraFecha === 'midnights',        
+                'text-TTPD-300':       estado === 'pasado' && eraFecha === 'TTPD',        
+            },
+            {
+                'text-debut-900':      estado === 'ahora' && eraFecha === 'debut',
+                'text-fearless-900':   estado === 'ahora' && eraFecha === 'fearless',
+                'text-speakNow-900':   estado === 'ahora' && eraFecha === 'speakNow',
+                'text-red-900':        estado === 'ahora' && eraFecha === 'red',
+                'text-1989-900':       estado === 'ahora' && eraFecha === '1989',
+                'text-reputation-900': estado === 'ahora' && eraFecha === 'reputation',
+                'text-lover-900':      estado === 'ahora' && eraFecha === 'lover',
+                'text-folklore-900':   estado === 'ahora' && eraFecha === 'folklore',
+                'text-evermore-900':   estado === 'ahora' && eraFecha === 'evermore',
+                'text-midnights-900':  estado === 'ahora' && eraFecha === 'midnights',
+                'text-TTPD-900':       estado === 'ahora' && eraFecha === 'TTPD',
+            },
+            {
+                'text-debut-900':      estado === 'futuro' && eraFecha === 'debut',        
+                'text-fearless-900':   estado === 'futuro' && eraFecha === 'fearless',        
+                'text-speakNow-900':   estado === 'futuro' && eraFecha === 'speakNow',        
+                'text-red-900':        estado === 'futuro' && eraFecha === 'red',        
+                'text-1989-900':       estado === 'futuro' && eraFecha === '1989',        
+                'text-reputation-900': estado === 'futuro' && eraFecha === 'reputation',        
+                'text-lover-900':      estado === 'futuro' && eraFecha === 'lover',        
+                'text-folklore-900':   estado === 'futuro' && eraFecha === 'folklore',        
+                'text-evermore-900':   estado === 'futuro' && eraFecha === 'evermore',        
+                'text-midnights-900':  estado === 'futuro' && eraFecha === 'midnights',        
+                'text-TTPD-900':       estado === 'futuro' && eraFecha === 'TTPD',             
+            }
+            ]}>
+            {ciudad}
+            </p>
+        </div>
+
+        <div
+            class="flex flex-row gap-[5px] items-center justify-start shrink-0 relative"
+        >
+        <LocationSvg era={eraFecha} estado={estado}/>
+        <p class:list = {[
+            'text-left font-headline-medium-font-family text-headline-medium-font-size leading-headline-medium-line-height font-headline-medium-font-weight relative',
+            {
+                'text-debut-300':      estado === 'pasado' && eraFecha === 'debut',        
+                'text-fearless-300':   estado === 'pasado' && eraFecha === 'fearless',        
+                'text-speakNow-300':   estado === 'pasado' && eraFecha === 'speakNow',        
+                'text-red-300':        estado === 'pasado' && eraFecha === 'red',        
+                'text-1989-300':       estado === 'pasado' && eraFecha === '1989',        
+                'text-reputation-300': estado === 'pasado' && eraFecha === 'reputation',        
+                'text-lover-300':      estado === 'pasado' && eraFecha === 'lover',        
+                'text-folklore-300':   estado === 'pasado' && eraFecha === 'folklore',        
+                'text-evermore-300':   estado === 'pasado' && eraFecha === 'evermore',        
+                'text-midnights-300':  estado === 'pasado' && eraFecha === 'midnights',        
+                'text-TTPD-300':       estado === 'pasado' && eraFecha === 'TTPD',        
+            },
+            {
+                'text-debut-900':      estado === 'ahora' && eraFecha === 'debut',
+                'text-fearless-900':   estado === 'ahora' && eraFecha === 'fearless',
+                'text-speakNow-900':   estado === 'ahora' && eraFecha === 'speakNow',
+                'text-red-900':        estado === 'ahora' && eraFecha === 'red',
+                'text-1989-900':       estado === 'ahora' && eraFecha === '1989',
+                'text-reputation-900': estado === 'ahora' && eraFecha === 'reputation',
+                'text-lover-900':      estado === 'ahora' && eraFecha === 'lover',
+                'text-folklore-900':   estado === 'ahora' && eraFecha === 'folklore',
+                'text-evermore-900':   estado === 'ahora' && eraFecha === 'evermore',
+                'text-midnights-900':  estado === 'ahora' && eraFecha === 'midnights',
+                'text-TTPD-900':       estado === 'ahora' && eraFecha === 'TTPD',
+            },
+            {
+                'text-debut-900':      estado === 'futuro' && eraFecha === 'debut',        
+                'text-fearless-900':   estado === 'futuro' && eraFecha === 'fearless',        
+                'text-speakNow-900':   estado === 'futuro' && eraFecha === 'speakNow',        
+                'text-red-900':        estado === 'futuro' && eraFecha === 'red',        
+                'text-1989-900':       estado === 'futuro' && eraFecha === '1989',        
+                'text-reputation-900': estado === 'futuro' && eraFecha === 'reputation',        
+                'text-lover-900':      estado === 'futuro' && eraFecha === 'lover',        
+                'text-folklore-900':   estado === 'futuro' && eraFecha === 'folklore',        
+                'text-evermore-900':   estado === 'futuro' && eraFecha === 'evermore',        
+                'text-midnights-900':  estado === 'futuro' && eraFecha === 'midnights',        
+                'text-TTPD-900':       estado === 'futuro' && eraFecha === 'TTPD',             
+            }
+        ]}>
+            {pais}
+            </p>
+        </div>
+
+        <div
+            class="flex flex-row gap-[5px] items-center justify-start shrink-0 relative"
+        >
+            <StadiumSvg era={eraFecha} estado={estado}/>
+            <p class:list = {['text-left font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative',
+                {
+                'text-debut-300':      estado === 'pasado' && eraFecha === 'debut',        
+                'text-fearless-300':   estado === 'pasado' && eraFecha === 'fearless',        
+                'text-speakNow-300':   estado === 'pasado' && eraFecha === 'speakNow',        
+                'text-red-300':        estado === 'pasado' && eraFecha === 'red',        
+                'text-1989-300':       estado === 'pasado' && eraFecha === '1989',        
+                'text-reputation-300': estado === 'pasado' && eraFecha === 'reputation',        
+                'text-lover-300':      estado === 'pasado' && eraFecha === 'lover',        
+                'text-folklore-300':   estado === 'pasado' && eraFecha === 'folklore',        
+                'text-evermore-300':   estado === 'pasado' && eraFecha === 'evermore',        
+                'text-midnights-300':  estado === 'pasado' && eraFecha === 'midnights',        
+                'text-TTPD-300':       estado === 'pasado' && eraFecha === 'TTPD',        
+            },
+            {
+                'text-debut-900':      estado === 'ahora' && eraFecha === 'debut',
+                'text-fearless-900':   estado === 'ahora' && eraFecha === 'fearless',
+                'text-speakNow-900':   estado === 'ahora' && eraFecha === 'speakNow',
+                'text-red-900':        estado === 'ahora' && eraFecha === 'red',
+                'text-1989-900':       estado === 'ahora' && eraFecha === '1989',
+                'text-reputation-900': estado === 'ahora' && eraFecha === 'reputation',
+                'text-lover-900':      estado === 'ahora' && eraFecha === 'lover',
+                'text-folklore-900':   estado === 'ahora' && eraFecha === 'folklore',
+                'text-evermore-900':   estado === 'ahora' && eraFecha === 'evermore',
+                'text-midnights-900':  estado === 'ahora' && eraFecha === 'midnights',
+                'text-TTPD-900':       estado === 'ahora' && eraFecha === 'TTPD',
+            },
+            {
+                'text-debut-900':      estado === 'futuro' && eraFecha === 'debut',        
+                'text-fearless-900':   estado === 'futuro' && eraFecha === 'fearless',        
+                'text-speakNow-900':   estado === 'futuro' && eraFecha === 'speakNow',        
+                'text-red-900':        estado === 'futuro' && eraFecha === 'red',        
+                'text-1989-900':       estado === 'futuro' && eraFecha === '1989',        
+                'text-reputation-900': estado === 'futuro' && eraFecha === 'reputation',        
+                'text-lover-900':      estado === 'futuro' && eraFecha === 'lover',        
+                'text-folklore-900':   estado === 'futuro' && eraFecha === 'folklore',        
+                'text-evermore-900':   estado === 'futuro' && eraFecha === 'evermore',        
+                'text-midnights-900':  estado === 'futuro' && eraFecha === 'midnights',        
+                'text-TTPD-900':       estado === 'futuro' && eraFecha === 'TTPD',             
+            }
+            ]}>
+            {estadio}
+            </p>
+        </div>
+
+        <div
+            class:list={[
+                "flex flex-row gap-[5px] items-center justify-start shrink-0 relative",
+            {
+                'hidden': telonero === ''
+            }                
+            ]}>
+            <MicrofonoSvg era={eraFecha} estado={estado}/>
+            <p class:list = {[
+                'text-${eraFecha}-900 text-left font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative',
+                {
+                'text-debut-300':      estado === 'pasado' && eraFecha === 'debut',        
+                'text-fearless-300':   estado === 'pasado' && eraFecha === 'fearless',        
+                'text-speakNow-300':   estado === 'pasado' && eraFecha === 'speakNow',        
+                'text-red-300':        estado === 'pasado' && eraFecha === 'red',        
+                'text-1989-300':       estado === 'pasado' && eraFecha === '1989',        
+                'text-reputation-300': estado === 'pasado' && eraFecha === 'reputation',        
+                'text-lover-300':      estado === 'pasado' && eraFecha === 'lover',        
+                'text-folklore-300':   estado === 'pasado' && eraFecha === 'folklore',        
+                'text-evermore-300':   estado === 'pasado' && eraFecha === 'evermore',        
+                'text-midnights-300':  estado === 'pasado' && eraFecha === 'midnights',        
+                'text-TTPD-300':       estado === 'pasado' && eraFecha === 'TTPD',        
+            },
+            {
+                'text-debut-900':      estado === 'ahora' && eraFecha === 'debut',
+                'text-fearless-900':   estado === 'ahora' && eraFecha === 'fearless',
+                'text-speakNow-900':   estado === 'ahora' && eraFecha === 'speakNow',
+                'text-red-900':        estado === 'ahora' && eraFecha === 'red',
+                'text-1989-900':       estado === 'ahora' && eraFecha === '1989',
+                'text-reputation-900': estado === 'ahora' && eraFecha === 'reputation',
+                'text-lover-900':      estado === 'ahora' && eraFecha === 'lover',
+                'text-folklore-900':   estado === 'ahora' && eraFecha === 'folklore',
+                'text-evermore-900':   estado === 'ahora' && eraFecha === 'evermore',
+                'text-midnights-900':  estado === 'ahora' && eraFecha === 'midnights',
+                'text-TTPD-900':       estado === 'ahora' && eraFecha === 'TTPD',
+            },
+            {
+                'text-debut-900':      estado === 'futuro' && eraFecha === 'debut',        
+                'text-fearless-900':   estado === 'futuro' && eraFecha === 'fearless',        
+                'text-speakNow-900':   estado === 'futuro' && eraFecha === 'speakNow',        
+                'text-red-900':        estado === 'futuro' && eraFecha === 'red',        
+                'text-1989-900':       estado === 'futuro' && eraFecha === '1989',        
+                'text-reputation-900': estado === 'futuro' && eraFecha === 'reputation',        
+                'text-lover-900':      estado === 'futuro' && eraFecha === 'lover',        
+                'text-folklore-900':   estado === 'futuro' && eraFecha === 'folklore',        
+                'text-evermore-900':   estado === 'futuro' && eraFecha === 'evermore',        
+                'text-midnights-900':  estado === 'futuro' && eraFecha === 'midnights',        
+                'text-TTPD-900':       estado === 'futuro' && eraFecha === 'TTPD',             
+            }
+            ]}>
+            {telonero}
+            </p>
+        </div>
+    </div>
+</article>

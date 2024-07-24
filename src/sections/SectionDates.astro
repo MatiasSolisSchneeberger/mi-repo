@@ -2,36 +2,88 @@
 import Title from "../components/Title.astro";
 import Header from "../components/Header.astro";
 import Subtitle from "../components/Subtitle.astro";
-import FechaPasadas from "../components/FechaPasadas.astro";
-import FechaActuales from "../components/FechaActuales.astro";
+import TarjetaFecha from "../components/TarjetaFecha.astro";
+
+import {concerts} from "../datas/concerts.json"
 
 interface Props {
 	era: string;
 }
 
+const eras = ["debut", "fearless", "speakNow", "red", "1989", "reputation", "lover", "folklore", "evermore", "midnights", "TTPD"]
 const { era } = Astro.props;
 ---
-<article class:list = {[
-    "py-12 px-32 space-y-6 ",
-    {
-        "bg-debut-100":         era === "debut",
-        "bg-fearless-100":      era === "fearless",
-        "bg-speakNow-100":      era === "speakNow",
-        "bg-red-100":           era === "red",
-        "bg-1989-100":          era === "1989",
-        "bg-reputation-100":    era === "reputation",
-        "bg-lover-100":         era === "lover",
-        "bg-folklore-100":      era === "folklore",
-        "bg-evermore-100":      era === "evermore",
-        "bg-midnights-100":     era === "midnights",
-        "bg-TTPD-100":          era === "TTPD",
-    }
-    ]}>
+<article id="Conciertos" class = `bg-${era}-100 py-12 px-32 space-y-6`>
     <Title era={era} titulo="Fecha de conciertos" texto="Estas son todas las fechas The Eras Tour, las pasadas, las actuales, y las futuras."/>
     <section class="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
-        <Subtitle era={era} titulo="Fechas Actuales" texto="Conciertos que son esta semana."/>
-        <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-[528px] relative">
-            <FechaActuales eraFecha="debut" />
+        <Subtitle era={era} titulo="Fechas Actuales" texto=""/>
+        <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+            
+            {
+                concerts.ahora.map(({ fecha , lugar , telonero }, index) => {
+                    const eraFecha = eras[index % eras.length];  // Alterna entre las eras
+                    
+                    return (
+                        <TarjetaFecha 
+                            estado="ahora"
+                            eraFecha={eraFecha}
+                            dia={fecha.dia}
+                            mes={fecha.mes}
+                            año={fecha.año}
+                            pais={lugar.pais}
+                            ciudad={lugar.ciudad}
+                            estadio={lugar.estadio}
+                            telonero={telonero}
+                        />
+                    );
+                })
+            }
+            
+            
+        </div>
+        <Subtitle era={era} titulo="Fechas Actuales" texto=""/>
+        <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+            {
+                concerts.futuro.map(({ fecha , lugar , telonero }, index) => {
+                    const eraFecha = eras[index % eras.length];  // Alterna entre las eras
+                    
+                    return (
+                        <TarjetaFecha 
+                            estado="futuro"
+                            eraFecha={eraFecha}
+                            dia={fecha.dia}
+                            mes={fecha.mes}
+                            año={fecha.año}
+                            pais={lugar.pais}
+                            ciudad={lugar.ciudad}
+                            estadio={lugar.estadio}
+                            telonero={telonero}
+                        />
+                    );
+                })
+            }
+        </div>
+        <Subtitle era={era} titulo="Fechas Pasadas" texto=""/>
+        <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+            {
+                concerts.pasados.map(({ fecha , lugar , telonero }, index) => {
+                    const eraFecha = eras[index % eras.length];  // Alterna entre las eras
+                    
+                    return (
+                        <TarjetaFecha 
+                            estado="pasado"
+                            eraFecha={eraFecha}
+                            dia={fecha.dia}
+                            mes={fecha.mes}
+                            año={fecha.año}
+                            pais={lugar.pais}
+                            ciudad={lugar.ciudad}
+                            estadio={lugar.estadio}
+                            telonero={telonero}
+                        />
+                    );
+                })
+            }        
         </div>
     </section>
 </article>

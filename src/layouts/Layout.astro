@@ -1,4 +1,5 @@
 ---
+import ButtonPrimario from '../components/ButtonPrimario.astro';
 import Header from '../components/Header.astro';
 import '@fontsource-variable/rubik';
 
@@ -16,7 +17,7 @@ const { title , era } = Astro.props;
 		<meta charset = "UTF-8" />
 		<meta name = "description" content = "Astro description" />
 		<meta name = "viewport" content = "width = device-width" />
-		<link rel = "icon" type = "image/svg+xml" href = "/src/components/svg/Frame.svg" />
+		<link rel = "icon" type = "image/svg+xml" href = "/src/components/svg/iconoPagina.svg" />
 		<meta name = "generator" content = {Astro.generator} />
 		
 		<!-- Tipografías -->
@@ -28,7 +29,7 @@ const { title , era } = Astro.props;
 	</head>
 	<body>
 		<Header era = {era}/>
-		<main>
+		<main class="z-10 relative pt-20">
 			<slot />
 		</main>
 	</body>

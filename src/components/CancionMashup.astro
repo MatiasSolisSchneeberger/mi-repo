@@ -1,0 +1,78 @@
+---
+import Emojie from './Emojie.astro';
+
+interface Props {
+	fromEra: string;
+	viaEra: string;
+	toEra: string;
+	cancion: string;
+	emojiePrincipal: string;
+	emojie2: string;
+	emojie3: string;
+	emojie4: string;
+	emojie5: string;
+	emojie6: string;
+}
+
+const { fromEra , viaEra , toEra , cancion , emojiePrincipal , emojie2 , emojie3 , emojie4 , emojie5 , emojie6 }  =  Astro.props;
+
+---
+<div class="pt-1 pb-1 flex flex-row items-center justify-start self-stretch shrink-0 relative overflow-hidden space-x-2 h-min">
+	<!-- Emojie Principal -->
+	<Emojie emojie={emojiePrincipal}/>
+	<!-- Divider Vertical -->
+    <div class:list= "bg-mashup-900 w-0.5 rounded-sm h-6"></div>
+    <!-- Cancion -->
+    <p class:list={[
+		"bg-gradient-to-r text-mashup-900 text-left font-title-medium-font-family text-title-medium-font-size  font-title-medium-font-weight relative leading-normal",
+		{
+			"from-debut-400":       fromEra === "debut",
+			"from-fearless-400":    fromEra === "fearless",
+			"from-speakNow-400":   	fromEra === "speakNow",
+			"from-red-400":         fromEra === "red",
+			"from-1989-400":        fromEra === "1989",
+			"from-reputation-400":  fromEra === "reputation",
+			"from-lover-400":       fromEra === "lover",
+			"from-folklore-400":    fromEra === "folklore",
+			"from-evermore-400":    fromEra === "evermore",
+			"from-midnights-400":   fromEra === "midnights",
+			"from-TTPD-400":        fromEra === "TTPD",
+		},
+		{
+			"via-debut-400":       viaEra === "debut",
+			"via-fearless-400":    viaEra === "fearless",
+			"via-speakNow-400":    viaEra === "speakNow",
+			"via-red-400":         viaEra === "red",
+			"via-1989-400":        viaEra === "1989",
+			"via-reputation-400":  viaEra === "reputation",
+			"via-lover-400":       viaEra === "lover",
+			"via-folklore-400":    viaEra === "folklore",
+			"via-evermore-400":    viaEra === "evermore",
+			"via-midnights-400":   viaEra === "midnights",
+			"via-TTPD-400":        viaEra === "TTPD",
+			"":           viaEra === "null",
+		},
+		{
+			"to-debut-400":         toEra === "debut",
+			"to-fearless-400":      toEra === "fearless",
+			"to-speakNow-400":      toEra === "speakNow",
+			"to-red-400":           toEra === "red",
+			"to-1989-400":          toEra === "1989",
+			"to-reputation-400":    toEra === "reputation",
+			"to-lover-400":         toEra === "lover",
+			"to-folklore-400":      toEra === "folklore",
+			"to-evermore-400":      toEra === "evermore",
+			"to-midnights-400":     toEra === "midnights",
+			"to-TTPD-400":          toEra === "TTPD",
+		}
+		]}>
+		{cancion}
+	</p>
+
+	<!-- Emojie Adicionales -->
+	<Emojie emojie={emojie2}/>
+	<Emojie emojie={emojie3}/>
+	<Emojie emojie={emojie4}/>
+	<Emojie emojie={emojie5}/>
+	<Emojie emojie={emojie6}/>
+</div>

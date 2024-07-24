@@ -1,8 +1,8 @@
-export interface conciertos{
-    "conciertos": Array<conciertos>
+export interface concerts{
+    "concerts": Array<concerts>
 }
 
-interface conciertos{
+interface concerts{
     "fechas": Array<fechas>
     "lugar": Array<lugar>
     "telonero": string

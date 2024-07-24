@@ -10,44 +10,11 @@ const { era , titulo , texto } = Astro.props;
 <section
     class = "flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative">
     <h2
-    class:list = {[
-        "text-center font-headline-large-font-family text-headline-large-font-size leading-headline-large-line-height font-headline-large-font-weight relative self-stretch",
-        {
-            "text-debut-900": era === "debut",
-            "text-fearless-900": era === "fearless",
-            "text-speakNow-900": era === "speakNow",
-            "text-red-900": era === "red",
-            "text-1989-900": era === "1989",
-            "text-reputation-900": era === "reputation",
-            "text-lover-900": era === "lover",
-            "text-folklore-900": era === "folklore",
-            "text-evermore-900": era === "evermore",
-            "text-midnights-900": era === "midnights",
-            "text-TTPD-900": era === "TTPD",
-        }
-    ]}
-    >
+    class:list = `text-${era}-900 text-center font-headline-large-font-family text-headline-large-font-size leading-headline-large-line-height font-headline-large-font-weight relative self-stretch`>
         {titulo}
     </h2>
     <p
-    class:list = {[
-        "text-center font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative self-stretch",
-        {
-            "text-debut-900": era === "debut",
-            "text-fearless-900": era === "fearless",
-            "text-speakNow-900": era === "speakNow",
-            "text-red-900": era === "red",
-            "text-1989-900": era === "1989",
-            "text-reputation-900": era === "reputation",
-            "text-lover-900": era === "lover",
-            "text-folklore-900": era === "folklore",
-            "text-evermore-900": era === "evermore",
-            "text-midnights-900": era === "midnights",
-            "text-TTPD-900": era === "TTPD",
-        }
-        ]}
-    style = "letter-spacing: var(--title-medium-letter-spacing, 0.15px)"
-    >
+    class=`text-${era}-900 text-center font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative self-stretch`>
         {texto}
     </p>
 </section>

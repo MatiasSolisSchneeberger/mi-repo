@@ -1,28 +1,54 @@
 ---
 interface Props {
 	era: string;
+    estado: string;
 }
 
-const { era } = Astro.props;
-
-const color: { [key: string]: string } = {
-    debut:      "#1d371f",
-    fearless:   "#6d241a",
-    speakNow:   "#5d3e5d",
-    red:        "#6f2c38",
-    "1989":     "#124d68",
-    reputation: "#3e3c3c",
-    lover:      "#801b35",
-    folklore:   "#4d4641",
-    evermore:   "#584036",
-    midnights:  "#354873",
-    TTPD:       "#493f3a",
-};
-
-const iconoColor = color[era] || "#000000";
+const { era , estado } = Astro.props;
 ---
 <div class="shrink-0 relative overflow-visible">
-    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill={iconoColor}>
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class:list={[
+        {
+                'fill-debut-300':      estado === 'pasado' && era === 'debut',        
+                'fill-fearless-300':   estado === 'pasado' && era === 'fearless',        
+                'fill-speakNow-300':   estado === 'pasado' && era === 'speakNow',        
+                'fill-red-300':        estado === 'pasado' && era === 'red',        
+                'fill-1989-300':       estado === 'pasado' && era === '1989',        
+                'fill-reputation-300': estado === 'pasado' && era === 'reputation',        
+                'fill-lover-300':      estado === 'pasado' && era === 'lover',        
+                'fill-folklore-300':   estado === 'pasado' && era === 'folklore',        
+                'fill-evermore-300':   estado === 'pasado' && era === 'evermore',        
+                'fill-midnights-300':  estado === 'pasado' && era === 'midnights',        
+                'fill-TTPD-300':       estado === 'pasado' && era === 'TTPD',        
+            },
+            {
+                'fill-debut-900':      estado === 'ahora' && era === 'debut',
+                'fill-fearless-900':   estado === 'ahora' && era === 'fearless',
+                'fill-speakNow-900':   estado === 'ahora' && era === 'speakNow',
+                'fill-red-900':        estado === 'ahora' && era === 'red',
+                'fill-1989-900':       estado === 'ahora' && era === '1989',
+                'fill-reputation-900': estado === 'ahora' && era === 'reputation',
+                'fill-lover-900':      estado === 'ahora' && era === 'lover',
+                'fill-folklore-900':   estado === 'ahora' && era === 'folklore',
+                'fill-evermore-900':   estado === 'ahora' && era === 'evermore',
+                'fill-midnights-900':  estado === 'ahora' && era === 'midnights',
+                'fill-TTPD-900':       estado === 'ahora' && era === 'TTPD',
+            },
+            {
+                'fill-debut-900':      estado === 'futuro' && era === 'debut',        
+                'fill-fearless-900':   estado === 'futuro' && era === 'fearless',        
+                'fill-speakNow-900':   estado === 'futuro' && era === 'speakNow',        
+                'fill-red-900':        estado === 'futuro' && era === 'red',        
+                'fill-1989-900':       estado === 'futuro' && era === '1989',        
+                'fill-reputation-900': estado === 'futuro' && era === 'reputation',        
+                'fill-lover-900':      estado === 'futuro' && era === 'lover',        
+                'fill-folklore-900':   estado === 'futuro' && era === 'folklore',        
+                'fill-evermore-900':   estado === 'futuro' && era === 'evermore',        
+                'fill-midnights-900':  estado === 'futuro' && era === 'midnights',        
+                'fill-TTPD-900':       estado === 'futuro' && era === 'TTPD',             
+            }
+        ]
+    }>
         <path d="M480-107q-14 0-28-5t-25-15q-65-60-115-117t-83.5-110.5q-33.5-53.5-51-103T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 45-17.5 94.5t-51 103Q698-301 648-244T533-127q-11 10-25 15t-28 5Zm0-373q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Z"/>
     </svg>
 </div>
