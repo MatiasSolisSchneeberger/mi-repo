@@ -1,0 +1,28 @@
+---
+interface Props {
+	era: string;
+}
+
+const { era } = Astro.props;
+
+---
+<div class="shrink-0 relative overflow-visible">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class:list={[
+        {
+            'fill-debut-100':      era === 'debut',
+            'fill-fearless-100':   era === 'fearless',
+            'fill-speakNow-100':   era === 'speakNow',
+            'fill-red-100':        era === 'red',
+            'fill-1989-100':       era === '1989',
+            'fill-reputation-100': era === 'reputation',
+            'fill-lover-100':      era === 'lover',
+            'fill-folklore-100':   era === 'folklore',
+            'fill-evermore-100':   era === 'evermore',
+            'fill-midnights-100':  era === 'midnights',
+            'fill-TTPD-100':       era === 'TTPD',
+        }
+    ]
+    }>
+        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+    </svg>
+</div>

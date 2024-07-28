@@ -10,7 +10,9 @@ interface eras {
     "fondo": string
     "disco": string
     "Spotify": string
-    "masInfo": string
+    "anterior": string
+    "siguiente": string
+    "linkPage": string
     "canciones": Array<canciones>
     "extras": Array<extras>
 }

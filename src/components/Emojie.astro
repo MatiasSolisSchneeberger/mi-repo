@@ -6,24 +6,24 @@ interface Props {
 const { emojie } = Astro.props;
 
 const imageEmojie: { [key: string]: string } = {
-    debut:      "public/images/Emojis/01.taylorswift.png",
-    fearless:   "public/images/Emojis/02.fearless.png",
-    speakNow:   "public/images/Emojis/03.speakNow.png",
-    red:        "public/images/Emojis/04.red.png",
-    "1989":     "public/images/Emojis/05.1989.png",
-    reputation: "public/images/Emojis/06.reputation.png",
-    lover:      "public/images/Emojis/07.lover.png",
-    folklore:   "public/images/Emojis/08.folklore.png",
-    evermore:   "public/images/Emojis/09.evermore.png",
-    midnights:  "public/images/Emojis/10.midnights.png",
-    TTPD:       "public/images/Emojis/11.TTPD.png",
-    mashup:     "public/images/Emojis/12.MashUp.png",
-    piano:      "public/images/Emojis/13.piano.png",
-    pelicula:   "public/images/Emojis/14.Película.png",
-    setlist:    "public/images/Emojis/15.setlist.png",
-    guitarra:   "public/images/Emojis/16.guitarra.png",
-    cantante:   "public/images/Emojis/17.cantante.png",
-    sinCantar:   "public/images/Emojis/cross-mark_274c (1).png",
+    debut:      "/public/images/Emojis/01.taylorswift.png",
+    fearless:   "/public/images/Emojis/02.fearless.png",
+    speakNow:   "/public/images/Emojis/03.speakNow.png",
+    red:        "/public/images/Emojis/04.red.png",
+    "1989":     "/public/images/Emojis/05.1989.png",
+    reputation: "/public/images/Emojis/06.reputation.png",
+    lover:      "/public/images/Emojis/07.lover.png",
+    folklore:   "/public/images/Emojis/08.folklore.png",
+    evermore:   "/public/images/Emojis/09.evermore.png",
+    midnights:  "/public/images/Emojis/10.midnights.png",
+    TTPD:       "/public/images/Emojis/11.TTPD.png",
+    mashup:     "/public/images/Emojis/12.MashUp.png",
+    piano:      "/public/images/Emojis/13.piano.png",
+    pelicula:   "/public/images/Emojis/14.Película.png",
+    setlist:    "/public/images/Emojis/15.setlist.png",
+    guitarra:   "/public/images/Emojis/16.guitarra.png",
+    cantante:   "/public/images/Emojis/17.cantante.png",
+    sinCantar:  "/public/images/Emojis/cross-mark_274c (1).png",
 };
 
 const imagen = imageEmojie[emojie] || "public/images/Emojis/19.nada.png"
@@ -31,7 +31,6 @@ const imagen = imageEmojie[emojie] || "public/images/Emojis/19.nada.png"
 
 <img 
     src={imagen}
-
     class:list = {[
         "w-[18px] h-[18px] relative",
         {
@@ -40,5 +39,5 @@ const imagen = imageEmojie[emojie] || "public/images/Emojis/19.nada.png"
         }
     ]}
 
-    alt={imageEmojie[emojie]}
+    alt={emojie}
 />

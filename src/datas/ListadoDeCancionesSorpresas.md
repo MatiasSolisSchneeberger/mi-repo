@@ -1,119 +1,163 @@
-# 2024 Eras Tour surprise songs:
-    Tokyo, Japan (Feb 7) - 'Dear Reader' and 'Holy Ground'
-    Tokyo, Japan (Feb 8) - 'Eyes Open' and 'Electric Touch'
-    Tokyo, Japan (Feb 9) - 'Superman' and 'The Outside'
-    Tokyo, Japan (Feb 10) - 'Come In With The Rain' and 'You're On Your Own, Kid'
-    Melbourne, Australia (Feb 16) - 'Red' and 'You're Losing Me'
-    Melbourne, Australia (Feb 17) - 'Getaway Car/August/The Other Side of the Door' and 'this is me trying'
-    Melbourne, Australia (Feb 18) - 'Come Back...Be Here/Daylight' and 'Teardrops On My Guitar'
-    Sydney, Australia (Feb 23) - 'How You Get The Girl' and 'White Horse/Coney Island' with Sabrina Carpenter
-    Sydney, Australia (Feb 24) - 'Should've Said No/You're Not Sorry' and 'New Year's Day/Peace'
-    Sydney, Australia (Feb 25) - 'Is It Over Now?/I Wish You Would' and 'Haunted/Exile'
-    Sydney, Australia (Feb 26) - 'Would've Could've Should've/Ivy' and 'Forever & Always/Maroon'
-    Singapore, Singapore (Mar 2) – 'Mine/Starlight' and 'I Don't Wanna Live Forever/Dress'
-    Singapore, Singapore (Mar 3) – 'Long Story Short/The Story of Us' and 'Clean/Evermore'
-    Singapore, Singapore (Mar 4) – 'Foolish One/Tell Me Why' and 'This Love/Call It What You Want'
-    Singapore, Singapore (Mar 7) – 'Death By A Thousand Cuts/Babe' and 'Fifteen/You're On Your Own, Kid'
-    Singapore, Singapore (Mar 8) – 'Sparks Fly/Gold Rush' and 'False God/Slut!'
-    Singapore, Singapore (Mar 9) – 'Tim McGraw/Cowboy Like Me' and 'Mirrorball/Epiphany'
-    Paris, France (May 9) – 'Paris' and 'loml'
-    Paris, France (May 10) – 'Is It Over Now?/Out Of The Woods' and 'My Boy Only Breaks His Favourite Toys'
-    Paris, France (May 11) – 'Hey Stephen' and 'Maroon'
-    Paris, France (May 12) – 'The Alchemy/Treacherous' and 'Begin Again/Paris'
-    Stockholm, Sweden (May 17) - 'I Think He Knows/Gorgeous/' and 'Peter'
-    Stockholm, Sweden (May 18) - 'Guilty As Sin?' and 'Say Don't Go/Welcome To New York/Clean'
-    Stockholm, Sweden (May 19) - 'Message In A Bottle/How You Get The Girl/New Romantics' and 'How Did It End?'
-    Lisbon, Portugal (May 24) - 'Come Back...Be Here/The Way I Loved You/The Other Side of the Door' and 'Fresh Out The Slammer/High Infidelity'
-    Lisbon, Portugal (May 25) - 'The Tortured Poets Department/Now That We Don't Talk' and 'You're On Your Own, Kid/Long Live'
-    Madrid, Spain (May 29) - 'Sparks Fly/I Can Fix Him (No Really I Can)' and 'I Look In People's Windows/Snow on the Beach'
-    Madrid, Spain (May 30) - 'Our Song/Jump Then Fall' and 'King of my Heart'
-    Lyon, France (June 2) - 'The Prophecy/Long Story Short' and 'Fifteen/You're On Your Own, Kid'
-    Lyon, France (June 3) - 'Glitch/Everything Has Changed' and 'Chloe, Sam, Sophia or Marcus'
-    Edinburgh, UK (June 7) - 'Would've, Could've, Should've/I Know Places' and ''Tis The Damn Season/Daylight'
-    Edinburgh, UK (June 8) - 'The Bolter/Getaway Car' and 'All Of The Girls You Loved Before/Crazier'
-    Edinburgh, UK (June 9) - 'It's Nice To Have A Friend/Dorothea' and 'Haunted/Exile'
-    Liverpool, UK (June 13) - 'I Can See You/Mine' and 'Cornelia Street/Maroon'
-    Liverpool, UK (June 14) - 'This Is What You Came For/Gold Rush' and 'The Great War/You're Losing Me'
-    Liverpool, UK (June 15) - 'Carolina/No Body, No Crime' and 'The Manuscript/Red'
-    Cardiff, UK (June 18) – 'I Forgot That You Existed/This Is Why We Can't Have Nice Things' and 'I Hate It Here/the lakes'
-    London, UK (June 21) – 'Hits Different/Death By A Thousand Cuts' and 'The Black Dog/Come Back...Be Here/Maroon'
-    London, UK (June 22) – 'thanK you aIMee/Mean' and 'Castles Crumbling' (with Hayley Williams)
-    London, UK (June 23) – 'us' (with Gracie Abrams) and 'Out of the Woods/Is It Over Now?/Clean'
-    Dublin, Ireland (June 28) – 'State of Grace/You're On Your Own, Kid' and 'Sweet Nothing/Hoax'
-    Dublin, Ireland (June 29) – 'The Albatross/Dancing With Our Hands Tied' and 'This Love/Ours'
-    Dublin, Ireland (June 30) – 'Clara Bow/The Lucky One' and 'You're On Your Own, Kid'
-    Amsterdam, Netherlands (July 4) – 'Guilty As Sin?/Untouchable' and 'The Archer/Question...?'
-    Amsterdam, Netherlands (July 5) – 'imgonnagetyouback/Dress' and 'You Are In Love/Cowboy Like Me'
-    Amsterdam, Netherlands (July 6) – 'Sweeter Than Fiction/Holy Ground' and 'Mary's Song (Oh My My My)/So High School/Everything Has Changed'
-    Zürich, Switzerland (July 9) – 'Right Where You Left Me/All You Had To Do Was Stay' and 'Last Kiss/Sad Beautiful Tragic'
-    Zürich, Switzerland (July 10) – 'Closure/A Perfectly Good Heart' and 'Robin/Never Grow Up'
-    Milan, Italy (July 13) – 'The 1/Wonderland' and 'I Almost Do/The Moment I Knew'
-    Milan, Italy (July 14) – 'Mr. Perfectly Fine/Red' and 'Getaway Car/Out of the Woods'
+fearless
+love story
+you belong with me
 
-# 2023 Eras Tour surprise songs:
-    Glendale, EEUU (March 17) - ‘mirrorball’ and 'Tim McGraw'
-    Glendale, EEUU (March 18) - ‘State of Grace’ and ‘this is me trying’
-    Las Vegas, EEUU (March 24) - 'Our Song' and 'Snow on the Beach'
-    Las Vegas, EEUU (March 25) - 'cowboy like me' (with Marcus Mumford) and 'White Horse'
-    Arlington, EEUU (March 31) - 'Sad Beautiful Tragic' and 'Ours'
-    Arlington, TX (April 1) - 'Death By a Thousand Cuts' and 'Clean'
-    Arlington, EEUU (April 2) - 'Jump Then Fall' and 'The Lucky One'
-    Tampa, EEUU (April 13) - 'Speak Now' and 'Treacherous'
-    Tampa, EEUU (April 14) - 'The Great War' (with Aaron Dessner) and 'You're On Your Own, Kid'
-    Tampa, EEUU (April 15) - 'mad woman' (with Aaron Dessner) and 'Mean'
-    Houston, EEUU (April 21) – 'Wonderland' and 'You're Not Sorry'
-    Houston, EEUU (April 22) – 'A Place In This World' and 'Today Was A Fairytale'
-    Houston, EEUU (April 23) – 'Begin Again' and 'Cold as You'
-    Atlanta, EEUU (April 28) – 'The Other Side of the Door' and 'Coney Island'
-    Atlanta, EEUU (April 29) – 'High Infidelity' and 'Gorgeous'
-    Atlanta, EEUU (April 30) – 'I Bet You Think About Me' and 'How You Get The Girl'
-    Nashville, EEUU (May 5) – 'Sparks Fly' and 'Teardrops On My Guitar'
-    Nashville, EEUU (May 6) – 'Out of the Woods' and 'Fifteen'
-    Nashville, EEUU (May 7) – 'Would've Could've Should've' (with Aaron Dessner) and 'Mine'
-    Philadelphia, EEUU (May 12) - 'gold rush' and 'Come Back... Be Here'
-    Philadelphia, EEUU (May 13) - 'Forever & Always' and 'This Love'
-    Philadelphia, EEUU (May 14) - 'Hey Stephen' and 'The Best Day'
-    Foxborough, EEUU (May 19) - 'Should've Said No' and 'Better Man'
-    Foxborough, EEUU (May 20) - 'Question...?' and 'Invisible'
-    Foxborough, EEUU (May 21) - 'I Think He Knows' and 'Red'
-    East Rutherford, EEUU (May 26) - 'Getaway Car' (with Jack Antonoff) and 'Maroon'
-    East Rutherford, EEUU (May 27) - 'Holy Ground' and 'False God'
-    East Rutherford, EEUU (May 28) - 'Welcome To New York' and 'Clean'
-    Chicago, EEUU (Jun 2) – 'I Wish You Would' and 'the lakes'
-    Chicago, EEUU (Jun 3) – 'You All Over Me' (with Maren Morris) and 'I Don't Wanna Live Forever'
-    Chicago, EEUU (Jun 4) – 'Hits Different' and 'The Moment I Knew'
-    Detroit, EEUU (Jun 9) – 'Haunted' and 'I Almost Do'
-    Detroit, EEUU (Jun 10) – 'All You Had To Do Was Stay' and 'Breathe'
-    Pittsburgh, EEUU (June 16) – 'Mr. Perfectly Fine' and 'The Last Time'
-    Pittsburgh, EEUU (June 17) – 'seven' (with Aaron Dessner) and 'The Story of Us'
-    Minneapolis, EEUU (June 23) – 'Paper Rings' and 'If This Was A Movie'
-    Minneapolis, EEUU (June 24) – 'Dear John' and 'Daylight'
-    Cincinnati, EEUU (June 30) – 'I'm Only Me When I'm With You' and 'evermore'
-    Cincinnati, EEUU (July 1) – 'ivy' (with Aaron Dessner), 'I miss you, I’m sorry' (with Gracie Abrams) and 'Call It What You Want'
-    Kansas City, EEUU (July 7) – 'Never Grow Up' and 'When Emma Falls in Love'
-    Kansas City, EEUU (July 8) – 'Last Kiss' and 'dorothea'
-    Denver, EEUU (July 14) - 'Picture To Burn' and 'Timeless'
-    Denver, EEUU (July 15) - 'Starlight' and 'Back To December'
-    Seattle, EEUU (July 22) - 'This Is Why We Can't Have Nice Things' and 'Everything Has Changed'
-    Seattle, EEUU (July 23) - 'Message In A Bottle' and 'Tied Together With A Smile'
-    Santa Clara, EEUU (July 28) - 'right where you left me' (with Aaron Dessner) and 'Castles Crumbling'
-    Santa Clara, EEUU (July 29) - 'Stay Stay Stay' and 'All of the Girls You've Loved Before'
-    Los Angeles, EEUU (Aug 3) – 'I Can See You' and Maroon'
-    Los Angeles, EEUU (Aug 4) – 'Our Song' and 'You Are In Love'
-    Los Angeles, EEUU (Aug 5) – 'Death By A Thousand Cuts' and 'You're On Your Own, Kid'
-    Los Angeles, EEUU (Aug 7) – 'Dress' and 'exile'
-    Los Angeles, EEUU (Aug 8) – 'I Know Places' and 'King of My Heart'
-    Los Angeles, EEUU (Aug 9) – 'New Romantics' and 'New Year's Day'
-    Mexico City, Mexico (Aug 24) - 'I Forgot That You Existed' and 'Sweet Nothing'
-    Mexico City, Mexico (Aug 25) - 'Tell Me Why' and 'Snow on the Beach'
-    Mexico City, Mexico (Aug 26) - 'Cornelia Street' and 'You're On Your Own, Kid'
-    Mexico City, Mexico (Aug 27) - 'Afterglow' and 'Maroon'
-    Buenos Aires, Argentina (Nov 9) – 'The Very First Night' and 'Labyrinth'
-    Buenos Aires, Argentina (Nov 11) – 'Is It Over Now?/Out of the Woods' and 'End Game'
-    Buenos Aires, Argentina (Nov 12) – 'Better Than Revenge' and 'Slut!'
-    Rio De Janeiro, Brazil (Nov 17) – 'Stay Beautiful' and 'Suburban Legends'
-    Rio De Janeiro, Brazil (Nov 19) – 'Dancing With Our Hands Tied' and 'Bigger Than The Whole Sky'
-    Rio De Janeiro, Brazil (Nov 20) – 'ME!' and 'So It Goes...'
-    São Paulo, Brazil (Nov 24) – 'Now That We Don't Talk' and 'Innocent'
-    São Paulo, Brazil (Nov 25) – 'Safe & Sound' and 'Untouchable'
-    São Paulo, Brazil (Nov 26) – 'Say Don't Go' and 'it's time to go'
+
+enchanted
+long live
+
+
+i knew you were trouble
+all too well
+22
+we are never ever getting back together
+
+
+blank space
+style
+shake it off
+bad blood
+wildest dreams
+
+
+ready for it?
+don't blame me
+delicate
+look what you made me do
+
+
+cruel summer
+lover
+the man
+the archer
+miss americana & the heartbreak prince
+you need to calm down
+
+
+the 1
+cardigan
+the last great american dynasty
+my tears ricochet
+august
+illicit affairs
+invisible string
+betty
+
+
+willow
+champagne problems
+tis the damn season
+torelate it
+marjorie
+
+
+lavander haze
+anti-hero
+midnight rain
+vigilante shit
+bejeweled
+karma
+mastermind
+
+
+fortnight
+down bad
+but daddy i love him
+who's afraid of little old me?
+i can do it with a broken heart
+the smallest man who ever lived
+so high school
+
+
+
+
+🎸the last great american dynasty / Run
+Latest
+🎹Nothing New / Dear Reader
+Latest
+🎸Teardrops on My Guitar / The Last Time
+🎹We Were Happy / happiness
+🎸Paper Rings / Stay Stay Stay
+🎹it's time to go / Better Man
+🎸Speak Now / Hey Stephen
+🎹this is me trying / Labyrinth
+🎸Superstar / invisible string
+🎹"Slut!" / False God
+🎸Mr. Perfectly Fine / Red
+🎹Getaway Car / Out of the Woods
+🎸the 1 / Wonderland
+🎹I Almost Do / The Moment I Knew
+🎸Mine / Starlight
+🎹I Don't Wanna Live Forever / Dress
+🎸The Prophecy / long story short
+🎹Fifteen / You're on Your Own, Kid
+🎸long story short / The Story of Us
+🎹Clean / evermore
+🎸Glitch / Everything Has Changed
+🎸Foolish One / Tell Me Why
+🎹This Love / Call It What You Want
+🎸Guilty as Sin? / Untouchable
+🎹The Archer / Question...?
+🎸imgonnagetyouback / Dress
+🎹You Are in Love / cowboy like me
+🎸Sweeter Than Fiction / Holy Ground
+🎹Mary's Song (Oh My My My) / So High School / Everything Has Changed
+🎸right where you left me / All You Had to Do Was Stay
+🎹Last Kiss / Sad Beautiful Tragic
+🎸closure / A Perfectly Good Heart
+🎹Robin / Never Grow Up
+🎸Clara Bow / The Lucky One
+🎸The Albatross / Dancing With Our Hands Tied
+🎹This Love / Ours
+🎸State of Grace / You're on Your Own, Kid
+🎹Sweet Nothing / hoax
+🎹Out of the Woods / Is It Over Now? / Clean
+🎸thanK you aIMee / Mean
+🎸Hits Different / Death by a Thousand Cuts
+🎹The Black Dog / Come Back… Be Here / Maroon
+🎸I Forgot That You Existed / This Is Why We Can't Have Nice Things
+🎹I Hate It Here / the lakes
+🎸no body, no crime / Carolina
+🎹The Manuscript / Red
+🎸This Is What You Came For / gold rush
+🎹The Great War / You're Losing Me
+🎸I Can See You / Mine
+🎹Cornelia Street / Maroon
+🎸Death by a Thousand Cuts / Babe
+🎹Fifteen / You're on Your Own, Kid
+🎸Would've, Could've, Should've / I Know Places
+🎹'tis the damn season / Daylight
+🎸Sparks Fly / gold rush
+🎹False God / "Slut!"
+🎸The Bolter / Getaway Car
+🎹All of the Girls You Loved Before / Crazier
+🎸dorothea / It's Nice to Have a Friend
+🎹Haunted / exile
+🎸Our Song / Jump Then Fall
+🎸Sparks Fly / I Can Fix Him (No Really I Can)
+🎹I Look in People's Windows / Snow on the Beach
+🎸The Tortured Poets Department / Now That We Don't Talk
+🎹You're on Your Own, Kid / Long Live
+🎸Come Back…Be Here / The Way I Loved You / The Other Side of the Door
+🎹Fresh Out the Slammer / High Infidelity
+🎸Message in a Bottle / How You Get The Girl / New Romantics
+🎹Say Don't Go / Welcome to New York / Clean
+🎸I Think He Knows / Gorgeous
+🎸Tim McGraw / cowboy like me
+🎹mirrorball / epiphany
+🎸Is It Over Now?
+🎸The Alchemy / Treacherous
+🎹Begin Again / Paris
+🎸Would've, Could've, Should've / ivy
+🎹Forever & Always / Maroon
+🎸is it over now? / I Wish You Would
+🎹Haunted / exile
+🎸Should've Said No / You're Not Sorry
+🎹New Year's Day / peace
+🎹White Horse / coney island
+🎸Come Back… Be Here / Daylight
+🎸getaway car / august / the other side of the door
+
+
+
+

@@ -8,9 +8,10 @@ import SpotifySvg from "./svg/SpotifySvg.astro";
 interface Props {
 	eraTarjeta: string;
     album: string;
+    linkPage: string;
 }
 
-const { eraTarjeta , album } = Astro.props;
+const { eraTarjeta , album , linkPage} = Astro.props;
 
 const imageLogo: { [key: string]: string } = {
     debut:      "/public/images/Logos-Discos/01-Logo-Debut.png",
@@ -49,18 +50,18 @@ const taylor = imageTaylor[eraTarjeta] || "/public/images/Emojis/cross-mark_274c
 <article id={eraTarjeta} class:list={[
     " transition ease-in-out delay-0 duration-200 shadow-sm hover:shadow-lg rounded-3xl flex-wrap self-start shrink-0 overflow-hidden flex flex-col gap-0 justify-center flex-1 min-w-[300px] max-w-[388px] relative px-2.5 space-y-2.5 py-2.5",
     {
-        'bg-debut-200 shadow-debut-600 hover:shadow-debut-900':         eraTarjeta === 'debut',
-        'bg-fearless-200 shadow-fearless-600 hover:shadow-fearless-900':      eraTarjeta === 'fearless',
-        'bg-speakNow-200 shadow-speakNow-600 hover:shadow-speakNow-900':      eraTarjeta === 'speakNow',
-        'bg-red-200 shadow-red-600 hover:shadow-red-900':           eraTarjeta === 'red',
-        'bg-1989-200 shadow-1989-600 hover:shadow-1989-900':          eraTarjeta === '1989',
-        'bg-reputation-200 shadow-reputation-600 hover:shadow-reputation-900':    eraTarjeta === 'reputation',
-        'bg-lover-200 shadow-lover-600 hover:shadow-lover-900':         eraTarjeta === 'lover',
-        'bg-folklore-200 shadow-folklore-600 hover:shadow-folklore-900':      eraTarjeta === 'folklore',
-        'bg-evermore-200 shadow-evermore-600 hover:shadow-evermore-900':      eraTarjeta === 'evermore',
-        'bg-midnights-200 shadow-midnights-600 hover:shadow-midnights-900':     eraTarjeta === 'midnights',
-        'bg-TTPD-200 shadow-TTPD-600 hover:shadow-TTPD-900':          eraTarjeta === 'TTPD',
-        'bg-mashup-200 shadow-mashup-600 hover:shadow-mashup-900':        eraTarjeta === 'mashup',
+        'bg-debut-200       shadow-debut-600      hover:shadow-debut-900':       eraTarjeta === 'debut',
+        'bg-fearless-200    shadow-fearless-600   hover:shadow-fearless-900':    eraTarjeta === 'fearless',
+        'bg-speakNow-200    shadow-speakNow-600   hover:shadow-speakNow-900':    eraTarjeta === 'speakNow',
+        'bg-red-200         shadow-red-600        hover:shadow-red-900':         eraTarjeta === 'red',
+        'bg-1989-200        shadow-1989-600       hover:shadow-1989-900':        eraTarjeta === '1989',
+        'bg-reputation-200  shadow-reputation-600 hover:shadow-reputation-900':  eraTarjeta === 'reputation',
+        'bg-lover-200       shadow-lover-600      hover:shadow-lover-900':       eraTarjeta === 'lover',
+        'bg-folklore-200    shadow-folklore-600   hover:shadow-folklore-900':    eraTarjeta === 'folklore',
+        'bg-evermore-200    shadow-evermore-600   hover:shadow-evermore-900':    eraTarjeta === 'evermore',
+        'bg-midnights-200   shadow-midnights-600  hover:shadow-midnights-900':   eraTarjeta === 'midnights',
+        'bg-TTPD-200        shadow-TTPD-600       hover:shadow-TTPD-900':        eraTarjeta === 'TTPD',
+        'bg-mashup-200      shadow-mashup-600     hover:shadow-mashup-900':      eraTarjeta === 'mashup',
     }
     ]}
 >
@@ -84,9 +85,10 @@ const taylor = imageTaylor[eraTarjeta] || "/public/images/Emojis/cross-mark_274c
             }
             ]}>
             <img
-            class="bg-logo-debut self-stretch flex-1 relative h-full w-full"
-            style="object-fit: contain"
+            class="bg-logo-debut self-stretch flex-1 relative h-full w-full object-contain"
             src={logo}
+            alt=`Logo del disco ${eraTarjeta}`
+
             />        
         </div>
         <!-- Taylor -->
@@ -122,9 +124,13 @@ const taylor = imageTaylor[eraTarjeta] || "/public/images/Emojis/cross-mark_274c
                 'bg-TTPD-400':          eraTarjeta === 'TTPD',
                 'bg-mashup-400':        eraTarjeta === 'mashup',
             }
-            ]}></div>
-            <img class="group-hover:scale-105 transition ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full z-10" src={taylor} alt="">
-            <div class="backdrop-blur-sm w-full h-full flex justify-center rounded-xl absolute mix-blend-multiply z-1"></div>
+            ]}/>
+            <img class="group-hover:scale-105 transition ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full z-10" 
+            src={taylor}
+            alt=`Taylor en la era ${eraTarjeta}`
+            style="mask-image: linear-gradient(to right, transparent 0%, black 05%, black 95%, transparent 100%);"
+            >
+            <div class="backdrop-blur-sm w-full h-full flex justify-center rounded-xl absolute mix-blend-multiply z-1"/>
         </div>
     </header>
     <!-- Canciones -->
@@ -137,7 +143,7 @@ const taylor = imageTaylor[eraTarjeta] || "/public/images/Emojis/cross-mark_274c
             <SpotifySvg era={eraTarjeta} slot="before"/>
             Spotify
         </ButtonSecundario>
-        <ButtonPrimario era={eraTarjeta} href="/" icono="Izq">
+        <ButtonPrimario era={eraTarjeta} href={linkPage} icono="Izq">
             <InfoSvg era={eraTarjeta} slot="before"/>
             Mas info
         </ButtonPrimario>

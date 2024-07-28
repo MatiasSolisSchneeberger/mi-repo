@@ -1,0 +1,28 @@
+---
+import ButtonPrimario from './ButtonPrimario.astro';
+import ArrowLeft from './svg/ArrowLeft.astro';
+import ArrowRight from './svg/ArrowRight.astro';
+
+interface Props {
+    era: string;
+    anterior: string;
+    siguiente: string;
+    logo: string;
+}
+
+const { era , anterior , siguiente , logo } = Astro.props;
+---
+
+<header class="flex flex-row gap-10 gap-y-0 items-center justify-center self-stretch shrink-0 relative">
+    <ButtonPrimario icono="Izq" era={era} href={anterior}>
+        <ArrowLeft slot="before" era={era}/>
+        Anterior
+    </ButtonPrimario>
+    <div class=`bg-${era}-400 h-14 p-2 md:flex flex-col gap-0 items-center justify-center self-stretch flex-1 relative rounded-full shrink-0 hidden`>
+        <img class="self-stretch flex-1 relative h-full w-full object-contain " src={logo} alt=`Logo del disco ${era}`>
+    </div>
+    <ButtonPrimario icono="Der" era={era} href={siguiente}>
+        Siguiente
+        <ArrowRight slot="after" era={era}/>
+    </ButtonPrimario>
+</header>

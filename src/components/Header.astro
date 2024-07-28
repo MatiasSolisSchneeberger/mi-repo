@@ -8,19 +8,20 @@ interface Props {
 const { era } = Astro.props;
 ---
 <header  class:list = {[
-        "fixed pt-4 pb-4 flex flex-row items-center self-stretch shrink-0 h-auto z-50 w-full justify-between px-10 ",
+        "z-10 pt-4 pb-4 flex flex-row items-center self-stretch shrink-0 h-auto w-full justify-between px-10 ",
         {
-            "bg-debut-900": era=== "debut",
-            "bg-fearless-900": era=== "fearless",
-            "bg-speakNow-900": era=== "speakNow",
-            "bg-red-900": era=== "red",
-            "bg-1989-900": era=== "1989",
-            "bg-reputation-900": era=== "reputation",
-            "bg-lover-900": era=== "lover",
-            "bg-folklore-900": era=== "folklore",
-            "bg-evermore-900": era=== "evermore",
-            "bg-midnights-900": era=== "midnights",
-            "bg-TTPD-900": era=== "TTPD",
+            "bg-debut-900":      era === "debut",
+            "bg-fearless-900":   era === "fearless",
+            "bg-speakNow-900":   era === "speakNow",
+            "bg-red-900":        era === "red",
+            "bg-1989-900":       era === "1989",
+            "bg-reputation-900": era === "reputation",
+            "bg-lover-900":      era === "lover",
+            "bg-folklore-900":   era === "folklore",
+            "bg-evermore-900":   era === "evermore",
+            "bg-midnights-900":  era === "midnights",
+            "bg-TTPD-900":       era === "TTPD",
+            "bg-mashup-900":     era === "mashup",
 
         }
     ]}>
@@ -28,15 +29,15 @@ const { era } = Astro.props;
     <Logo era = {era} />
 
     <div class = "flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
-        <ButtonPrimario era = {era} href = "#Inicio" icono={null}>
+        <ButtonPrimario era = {era} href = "/mi-repo/#Inicio" icono={null}>
             Inicio
         </ButtonPrimario>
 
-        <ButtonPrimario era = {era} href = "#Canciones" icono={null}>
+        <ButtonPrimario era = {era} href = "/mi-repo/#Canciones" icono={null}>
             Canciones
         </ButtonPrimario>
 
-        <ButtonPrimario era = {era} href = "#Conciertos" icono={null}>
+        <ButtonPrimario era = {era} href = "/mi-repo/#Conciertos" icono={null}>
             Conciertos
         </ButtonPrimario>
 
