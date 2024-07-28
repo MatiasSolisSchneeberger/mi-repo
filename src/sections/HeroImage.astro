@@ -1,17 +1,10 @@
 ---
 import ButtonPrimario from '../components/ButtonPrimario.astro';
-import ButtonSecundario from '../components/ButtonSecundario.astro';
 interface Props {
 	era: string;
 }
 
 const { era }  =  Astro.props;
-/* pasar a mayuscula la primera letra */
-function capitalizeFirstLetter(str: string): string {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-}
-
-const capitalizedEra  =  capitalizeFirstLetter(era);
 ---
 
 <div id="Inicio" class:list = {[
