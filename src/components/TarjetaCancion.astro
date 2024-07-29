@@ -3,7 +3,7 @@ import ButtonPrimario from "./ButtonPrimario.astro";
 import ButtonSecundario from "./ButtonSecundario.astro";
 import InfoSvg from "./svg/InfoSvg.astro";
 import SpotifySvg from "./svg/SpotifySvg.astro";
-import logoFearless from "src/assets/images/Logos-Discos/02-Logo-Fearless.png"
+import logoFearless from "./src/assets/images/Logos-Discos/02-Logo-Fearless.png"
 
 interface Props {
 	eraTarjeta: string;
@@ -28,18 +28,18 @@ const imageLogo: { [key: string]: string } = {
     mashup:     "12-Logo-Mashups",
 };
 const imageTaylor: { [key: string]: string } = {
-    debut:      "/public/images/Fotos/01-TaylorSwift.png",
-    fearless:   "/public/images/Fotos/02-Fearless.png",
-    speakNow:   "/public/images/Fotos/03-SpeakNow.png",
-    red:        "/public/images/Fotos/04-Red.png",
-    "1989":     "/public/images/Fotos/05-1989.png",
-    reputation: "/public/images/Fotos/06-Reputation.png",
-    lover:      "/public/images/Fotos/07-Lover.png",
-    folklore:   "/public/images/Fotos/08-Folklore.png",
-    evermore:   "/public/images/Fotos/09-Evermore.png",
-    midnights:  "/public/images/Fotos/10-Midnights.png",
-    TTPD:       "/public/images/Fotos/11-TTPD.png",
-    mashup:     "/public/images/Fotos/12-Mashup.png",
+    debut:      "/mi-repo/images/Fotos/01-TaylorSwift.png",
+    fearless:   "/mi-repo/images/Fotos/02-Fearless.png",
+    speakNow:   "/mi-repo/images/Fotos/03-SpeakNow.png",
+    red:        "/mi-repo/images/Fotos/04-Red.png",
+    "1989":     "/mi-repo/images/Fotos/05-1989.png",
+    reputation: "/mi-repo/images/Fotos/06-Reputation.png",
+    lover:      "/mi-repo/images/Fotos/07-Lover.png",
+    folklore:   "/mi-repo/images/Fotos/08-Folklore.png",
+    evermore:   "/mi-repo/images/Fotos/09-Evermore.png",
+    midnights:  "/mi-repo/images/Fotos/10-Midnights.png",
+    TTPD:       "/mi-repo/images/Fotos/11-TTPD.png",
+    mashup:     "/mi-repo/images/Fotos/12-Mashup.png",
 };
 
 // Obtener la imagen correspondiente al eraTarjeta
@@ -86,7 +86,7 @@ const taylor = imageTaylor[eraTarjeta] || "/public/images/Emojis/cross-mark_274c
             ]}>
             <img
             class="bg-logo-debut self-stretch flex-1 relative h-full w-full object-contain"
-            src={logoFearless.src}
+            src=`./src/assets/images/Logos-Discos/${logo}.png`
             alt=`Logo del disco ${eraTarjeta}`
             />        
         </div>
