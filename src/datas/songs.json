@@ -2,10 +2,10 @@
     "eras": [
         {
             "albums": "debut",
-            "logo": "/public/images/Logos-Discos/01-Logo-Debut.png",
-            "foto":"/public/images/Fotos/01-TaylorSwift.png",
-            "portada":"/public/images/Portadas-Discos/01-Portada-TaylorSwift.png",
-            "emojie":"/public/images/Emojis/01.taylorSwift.png",
+            "logo": "/mi-repo/images/Logos-Discos/01-Logo-Debut.png",
+            "foto":"/mi-repo/images/Fotos/01-TaylorSwift.png",
+            "portada":"/mi-repo/images/Portadas-Discos/01-Portada-TaylorSwift.png",
+            "emojie":"/mi-repo/images/Emojis/01.taylorSwift.png",
             "linkPage": "/mi-repo/eras/01-debut",
             "Spotify": "https://open.spotify.com/intl-es/album/5eyZZoQEFQWRHkV2xgAeBw?si=2dL1AZfiTG-Zo0FImYfsHg",
             "anterior": "/mi-repo/eras/mashup",
@@ -408,7 +408,7 @@
         },
         {
             "albums": "fearless",
-            "logo": "/public/images/Logos-Discos/02-Logo-Fearless.png",
+            "logo": "/mi-repo/images/Logos-Discos/02-Logo-Fearless.png",
             "foto":"",
             "portada":"public/images/Portadas-Discos/02-Portada-Fearless.png",
             "emojie":"public/images/Emojis/02.fearless.png",
@@ -1203,7 +1203,7 @@
         },
         {
             "albums": "speakNow",
-            "logo": "/public/images/Logos-Discos/03-Logo-SpeakNow.png",
+            "logo": "/mi-repo/images/Logos-Discos/03-Logo-SpeakNow.png",
             "foto":"",
             "portada":"",
             "emojie":"public/images/Emojis/03.speakNow.png",
@@ -1924,7 +1924,7 @@
         },
         {
             "albums": "red",
-            "logo": "/public/images/Logos-Discos/04-Logo-Red.png",
+            "logo": "/mi-repo/images/Logos-Discos/04-Logo-Red.png",
             "foto":"",
             "portada":"",
             "emojie":"public/images/Emojis/04.red.png",
@@ -2901,7 +2901,7 @@
         },
         {
             "albums": "1989",
-            "logo": "/public/images/Logos-Discos/05-Logo-1989.png",
+            "logo": "/mi-repo/images/Logos-Discos/05-Logo-1989.png",
             "foto":"",
             "portada":"",
             "emojie":"public/images/Emojis/05.1989.png",
@@ -3652,7 +3652,7 @@
         },
         {
             "albums": "reputation",
-            "logo": "/public/images/Logos-Discos/06-Logo-Reputation.png",
+            "logo": "/mi-repo/images/Logos-Discos/06-Logo-Reputation.png",
             "foto":"",
             "portada":"",
             "emojie":"public/images/Emojis/06.reputation.png",
@@ -4102,7 +4102,7 @@
         },
         {
             "albums": "lover",
-            "logo": "/public/images/Logos-Discos/07-Logo-Lover.png",
+            "logo": "/mi-repo/images/Logos-Discos/07-Logo-Lover.png",
             "foto":"",
             "portada":"",
             "emojie":"public/images/Emojis/07.lover.png",
@@ -4705,7 +4705,7 @@
         },
         {
             "albums": "folklore",
-            "logo": "/public/images/Logos-Discos/08-Logo-Folklore.png",
+            "logo": "/mi-repo/images/Logos-Discos/08-Logo-Folklore.png",
             "foto":"",
             "portada":"",
             "emojie":"public/images/Emojis/08.folklore.png",
@@ -5194,7 +5194,7 @@
         },
         {
             "albums": "evermore",
-            "logo": "/public/images/Logos-Discos/09-Logo-Evermore.png",
+            "logo": "/mi-repo/images/Logos-Discos/09-Logo-Evermore.png",
             "foto":"",
             "portada":"",
             "emojie":"public/images/Emojis/09.evermore.png",
@@ -5703,7 +5703,7 @@
         },
         {
             "albums": "midnights",
-            "logo": "/public/images/Logos-Discos/10-Logo-Midnights.png",
+            "logo": "/mi-repo/images/Logos-Discos/10-Logo-Midnights.png",
             "foto":"",
             "portada":"",
             "emojie":"public/images/Emojis/10.midnights.png",
@@ -6532,7 +6532,7 @@
         },
         {
             "albums": "TTPD",
-            "logo": "/public/images/Logos-Discos/11-Logo-TTPD.png",
+            "logo": "/mi-repo/images/Logos-Discos/11-Logo-TTPD.png",
             "foto":"",
             "portada":"",
             "emojie":"public/images/Emojis/11.TTPD.png",
