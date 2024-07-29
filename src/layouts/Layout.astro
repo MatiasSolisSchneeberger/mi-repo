@@ -26,7 +26,7 @@ const { title , era } = Astro.props;
 
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="no-scrollbar grid">
 		<Header era = {era}/>
 		<main>
 			<slot />
@@ -34,4 +34,7 @@ const { title , era } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	.no-scrollbar::-webkit-scrollbar {
+            display: none; /* Ocultar scrollbar en navegadores basados en WebKit */
+        }
 </style>

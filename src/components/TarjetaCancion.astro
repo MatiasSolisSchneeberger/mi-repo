@@ -13,32 +13,32 @@ interface Props {
 const { eraTarjeta , album , linkPage} = Astro.props;
 
 const imageLogo: { [key: string]: string } = {
-    debut:      "/images/Logos-Discos/01-Logo-Debut.png",
-    fearless:   "/images/Logos-Discos/02-Logo-Fearless.png",
-    speakNow:   "/images/Logos-Discos/03-Logo-SpeakNow.png",
-    red:        "/images/Logos-Discos/04-Logo-Red.png",
-    "1989":     "/images/Logos-Discos/05-Logo-1989.png",
-    reputation: "/images/Logos-Discos/06-Logo-Reputation.png",
-    lover:      "/images/Logos-Discos/07-Logo-Lover.png",
-    folklore:   "/images/Logos-Discos/08-Logo-Folklore.png",
-    evermore:   "/images/Logos-Discos/09-Logo-Evermore.png",
-    midnights:  "/images/Logos-Discos/10-Logo-Midnights.png",
-    TTPD:       "/images/Logos-Discos/11-Logo-TTPD.png",
-    mashup:     "/images/Logos-Discos/12-Logo-Mashups.png",
+    debut:      "/public/images/Logos-Discos/01-Logo-Debut.png",
+    fearless:   "/public/images/Logos-Discos/02-Logo-Fearless.png",
+    speakNow:   "/public/images/Logos-Discos/03-Logo-SpeakNow.png",
+    red:        "/public/images/Logos-Discos/04-Logo-Red.png",
+    "1989":     "/public/images/Logos-Discos/05-Logo-1989.png",
+    reputation: "/public/images/Logos-Discos/06-Logo-Reputation.png",
+    lover:      "/public/images/Logos-Discos/07-Logo-Lover.png",
+    folklore:   "/public/images/Logos-Discos/08-Logo-Folklore.png",
+    evermore:   "/public/images/Logos-Discos/09-Logo-Evermore.png",
+    midnights:  "/public/images/Logos-Discos/10-Logo-Midnights.png",
+    TTPD:       "/public/images/Logos-Discos/11-Logo-TTPD.png",
+    mashup:     "/public/images/Logos-Discos/12-Logo-Mashups.png",
 };
 const imageTaylor: { [key: string]: string } = {
-    debut:      "/images/Fotos/01-TaylorSwift.png",
-    fearless:   "/images/Fotos/02-Fearless.png",
-    speakNow:   "/images/Fotos/03-SpeakNow.png",
-    red:        "/images/Fotos/04-Red.png",
-    "1989":     "/images/Fotos/05-1989.png",
-    reputation: "/images/Fotos/06-Reputation.png",
-    lover:      "/images/Fotos/07-Lover.png",
-    folklore:   "/images/Fotos/08-Folklore.png",
-    evermore:   "/images/Fotos/09-Evermore.png",
-    midnights:  "/images/Fotos/10-Midnights.png",
-    TTPD:       "/images/Fotos/11-TTPD.png",
-    mashup:     "/images/Fotos/12-Mashup.png",
+    debut:      "/public/images/Fotos/01-TaylorSwift.png",
+    fearless:   "/public/images/Fotos/02-Fearless.png",
+    speakNow:   "/public/images/Fotos/03-SpeakNow.png",
+    red:        "/public/images/Fotos/04-Red.png",
+    "1989":     "/public/images/Fotos/05-1989.png",
+    reputation: "/public/images/Fotos/06-Reputation.png",
+    lover:      "/public/images/Fotos/07-Lover.png",
+    folklore:   "/public/images/Fotos/08-Folklore.png",
+    evermore:   "/public/images/Fotos/09-Evermore.png",
+    midnights:  "/public/images/Fotos/10-Midnights.png",
+    TTPD:       "/public/images/Fotos/11-TTPD.png",
+    mashup:     "/public/images/Fotos/12-Mashup.png",
 };
 
 // Obtener la imagen correspondiente al eraTarjeta
@@ -85,7 +85,7 @@ const taylor = imageTaylor[eraTarjeta] || "/public/images/Emojis/cross-mark_274c
             ]}>
             <img
             class="bg-logo-debut self-stretch flex-1 relative h-full w-full object-contain"
-            src="/images/fearless.png"
+            src={logo}
             alt=`Logo del disco ${eraTarjeta}`
             />        
         </div>
