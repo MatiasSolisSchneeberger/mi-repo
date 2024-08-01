@@ -7,7 +7,7 @@ interface Props {
 
 const { href , era , icono }  =  Astro.props;
 ---
-<a href = {href} class:list = {[
+<a href = {href} target="_blank" class:list = {[
 		"rounded-[100px] flex flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden",
 		{
 			"bg-debut-300 hover:bg-debut-400": era === "debut",

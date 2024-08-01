@@ -1,9 +1,10 @@
 ---
+
 import Title from "../components/Title.astro";
 import Subtitle from "../components/Subtitle.astro";
 import TarjetaFecha from "../components/TarjetaFecha.astro";
-
 import {concerts} from "../datas/concerts.json"
+import ButtonPrimario from "../components/ButtonPrimario.astro";
 
 interface Props {
 	era: string;
@@ -11,39 +12,42 @@ interface Props {
 
 const eras = ["debut", "fearless", "speakNow", "red", "1989", "reputation", "lover", "folklore", "evermore", "midnights", "TTPD"]
 const { era } = Astro.props;
+
+const maxFechasToShow = 6;  // Número máximo de fechas a mostrar inicialmente
+
+Function
+
 ---
-<article id="Conciertos" class = `bg-${era}-100 py-12 px-32 space-y-6`>
+
+<article id="Conciertos" class = `py-12 px-8 sm:px-10 xl:px-44 space-y-6`>
     <Title era={era} titulo="Fecha de conciertos" texto="Estas son todas las fechas The Eras Tour, las pasadas, las actuales, y las futuras."/>
-    <section class="flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
-        <Subtitle era={era} titulo="Fechas Actuales" texto=""/>
+    <section class="flex flex-col gap-6 self-stretch shrink-0 relative items-center">
+        <Subtitle era={era} titulo="Fechas Actuales" texto={null}/>
         <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
-            
             {
-                concerts.ahora.map(({ fecha , lugar , telonero }, index) => {
-                    const eraFecha = eras[index % eras.length];  // Alterna entre las eras
-                    
-                    return (
-                        <TarjetaFecha 
-                            estado="ahora"
-                            eraFecha={eraFecha}
-                            dia={fecha.dia}
-                            mes={fecha.mes}
-                            año={fecha.año}
-                            pais={lugar.pais}
-                            ciudad={lugar.ciudad}
-                            estadio={lugar.estadio}
-                            telonero={telonero}
-                        />
-                    );
-                })
-            }
-            
+            concerts.ahora.slice(0, maxFechasToShow).map(({ fecha, lugar, telonero }, index) => {
+                const eraFecha = eras[index % eras.length];  // Alterna entre las eras
+                return (
+                    <TarjetaFecha 
+                        estado="ahora"
+                        eraFecha={eraFecha}
+                        dia={fecha.dia}
+                        mes={fecha.mes}
+                        año={fecha.año}
+                        pais={lugar.pais}
+                        ciudad={lugar.ciudad}
+                        estadio={lugar.estadio}
+                        telonero={telonero}
+                    />
+                );
+            })}
             
         </div>
-        <Subtitle era={era} titulo="Fechas Actuales" texto=""/>
+
+        <Subtitle era={era} titulo="Proximas Fechas" texto={null}/>
         <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
             {
-                concerts.futuro.map(({ fecha , lugar , telonero }, index) => {
+                concerts.futuro.slice(0,maxFechasToShow).map(({ fecha , lugar , telonero }, index) => {
                     const eraFecha = eras[index % eras.length];  // Alterna entre las eras
                     
                     return (
@@ -62,10 +66,113 @@ const { era } = Astro.props;
                 })
             }
         </div>
-        <Subtitle era={era} titulo="Fechas Pasadas" texto=""/>
+        <button id="btn-ver-fut" class:list = {[
+            "px-6 rounded-[100px] flex flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden",
+            {
+                "bg-debut-600 hover:bg-debut-500": era === "debut",
+                "bg-fearless-600 hover:bg-fearless-500": era === "fearless",
+                "bg-speakNow-600 hover:bg-speakNow-500": era === "speakNow",
+                "bg-red-600 hover:bg-red-500": era === "red",
+                "bg-1989-600 hover:bg-1989-500": era === "1989",
+                "bg-reputation-600 hover:bg-reputation-500": era === "reputation",
+                "bg-lover-600 hover:bg-lover-500": era === "lover",
+                "bg-folklore-600 hover:bg-folklore-500": era === "folklore",
+                "bg-evermore-600 hover:bg-evermore-500": era === "evermore",
+                "bg-midnights-600 hover:bg-midnights-500": era === "midnights",
+                "bg-TTPD-600 hover:bg-TTPD-500": era === "TTPD",
+                "bg-mashup-600 hover:bg-mashup-500": era === "mashup",
+                
+            }
+        ]}>
+            <p  class:list = {[
+                "cursor-pointer text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
+                {
+                    "text-debut-50": 		era === "debut",
+                    "text-fearless-50": 	era === "fearless",
+                    "text-speakNow-50": 	era === "speakNow",
+                    "text-red-50": 			era === "red",
+                    "text-1989-50": 		era === "1989",
+                    "text-reputation-50": 	era === "reputation",
+                    "text-lover-50": 		era === "lover",
+                    "text-folklore-50": 	era === "folklore",
+                    "text-evermore-50": 	era === "evermore",
+                    "text-midnights-50": 	era === "midnights",
+                    "text-TTPD-50": 		era === "TTPD",
+                    "text-mashup-50": 		era === "mashup",
+                }
+                ]}
+                style = "letter-spacing: var(--title-small-letter-spacing, 0.1px)">
+                Ver Mas
+            </p>
+        </button>
+        
+        <div id="masFechas-fut" class="hidden gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+            <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+                {
+                    concerts.futuro.slice(maxFechasToShow).map(({ fecha , lugar , telonero }, index) => {
+                        const eraFecha = eras[index % eras.length];  // Alterna entre las eras
+                        
+                        return (
+                            <TarjetaFecha 
+                                estado="futuro"
+                                eraFecha={eraFecha}
+                                dia={fecha.dia}
+                                mes={fecha.mes}
+                                año={fecha.año}
+                                pais={lugar.pais}
+                                ciudad={lugar.ciudad}
+                                estadio={lugar.estadio}
+                                telonero={telonero}
+                            />
+                        );
+                    })
+                }
+            </div>
+        </div>
+        <button id="btn-ocul-fut" class:list = {[
+        "hidden px-6 rounded-[100px] flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden",
+        {
+            "bg-debut-600 hover:bg-debut-500": era === "debut",
+            "bg-fearless-600 hover:bg-fearless-500": era === "fearless",
+            "bg-speakNow-600 hover:bg-speakNow-500": era === "speakNow",
+            "bg-red-600 hover:bg-red-500": era === "red",
+            "bg-1989-600 hover:bg-1989-500": era === "1989",
+            "bg-reputation-600 hover:bg-reputation-500": era === "reputation",
+            "bg-lover-600 hover:bg-lover-500": era === "lover",
+            "bg-folklore-600 hover:bg-folklore-500": era === "folklore",
+            "bg-evermore-600 hover:bg-evermore-500": era === "evermore",
+            "bg-midnights-600 hover:bg-midnights-500": era === "midnights",
+            "bg-TTPD-600 hover:bg-TTPD-500": era === "TTPD",
+            "bg-mashup-600 hover:bg-mashup-500": era === "mashup",
+            
+        }
+        ]}>
+            <p  class:list = {[
+                "cursor-pointer text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
+                {
+                    "text-debut-50": 		era === "debut",
+                    "text-fearless-50": 	era === "fearless",
+                    "text-speakNow-50": 	era === "speakNow",
+                    "text-red-50": 			era === "red",
+                    "text-1989-50": 		era === "1989",
+                    "text-reputation-50": 	era === "reputation",
+                    "text-lover-50": 		era === "lover",
+                    "text-folklore-50": 	era === "folklore",
+                    "text-evermore-50": 	era === "evermore",
+                    "text-midnights-50": 	era === "midnights",
+                    "text-TTPD-50": 		era === "TTPD",
+                    "text-mashup-50": 		era === "mashup",
+                }
+                ]}
+                style = "letter-spacing: var(--title-small-letter-spacing, 0.1px)">
+                Ocultar
+            </p>
+        </button>           
+        
+        <Subtitle era={era} titulo="Fechas Pasadas" texto={null}/>
         <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
             {
-                concerts.pasados.map(({ fecha , lugar , telonero }, index) => {
+                concerts.pasados.slice(0,maxFechasToShow).map(({ fecha , lugar , telonero }, index) => {
                     const eraFecha = eras[index % eras.length];  // Alterna entre las eras
                     
                     return (
@@ -82,7 +189,138 @@ const { era } = Astro.props;
                         />
                     );
                 })
-            }        
+            }
         </div>
+        <button id="btn-ver-past" class:list = {[
+            "px-6 rounded-[100px] flex flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden",
+            {
+                "bg-debut-600 hover:bg-debut-500": era === "debut",
+                "bg-fearless-600 hover:bg-fearless-500": era === "fearless",
+                "bg-speakNow-600 hover:bg-speakNow-500": era === "speakNow",
+                "bg-red-600 hover:bg-red-500": era === "red",
+                "bg-1989-600 hover:bg-1989-500": era === "1989",
+                "bg-reputation-600 hover:bg-reputation-500": era === "reputation",
+                "bg-lover-600 hover:bg-lover-500": era === "lover",
+                "bg-folklore-600 hover:bg-folklore-500": era === "folklore",
+                "bg-evermore-600 hover:bg-evermore-500": era === "evermore",
+                "bg-midnights-600 hover:bg-midnights-500": era === "midnights",
+                "bg-TTPD-600 hover:bg-TTPD-500": era === "TTPD",
+                "bg-mashup-600 hover:bg-mashup-500": era === "mashup",
+                
+            }
+        ]}>
+            <p  class:list = {[
+                "cursor-pointer text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
+                {
+                    "text-debut-50": 		era === "debut",
+                    "text-fearless-50": 	era === "fearless",
+                    "text-speakNow-50": 	era === "speakNow",
+                    "text-red-50": 			era === "red",
+                    "text-1989-50": 		era === "1989",
+                    "text-reputation-50": 	era === "reputation",
+                    "text-lover-50": 		era === "lover",
+                    "text-folklore-50": 	era === "folklore",
+                    "text-evermore-50": 	era === "evermore",
+                    "text-midnights-50": 	era === "midnights",
+                    "text-TTPD-50": 		era === "TTPD",
+                    "text-mashup-50": 		era === "mashup",
+                }
+                ]}
+                style = "letter-spacing: var(--title-small-letter-spacing, 0.1px)">
+                Ver Mas
+            </p>
+        </button>
+        
+        <div id="masFechas-past" class="hidden gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+            <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+                {
+                    concerts.pasados.slice(maxFechasToShow).map(({ fecha , lugar , telonero }, index) => {
+                        const eraFecha = eras[index % eras.length];  // Alterna entre las eras
+                        
+                        return (
+                            <TarjetaFecha 
+                                estado="pasado"
+                                eraFecha={eraFecha}
+                                dia={fecha.dia}
+                                mes={fecha.mes}
+                                año={fecha.año}
+                                pais={lugar.pais}
+                                ciudad={lugar.ciudad}
+                                estadio={lugar.estadio}
+                                telonero={telonero}
+                            />
+                        );
+                    })
+                }
+            </div>
+        </div>
+        <button id="btn-ocul-past" class:list = {[
+        "hidden px-6 rounded-[100px] flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden",
+        {
+            "bg-debut-600 hover:bg-debut-500": era === "debut",
+            "bg-fearless-600 hover:bg-fearless-500": era === "fearless",
+            "bg-speakNow-600 hover:bg-speakNow-500": era === "speakNow",
+            "bg-red-600 hover:bg-red-500": era === "red",
+            "bg-1989-600 hover:bg-1989-500": era === "1989",
+            "bg-reputation-600 hover:bg-reputation-500": era === "reputation",
+            "bg-lover-600 hover:bg-lover-500": era === "lover",
+            "bg-folklore-600 hover:bg-folklore-500": era === "folklore",
+            "bg-evermore-600 hover:bg-evermore-500": era === "evermore",
+            "bg-midnights-600 hover:bg-midnights-500": era === "midnights",
+            "bg-TTPD-600 hover:bg-TTPD-500": era === "TTPD",
+            "bg-mashup-600 hover:bg-mashup-500": era === "mashup",
+            
+        }
+        ]}>
+            <p  class:list = {[
+                "cursor-pointer text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
+                {
+                    "text-debut-50": 		era === "debut",
+                    "text-fearless-50": 	era === "fearless",
+                    "text-speakNow-50": 	era === "speakNow",
+                    "text-red-50": 			era === "red",
+                    "text-1989-50": 		era === "1989",
+                    "text-reputation-50": 	era === "reputation",
+                    "text-lover-50": 		era === "lover",
+                    "text-folklore-50": 	era === "folklore",
+                    "text-evermore-50": 	era === "evermore",
+                    "text-midnights-50": 	era === "midnights",
+                    "text-TTPD-50": 		era === "TTPD",
+                    "text-mashup-50": 		era === "mashup",
+                }
+                ]}
+                style = "letter-spacing: var(--title-small-letter-spacing, 0.1px)">
+                Ocultar
+            </p>
+        </button> 
     </section>
 </article>
+
+<!-- creo que ya se como hacer para que no se muestren las fechas -->
+<script>
+    document.getElementById('btn-ver-fut')?.addEventListener('click', ()=>(
+        document.getElementById('masFechas-fut')?.classList.remove('hidden'),
+        document.getElementById('btn-ver-fut')?.classList.add('hidden'),
+        document.getElementById('btn-ocul-fut')?.classList.remove('hidden')
+    )
+    )
+    document.getElementById('btn-ocul-fut')?.addEventListener('click', ()=>(
+        document.getElementById('masFechas-fut')?.classList.add('hidden'),
+        document.getElementById('btn-ver-fut')?.classList.remove('hidden'),
+        document.getElementById('btn-ocul-fut')?.classList.add('hidden')
+    )
+    )
+    
+    document.getElementById('btn-ver-past')?.addEventListener('click', ()=>(
+        document.getElementById('masFechas-past')?.classList.remove('hidden'),
+        document.getElementById('btn-ver-past')?.classList.add('hidden'),
+        document.getElementById('btn-ocul-past')?.classList.remove('hidden')
+    )
+    )
+    document.getElementById('btn-ocul-past')?.addEventListener('click', ()=>(
+        document.getElementById('masFechas-past')?.classList.add('hidden'),
+        document.getElementById('btn-ver-past')?.classList.remove('hidden'),
+        document.getElementById('btn-ocul-past')?.classList.add('hidden')
+    )
+    )
+</script>

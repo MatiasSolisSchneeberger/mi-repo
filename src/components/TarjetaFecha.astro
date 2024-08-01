@@ -19,7 +19,7 @@ interface Props {
 const { estado , eraFecha , dia , mes , año , pais , ciudad , estadio , telonero } = Astro.props
 ---
 
-<article class:list={["rounded-3xl p-3 flex flex-row gap-2.5 items-center justify-start flex-1 h-40 min-w-[325px] relative overflow-hidden",
+<article class:list={["rounded-3xl p-3 flex flex-row gap-2.5 items-center justify-start flex-1 h-40 min-w-[400px] relative overflow-hidden",
     {
         'bg-debut-200':      estado === 'pasado' && eraFecha === 'debut',        
         'bg-fearless-200':   estado === 'pasado' && eraFecha === 'fearless',        
@@ -60,7 +60,9 @@ const { estado , eraFecha , dia , mes , año , pais , ciudad , estadio , teloner
         'bg-TTPD-300':       estado === 'futuro' && eraFecha === 'TTPD',             
     }
 ]}>
-    <div class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 relative rounded-lg  overflow-hidden">
+    <!-- cuadro de fecha -->
+    <div class="flex flex-col gap-0 items-center justify-center self-stretch shrink-0 relative rounded-xl  overflow-hidden">
+        <!-- Cuadro de Ahora -->
         <div class:list={[
             "bg-schemes-error rounded-tl-xl rounded-tr-xl pr-3.5 pl-3.5 flex flex-col gap-0 items-center justify-start shrink-0 w-full relative overflow-hidden",
             {

@@ -1,5 +1,6 @@
 ---
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '@fontsource-variable/rubik';
 
 interface Props {
@@ -16,7 +17,7 @@ const { title , era } = Astro.props;
 		<meta charset = "UTF-8" />
 		<meta name = "description" content = "Astro description" />
 		<meta name = "viewport" content = "width = device-width" />
-		<link rel = "icon" type = "image/svg+xml" href = "/src/components/svg/iconoPagina.svg" />
+		<link rel = "icon" type = "image/svg+xml" href = "/mi-repo/src/components/svg/iconoPagina.svg" />
 		<meta name = "generator" content = {Astro.generator} />
 		
 		<!-- Tipografías -->
@@ -26,15 +27,32 @@ const { title , era } = Astro.props;
 
 		<title>{title}</title>
 	</head>
-	<body class="no-scrollbar grid">
+	<body class:list={[
+		"no-scrollbar grid",
+		{
+			"bg-debut-50": era === 'debut',
+			"bg-fearless-50": era === 'fearless',
+			"bg-speakNow-50": era === 'speakNow',
+			"bg-red-50": era === 'red',
+			"bg-1989-50": era === '1989',
+			"bg-reputation-50": era === 'reputation',
+			"bg-lover-50": era === 'lover',
+			"bg-folklore-50": era === 'folklore',
+			"bg-evermore-50": era === 'evermore',
+			"bg-midnights-50": era === 'midnights',
+			"bg-TTPD-50": era === 'TTPD',
+		}
+		]}>
 		<Header era = {era}/>
 		<main>
 			<slot />
 		</main>
+		<Footer era = {era}/>
 	</body>
 </html>
 <style is:global>
-	.no-scrollbar::-webkit-scrollbar {
-            display: none; /* Ocultar scrollbar en navegadores basados en WebKit */
-        }
+/* 	.no-scrollbar::-webkit-scrollbar {
+            display: none; 
+        } */
+		
 </style>

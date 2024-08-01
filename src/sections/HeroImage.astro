@@ -2,13 +2,14 @@
 import ButtonPrimario from '../components/ButtonPrimario.astro';
 interface Props {
 	era: string;
+    boton: boolean;
 }
 
-const { era }  =  Astro.props;
+const { era , boton }  =  Astro.props;
 ---
 
 <div id="Inicio" class:list = {[
-    "sm:px-56 px-16 flex flex-col items-center justify-center self-stretch shrink-0 w-auto relative py-40 space-y-8 bg-cover bg-no-repeat bg-center",
+    "sm:px-32 px-14 flex flex-col items-center justify-center self-stretch shrink-0 relative py-40 space-y-8 bg-cover bg-no-repeat bg-center w-full",
     {
         'bg-fondos-debut': era === 'debut',
         'bg-fondos-fearless': era === 'fearless',
@@ -22,7 +23,7 @@ const { era }  =  Astro.props;
         'bg-fondos-midnights': era === 'midnights',
         'bg-fondos-TTPD': era === 'TTPD',
     }
-    ]} >
+    ]}>
     <div class:list={[
         {"hidden": era === 'TTPD'}
         ]}>
@@ -51,29 +52,21 @@ const { era }  =  Astro.props;
                 'text-midnights-400': era === 'midnights',
                 'text-TTPD-400': era === 'TTPD',
             }
-            ]} style = "letter-spacing: var(--display-large-letter-spacing, -1px)">
+            ]},
+            style = "letter-spacing: var(--display-large-letter-spacing, -1px)">
         Swifties Eras Tour
         </div>
-        <div class:list = {[
-            "text-center font-headline-small-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight relative self-stretch flex items-center justify-center capitalize ",
-            {
-                'text-debut-400': era === 'debut',
-                'text-fearless-400': era === 'fearless',
-                'text-speakNow-400': era === 'speakNow',
-                'text-red-400': era === 'red',
-                'text-1989-400': era === '1989',
-                'text-reputation-400': era === 'reputation',
-                'text-lover-400': era === 'lover',
-                'text-folklore-400': era === 'folklore',
-                'text-evermore-400': era === 'evermore',
-                'text-midnights-400': era === 'midnights',
-                'text-TTPD-400': era === 'TTPD',
-            }
-            ]} style = "mix-blend-mode: color-dodge">
+        <div class=`text-center font-headline-small-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight relative self-stretch flex items-center justify-center capitalize text-${era}-400`, style = "mix-blend-mode: color-dodge">
         {era}
         </div>
     </div>
-    <div class = "hidden sm:flex flex-row gap-space-400 items-center justify-center shrink-0 relative space-x-4">
+
+    <div class:list = {[
+        "flex-row gap-space-400 items-center justify-center shrink-0 relative space-x-4 hidden",
+        {
+            'sm:flex': boton === true
+        }
+    ]}>
         <ButtonPrimario era = {era} href="#Canciones" icono={null}>
             Canciones
         </ButtonPrimario>
@@ -82,6 +75,3 @@ const { era }  =  Astro.props;
         </ButtonPrimario>
     </div>
 </div>
-    
-<style>
-</style>

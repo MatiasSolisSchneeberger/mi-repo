@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
-    "@astrojs/react": "^3.6.0",
+    "@astrojs/react": "^3.6.1",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/rubik": "^5.0.22",
     "@fontsource/roboto": "^5.0.13",

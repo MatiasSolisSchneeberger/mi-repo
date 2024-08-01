@@ -1,6 +1,6 @@
 ---
 interface Props {
-	href: string;
+	href: string | null;
 	era: string;
 	icono: string | null;
 }
@@ -36,7 +36,7 @@ const { href , era , icono }  =  Astro.props;
 		<slot name="before"/>
 
 		<p  class:list = {[
-			"text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
+			"cursor-pointer text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
 		{
 			"text-debut-50": 		era === "debut",
 			"text-fearless-50": 	era === "fearless",

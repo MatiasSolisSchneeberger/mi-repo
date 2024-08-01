@@ -18,7 +18,7 @@ const { era , anterior , siguiente , logo } = Astro.props;
         <ArrowLeft slot="before" era={era}/>
         Anterior
     </ButtonPrimario>
-    <div class=`bg-${era}-400 h-14 p-2 md:flex flex-col gap-0 items-center justify-center self-stretch flex-1 relative rounded-full shrink-0 hidden`>
+    <div class=`bg-${era}-400 h-14 p-2 sm:flex flex-col gap-0 items-center justify-center self-stretch flex-1 relative rounded-full shrink-0 hidden`>
         <img class="self-stretch flex-1 relative h-full w-full object-contain " src={logo} alt=`Logo del disco ${era}`>
     </div>
     <ButtonPrimario icono="Der" era={era} href={siguiente}>

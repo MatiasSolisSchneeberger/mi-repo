@@ -1,0 +1,93 @@
+---
+import Logo from './Logo.astro';
+import GitHubSvg from './svg/GitHubSvg.astro';
+import GitHubBordeSvg from './svg/GitHubBordeSvg.astro';
+import PortfolioSvg from './svg/PortfolioSvg.astro';
+import LinkedInSvg from './svg/LinkedInSvg.astro'
+import MailSvg from './svg/MailSvg.astro';
+
+interface Props {
+	era: string;
+}
+
+const { era } = Astro.props;
+---
+
+<footer class={`bg-${era}-900 px-8 md:px-24 py-16 flex flex-col md:flex-row gap-8 items-start justify-start relative overflow-hidden`}>
+    <article class="flex flex-col gap-4 items-start w-full md:w-2/3">
+        <Logo era={era} />
+        <h2 class={`text-${era}-200 text-left font-title-large-font-family text-title-large-font-size leading-title-large-line-height font-title-large-font-weight`}>
+            Swifties Eras Tour
+        </h2>
+        <p class={`text-${era}-200 text-left font-body-medium-font-family text-body-medium-font-size leading-body-medium-line-height font-body-medium-font-weight`} style="letter-spacing: var(--body-small-letter-spacing, 0.4px)">
+            Página creada por un fan para fans.
+            <br />
+            <br />
+            Soy una apasionado swiftie y he creado este sitio web como un tributo a Taylor Swift y su increíble carrera. Este sitio es la primera página que hago en su totalidad, y busca celebrar cada momento y cada canción. Agradezco a Taylor por ser una inspiración constante y por su música que me ha acompañado a lo largo de los años.
+            <br />
+            <br />
+            Este sitio incluye una sección especial para las canciones sorpresa del tour, donde podrás encontrar detalles sobre las fechas y lugares en los que se tocaron. Además, todas las fechas que se hicieron y faltan hacer.
+            <br />
+            <br />
+            Si tienen alguna sugerencia no duden en mandarme un correo.
+        </p>
+    </article>
+
+    <article class="flex flex-col gap-4 w-full md:w-1/6">
+        <h3 class={`text-${era}-200 text-center font-title-large-font-family text-title-large-font-size leading-title-large-line-height font-title-large-font-weight`}>
+            Eras
+        </h3>
+        <div class={`text-${era}-200 flex flex-col gap-2`}>
+            <p class="font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight">Taylor Swift</p>
+            <p class="font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight">Fearless</p>
+            <p class="font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight">Speak Now</p>
+            <p class="font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight">Red</p>
+            <p class="font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight">1989</p>
+            <p class="font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight">Reputation</p>
+            <p class="font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight">Lover</p>
+            <p class="font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight">Folklore</p>
+            <p class="font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight">Evermore</p>
+            <p class="font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight">Midnights</p>
+            <p class="font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight">TTPD</p>
+            <p class="font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight">Mashup</p>
+        </div>
+    </article>
+
+    <article class="flex flex-col gap-4 w-full md:w-1/6">
+        <h3 class={`text-${era}-200 text-center font-title-large-font-family text-title-large-font-size leading-title-large-line-height font-title-large-font-weight`}>
+            Contacto
+        </h3>
+        <div class="flex flex-col gap-2.5">
+            <a href="" class="flex items-center gap-2">
+                <LinkedInSvg era={era}/>
+                <p class={`text-${era}-200 text-body-medium-font-family text-body-medium-font-size leading-body-medium-line-height font-body-medium-font-weight`}>
+                    LinkedIn
+                </p>
+            </a>
+            <a class="flex items-center gap-2">
+                <GitHubSvg era={era}/>
+                <p class={`text-${era}-200 text-body-medium-font-family text-body-medium-font-size leading-body-medium-line-height font-body-medium-font-weight`}>
+                    Repositorio
+                </p>
+            </a>
+            <a href="https://github.com/MatiasSolisSchneeberger" target="_blank" class="flex items-center gap-2">
+                <GitHubBordeSvg era={era}/>
+                <p class={`text-${era}-200 text-body-medium-font-family text-body-medium-font-size leading-body-medium-line-height font-body-medium-font-weight`}>
+                    GitHub
+                </p>
+            </a>
+            <a class="flex items-center gap-2">
+                <PortfolioSvg era={era}/>
+                <p class={`text-${era}-200 text-body-medium-font-family text-body-medium-font-size leading-body-medium-line-height font-body-medium-font-weight`}>
+                    Portfolio
+                </p>
+            </a>
+            <a class="flex items-center gap-2">
+                <MailSvg era={era}/>
+                <p class={`text-${era}-200 text-body-medium-font-family text-body-medium-font-size leading-body-medium-line-height font-body-medium-font-weight`}>
+                    Mail
+                </p>
+            </a>
+        </div>
+    </article>
+</footer>

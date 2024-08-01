@@ -2,7 +2,7 @@
 interface Props {
 	era: string;
     titulo: string;
-    texto: string;
+    texto: string | null;
 }
 
 const { era , titulo , texto } = Astro.props;
@@ -14,7 +14,7 @@ const { era , titulo , texto } = Astro.props;
         {titulo}
     </h2>
     <p
-    class=`text-${era}-900 text-center font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative self-stretch`>
+    class=`text-${era}-900 text-center font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative self-stretch` class:list={[{'hidden': texto===null}]}>
         {texto}
     </p>
 </section>

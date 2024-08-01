@@ -16,22 +16,7 @@ interface Props {
 const { era }  =  Astro.props;
 ---
 
-<article id="Canciones" class:list = {[
-    "py-12 px-8 sm:px-32 space-y-6 ",
-    {
-        "bg-debut-100":         era === "debut",
-        "bg-fearless-100":      era === "fearless",
-        "bg-speakNow-100":      era === "speakNow",
-        "bg-red-100":           era === "red",
-        "bg-1989-100":          era === "1989",
-        "bg-reputation-100":    era === "reputation",
-        "bg-lover-100":         era === "lover",
-        "bg-folklore-100":      era === "folklore",
-        "bg-evermore-100":      era === "evermore",
-        "bg-midnights-100":     era === "midnights",
-        "bg-TTPD-100":          era === "TTPD",
-    }
-    ]}>
+<article id="Canciones" class='py-12 px-8 sm:px-10 xl:px-44 space-y-6'>
     <!-- Titulo -->
     <Title era={era} titulo = "Canciones Sorpresas" texto = "Estas fueron las canciones sorpresas que hubieron hasta ahora en “The Eras Tour”."/>
     <!-- Botontes/Etiquetas -->
