@@ -1,14 +1,18 @@
 ---
 import ButtonPrimario from '../components/ButtonPrimario.astro';
+import ArrowLeft from '../components/svg/ArrowLeft.astro';
+import ArrowRight from '../components/svg/ArrowRight.astro';
 interface Props {
 	era: string;
     boton: boolean;
+    pagAnt: string;
+    pagSig: string;
 }
 
-const { era , boton }  =  Astro.props;
+const { era , boton , pagAnt , pagSig }  =  Astro.props;
 ---
 
-<div id="Inicio" class:list = {[
+<div transition:name="hero-image" id="Inicio" class:list = {[
     "sm:px-32 px-14 flex flex-col items-center justify-center self-stretch shrink-0 relative py-40 space-y-8 bg-cover bg-no-repeat bg-center w-full",
     {
         'bg-fondos-debut': era === 'debut',
@@ -22,20 +26,62 @@ const { era , boton }  =  Astro.props;
         'bg-fondos-evermore': era === 'evermore',
         'bg-fondos-midnights': era === 'midnights',
         'bg-fondos-TTPD': era === 'TTPD',
+        'bg-fondos-mashup': era === 'mashup'
+    },
+    {
+        'py-28': boton === false
     }
     ]}>
-    <div class:list={[
-        {"hidden": era === 'TTPD'}
+
+    <!-- derechos de las imagenes  -->
+    <p class:list={[
+        'text-center font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight absolute left-[30px] bottom-[30px]',
+            {
+                'text-debut-400': era === 'debut',
+                'text-fearless-400': era === 'fearless',
+                'text-speakNow-400': era === 'speakNow',
+                'text-red-400': era === 'red',
+                'text-1989-400': era === '1989',
+                'text-reputation-400': era === 'reputation',
+                'text-lover-400': era === 'lover',
+                'text-folklore-400': era === 'folklore',
+                'text-evermore-400': era === 'evermore',
+                'text-midnights-400': era === 'midnights',
+                'text-TTPD-400': era === 'TTPD',
+                'text-mashup-400': era === 'mashup',
+            },
+            {
+                "hidden": era === 'TTPD'
+            }
         ]}>
-        <p class=`text-${era}-400 text-center font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight absolute left-[30px] bottom-[30px]`>
-            © Disney. All rights reserved.</p>
-    </div>
-    <div class:list={[
-        {"hidden": era !== 'TTPD'}
+        © Disney. All rights reserved.
+    </p>
+
+    <p class:list={[
+        'text-center font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight absolute left-[30px] bottom-[30px]',
+            {
+                'text-debut-400': era === 'debut',
+                'text-fearless-400': era === 'fearless',
+                'text-speakNow-400': era === 'speakNow',
+                'text-red-400': era === 'red',
+                'text-1989-400': era === '1989',
+                'text-reputation-400': era === 'reputation',
+                'text-lover-400': era === 'lover',
+                'text-folklore-400': era === 'folklore',
+                'text-evermore-400': era === 'evermore',
+                'text-midnights-400': era === 'midnights',
+                'text-TTPD-400': era === 'TTPD',
+                'text-mashup-400': era === 'mashup',
+            },
+            {
+                "hidden": era !== 'TTPD'
+            }
         ]}>
-        <p class=`text-${era}-400 text-center font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight absolute left-[30px] bottom-[30px]`>
-            © Taylor Swift, from her official YouTube channel.</p>
-    </div>
+        © Taylor Swift, from her official YouTube channel.
+    </p>
+
+
+    <!-- Titulo -->
     <div class = "flex flex-col gap-space-200 items-center justify-center shrink-0 relative space-y-2 overflow-hidden">
         <div class:list = {[
             "text-center font-display-large-font-family text-display-large-font-size leading-display-large-line-height font-display-large-font-weight relative self-stretch",
@@ -51,6 +97,7 @@ const { era , boton }  =  Astro.props;
                 'text-evermore-400': era === 'evermore',
                 'text-midnights-400': era === 'midnights',
                 'text-TTPD-400': era === 'TTPD',
+                'text-mashup-400': era === 'mashup',
             }
             ]},
             style = "letter-spacing: var(--display-large-letter-spacing, -1px)">
@@ -60,7 +107,13 @@ const { era , boton }  =  Astro.props;
         {era}
         </div>
     </div>
-
+    <a class="absolute left-4 y-1/2" href={pagAnt}>
+        <ArrowLeft era={era}/>
+    </a>
+    <a class="absolute right-4 y-1/2" href={pagSig}>
+        <ArrowRight era={era}/>
+    </a>
+    <!-- botones CTA -->
     <div class:list = {[
         "flex-row gap-space-400 items-center justify-center shrink-0 relative space-x-4 hidden",
         {

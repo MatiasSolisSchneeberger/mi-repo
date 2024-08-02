@@ -1,0 +1,15 @@
+---
+import ButtonPrimario from "../components/ButtonPrimario.astro"
+import Title from "../components/Title.astro"
+import Layout from "../layouts/Layout.astro"
+
+const era = 'reputation'
+---
+<Layout title="404 | Swifties Eras Tour" era={era}>
+    <div class="py-12 px-8 sm:px-10 xl:px-44 space-y-6 items-center flex flex-col">
+        <Title era={era} titulo="Error 404" texto="Parece que te has perdido, intenta volviendo a la pagina inicial"/>
+        <ButtonPrimario href='/mi-repo' era={era} icono={null}>
+            Inicio
+        </ButtonPrimario>
+    </div>
+</Layout>

@@ -7,7 +7,8 @@ const { era } = Astro.props;
 
 ---
 <div class="shrink-0 relative overflow-visible">
-    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class:list={[
+    
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class:list={[
         {
             'fill-debut-100':      era === 'debut',
             'fill-fearless-100':   era === 'fearless',
@@ -20,9 +21,10 @@ const { era } = Astro.props;
             'fill-evermore-100':   era === 'evermore',
             'fill-midnights-100':  era === 'midnights',
             'fill-TTPD-100':       era === 'TTPD',
+            'fill-mashup-100':     era === 'mashup',
         }
     ]
     }>
-        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+        <path d="M579-480 285-774q-15-15-14.5-35.5T286-845q15-15 35.5-15t35.5 15l307 308q12 12 18 27t6 30q0 15-6 30t-18 27L356-115q-15 15-35 14.5T286-116q-15-15-15-35.5t15-35.5l293-293Z"/>
     </svg>
 </div>

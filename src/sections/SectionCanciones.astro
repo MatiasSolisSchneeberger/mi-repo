@@ -16,7 +16,7 @@ interface Props {
 const { era }  =  Astro.props;
 ---
 
-<article id="Canciones" class='py-12 px-8 sm:px-10 xl:px-44 space-y-6'>
+<article id="Canciones" class='py-12 px-8 sm:px-10 xl:px-28 space-y-6'>
     <!-- Titulo -->
     <Title era={era} titulo = "Canciones Sorpresas" texto = "Estas fueron las canciones sorpresas que hubieron hasta ahora en “The Eras Tour”."/>
     <!-- Botontes/Etiquetas -->
@@ -37,6 +37,7 @@ const { era }  =  Astro.props;
                     "text-evermore-900":    era === "evermore",
                     "text-midnights-900":   era === "midnights",
                     "text-TTPD-900":        era === "TTPD",
+                    "text-mashup-900":        era === "mashup",
                 }
                 ]}>
                 Eras
@@ -159,9 +160,9 @@ const { era }  =  Astro.props;
     <!-- TarjetasCanciones -->
     <section class="flex flex-row gap-6 items-center justify-center flex-wrap self-stretch shrink-0 relative py-0">
         {
-            eras.map(({ albums , Spotify , canciones , extras , linkPage}) => {
+            eras.map(({ albums , Spotify , canciones , extras , linkPage , YTMusic }) => {
                 return (
-                    <TarjetaCancion eraTarjeta={albums} album={Spotify} linkPage={linkPage}>
+                    <TarjetaCancion eraTarjeta={albums} spotify={Spotify} linkPage={linkPage} YTmusic={YTMusic}>
                         {
                             canciones.map(({title , etiquetas}) =>{
                                     return (

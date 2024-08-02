@@ -1,16 +1,17 @@
 ---
+// Importa los componentes necesarios
 import ButtonToUp from '../components/ButtonToUp.astro';
 import Layout from '../layouts/Layout.astro';
 import HeroImage from '../sections/HeroImage.astro';
 import SectionCanciones from '../sections/SectionCanciones.astro';
 import SectionDates from '../sections/SectionDates.astro';
-const era = 'mashup'
-
+const era = 'debut'
 ---
 
-<Layout title="Swifties Eras Tour" era={era}>
-	<HeroImage era={era} boton={true} pagAnt='/mi-repo/eras/05-1989' pagSig='/mi-repo/eras/10-midnights'/>
-	<SectionCanciones era={era}/>
+<Layout title = "Swifties Eras Tour" era = {era}>
+	<!-- <HeroImage era = {era} boton = {true}/> -->
+	<SectionCanciones era = {era}/>
 	<SectionDates era={era}/>
 	<ButtonToUp era={era}/>
 </Layout>
+

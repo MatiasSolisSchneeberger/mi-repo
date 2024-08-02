@@ -1,31 +1,20 @@
 ---
 import ButtonPrimario from "./ButtonPrimario.astro";
 import ButtonSecundario from "./ButtonSecundario.astro";
+import LogoDiscos from "./LogoDiscos.astro";
 import InfoSvg from "./svg/InfoSvg.astro";
 import SpotifySvg from "./svg/SpotifySvg.astro";
+import YTMusicSvg from "./svg/YTMusicSvg.astro";
 
 interface Props {
 	eraTarjeta: string;
-    album: string;
+    spotify: string;
     linkPage: string;
+    YTmusic: string;
 }
 
-const { eraTarjeta , album , linkPage} = Astro.props;
+const { eraTarjeta , spotify , linkPage , YTmusic } = Astro.props;
 
-const imageLogo: { [key: string]: string } = {
-    debut:      "/mi-repo/images/Logos-Discos/01-Logo-Debut.png",
-    fearless:   "/mi-repo/images/Logos-Discos/02-Logo-Fearless.png",
-    speakNow:   "/mi-repo/images/Logos-Discos/03-Logo-SpeakNow.png",
-    red:        "/mi-repo/images/Logos-Discos/04-Logo-Red.png",
-    "1989":     "/mi-repo/images/Logos-Discos/05-Logo-1989.png",
-    reputation: "/mi-repo/images/Logos-Discos/06-Logo-Reputation.png",
-    lover:      "/mi-repo/images/Logos-Discos/07-Logo-Lover.png",
-    folklore:   "/mi-repo/images/Logos-Discos/08-Logo-Folklore.png",
-    evermore:   "/mi-repo/images/Logos-Discos/09-Logo-Evermore.png",
-    midnights:  "/mi-repo/images/Logos-Discos/10-Logo-Midnights.png",
-    TTPD:       "/mi-repo/images/Logos-Discos/11-Logo-TTPD.png",
-    mashup:     "/mi-repo/images/Logos-Discos/12-Logo-Mashups.png",
-};
 const imageTaylor: { [key: string]: string } = {
     debut:      "/mi-repo/images/Fotos/01-TaylorSwift.png",
     fearless:   "/mi-repo/images/Fotos/02-Fearless.png",
@@ -42,12 +31,11 @@ const imageTaylor: { [key: string]: string } = {
 };
 
 // Obtener la imagen correspondiente al eraTarjeta
-const logo = imageLogo[eraTarjeta] || "/mi-repo/images/Emojis/cross-mark_274c.png";
 const taylor = imageTaylor[eraTarjeta] || "/mi-repo/images/Emojis/cross-mark_274c.png";
 
 ---
-<article id={eraTarjeta} class:list={[
-    "transition ease-in-out delay-0 duration-200 shadow-sm hover:shadow-lg rounded-3xl flex-wrap self-start shrink-0 overflow-hidden flex flex-col gap-0 justify-center flex-1 min-w-[350px] max-w-[400px] relative px-2.5 space-y-2.5 py-2.5",
+<article transition:name="tarjeta-tabla" id={eraTarjeta} class:list={[
+    "transition ease-in-out delay-0 duration-200 shadow-sm hover:shadow-md rounded-3xl flex-wrap self-start shrink-0 overflow-hidden flex flex-col gap-0 justify-center flex-1 min-w-[400px] max-w-[450px] relative px-2.5 space-y-2.5 py-2.5",
     {
         'bg-debut-200       shadow-debut-600      hover:shadow-debut-900':       eraTarjeta === 'debut',
         'bg-fearless-200    shadow-fearless-600   hover:shadow-fearless-900':    eraTarjeta === 'fearless',
@@ -66,7 +54,7 @@ const taylor = imageTaylor[eraTarjeta] || "/mi-repo/images/Emojis/cross-mark_274
 >
     <header class="w-full flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative space-y-2.5">
         <!-- logo -->
-        <div class:list={[
+        <div  class:list={[
             "rounded-2xl p-2 flex flex-col gap-0 items-center justify-center self-stretch shrink-0 h-[72px] relative",
             {
                 'bg-debut-400':         eraTarjeta === 'debut',
@@ -83,11 +71,7 @@ const taylor = imageTaylor[eraTarjeta] || "/mi-repo/images/Emojis/cross-mark_274
                 'bg-mashup-400':        eraTarjeta === 'mashup',
             }
             ]}>
-            <img
-            class="bg-logo-debut self-stretch flex-1 relative h-full w-full object-contain"
-            src={logo}
-            alt=`Logo del disco ${eraTarjeta}`
-            />        
+            <LogoDiscos era={eraTarjeta}/>
         </div>
         <!-- Taylor -->
         <div class:list={[
@@ -137,10 +121,17 @@ const taylor = imageTaylor[eraTarjeta] || "/mi-repo/images/Emojis/cross-mark_274
     </section>
     <!-- seccion de botones -->
     <section class="w-full flex justify-end space-x-2.5">
-        <ButtonSecundario era = {eraTarjeta} href={album} icono="Izq">
+        <ButtonSecundario era = {eraTarjeta} href={spotify} icono="Izq">
             <SpotifySvg era={eraTarjeta} slot="before"/>
             Spotify
         </ButtonSecundario>
+            
+        
+        <ButtonSecundario era = {eraTarjeta} href={YTmusic} icono="Izq">
+            <YTMusicSvg era={eraTarjeta} slot="before"/>
+            YTMusic
+        </ButtonSecundario>
+
         <ButtonPrimario era={eraTarjeta} href={linkPage} icono="Izq">
             <InfoSvg era={eraTarjeta} slot="before"/>
             Mas info

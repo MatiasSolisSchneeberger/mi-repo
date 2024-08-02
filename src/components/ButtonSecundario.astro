@@ -26,17 +26,17 @@ const { href , era , icono }  =  Astro.props;
 		}
 	]}>
 	<div class:list = {[
-		"py-2.5 flex flex-row gap-2 items-center justify-center self-stretch flex-1 relative",
+		"px-2.5 py-2.5 flex flex-row gap-2 items-center justify-center self-stretch flex-1 relative",
 		{
-			"pl-4 pr-6": icono === "Izq",
-			"px-6": icono === null,
-			"pl-6 pr-4": icono === "Der",
+			"sm:pl-4 sm:pr-6": icono === "Izq",
+			"sm:px-6": icono === null,
+			"sm:pl-6 sm:pr-4": icono === "Der",
 		}
 		]}>
 		<slot name="before"/>
 
 		<p  class:list = {[
-			"text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
+			"hidden sm:flex text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative items-center justify-center",
 		{
 			"text-debut-800": 		era === "debut",
 			"text-fearless-800": 	era === "fearless",

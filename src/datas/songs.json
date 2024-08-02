@@ -8,7 +8,8 @@
             "emojie":"/mi-repo/images/Emojis/01.taylorSwift.png",
             "linkPage": "/mi-repo/eras/01-debut",
             "Spotify": "https://open.spotify.com/intl-es/album/5eyZZoQEFQWRHkV2xgAeBw?si=2dL1AZfiTG-Zo0FImYfsHg",
-            "anterior": "/mi-repo/eras/mashup",
+            "YTMusic": "https://music.youtube.com/playlist?list=OLAK5uy_n4ff33EEbSLpX0kTDnxNsHe1X0U8AUj7Q&si=kGdSAlM3oi-Wenav",
+            "anterior": "/mi-repo/eras/12-mashup",
             "siguiente": "/mi-repo/eras/02-fearless",
             "canciones": [
                 {
@@ -414,6 +415,7 @@
             "emojie":"public/images/Emojis/02.fearless.png",
             "linkPage": "/mi-repo/eras/02-fearless",
             "Spotify": "https://open.spotify.com/album/4hDok0OAJd57SingapurIT8xuWJH?si=pntFCTVKQ1GCRV-AptxPSQ",
+            "YTMusic": "https://music.youtube.com/playlist?list=OLAK5uy_mGRDKgRDJtrpyw25zrYD7Rl56ACL1Oiy8&si=QGZ_UvbUg0nL3c4O",
             "anterior": "/mi-repo/eras/01-debut",
             "siguiente": "/mi-repo/eras/03-speakNow",
             "canciones": [
@@ -1209,6 +1211,7 @@
             "emojie":"public/images/Emojis/03.speakNow.png",
             "linkPage": "/mi-repo/eras/03-speakNow",
             "Spotify": "https://open.spotify.com/album/5AEDGbliTTfjOB8TSm1sxt?si=QGoLcB9fSNqYHoDss1Xcew",
+            "YTMusic": "https://music.youtube.com/playlist?list=OLAK5uy_ne0DpedKNeKeFyjQ86_6DJHyCGCjqHOv8&si=BY4PdaBF5tuDtuKR",
             "anterior": "/mi-repo/eras/02-fearless",
             "siguiente": "/mi-repo/eras/04-red",
             "canciones": [
@@ -1930,6 +1933,7 @@
             "emojie":"public/images/Emojis/04.red.png",
             "linkPage": "/mi-repo/eras/04-red",
             "Spotify": "https://open.spotify.com/album/6kZ42qRrzov54LcAk4onW9?si=POpkHfahROCaIDHfZZ6O1A",
+            "YTMusic": "https://music.youtube.com/playlist?list=OLAK5uy_l1Em5x2MlWyFc1w_7ayxQc6qVLVUbhaME&si=aChi0t8ijiwOJyod",
             "anterior": "/mi-repo/eras/03-speakNow",
             "siguiente": "/mi-repo/eras/05-1989",
             "canciones": [
@@ -2907,6 +2911,7 @@
             "emojie":"public/images/Emojis/05.1989.png",
             "linkPage": "/mi-repo/eras/05-1989",
             "Spotify": "https://open.spotify.com/album/64LU4c1nfjz1t4VnGhagcg?si=6jGmboIjQQGLw4ZhGLgk1Q",
+            "YTMusic": "https://music.youtube.com/playlist?list=OLAK5uy_ncKvykObOe16WxrmZEAlCbWBRZm2Utaqk&si=7knSFf82aVTHBnw3",
             "anterior": "/mi-repo/eras/04-red",
             "siguiente": "/mi-repo/eras/06-reputation",
             "canciones": [
@@ -3658,6 +3663,7 @@
             "emojie":"public/images/Emojis/06.reputation.png",
             "linkPage": "/mi-repo/eras/06-reputation",
             "Spotify": "https://open.spotify.com/album/6DEjYFkNZh67HP7R9PSZvv?si=vWGKP9kdQ-abrvYyXNfGHQ",
+            "YTMusic": "https://music.youtube.com/playlist?list=OLAK5uy_l82R_qfJluzeSGxUyghbnvS_49xIyTfYE&si=Gl4WwmvpYQRazROp",
             "anterior": "/mi-repo/eras/05-1989",
             "siguiente": "/mi-repo/eras/07-lover",
             "canciones": [
@@ -4108,6 +4114,7 @@
             "emojie":"public/images/Emojis/07.lover.png",
             "linkPage": "/mi-repo/eras/07-lover",
             "Spotify": "https://open.spotify.com/album/1NAmidJlEaVgA3MpcPFYGq?si=S3EhXOPxTFWEqkX2lwrXsQ",
+            "YTMusic": "https://music.youtube.com/playlist?list=OLAK5uy_nAF_sXI8U1xc8DjaTMUcf7v1BTxYfCQTQ&si=7MliI2sqTObi84ox",
             "anterior": "/mi-repo/eras/06-reputation",
             "siguiente": "/mi-repo/eras/08-folklore",
             "canciones": [
@@ -4711,6 +4718,7 @@
             "emojie":"public/images/Emojis/08.folklore.png",
             "linkPage": "/mi-repo/eras/08-folklore",
             "Spotify": "https://open.spotify.com/album/2fenSS68JI1h4Fo296JfGr?si=Bj14lR1_RwWPSingapurkGWZA7Qg",
+            "YTMusic": "https://music.youtube.com/playlist?list=OLAK5uy_lAQWiZVWU7ImDOQV9WsKjMAlLXSfWROXU&si=Tl_1BSfyXLgqXCDd",
             "anterior": "/mi-repo/eras/07-lover",
             "siguiente": "/mi-repo/eras/09-evermore",
             "canciones": [
@@ -5200,6 +5208,7 @@
             "emojie":"public/images/Emojis/09.evermore.png",
             "linkPage": "/mi-repo/eras/09-evermore",
             "Spotify": "https://open.spotify.com/album/2Xoteh7uEpea4TohMxjtaq?si=Wtf-xjXLQwKPRNBSCZcCEg",
+            "YTMusic": "https://music.youtube.com/playlist?list=OLAK5uy_mHOONmW7kSUOYZeXHYBakzyhyAdSmThSc&si=fZCpBO3Gu_v_wPzz",
             "anterior": "/mi-repo/eras/08-folklore",
             "siguiente": "/mi-repo/eras/10-midnights",
             "canciones": [
@@ -5709,6 +5718,7 @@
             "emojie":"public/images/Emojis/10.midnights.png",
             "linkPage": "/mi-repo/eras/10-midnights",
             "Spotify": "https://open.spotify.com/album/151w1FgRZfnKZA9FEcg9Z3?si=VeBZpMegQSSlneHkbOpgrQ",
+            "YTMusic": "https://music.youtube.com/playlist?list=OLAK5uy_nwM2VykawOmNH-z3L283XEI95Jb-sxIBo&si=DmjGFdH7Y5oNR0a5",
             "anterior": "/mi-repo/eras/09-evermore",
             "siguiente": "/mi-repo/eras/11-TTPD",
             "canciones": [
@@ -6538,6 +6548,7 @@
             "emojie":"public/images/Emojis/11.TTPD.png",
             "linkPage": "/mi-repo/eras/11-TTPD",
             "Spotify": "https://open.spotify.com/album/1Mo4aZ8pdj6L1jx8zSwJnt?si=UXBJ5yJERz-J4i-Q9eA8eQ",
+            "YTMusic": "https://music.youtube.com/playlist?list=OLAK5uy_m6rFWXAYFIFVIaeyn8w6kzM38Rj5D3trg&si=NF5hLtzQPVJYpsbE",
             "anterior": "/mi-repo/eras/10-midnights",
             "siguiente": "/mi-repo/eras/01-debut",
             "canciones": [
