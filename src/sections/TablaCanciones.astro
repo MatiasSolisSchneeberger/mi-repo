@@ -1,6 +1,6 @@
 ---
 import Emojie from "../components/Emojie.astro";
-import {eras} from "../datas/songs.json"
+import {eras} from "../data/songs.json"
 
 interface Props {
     era: string
@@ -16,7 +16,7 @@ if (!eraData) return null
     <thead class="w-full flex flex-row gap-2">
         <tr class={`bg-${era}-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full`}>
             <th class:list = {[
-                "text-center font-headline-small-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight relative w-full",
+                "text-center text-headline-small relative w-full",
                 {
                     "text-debut-100": era === "debut",
                     "text-fearless-100": era === "fearless",
@@ -36,7 +36,7 @@ if (!eraData) return null
         </tr>
         <tr class={`bg-${era}-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full`}>
             <th class:list = {[
-                "text-center font-headline-small-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight relative w-full",
+                "text-center text-headline-small relative w-full",
                 {
                     "text-debut-100": era === "debut",
                     "text-fearless-100": era === "fearless",
@@ -56,7 +56,7 @@ if (!eraData) return null
         </tr>
         <tr class={`bg-${era}-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full`}>
             <th class:list = {[
-                "text-center font-headline-small-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight relative w-full",
+                "text-center text-headline-small relative w-full",
                 {
                     "text-debut-100": era === "debut",
                     "text-fearless-100": era === "fearless",
@@ -97,7 +97,7 @@ if (!eraData) return null
                             }
                         ]}>
                             <td class=" w-full rounded-2xl relative">
-                                <p class="font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight text-center">
+                                <p class="text-title-medium text-center">
                                     {title}
                                 </p>
                             </td>
@@ -107,7 +107,7 @@ if (!eraData) return null
                                         if (!instrumento) return null
                                         return(
                                             <div class="flex flex-row gap-3 justify-center" >
-                                                <p class="font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight">
+                                                <p class="text-title-medium">
                                                     {fecha.dia}/{fecha.mes}/{fecha.año}
                                                 </p>
                                                 <Emojie emojie={instrumento}/>
@@ -122,7 +122,7 @@ if (!eraData) return null
                                 {
                                     info.map(({lugar})=>{
                                         return(
-                                            <p class="font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight text-center">{lugar}</p>
+                                            <p class="text-title-medium text-center">{lugar}</p>
                                         )
                                     }
 
@@ -176,7 +176,7 @@ if (!eraData) return null
                             }
                         ]}>
                             <td class=" w-full rounded-2xl relative">
-                                <p class="font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight text-center">
+                                <p class="text-title-medium text-center">
                                     {title}
                                 </p>
                             </td>
@@ -186,7 +186,7 @@ if (!eraData) return null
                                         if (!instrumento) return null
                                         return(
                                             <div class="flex flex-row gap-3 justify-center">
-                                                <p class="font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight">
+                                                <p class="text-title-medium">
                                                     {fecha.dia}/{fecha.mes}/{fecha.año}
                                                 </p>
                                                 <Emojie emojie={instrumento}/>
@@ -201,7 +201,7 @@ if (!eraData) return null
                                 {
                                     info.map(({lugar})=>{
                                         return(
-                                            <p class="font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight text-center">{lugar}</p>
+                                            <p class="text-title-medium text-center">{lugar}</p>
                                         )
                                     }
 

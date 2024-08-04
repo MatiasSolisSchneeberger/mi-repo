@@ -2,10 +2,9 @@
 interface Props {
 	era: string;
     titulo: string;
-    texto: string;
 }
 
-const { era , titulo , texto } = Astro.props;
+const { era , titulo } = Astro.props;
 ---
 <section
     class = "flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative"
@@ -26,11 +25,11 @@ const { era , titulo , texto } = Astro.props;
         }
     ]}
 >
-    <h2 class="text-center text-display-medium relative self-stretch">
+    <h2 class="text-display-medium relative self-stretch">
         {titulo}
     </h2>
-    <p class = "text-center text-title-medium relative self-stretch"
+    <p class = "text-title-medium relative self-stretch"
     style = "letter-spacing: var(--title-medium-letter-spacing, 0.15px)">
-        {texto}
+        <slot/>
     </p>
 </section>

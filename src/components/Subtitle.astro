@@ -10,11 +10,11 @@ const { era , titulo , texto } = Astro.props;
 <section
     class = "flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative">
     <h2
-    class:list = `text-${era}-900 text-center font-headline-large-font-family text-headline-large-font-size leading-headline-large-line-height font-headline-large-font-weight relative self-stretch`>
+    class:list = `text-${era}-900 text-center text-headline-large relative self-stretch`>
         {titulo}
     </h2>
     <p
-    class=`text-${era}-900 text-center font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight relative self-stretch` class:list={[{'hidden': texto===null}]}>
+    class=`text-${era}-900 text-title-medium relative self-stretch` class:list={[{'hidden': texto===null}]}>
         {texto}
     </p>
 </section>

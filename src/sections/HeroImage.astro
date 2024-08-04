@@ -35,7 +35,7 @@ const { era , boton , pagAnt , pagSig }  =  Astro.props;
 
     <!-- derechos de las imagenes  -->
     <p class:list={[
-        'text-center font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight absolute left-[30px] bottom-[30px]',
+        'text-center text-body-large absolute left-[30px] bottom-[30px]',
             {
                 'text-debut-400': era === 'debut',
                 'text-fearless-400': era === 'fearless',
@@ -58,7 +58,7 @@ const { era , boton , pagAnt , pagSig }  =  Astro.props;
     </p>
 
     <p class:list={[
-        'text-center font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight absolute left-[30px] bottom-[30px]',
+        'text-center text-body-large absolute left-[30px] bottom-[30px]',
             {
                 'text-debut-400': era === 'debut',
                 'text-fearless-400': era === 'fearless',
@@ -84,7 +84,7 @@ const { era , boton , pagAnt , pagSig }  =  Astro.props;
     <!-- Titulo -->
     <div class = "flex flex-col gap-space-200 items-center justify-center shrink-0 relative space-y-2 overflow-hidden">
         <div class:list = {[
-            "text-center font-display-large-font-family text-display-large-font-size leading-display-large-line-height font-display-large-font-weight relative self-stretch",
+            "text-center text-display-large relative self-stretch",
             {
                 'text-debut-400': era === 'debut',
                 'text-fearless-400': era === 'fearless',
@@ -103,7 +103,7 @@ const { era , boton , pagAnt , pagSig }  =  Astro.props;
             style = "letter-spacing: var(--display-large-letter-spacing, -1px)">
         Swifties Eras Tour
         </div>
-        <div class=`text-center font-headline-small-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight relative self-stretch flex items-center justify-center capitalize text-${era}-400`, style = "mix-blend-mode: color-dodge">
+        <div class=`text-center text-headline-small relative self-stretch flex items-center justify-center capitalize text-${era}-400`, style = "mix-blend-mode: color-dodge">
         {era}
         </div>
     </div>

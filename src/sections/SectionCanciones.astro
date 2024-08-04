@@ -6,7 +6,7 @@ import TarjetaCancion from "../components/TarjetaCancion.astro";
 import Cancion from "../components/Cancion.astro";
 import Emojie from "../components/Emojie.astro";
 
-import {eras} from "../datas/songs.json"
+import {eras} from "../data/songs.json"
 import CancionMashup from "../components/CancionMashup.astro";
 
 interface Props {
@@ -24,7 +24,7 @@ const { era }  =  Astro.props;
         <!-- Botones -->
         <div class="rounded-3xl flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative">
             <h3 class:list  =  {[
-                "text-center font-headline-medium-font-family text-headline-medium-font-size leading-headline-medium-line-height font-headline-medium-font-weight relative self-stretch",
+                "text-center text-headline-medium relative self-stretch",
                 {
                     "text-debut-900":       era === "debut",
                     "text-fearless-900":    era === "fearless",
@@ -109,7 +109,7 @@ const { era }  =  Astro.props;
         <!-- Etiquetas -->
         <div class = "rounded-3xl flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative">
             <h3 class:list  =  {[
-                "text-center font-headline-medium-font-family text-headline-medium-font-size leading-headline-medium-line-height font-headline-medium-font-weight relative self-stretch",
+                "text-center text-headline-medium relative self-stretch",
                 {
                     "text-debut-900":       era === "debut",
                     "text-fearless-900":    era === "fearless",
