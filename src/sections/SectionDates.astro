@@ -3,7 +3,7 @@
 import Title from "../components/Title.astro";
 import Subtitle from "../components/Subtitle.astro";
 import TarjetaFecha from "../components/TarjetaFecha.astro";
-import {concerts} from "../datas/concerts.json"
+import {concerts} from "../data/concerts.json"
 import ButtonPrimario from "../components/ButtonPrimario.astro";
 
 interface Props {
@@ -85,7 +85,7 @@ Function
             }
         ]}>
             <p  class:list = {[
-                "cursor-pointer text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
+                "cursor-pointer text-center text-title-small relative flex items-center justify-center",
                 {
                     "text-debut-50": 		era === "debut",
                     "text-fearless-50": 	era === "fearless",
@@ -148,7 +148,7 @@ Function
         }
         ]}>
             <p  class:list = {[
-                "cursor-pointer text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
+                "cursor-pointer text-center text-title-small relative flex items-center justify-center",
                 {
                     "text-debut-50": 		era === "debut",
                     "text-fearless-50": 	era === "fearless",
@@ -210,7 +210,7 @@ Function
             }
         ]}>
             <p  class:list = {[
-                "cursor-pointer text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
+                "cursor-pointer text-center text-title-small relative flex items-center justify-center",
                 {
                     "text-debut-50": 		era === "debut",
                     "text-fearless-50": 	era === "fearless",
@@ -273,7 +273,7 @@ Function
         }
         ]}>
             <p  class:list = {[
-                "cursor-pointer text-center font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight relative flex items-center justify-center",
+                "cursor-pointer text-center text-title-small relative flex items-center justify-center",
                 {
                     "text-debut-50": 		era === "debut",
                     "text-fearless-50": 	era === "fearless",

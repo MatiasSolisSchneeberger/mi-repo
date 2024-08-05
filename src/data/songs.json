@@ -405,6 +405,9 @@
                 }
             ],
             "extras":[
+            ],
+            "notas": [
+            
             ]
         },
         {
@@ -1201,6 +1204,8 @@
                         "sexto": "N/A"
                     }
                 }
+            ],
+            "notas": [
             ]
         },
         {
@@ -1923,6 +1928,8 @@
                 }
             ],
             "extras":[
+            ],
+            "notas": [
             ]
         },
         {
@@ -2901,6 +2908,9 @@
                         "sexto": "N/A"
                     }
                 }
+            ],
+            "notas": [
+                {"nota": "Nothing New: Fué parte del setlist en las fechas que Phoebe Bridgers fue telonera"}
             ]
         },
         {
@@ -3653,6 +3663,9 @@
                         "sexto": "N/A"
                     }
                 }
+            ],
+            "notas": [
+
             ]
         },
         {
@@ -4104,6 +4117,8 @@
                         "sexto": "N/A"
                     }
                 }
+            ],
+            "notas": [
             ]
         },
         {
@@ -4708,6 +4723,8 @@
                         "sexto": "N/A"
                     }
                 }
+            ],
+            "notas": [
             ]
         },
         {
@@ -5010,7 +5027,7 @@
                     ],
                     "etiquetas": {
                         "principal": "setlist",
-                        "segundo": "N/A",
+                        "segundo": "guitarra",
                         "tercer": "N/A",
                         "cuarto": "N/A",
                         "quinto": "N/A",
@@ -5198,6 +5215,10 @@
                         "sexto": "N/A"
                     }
                 }
+            ],
+            "notas": [
+                {"nota": "A partir de la primera fecha en Arlington, «Invisible String» fue reemplazada por «The 1». Sin embargo, esta última fue interpretada nuevamente en la segunda fecha de Nashville."},
+                {"nota": "La canción Seven es interpretada como poesía en el interludio de red y folklore, durante la primera parte del tour, con algunas partes de Wildest Dreams "}
             ]
         },
         {
@@ -5355,7 +5376,7 @@
                     }
                 },
                 {
-                    "title": "no body, no crime",
+                    "title": "no body, no crime * ",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -5708,6 +5729,9 @@
                 }
             ],
             "extras":[
+            ],
+            "notas": [
+                {"nota": "*No Body, No Crime: Esta canción fue incluida en el setlist en lugar de 'tis the damn season durante las fechas en las que el grupo Haim fueron teloneras"}
             ]
         },
         {
@@ -6538,6 +6562,10 @@
                 }
             ],
             "extras":[
+            ],
+            "notas": [
+                {"nota": ""},
+                {"nota": ""}
             ]
         },
         {
@@ -7286,6 +7314,8 @@
                         "sexto": "N/A"
                     }
                 }
+            ],
+            "notas": [
             ]
         }
     ]

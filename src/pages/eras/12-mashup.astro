@@ -3,7 +3,7 @@ import HeaderEra from "../../components/HeaderEra.astro"
 import Layout from "../../layouts/Layout.astro"
 import TablaCanciones from "../../sections/TablaCanciones.astro"
 const era = 'debut'
-import {eras} from "../../datas/songs.json"
+import {eras} from "../../data/songs.json"
 import HeroImage from "../../sections/HeroImage.astro"
 const eraData = eras.find(e => e.albums === era);
 if (!eraData) return null

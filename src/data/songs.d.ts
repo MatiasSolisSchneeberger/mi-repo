@@ -15,6 +15,7 @@ interface eras {
     "linkPage": string
     "canciones": Array<canciones>
     "extras": Array<extras>
+    "notas": Array<notas>
 }
 
 interface canciones{
@@ -27,6 +28,10 @@ interface extras{
     title: string
     fechas: Array<fechas>
     etiquetas: Array<etiquetas>
+}
+
+interface notas{
+    nota: string
 }
 
 interface etiquetas{

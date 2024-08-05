@@ -305,8 +305,6 @@ export default {
 				"body-medium-tracking": "0.25px",
 				"body-small-tracking": "0.4px",
 			},
-		
-			
 		},
 	},
 	plugins: [],
