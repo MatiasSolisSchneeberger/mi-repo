@@ -96,9 +96,30 @@ if (!eraData) return null
                                 "bg-TTPD-200": era === "TTPD",
                             }
                         ]}>
-                            <td class=" w-full rounded-2xl relative">
-                                <p class="text-title-medium text-center">
-                                    {title}
+                            <td class=" w-full rounded-2xl relative justify-center">
+                                <p class:list={[
+                                    "text-title-medium text-center",
+                                    {
+                                        'text-debut-400': etiquetas.principal === "sinCantar" && era === 'debut',
+                                        'text-fearless-400': etiquetas.principal === "sinCantar" && era === 'fearless',
+                                        'text-speakNow-400': etiquetas.principal === "sinCantar" && era === 'speakNow',
+                                        'text-red-400': etiquetas.principal === "sinCantar" && era === 'red',
+                                        'text-1989-400': etiquetas.principal === "sinCantar" && era === '1989',
+                                        'text-reputation-400': etiquetas.principal === "sinCantar" && era === 'reputation',
+                                        'text-lover-400': etiquetas.principal === "sinCantar" && era === 'lover',
+                                        'text-folklore-400': etiquetas.principal === "sinCantar" && era === 'folklore',
+                                        'text-evermore-400': etiquetas.principal === "sinCantar" && era === 'evermore',
+                                        'text-midnights-400': etiquetas.principal === "sinCantar" && era === 'midnights',
+                                        'text-TTPD-400': etiquetas.principal === "sinCantar" && era === 'TTPD',
+                                        'text-mashup-400': etiquetas.principal === "sinCantar" && era === 'mashup',
+                                        
+                                    }]}>
+                                    <span class:list={[
+                                    {
+                                        'hidden': etiquetas.principal !== "setlist",
+                                        
+                                    }
+                                    ]}>Setlist</span> {title}
                                 </p>
                             </td>
                             <td class="flex flex-col w-full" class:list={[{'hidden': etiquetas.principal === "setlist" || etiquetas.principal === 'sinCantar'}]}>

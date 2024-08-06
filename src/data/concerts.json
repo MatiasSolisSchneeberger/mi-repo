@@ -1547,9 +1547,7 @@
                     "estadio": "Olympiastadion"
                 },
                 "telonero": "Paramore"
-            }
-        ],
-        "ahora":[
+            },
             {
                 "fecha": {
                     "dia": "1",
@@ -1590,7 +1588,7 @@
                 "telonero": "Paramore"
             }
         ],
-        "futuro":[
+        "ahora":[
             {
                 "fecha": {
                     "dia": "8",
@@ -1629,7 +1627,9 @@
                     "estadio": "Ernst Happel Stadion"
                 },
                 "telonero": "Paramore"
-            },
+            }
+        ],
+        "futuro":[
             {
                 "fecha": {
                     "dia": "15",
