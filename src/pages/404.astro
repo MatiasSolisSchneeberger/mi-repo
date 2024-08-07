@@ -6,10 +6,10 @@ import Layout from "../layouts/Layout.astro"
 const era = 'reputation'
 ---
 <Layout title="404 | Swifties Eras Tour" era={era}>
-    <div class="py-12 px-8 sm:px-10 xl:px-44 space-y-6 items-center flex flex-col">
+    <main class="py-12 px-8 md:px-32 space-y-6 flex flex-col gap-2.5 gap-y-0 items-start justify-start self-stretch shrink-0 relative">
         <Title era={era} titulo="Error 404" texto="Parece que te has perdido, intenta volviendo a la pagina inicial"/>
         <ButtonPrimario href='/mi-repo' era={era} icono={null}>
             Inicio
         </ButtonPrimario>
-    </div>
+    </main>
 </Layout>

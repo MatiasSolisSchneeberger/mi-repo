@@ -4,13 +4,37 @@ import Layout from '../layouts/Layout.astro';
 import HeroImage from '../sections/HeroImage.astro';
 import SectionCanciones from '../sections/SectionCanciones.astro';
 import SectionDates from '../sections/SectionDates.astro';
-const era = 'mashup'
 
 ---
 
-<Layout transition:name='layout' title="Swifties Eras Tour" era={era}>
-	<HeroImage era={era} boton={true} pagAnt='/mi-repo/eras/05-1989' pagSig='/mi-repo/fearlessversion'/>
-	<SectionCanciones era={era}/>
-	<SectionDates era={era}/>
-	<ButtonToUp era={era}/>
+<Layout title="Swifties Eras Tour" era='mashup'>
+	<HeroImage era='mashup' boton={true} pagAnt='/mi-repo/eras/05-1989' pagSig='/mi-repo/fearlessversion'/>
+	<SectionCanciones era='mashup'/>
+	<SectionDates era='mashup'/>
+	<ButtonToUp era='mashup'/>
 </Layout>
+
+
+
+<!-- <script>
+	// Ejecutar el script después de que el DOM esté cargado
+	document.addEventListener('DOMContentLoaded', () => {
+		// Seleccionar todos los botones con el ID "Ant"
+		const buttons = document.querySelectorAll('button#Ant');
+
+		buttons.forEach((button) => {
+			button.addEventListener('click', () => {
+			console.log('Botón clickeado:', button);
+
+			// Obtener el elemento con el ID "Inicio"
+			const inicioElement = document.getElementById('Inicio');
+			if (inicioElement) {
+				console.log('Elemento Inicio encontrado:', inicioElement);
+				inicioElement.setAttribute('era', 'debut');
+			} else {
+				console.error('Elemento Inicio no encontrado');
+			}
+			});
+		});
+	});
+</script> -->

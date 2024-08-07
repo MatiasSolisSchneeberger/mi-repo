@@ -1,16 +1,13 @@
 ---
 import ArrowUp from './svg/ArrowUp.astro';
-
 interface Props {
 	era: string;
 }
 
 const { era }  =  Astro.props;
-
-
 ---
 
-<div id="button-up" class="shadow-sm hover:shadow-lg fixed bottom-2 right-2 opacity-0 transition-opacity">
+<div class="button-up" class="shadow-sm hover:shadow-lg fixed bottom-2 right-2 opacity-0 transition-opacity">
     <button id="scroll-to-top" style="box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
         0px 4px 8px 3px rgba(0, 0, 0, 0.15)" class:list={[
         "fixed bottom-2 right-2 p-2 flex cursor-default items-center justify-center rounded-lg text-primary  motion-safe:transition",

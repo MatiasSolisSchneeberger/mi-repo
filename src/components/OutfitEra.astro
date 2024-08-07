@@ -1,0 +1,109 @@
+---
+import ImagenOutfit from "./ImagenOutfit.astro"
+
+import {eras} from '../data/outfits.json'
+---
+{
+    eras.map(({discos , bodysuit , jacket , dress , set , shirt }) => {
+        return(
+            <section class:list={[
+                'w-full rounded-3xl p-6 flex flex-col gap-3 gap-y-4 items-start justify-start self-stretch shrink-0 relative',
+                {
+                    "text-debut-800 bg-debut-300":         discos === "debut",
+                    "text-fearless-800 bg-fearless-300":      discos === "fearless",
+                    "text-speakNow-800 bg-speakNow-300":      discos === "Speak Now",
+                    "text-red-800 bg-red-300":           discos === "red",
+                    "text-1989-800 bg-1989-300":          discos === "1989",
+                    "text-reputation-800 bg-reputation-300":    discos === "reputation",
+                    "text-lover-800 bg-lover-300":         discos === "lover",
+                    "text-folklore-800 bg-folklore-300":      discos === "folklore",
+                    "text-evermore-800 bg-evermore-300":      discos === "evermore",
+                    "text-midnights-800 bg-midnights-300":     discos === "midnights",
+                    "text-TTPD-800 bg-TTPD-300":          discos === "TTPD",
+                    "text-mashup-800 bg-mashup-300":        discos === "surprise songs",
+                    "bg-gradient-to-r from-folklore-300 to-evermore-300":        discos === "folkmore",
+                }
+            ]}
+            style="box-shadow: var(--m3-elevation-light-3-box-shadow,0px 1px 3px 0px rgba(0, 0, 0, 0.3),0px 4px 8px 3px rgba(0, 0, 0, 0.15));">
+                <h2 class:list={[' text-center text-headline-medium relative self-stretch', {'text-transparent bg-clip-text bg-gradient-to-r from-folklore-800 to-evermore-800': discos === 'folkmore'}]}>
+                    {discos.toUpperCase()}
+                </h2>
+                {/* bodysuit */}
+                {
+                    bodysuit.length > 0 && <h3 class:list={[" text-center text-title-large relative self-stretch",
+                    {'text-transparent bg-clip-text bg-gradient-to-r from-folklore-800 to-evermore-800': discos === 'folkmore'}
+                        
+                    ]}>Bodysuit</h3>
+                }
+                <div class="flex flex-row gap-6 items-center justify-center flex-wrap content-center self-stretch shrink-0 relative"> 
+                {
+                    bodysuit.map(({image}) =>{
+                        return(<ImagenOutfit src={image} era={discos}/>)
+                    })
+                    
+                }
+                </div>
+                {/* Jackets */}
+                {
+                    jacket.length > 0 && <h3 class:list={[" text-center text-title-large relative self-stretch",
+                    {'text-transparent bg-clip-text bg-gradient-to-r from-folklore-800 to-evermore-800': discos === 'folkmore'}
+                        
+                    ]}>Jacket</h3>
+                }
+                <div class="flex flex-row gap-6 items-center justify-center flex-wrap content-center self-stretch shrink-0 relative"> 
+                {
+                    jacket.map(({image}) =>{
+                        return(<ImagenOutfit src={image} era={discos}/>)
+                    })
+                    
+                }
+                </div>
+                {/* dress */}
+                {
+                    dress.length > 0 && <h3 class:list={[" text-center text-title-large relative self-stretch",
+                    {'text-transparent bg-clip-text bg-gradient-to-r from-folklore-800 to-evermore-800': discos === 'folkmore'}
+                        
+                    ]}>Dress</h3>
+                }
+                <div class="flex flex-row gap-6 items-center justify-center flex-wrap content-center self-stretch shrink-0 relative"> 
+                {
+                    dress.map(({image}) =>{
+                        return(<ImagenOutfit src={image} era={discos}/>)
+                    })
+                    
+                }
+                </div>
+                {/* set */}
+                {
+                    set.length > 0 && <h3 class:list={[" text-center text-title-large relative self-stretch",
+                    {'text-transparent bg-clip-text bg-gradient-to-r from-folklore-800 to-evermore-800': discos === 'folkmore'}
+                        
+                    ]}>Set</h3>
+                }
+                <div class="flex flex-row gap-6 items-center justify-center flex-wrap content-center self-stretch shrink-0 relative"> 
+                {
+                    set.map(({image}) =>{
+                        return(<ImagenOutfit src={image} era={discos}/>)
+                    })
+                    
+                }
+                </div>
+                {/* shirt */}
+                {
+                    shirt.length > 0 && <h3 class:list={[" text-center text-title-large relative self-stretch",
+                    {'text-transparent bg-clip-text bg-gradient-to-r from-folklore-800 to-evermore-800': discos === 'folkmore'}
+                        
+                    ]}>Shirt</h3>
+                }
+                <div class="flex flex-row gap-6 items-center justify-center flex-wrap content-center self-stretch shrink-0 relative"> 
+                {
+                    shirt.map(({image}) =>{
+                        return(<ImagenOutfit src={image} era={discos}/>)
+                    })
+                    
+                }
+                </div>
+            </section>
+        )
+    })
+}
