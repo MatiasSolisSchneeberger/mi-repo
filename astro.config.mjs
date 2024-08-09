@@ -10,5 +10,7 @@ export default defineConfig({
   base: 'mi-repo',
   integrations: [tailwind(), react()],
   output: "server",
-  adapter: netlify()
+  adapter: netlify({
+    edgeMiddleware: true
+  }),
 });
