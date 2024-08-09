@@ -1586,9 +1586,7 @@
                     "estadio": "PGE Narodowy"
                 },
                 "telonero": "Paramore"
-            }
-        ],
-        "ahora":[
+            },
             {
                 "fecha": {
                     "dia": "8",
@@ -1597,7 +1595,7 @@
                 },
                 "lugar": {
                     "pais": "Austria",
-                    "ciudad": "Viena",
+                    "ciudad": "Viena*",
                     "estadio": "Ernst Happel Stadion"
                 },
                 "telonero": "Paramore"
@@ -1610,7 +1608,7 @@
                 },
                 "lugar": {
                     "pais": "Austria",
-                    "ciudad": "Viena",
+                    "ciudad": "Viena*",
                     "estadio": "Ernst Happel Stadion"
                 },
                 "telonero": "Paramore"
@@ -1623,11 +1621,14 @@
                 },
                 "lugar": {
                     "pais": "Austria",
-                    "ciudad": "Viena",
+                    "ciudad": "Viena*",
                     "estadio": "Ernst Happel Stadion"
                 },
                 "telonero": "Paramore"
             }
+        ],
+        "ahora":[
+            
         ],
         "futuro":[
             {
