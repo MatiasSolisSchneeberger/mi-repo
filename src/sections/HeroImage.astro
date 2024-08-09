@@ -13,7 +13,7 @@ const { era , boton , pagAnt , pagSig }  =  Astro.props;
 ---
 
 <div transition:name="hero-image" id="Inicio" class:list = {[
-    "sm:px-32 px-14 flex flex-col items-center justify-center self-stretch shrink-0 relative py-24 sm:py-40 space-y-8 bg-cover bg-no-repeat bg-center w-full",
+    "sm:px-32 px-14 flex flex-col items-center justify-center self-stretch shrink-0 relative py-40 space-y-8 bg-cover bg-no-repeat bg-center w-full",
     {
         'bg-fondos-debut': era === 'debut',
         'bg-fondos-fearless': era === 'fearless',
@@ -83,8 +83,8 @@ const { era , boton , pagAnt , pagSig }  =  Astro.props;
 
     <!-- Titulo -->
     <div class = "flex flex-col gap-space-200 items-center justify-center shrink-0 relative space-y-2 overflow-hidden">
-        <h1 class:list = {[
-            "text-center text-display-small text-display-large relative self-stretch",
+        <div class:list = {[
+            "text-center text-display-large relative self-stretch",
             {
                 'text-debut-400': era === 'debut',
                 'text-fearless-400': era === 'fearless',
@@ -99,9 +99,10 @@ const { era , boton , pagAnt , pagSig }  =  Astro.props;
                 'text-TTPD-400': era === 'TTPD',
                 'text-mashup-400': era === 'mashup',
             }
-            ]}>
+            ]},
+            style = "letter-spacing: var(--display-large-letter-spacing, -1px)">
         Swifties Eras Tour
-        </h1>
+        </div>
         <div class=`text-center text-headline-small relative self-stretch flex items-center justify-center capitalize text-${era}-400`, style = "mix-blend-mode: color-dodge">
         {era}
         </div>
@@ -119,8 +120,8 @@ const { era , boton , pagAnt , pagSig }  =  Astro.props;
             'sm:flex': boton === true
         }
     ]}>
-        <ButtonPrimario era = {era} href = "/mi-repo/outfits" icono={null}>
-            Outfits
+        <ButtonPrimario era = {era} href="#Canciones" icono={null}>
+            Canciones
         </ButtonPrimario>
         <ButtonPrimario era = {era} href="#Conciertos" icono={null}>
             Conciertos
