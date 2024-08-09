@@ -1628,9 +1628,6 @@
             }
         ],
         "ahora":[
-            
-        ],
-        "futuro":[
             {
                 "fecha": {
                     "dia": "15",
@@ -1695,7 +1692,9 @@
                     "estadio": "Estadio de Wembley"
                 },
                 "telonero": "Paramore"
-            },
+            }
+        ],
+        "futuro":[
             {
                 "fecha": {
                     "dia": "18",
