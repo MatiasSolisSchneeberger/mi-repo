@@ -6,27 +6,27 @@ interface Props {
 const { emojie } = Astro.props;
 
 const imageEmojie: { [key: string]: string } = {
-    debut:      "/mi-repo/images/Emojis/01.taylorSwift.png",
-    fearless:   "/mi-repo/images/Emojis/02.fearless.png",
-    speakNow:   "/mi-repo/images/Emojis/03.speakNow.png",
-    red:        "/mi-repo/images/Emojis/04.red.png",
-    "1989":     "/mi-repo/images/Emojis/05.1989.png",
-    reputation: "/mi-repo/images/Emojis/06.reputation.png",
-    lover:      "/mi-repo/images/Emojis/07.lover.png",
-    folklore:   "/mi-repo/images/Emojis/08.folklore.png",
-    evermore:   "/mi-repo/images/Emojis/09.evermore.png",
-    midnights:  "/mi-repo/images/Emojis/10.midnights.png",
-    TTPD:       "/mi-repo/images/Emojis/11.TTPD.png",
-    mashup:     "/mi-repo/images/Emojis/12.MashUp.png",
-    piano:      "/mi-repo/images/Emojis/13.piano.png",
-    pelicula:   "/mi-repo/images/Emojis/14.Película.png",
-    setlist:    "/mi-repo/images/Emojis/15.setlist.png",
-    guitarra:   "/mi-repo/images/Emojis/16.guitarra.png",
-    cantante:   "/mi-repo/images/Emojis/17.cantante.png",
-    sinCantar:  "/mi-repo/images/Emojis/cross-mark_274c (1).png",
+    debut:      "/swifties-eras-tour/images/Emojis/01.taylorSwift.png",
+    fearless:   "/swifties-eras-tour/images/Emojis/02.fearless.png",
+    speakNow:   "/swifties-eras-tour/images/Emojis/03.speakNow.png",
+    red:        "/swifties-eras-tour/images/Emojis/04.red.png",
+    "1989":     "/swifties-eras-tour/images/Emojis/05.1989.png",
+    reputation: "/swifties-eras-tour/images/Emojis/06.reputation.png",
+    lover:      "/swifties-eras-tour/images/Emojis/07.lover.png",
+    folklore:   "/swifties-eras-tour/images/Emojis/08.folklore.png",
+    evermore:   "/swifties-eras-tour/images/Emojis/09.evermore.png",
+    midnights:  "/swifties-eras-tour/images/Emojis/10.midnights.png",
+    TTPD:       "/swifties-eras-tour/images/Emojis/11.TTPD.png",
+    mashup:     "/swifties-eras-tour/images/Emojis/12.MashUp.png",
+    piano:      "/swifties-eras-tour/images/Emojis/13.piano.png",
+    pelicula:   "/swifties-eras-tour/images/Emojis/14.Película.png",
+    setlist:    "/swifties-eras-tour/images/Emojis/15.setlist.png",
+    guitarra:   "/swifties-eras-tour/images/Emojis/16.guitarra.png",
+    cantante:   "/swifties-eras-tour/images/Emojis/17.cantante.png",
+    sinCantar:  "/swifties-eras-tour/images/Emojis/cross-mark_274c (1).png",
 };
 
-const imagen = imageEmojie[emojie] || "/mi-repo/images/Emojis/19.nada.png"
+const imagen = imageEmojie[emojie] || "/swifties-eras-tour/images/Emojis/19.nada.png"
 ---
 
 <img 
@@ -34,8 +34,8 @@ const imagen = imageEmojie[emojie] || "/mi-repo/images/Emojis/19.nada.png"
     class:list = {[
         "w-[18px] h-[18px] relative",
         {
-            "hidden": imagen === "/mi-repo/images/Emojis/19.nada.png",
-            "opacity-0": imagen === "/mi-repo/images/Emojis/cross-mark_274c (1).png",
+            "hidden": imagen === "/swifties-eras-tour/images/Emojis/19.nada.png",
+            "opacity-0": imagen === "/swifties-eras-tour/images/Emojis/cross-mark_274c (1).png",
         }
     ]}
 

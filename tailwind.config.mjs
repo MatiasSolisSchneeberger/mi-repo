@@ -5,18 +5,18 @@ export default {
 		extend: {
 			backgroundImage:{
 				/* Fondos HeroImage */
-				'fondos-debut': 	 'radial-gradient(closest-side,rgba(35, 66, 37, 0.75) 0%, rgba(35, 66, 37, 0) 100%), linear-gradient(to left, rgba(35, 66, 37, 0.25), rgba(35, 66, 37, 0.25)), url("/mi-repo/images/Fondos/01.Debut.png")',
-				'fondos-fearless': 	 'radial-gradient(closest-side,rgba(132, 42, 28, 0.75) 0%,rgba(132, 42, 28, 0) 100%), linear-gradient(to left, rgba(132, 42, 28, 0.25), rgba(132, 42, 28, 0.25)), url("/mi-repo/images/Fondos/02.Fearless.png")',		
-				'fondos-speakNow': 	 'radial-gradient(closest-side,rgba(109, 71, 107, 0.75) 0%,rgba(109, 71, 107, 0) 100%), linear-gradient(to left, rgba(109, 71, 107, 0.25), rgba(109, 71, 107, 0.25)), url("/mi-repo/images/Fondos/03.SpeakNow.png")',
-				'fondos-red': 		 'radial-gradient(closest-side,rgba(122, 46, 57, 0.75) 0%,rgba(122, 46, 57, 0) 100%), linear-gradient(to left, rgba(122, 46, 57, 0.25), rgba(122, 46, 57, 0.25)), url("/mi-repo/images/Fondos/03.Red.png")',
-				'fondos-1989': 		 'radial-gradient(closest-side,rgba(15, 94, 125, 0.75) 0%,rgba(15, 94, 125, 0) 100%), linear-gradient(to left, rgba(15, 94, 125, 0.25), rgba(15, 94, 125, 0.25)), url("/mi-repo/images/Fondos/05.1989.png")',
-				'fondos-reputation': 'radial-gradient(closest-side,rgba(72, 68, 68, 0.75) 0%,rgba(72, 68, 68, 0) 100%), linear-gradient(to left, rgba(72, 68, 68, 0.25), rgba(72, 68, 68, 0.25)), url("/mi-repo/images/Fondos/06.Reputation.png")',
-				'fondos-lover': 	 'radial-gradient(closest-side,rgba(153, 27, 59, 0.75) 0%,rgba(153, 27, 59, 0) 100%), linear-gradient(to left, rgba(153, 27, 59, 0.25), rgba(153, 27, 59, 0.25)), url("/mi-repo/images/Fondos/07.Lover.png")',
-				'fondos-folklore': 	 'radial-gradient(closest-side,rgba(93, 84, 79, 0.75) 0%,rgba(93, 84, 79, 0) 100%), linear-gradient(to left, rgba(93, 84, 79, 0.25), rgba(93, 84, 79, 0.25)), url("/mi-repo/images/Fondos/08.Folklore.png")',
-				'fondos-evermore': 	 'radial-gradient(closest-side,rgba(108, 76, 64, 0.75) 0%,rgba(108, 76, 64, 0) 100%), linear-gradient(to left, rgba(108, 76, 64, 0.25), rgba(108, 76, 64, 0.25)), url("/mi-repo/images/Fondos/09.Evermore.png")',
-				'fondos-midnights':  'radial-gradient(closest-side,rgba(61, 85, 144, 0.75) 0%,rgba(61, 85, 144, 0) 100%), linear-gradient(to left, rgba(61, 85, 144, 0.25), rgba(61, 85, 144, 0.25)), url("/mi-repo/images/Fondos/10.Midnights.png")',
-				'fondos-TTPD': 		 'radial-gradient(closest-side,rgba(83, 71, 64, 0.75) 0%,rgba(0, 0, 0, 0) 100%), linear-gradient(to left, rgba(83, 71, 64, 0.25), rgba(83, 71, 64, 0.25)), url("/mi-repo/images/Fondos/11.TTPD.png")',
-				'fondos-mashup': 	 'radial-gradient(closest-side,rgba(154, 39, 26, 0.75) 0%,rgba(0, 0, 0, 0) 100%),linear-gradient(to left, rgba(154, 39, 26, 0.25), rgba(154, 39, 26, 0.25)), url("/mi-repo/images/Fondos/12.Mashup.png")'
+				'fondos-debut': 	 'radial-gradient(closest-side,rgba(35, 66, 37, 0.75) 0%, rgba(35, 66, 37, 0) 100%), linear-gradient(to left, rgba(35, 66, 37, 0.25), rgba(35, 66, 37, 0.25)), url("/swifties-eras-tour/images/Fondos/01.Debut.png")',
+				'fondos-fearless': 	 'radial-gradient(closest-side,rgba(132, 42, 28, 0.75) 0%,rgba(132, 42, 28, 0) 100%), linear-gradient(to left, rgba(132, 42, 28, 0.25), rgba(132, 42, 28, 0.25)), url("/swifties-eras-tour/images/Fondos/02.Fearless.png")',		
+				'fondos-speakNow': 	 'radial-gradient(closest-side,rgba(109, 71, 107, 0.75) 0%,rgba(109, 71, 107, 0) 100%), linear-gradient(to left, rgba(109, 71, 107, 0.25), rgba(109, 71, 107, 0.25)), url("/swifties-eras-tour/images/Fondos/03.SpeakNow.png")',
+				'fondos-red': 		 'radial-gradient(closest-side,rgba(122, 46, 57, 0.75) 0%,rgba(122, 46, 57, 0) 100%), linear-gradient(to left, rgba(122, 46, 57, 0.25), rgba(122, 46, 57, 0.25)), url("/swifties-eras-tour/images/Fondos/03.Red.png")',
+				'fondos-1989': 		 'radial-gradient(closest-side,rgba(15, 94, 125, 0.75) 0%,rgba(15, 94, 125, 0) 100%), linear-gradient(to left, rgba(15, 94, 125, 0.25), rgba(15, 94, 125, 0.25)), url("/swifties-eras-tour/images/Fondos/05.1989.png")',
+				'fondos-reputation': 'radial-gradient(closest-side,rgba(72, 68, 68, 0.75) 0%,rgba(72, 68, 68, 0) 100%), linear-gradient(to left, rgba(72, 68, 68, 0.25), rgba(72, 68, 68, 0.25)), url("/swifties-eras-tour/images/Fondos/06.Reputation.png")',
+				'fondos-lover': 	 'radial-gradient(closest-side,rgba(153, 27, 59, 0.75) 0%,rgba(153, 27, 59, 0) 100%), linear-gradient(to left, rgba(153, 27, 59, 0.25), rgba(153, 27, 59, 0.25)), url("/swifties-eras-tour/images/Fondos/07.Lover.png")',
+				'fondos-folklore': 	 'radial-gradient(closest-side,rgba(93, 84, 79, 0.75) 0%,rgba(93, 84, 79, 0) 100%), linear-gradient(to left, rgba(93, 84, 79, 0.25), rgba(93, 84, 79, 0.25)), url("/swifties-eras-tour/images/Fondos/08.Folklore.png")',
+				'fondos-evermore': 	 'radial-gradient(closest-side,rgba(108, 76, 64, 0.75) 0%,rgba(108, 76, 64, 0) 100%), linear-gradient(to left, rgba(108, 76, 64, 0.25), rgba(108, 76, 64, 0.25)), url("/swifties-eras-tour/images/Fondos/09.Evermore.png")',
+				'fondos-midnights':  'radial-gradient(closest-side,rgba(61, 85, 144, 0.75) 0%,rgba(61, 85, 144, 0) 100%), linear-gradient(to left, rgba(61, 85, 144, 0.25), rgba(61, 85, 144, 0.25)), url("/swifties-eras-tour/images/Fondos/10.Midnights.png")',
+				'fondos-TTPD': 		 'radial-gradient(closest-side,rgba(83, 71, 64, 0.75) 0%,rgba(0, 0, 0, 0) 100%), linear-gradient(to left, rgba(83, 71, 64, 0.25), rgba(83, 71, 64, 0.25)), url("/swifties-eras-tour/images/Fondos/11.TTPD.png")',
+				'fondos-mashup': 	 'radial-gradient(closest-side,rgba(154, 39, 26, 0.75) 0%,rgba(0, 0, 0, 0) 100%),linear-gradient(to left, rgba(154, 39, 26, 0.25), rgba(154, 39, 26, 0.25)), url("/swifties-eras-tour/images/Fondos/12.Mashup.png")'
 			},
 			colors: {
 				/* Debut */

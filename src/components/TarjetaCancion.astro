@@ -16,22 +16,22 @@ interface Props {
 const { eraTarjeta , spotify , linkPage , YTmusic } = Astro.props;
 
 const imageTaylor: { [key: string]: string } = {
-    debut:      "/mi-repo/images/Fotos/01-TaylorSwift.png",
-    fearless:   "/mi-repo/images/Fotos/02-Fearless.png",
-    speakNow:   "/mi-repo/images/Fotos/03-SpeakNow.png",
-    red:        "/mi-repo/images/Fotos/04-Red.png",
-    "1989":     "/mi-repo/images/Fotos/05-1989.png",
-    reputation: "/mi-repo/images/Fotos/06-Reputation.png",
-    lover:      "/mi-repo/images/Fotos/07-Lover.png",
-    folklore:   "/mi-repo/images/Fotos/08-Folklore.png",
-    evermore:   "/mi-repo/images/Fotos/09-Evermore.png",
-    midnights:  "/mi-repo/images/Fotos/10-Midnights.png",
-    TTPD:       "/mi-repo/images/Fotos/11-TTPD.png",
-    mashup:     "/mi-repo/images/Fotos/12-Mashup.png",
+    debut:      "/swifties-eras-tour/images/Fotos/01-TaylorSwift.png",
+    fearless:   "/swifties-eras-tour/images/Fotos/02-Fearless.png",
+    speakNow:   "/swifties-eras-tour/images/Fotos/03-SpeakNow.png",
+    red:        "/swifties-eras-tour/images/Fotos/04-Red.png",
+    "1989":     "/swifties-eras-tour/images/Fotos/05-1989.png",
+    reputation: "/swifties-eras-tour/images/Fotos/06-Reputation.png",
+    lover:      "/swifties-eras-tour/images/Fotos/07-Lover.png",
+    folklore:   "/swifties-eras-tour/images/Fotos/08-Folklore.png",
+    evermore:   "/swifties-eras-tour/images/Fotos/09-Evermore.png",
+    midnights:  "/swifties-eras-tour/images/Fotos/10-Midnights.png",
+    TTPD:       "/swifties-eras-tour/images/Fotos/11-TTPD.png",
+    mashup:     "/swifties-eras-tour/images/Fotos/12-Mashup.png",
 };
 
 // Obtener la imagen correspondiente al eraTarjeta
-const taylor = imageTaylor[eraTarjeta] || "/mi-repo/images/Emojis/cross-mark_274c.png";
+const taylor = imageTaylor[eraTarjeta] || "/swifties-eras-tour/images/Emojis/cross-mark_274c.png";
 
 ---
 <article transition:name="tarjeta-tabla" id={eraTarjeta} class:list={[
@@ -77,17 +77,17 @@ const taylor = imageTaylor[eraTarjeta] || "/mi-repo/images/Emojis/cross-mark_274
         <div class:list={[
             "group transition ease-in-out delay-0 duration-200 h-[350px]  bg-cover bg-center rounded-xl flex flex-col items-center justify-end self-stretch shrink-0 relative overflow-hidden",
             {
-                "bg-[url('/mi-repo/images/Portadas-Discos/01-Portada-TaylorSwift.png')]":    eraTarjeta === 'debut',
-                "bg-[url('/mi-repo/images/Portadas-Discos/02-Portada-Fearless.png')]":       eraTarjeta === 'fearless',
-                "bg-[url('/mi-repo/images/Portadas-Discos/03-Portada-SpeakNow.png')]":       eraTarjeta === 'speakNow',
-                "bg-[url('/mi-repo/images/Portadas-Discos/04-Portada-Red.png')]":            eraTarjeta === 'red',
-                "bg-[url('/mi-repo/images/Portadas-Discos/05-Portada-1989.png')]":           eraTarjeta === '1989',
-                "bg-[url('/mi-repo/images/Portadas-Discos/06-Portada-Reputation.png')]":     eraTarjeta === 'reputation',
-                "bg-[url('/mi-repo/images/Portadas-Discos/07-Portada-Lover.png')]":          eraTarjeta === 'lover',
-                "bg-[url('/mi-repo/images/Portadas-Discos/08-Portada-Folklore.png')]":       eraTarjeta === 'folklore',
-                "bg-[url('/mi-repo/images/Portadas-Discos/09-Portada-Evermore.png')]":       eraTarjeta === 'evermore',
-                "bg-[url('/mi-repo/images/Portadas-Discos/10-Portada-Midnights.png')]":      eraTarjeta === 'midnights',
-                "bg-[url('/mi-repo/images/Portadas-Discos/11-Portada-TTPD.png')]":           eraTarjeta === 'TTPD',
+                "bg-[url('/swifties-eras-tour/images/Portadas-Discos/01-Portada-TaylorSwift.png')]":    eraTarjeta === 'debut',
+                "bg-[url('/swifties-eras-tour/images/Portadas-Discos/02-Portada-Fearless.png')]":       eraTarjeta === 'fearless',
+                "bg-[url('/swifties-eras-tour/images/Portadas-Discos/03-Portada-SpeakNow.png')]":       eraTarjeta === 'speakNow',
+                "bg-[url('/swifties-eras-tour/images/Portadas-Discos/04-Portada-Red.png')]":            eraTarjeta === 'red',
+                "bg-[url('/swifties-eras-tour/images/Portadas-Discos/05-Portada-1989.png')]":           eraTarjeta === '1989',
+                "bg-[url('/swifties-eras-tour/images/Portadas-Discos/06-Portada-Reputation.png')]":     eraTarjeta === 'reputation',
+                "bg-[url('/swifties-eras-tour/images/Portadas-Discos/07-Portada-Lover.png')]":          eraTarjeta === 'lover',
+                "bg-[url('/swifties-eras-tour/images/Portadas-Discos/08-Portada-Folklore.png')]":       eraTarjeta === 'folklore',
+                "bg-[url('/swifties-eras-tour/images/Portadas-Discos/09-Portada-Evermore.png')]":       eraTarjeta === 'evermore',
+                "bg-[url('/swifties-eras-tour/images/Portadas-Discos/10-Portada-Midnights.png')]":      eraTarjeta === 'midnights',
+                "bg-[url('/swifties-eras-tour/images/Portadas-Discos/11-Portada-TTPD.png')]":           eraTarjeta === 'TTPD',
             }
             ]}>
             <div class:list={[

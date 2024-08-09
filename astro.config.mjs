@@ -6,6 +6,6 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: 'https:matiassolisschneeberger.github.io',
-  base: 'mi-repo',
+  base: 'swifties-eras-tour',
   integrations: [tailwind(), react()]
 });
