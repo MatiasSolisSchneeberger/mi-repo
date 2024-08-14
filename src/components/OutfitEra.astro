@@ -1,10 +1,10 @@
 ---
 import ImagenOutfit from "./ImagenOutfit.astro"
 
-import {eras} from '../data/outfits.json'
+import {erasOutfit} from '../data/outfits.json'
 ---
 {
-    eras.map(({discos , bodysuit , jacket , dress , set , shirt }) => {
+    erasOutfit.map(({discos , bodysuit , jacket , dress , set , shirt }) => {
         return(
             <section class:list={[
                 'w-full rounded-3xl p-6 flex flex-col gap-3 gap-y-4 items-start justify-start self-stretch shrink-0 relative',

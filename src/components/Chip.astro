@@ -8,11 +8,11 @@ const { icono , era } = Astro.props;
 ---
 <chip
     class:list = {[
-        " rounded-lg border-solid  border flex flex-row gap-0 items-center justify-center shrink-0 h-8 relative overflow-hidden",
+        "cursor-pointer hover:scale-105 rounded-lg border-solid  border flex flex-row gap-0 items-center justify-center shrink-0 h-8 relative overflow-hidden",
         {
             "bg-debut-200       border-debut-600":      era === "debut",
             "bg-fearless-200    border-fearless-600":   era === "fearless",
-            "bg-speakNow-200   border-speakNow-600":  era === "speakNow",
+            "bg-speakNow-200    border-speakNow-600":  era === "speakNow",
             "bg-red-200         border-red-600":        era === "red",
             "bg-1989-200        border-1989-600":       era === "1989",
             "bg-reputation-200  border-reputation-600": era === "reputation",
@@ -29,7 +29,7 @@ const { icono , era } = Astro.props;
         0px 1px 2px 0px rgba(0, 0, 0, 0.3); 
     "
 >
-    <button
+    <div
         class:list = {[
             "pt-1.5 pb-1.5 flex flex-row gap-2 items-center justify-center shrink-0 h-8 relative",
             {
@@ -41,7 +41,7 @@ const { icono , era } = Astro.props;
     >
         <slot name="before"/>
         
-        <a
+        <p
         class:list = {[
             "text-center text-title-small relative flex items-center justify-center",
             {
@@ -61,7 +61,7 @@ const { icono , era } = Astro.props;
             style = "letter-spacing: var(--title-small-letter-spacing, 0.1px)"
         >
             <slot/>
-        </a>
+        </p>
 
         <slot name="after">
     </button>

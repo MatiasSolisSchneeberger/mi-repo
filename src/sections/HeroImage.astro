@@ -10,12 +10,30 @@ interface Props {
 }
 
 const { era , boton , pagAnt , pagSig }  =  Astro.props;
+
+const albumes: { [key: string]: string } = {
+    debut:      "Taylor Swift",
+    fearless:   "Fearless",
+    speakNow:   "Speak Now",
+    red:        "Red",
+    "1989":     "1989",
+    reputation: "Reputation",
+    lover:      "Lover",
+    folklore:   "Folklore",
+    evermore:   "Evermore",
+    midnights:  "Midnights",
+    TTPD:       "The Tortured Poets Department",
+    mashup:     "Suprise Songs",
+}
+
+const album = albumes[era] || "";
+
 ---
 
 <div transition:name="hero-image" id="Inicio" class:list = {[
-    "sm:px-32 px-14 flex flex-col items-center justify-center self-stretch shrink-0 relative py-40 space-y-8 bg-cover bg-no-repeat bg-center w-full",
+    "px-14 py-32 sm:py-40 sm:px-32 flex flex-col items-center justify-center self-stretch shrink-0 relative space-y-8 bg-cover bg-center w-full",
     {
-        'bg-fondos-debut': era === 'debut',
+        'bg-fondos-debut bg-left': era === 'debut',
         'bg-fondos-fearless': era === 'fearless',
         'bg-fondos-speakNow': era === 'speakNow',
         'bg-fondos-red': era === 'red',
@@ -84,7 +102,7 @@ const { era , boton , pagAnt , pagSig }  =  Astro.props;
     <!-- Titulo -->
     <div class = "flex flex-col gap-space-200 items-center justify-center shrink-0 relative space-y-2 overflow-hidden">
         <div class:list = {[
-            "text-center text-display-large relative self-stretch",
+            "text-center text-display-small sm:text-display-large relative self-stretch",
             {
                 'text-debut-400': era === 'debut',
                 'text-fearless-400': era === 'fearless',
@@ -104,7 +122,7 @@ const { era , boton , pagAnt , pagSig }  =  Astro.props;
         Swifties Eras Tour
         </div>
         <div class=`text-center text-headline-small relative self-stretch flex items-center justify-center capitalize text-${era}-400`, style = "mix-blend-mode: color-dodge">
-        {era}
+        {album}
         </div>
     </div>
     <a class="absolute left-4 y-1/2" href={pagAnt}>

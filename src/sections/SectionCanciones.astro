@@ -7,7 +7,6 @@ import Cancion from "../components/Cancion.astro";
 import Emojie from "../components/Emojie.astro";
 
 import {eras} from "../data/songs.json"
-import CancionMashup from "../components/CancionMashup.astro";
 
 interface Props {
 	era: string;
@@ -218,16 +217,5 @@ const { era }  =  Astro.props;
                 )
             })
         }
-        <CancionMashup 
-            fromEra= "debut"
-            viaEra= "null"
-            toEra= "red"
-            cancion= "Our Song x All too well"
-            emojiePrincipal= ""
-            emojie2= ""
-            emojie3= ""
-            emojie4= ""
-            emojie5= ""
-            emojie6= ""/>
     </section>
 </article>

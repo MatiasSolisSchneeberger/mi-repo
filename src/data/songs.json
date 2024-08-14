@@ -249,7 +249,7 @@
                             },
                             "cantSorp": null,
                             "instrumento": "guitarra",
-                            "lugar": "Sidney, Australia"
+                            "lugar": "Sídney, Australia"
                         }
                     ],
                     "etiquetas": {
@@ -585,7 +585,7 @@
                             },
                             "cantSorp": "Sabrina Carpenter",
                             "instrumento": "piano",
-                            "lugar": "Sydney, Australia"
+                            "lugar": "Sídney, Australia"
                         }
                     ],
                     "etiquetas": {
@@ -703,7 +703,7 @@
                             },
                             "cantSorp": null,
                             "instrumento": "guitarra",
-                            "lugar": "Sidney, Australia"
+                            "lugar": "Sídney, Australia"
                         },
                         {
                             "tipo": "dia 3",
@@ -773,7 +773,7 @@
                             },
                             "cantSorp": "mashup",
                             "instrumento": "piano",
-                            "lugar": "Sydney, Australia"
+                            "lugar": "Sídney, Australia"
                         }
                     ],
                     "etiquetas": {
@@ -998,7 +998,7 @@
                     }
                 },
                 {
-                    "title": "Today Was A Fairytale",
+                    "title": "Today Was A Fairytale x2",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -1010,11 +1010,22 @@
                             "cantSorp": null,
                             "instrumento": "piano",
                             "lugar": "Houston, EE UU"
+                        },
+                        {
+                            "tipo": "dia 2",
+                            "fecha": {
+                                "dia": 3,
+                                "mes": 7,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "guitarra",
+                            "lugar": "Warsaw, Polonia"
                         }
                     ],
                     "etiquetas": {
                         "principal": "piano",
-                        "segundo": "N/A",
+                        "segundo": "mashup",
                         "tercer": "N/A",
                         "cuarto": "N/A",
                         "quinto": "N/A",
@@ -1141,8 +1152,17 @@
                             "cantSorp": null,
                             "instrumento": "piano",
                             "lugar": "Munich, Alemania"
-
-
+                        },
+                        {
+                            "tipo": "dia 2",
+                            "fecha": {
+                                "dia": 28,
+                                "mes": 7,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "piano",
+                            "lugar": "Munich, Alemania"
                         }
                     ],
                     "etiquetas": {
@@ -1206,6 +1226,7 @@
                 }
             ],
             "notas": [
+                
             ]
         },
         {
@@ -1809,7 +1830,7 @@
                     }
                 },
                 {
-                    "title": "I Can See You x2",
+                    "title": "I Can See You x3",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -1832,6 +1853,17 @@
                             "cantSorp": null,
                             "instrumento": "guitarra",
                             "lugar": "Liverpool, Inglaterra"
+                        },
+                        {
+                            "tipo": "dia 3",
+                            "fecha": {
+                                "dia": 2,
+                                "mes": 8,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "guitarra",
+                            "lugar": "Warsaw, Polonia"
                         }
                     ],
                     "etiquetas": {
@@ -1930,6 +1962,10 @@
             "extras":[
             ],
             "notas": [
+                {"nota": "* Castles Crumbling: el interludio entre el set de Red y Speak Now contiene partes de esta canción, junto con Enchanted"},
+                {"nota": "* Long Live: fue agregado en 7 de Julio (el mismo dia que salió Speak Now Taylor's Version) en Kansas City al setlist. Y fue retirado el 9 de mayo al agregar TTPD"},
+                {"nota": "El 7 de Julio del 2023 fue la premier del videoclip 'I Can See You'"},
+                {"nota": "El 5 de Mayo del 2023 fue anunciado Speak Now (Taylor's Version)"}
             ]
         },
         {
@@ -1980,7 +2016,7 @@
                     }
                 },
                 {
-                    "title": "Red x4",
+                    "title": "Red x5",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -2025,6 +2061,17 @@
                             "cantSorp": null,
                             "instrumento": "guitarra",
                             "lugar": "Milán, Italia"
+                        },
+                        {
+                            "tipo": "dia 5",
+                            "fecha": {
+                                "dia": 2,
+                                "mes": 8,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "piano",
+                            "lugar": "Warsaw, Polonia"
                         }
                     ],
                     "etiquetas": {
@@ -3136,7 +3183,7 @@
                             },
                             "cantSorp": null,
                             "instrumento": "guitarra",
-                            "lugar": "Sydney, Australia"
+                            "lugar": "Sídney, Australia"
                         }
                     ],
                     "etiquetas": {
@@ -3532,7 +3579,7 @@
                     }
                 },
                 {
-                    "title": "Suburban Legends",
+                    "title": "Suburban Legends x2",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -3544,11 +3591,22 @@
                             "cantSorp": null,
                             "instrumento": "piano",
                             "lugar": "Río de Janeiro, Brasil"
+                        },
+                        {
+                            "tipo": "dia 2",
+                            "fecha": {
+                                "dia": 1,
+                                "mes": 7,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "piano",
+                            "lugar": "Warsaw, Polonia"
                         }
                     ],
                     "etiquetas": {
                         "principal": "piano",
-                        "segundo": "N/A",
+                        "segundo": "mashup",
                         "tercer": "N/A",
                         "cuarto": "N/A",
                         "quinto": "N/A",
@@ -3578,7 +3636,7 @@
                             },
                             "cantSorp": null,
                             "instrumento": "guitarra",
-                            "lugar": "Sydney, Australia"
+                            "lugar": "Sídney, Australia"
                         },
                         {
                             "tipo": "dia 3",
@@ -3665,7 +3723,7 @@
                 }
             ],
             "notas": [
-
+                {"nota": "El 9 de Agosto del 2023 fue anunciado 1989 (Taylor's Version)"}
             ]
         },
         {
@@ -4046,7 +4104,7 @@
                     }
                 },
                 {
-                    "title": "New Year's Day x2",
+                    "title": "New Year's Day x3",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -4069,6 +4127,17 @@
                             "cantSorp": null,
                             "instrumento": "piano",
                             "lugar": "Sídney, AU"
+                        },
+                        {
+                            "tipo": "dia 3",
+                            "fecha": {
+                                "dia": 1,
+                                "mes": 7,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "piano",
+                            "lugar": "Warsaw, Polonia"
                         }
                     ],
                     "etiquetas": {
@@ -4083,7 +4152,7 @@
             ],
             "extras":[
                 {
-                    "title": "I Don't Wanna Live Forever x2",
+                    "title": "I Don't Wanna Live Forever x3",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -4106,6 +4175,17 @@
                             "cantSorp": null,
                             "instrumento": "piano",
                             "lugar": "Singapur, Singapur"
+                        },
+                        {
+                            "tipo": "dia 3",
+                            "fecha": {
+                                "dia": 28,
+                                "mes": 4,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "piano",
+                            "lugar": "Munich, Alemania"
                         }
                     ],
                     "etiquetas": {
@@ -4265,7 +4345,7 @@
                     }
                 },
                 {
-                    "title": "I Think He Knows x2",
+                    "title": "I Think He Knows x3",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -4288,6 +4368,17 @@
                             "cantSorp": null,
                             "instrumento": "guitarra",
                             "lugar": "Solna, Estocolmo"
+                        },
+                        {
+                            "tipo": "dia 3",
+                            "fecha": {
+                                "dia": 3,
+                                "mes": 8,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "guitarra",
+                            "lugar": "Warsaw, Polonia"
                         }
                     ],
                     "etiquetas": {
@@ -4740,7 +4831,7 @@
             "siguiente": "/swifties-eras-tour/eras/09-evermore",
             "canciones": [
                 {
-                    "title": "the 1",
+                    "title": "the 1 *",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -4812,7 +4903,7 @@
                     }
                 },
                 {
-                    "title": "exile x3",
+                    "title": "exile x4",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -4846,6 +4937,17 @@
                             "cantSorp": null,
                             "instrumento": "piano",
                             "lugar": "Edimburgo, Escocia"
+                        },
+                        {
+                            "tipo": "dia 4",
+                            "fecha": {
+                                "dia": 3,
+                                "mes": 8,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "piano",
+                            "lugar": "Warsaw, Polonia"
                         }
                     ],
                     "etiquetas": {
@@ -4882,7 +4984,7 @@
                     }
                 },
                 {
-                    "title": "mirrorball x2",
+                    "title": "mirrorball x3",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -4892,7 +4994,7 @@
                                 "año": 2023
                             },
                             "cantSorp": null,
-                            "instrumento": "acústico",
+                            "instrumento": "guitarra",
                             "lugar": "Glendale, EE UU"
                         },
                         {
@@ -4905,6 +5007,17 @@
                             "cantSorp": null,
                             "instrumento": "piano",
                             "lugar": "Singapur, Singapur"
+                        },
+                        {
+                            "tipo": "dia 3",
+                            "fecha": {
+                                "dia": 1,
+                                "mes": 8,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "piano",
+                            "lugar": "Warsaw, Polonia"
                         }
                     ],
                     "etiquetas": {
@@ -4917,7 +5030,7 @@
                     }
                 },
                 {
-                    "title": "seven",
+                    "title": "seven *",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -5011,7 +5124,7 @@
                     }
                 },
                 {
-                    "title": "invisible string",
+                    "title": "invisible string *",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -5494,6 +5607,52 @@
                     }
                 },
                 {
+                    "title": "ivy x3",
+                    "info": [
+                        {
+                            "tipo": "dia 1",
+                            "fecha": {
+                                "dia": 1,
+                                "mes": 7,
+                                "año": 2023
+                            },
+                            "cantSorp": "Aaron Dessner",
+                            "instrumento": "guitarra",
+                            "lugar": "Cincinnati, EE UU"
+                        },
+                        {
+                            "tipo": "dia 2",
+                            "fecha": {
+                                "dia": 26,
+                                "mes": 2,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "guitarra",
+                            "lugar": "Sídney, AU"
+                        },
+                        {
+                            "tipo": "dia 3",
+                            "fecha": {
+                                "dia": 28,
+                                "mes": 7,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "guitarra",
+                            "lugar": "Munich, Alemania"
+                        }
+                    ],
+                    "etiquetas": {
+                        "principal": "piano",
+                        "segundo": "mashup",
+                        "tercer": "N/A",
+                        "cuarto": "N/A",
+                        "quinto": "N/A",
+                        "sexto": "N/A"
+                    }
+                },
+                {
                     "title": "cowboy like me x3",
                     "info": [
                         {
@@ -5771,7 +5930,7 @@
                     }
                 },
                 {
-                    "title": "Maroon x7",
+                    "title": "Maroon x8",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -5849,6 +6008,17 @@
                             "cantSorp": null,
                             "instrumento": "piano",
                             "lugar": "Londres, Inglaterra"
+                        },
+                        {
+                            "tipo": "dia 5",
+                            "fecha": {
+                                "dia": 2,
+                                "mes": 8,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "piano",
+                            "lugar": "Warsaw, Polonia"
                         }
                     ],
                     "etiquetas": {
@@ -6564,8 +6734,6 @@
             "extras":[
             ],
             "notas": [
-                {"nota": ""},
-                {"nota": ""}
             ]
         },
         {
@@ -6573,7 +6741,7 @@
             "logo": "/swifties-eras-tour/images/Logos-Discos/11-Logo-TTPD.png",
             "foto":"",
             "portada":"",
-            "emojie":"public/images/Emojis/11.TTPD.png",
+            "emojie":"/swifties-eras-tour/images/Emojis/11.TTPD.png",
             "linkPage": "/swifties-eras-tour/eras/11-TTPD",
             "Spotify": "https://open.spotify.com/album/1Mo4aZ8pdj6L1jx8zSwJnt?si=UXBJ5yJERz-J4i-Q9eA8eQ",
             "YTMusic": "https://music.youtube.com/playlist?list=OLAK5uy_m6rFWXAYFIFVIaeyn8w6kzM38Rj5D3trg&si=NF5hLtzQPVJYpsbE",
@@ -6844,11 +7012,22 @@
                             "cantSorp": null,
                             "instrumento": "guitarra",
                             "lugar": "Madrid, España"
+                        },
+                        {
+                            "tipo": "dia 2",
+                            "fecha": {
+                                "dia": 2,
+                                "mes": 8,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "guitarra",
+                            "lugar": "Warsaw, Polonia"
                         }
                     ],
                     "etiquetas": {
                         "principal": "guitarra",
-                        "segundo": "N/A",
+                        "segundo": "mashup",
                         "tercer": "N/A",
                         "cuarto": "N/A",
                         "quinto": "N/A",
@@ -6856,7 +7035,7 @@
                     }
                 },
                 {
-                    "title": "loml",
+                    "title": "loml x2",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -6868,11 +7047,22 @@
                             "cantSorp": null,
                             "instrumento": "piano",
                             "lugar": "París, Francia"
+                        },
+                        {
+                            "tipo": "dia 2",
+                            "fecha": {
+                                "dia": 28,
+                                "mes": 7,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "piano",
+                            "lugar": "Munich, Alemania"
                         }
                     ],
                     "etiquetas": {
                         "principal": "piano",
-                        "segundo": "N/A",
+                        "segundo": "mashup",
                         "tercer": "N/A",
                         "cuarto": "N/A",
                         "quinto": "N/A",
@@ -6964,11 +7154,22 @@
                             "cantSorp": null,
                             "instrumento": "guitarra",
                             "lugar": "Dublín, IE"
+                        },
+                        {
+                            "tipo": "dia 2",
+                            "fecha": {
+                                "dia": 1,
+                                "mes": 7,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "guitarra",
+                            "lugar": "Warsaw, Polonia"
                         }
                     ],
                     "etiquetas": {
                         "principal": "guitarra",
-                        "segundo": "N/A",
+                        "segundo": "mashup",
                         "tercer": "N/A",
                         "cuarto": "N/A",
                         "quinto": "N/A",
@@ -6976,7 +7177,7 @@
                     }
                 },
                 {
-                    "title": "The Black Dog",
+                    "title": "The Black Dog x2",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -6988,11 +7189,22 @@
                             "cantSorp": null,
                             "instrumento": "piano",
                             "lugar": "Londres, Inglaterra"
+                        },
+                        {
+                            "tipo": "dia 2",
+                            "fecha": {
+                                "dia": 3,
+                                "mes": 8,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "piano",
+                            "lugar": "Warsaw, Polonia"
                         }
                     ],
                     "etiquetas": {
                         "principal": "piano",
-                        "segundo": "N/A",
+                        "segundo": "mashup",
                         "tercer": "N/A",
                         "cuarto": "N/A",
                         "quinto": "N/A",
@@ -7000,7 +7212,7 @@
                     }
                 },
                 {
-                    "title": "imgonnagetyouback",
+                    "title": "imgonnagetyouback x2",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -7012,6 +7224,17 @@
                             "cantSorp": null,
                             "instrumento": "guitarra",
                             "lugar": "Ámsterdam, Países Bajos"
+                        },
+                        {
+                            "tipo": "dia 2",
+                            "fecha": {
+                                "dia": 28,
+                                "mes": 7,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "guitarra",
+                            "lugar": "Munich, Alemania"
                         }
                     ],
                     "etiquetas": {
@@ -7291,7 +7514,7 @@
             ],
             "extras":[
                 {
-                    "title": "us.",
+                    "title": "us. *",
                     "info": [
                         {
                             "tipo": "dia 1",
@@ -7301,7 +7524,7 @@
                                 "año": 2024
                             },
                             "cantSorp": null,
-                            "instrumento": "guitarra y piano",
+                            "instrumento": "guitarra",
                             "lugar": "Londres, Inglaterra"
                         }
                     ],
@@ -7316,6 +7539,195 @@
                 }
             ],
             "notas": [
+                {"nota": "TTPD fue agregado al setlist en la primera noche de Paris, Francia el 9 de Mayo."},
+                {"nota": "* us.: colaboración con Gracie Abrams, en el disco The Secret of Us"}
+            ]
+        },
+        {
+            "albums": "mashup",
+            "logo": "/swifties-eras-tour/images/Logos-Discos/12-Logo-Mashups.png",
+            "foto":"/swifties-eras-tour/images/Fotos/12-Mashup.png",
+            "portada":"",
+            "emojie":"/swifties-eras-tour/images/Emojis/12.MashUp.png",
+            "linkPage": "/swifties-eras-tour/eras/12-mashup.astro",
+            "Spotify": "",
+            "YTMusic": "",
+            "anterior": "/swifties-eras-tour/eras/11-TTPD.astro",
+            "siguiente": "/swifties-eras-tour/eras/01-debut.astro",
+            "canciones": [
+                {
+                    "title": "Is It Over Now?/Out of the Woods",
+                    "info": [
+                        {
+                            "tipo": "dia 1",
+                            "fecha": {
+                                "dia": 11,
+                                "mes": 11,
+                                "año": 2023
+                            },
+                            "cantSorp": null,
+                            "instrumento": "guitarra",
+                            "lugar": "Buenos Aires, Argentina"
+                        }
+                    ],
+                    "etiquetas": {
+                        "principal": "guitarra",
+                        "segundo": "N/A",
+                        "tercer": "N/A",
+                        "cuarto": "N/A",
+                        "quinto": "N/A",
+                        "sexto": "N/A"
+                    }
+                },
+                {
+                    "title": "Getaway Car/August/The Other Side of the Door",
+                    "info": [
+                        {
+                            "tipo": "dia 1",
+                            "fecha": {
+                                "dia": 17,
+                                "mes": 2,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "guitarra",
+                            "lugar": "Melbourne, Australia"
+                        }
+                    ],
+                    "etiquetas": {
+                        "principal": "guitarra",
+                        "segundo": "N/A",
+                        "tercer": "N/A",
+                        "cuarto": "N/A",
+                        "quinto": "N/A",
+                        "sexto": "N/A"
+                    }
+                },
+                {
+                    "title": "Come Back...Be Here/Daylight",
+                    "info": [
+                        {
+                            "tipo": "dia 1",
+                            "fecha": {
+                                "dia": 18,
+                                "mes": 2,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "guitarra",
+                            "lugar": "Melbourne, Australia"
+                        }
+                    ],
+                    "etiquetas": {
+                        "principal": "guitarra",
+                        "segundo": "N/A",
+                        "tercer": "N/A",
+                        "cuarto": "N/A",
+                        "quinto": "N/A",
+                        "sexto": "N/A"
+                    }
+                },
+                {
+                    "title": "White Horse/Coney Island",
+                    "info": [
+                        {
+                            "tipo": "dia 1",
+                            "fecha": {
+                                "dia": 23,
+                                "mes": 2,
+                                "año": 2024
+                            },
+                            "cantSorp": "Sabrina Carpenter",
+                            "instrumento": "piano",
+                            "lugar": "Melbourne, Australia"
+                        }
+                    ],
+                    "etiquetas": {
+                        "principal": "piano",
+                        "segundo": "cantante",
+                        "tercer": "N/A",
+                        "cuarto": "N/A",
+                        "quinto": "N/A",
+                        "sexto": "N/A"
+                    }
+                },
+                {
+                    "title": "Should've Said No/You're Not Sorry",
+                    "info": [
+                        {
+                            "tipo": "dia 1",
+                            "fecha": {
+                                "dia": 24,
+                                "mes": 2,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "guitarra",
+                            "lugar": "Sídney, Australia"
+                        }
+                    ],
+                    "etiquetas": {
+                        "principal": "guitarra",
+                        "segundo": "N/A",
+                        "tercer": "N/A",
+                        "cuarto": "N/A",
+                        "quinto": "N/A",
+                        "sexto": "N/A"
+                    }
+                },
+                {
+                    "title": "New Year's Day/Peace",
+                    "info": [
+                        {
+                            "tipo": "dia 1",
+                            "fecha": {
+                                "dia": 24,
+                                "mes": 2,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "piano",
+                            "lugar": "Sídney, Australia"
+                        }
+                    ],
+                    "etiquetas": {
+                        "principal": "piano",
+                        "segundo": "N/A",
+                        "tercer": "N/A",
+                        "cuarto": "N/A",
+                        "quinto": "N/A",
+                        "sexto": "N/A"
+                    }
+                },
+                {
+                    "title": "Is It Over Now?/I Wish You Would",
+                    "info": [
+                        {
+                            "tipo": "dia 1",
+                            "fecha": {
+                                "dia": 25,
+                                "mes": 2,
+                                "año": 2024
+                            },
+                            "cantSorp": null,
+                            "instrumento": "guitarra",
+                            "lugar": "Sídney, Australia"
+                        }
+                    ],
+                    "etiquetas": {
+                        "principal": "piano",
+                        "segundo": "N/A",
+                        "tercer": "N/A",
+                        "cuarto": "N/A",
+                        "quinto": "N/A",
+                        "sexto": "N/A"
+                    }
+                }
+            ],
+            "extras":[
+            ],
+            "notas": [
+                
             ]
         }
     ]

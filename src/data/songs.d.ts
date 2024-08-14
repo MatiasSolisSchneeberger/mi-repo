@@ -26,6 +26,7 @@ interface canciones{
 }
 interface extras{
     title: string
+    info: Array<info>
     fechas: Array<fechas>
     etiquetas: Array<etiquetas>
 }

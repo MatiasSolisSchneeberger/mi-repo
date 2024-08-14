@@ -22,7 +22,7 @@ Function
     <Title era={era} titulo="Fecha de conciertos" texto="Estas son todas las fechas The Eras Tour, las pasadas, las actuales, y las futuras."/>
     <section class="flex flex-col gap-6 self-stretch shrink-0 relative items-center">
         <Subtitle era={era} titulo="Fechas Actuales" texto={null}/>
-        <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+        <div class="flex flex-col sm:flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
             {
             concerts.ahora.slice(0, maxFechasToShow).map(({ fecha, lugar, telonero }, index) => {
                 const eraFecha = eras[index % eras.length];  // Alterna entre las eras
@@ -44,7 +44,7 @@ Function
         </div>
 
         <Subtitle era={era} titulo="Proximas Fechas" texto={null}/>
-        <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+        <div class="flex flex-col sm:flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
             {
                 concerts.futuro.slice(0,maxFechasToShow).map(({ fecha , lugar , telonero }, index) => {
                     const eraFecha = eras[index % eras.length];  // Alterna entre las eras
@@ -169,7 +169,7 @@ Function
         </button>           
         
         <Subtitle era={era} titulo="Fechas Pasadas" texto={null}/>
-        <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+        <div class="flex flex-col sm:flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
             {
                 concerts.pasados.slice(0,maxFechasToShow).map(({ fecha , lugar , telonero }, index) => {
                     const eraFecha = eras[index % eras.length];  // Alterna entre las eras

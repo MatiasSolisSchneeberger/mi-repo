@@ -1,5 +1,5 @@
 export interface concerts {
-    "eras": Array<era>;
+    "erasOutfit": Array<era>;
 }
 
 interface era {

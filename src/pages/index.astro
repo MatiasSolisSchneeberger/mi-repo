@@ -4,14 +4,14 @@ import Layout from '../layouts/Layout.astro';
 import HeroImage from '../sections/HeroImage.astro';
 import SectionCanciones from '../sections/SectionCanciones.astro';
 import SectionDates from '../sections/SectionDates.astro';
-
+const era = 'debut'
 ---
 
-<Layout title="Swifties Eras Tour" era='mashup'>
-	<HeroImage era='mashup' boton={true} pagAnt='/swifties-eras-tour/eras/05-1989' pagSig='/swifties-eras-tour/fearlessversion'/>
-	<SectionCanciones era='mashup'/>
-	<SectionDates era='mashup'/>
-	<ButtonToUp era='mashup'/>
+<Layout title="Swifties Eras Tour" era={era}>
+	<HeroImage era={era} boton={true} pagAnt='/swifties-eras-tour/eras/05-1989' pagSig='/swifties-eras-tour/fearlessversion'/>
+	<SectionCanciones era={era}/>
+	<SectionDates era={era}/>
+	<ButtonToUp era={era}/>
 </Layout>
 
 

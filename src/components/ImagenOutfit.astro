@@ -6,9 +6,9 @@ interface Props {
 
 const { era , src } = Astro.props;
 ---
-<div class="rounded-xl  flex-1 h-[450px] min-w-[264px] sm:max-w-[360px] relative" >
+<div class="group rounded-xl flex-1 h-[450px] min-w-[264px] sm:max-w-[360px] relative" >
     <div class:list={[
-        "w-full h-full flex justify-center rounded-xl absolute mix-blend-multiply z-20",
+        "group-hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 h-full flex justify-center rounded-xl absolute mix-blend-multiply z-20",
     {
         'bg-gradient-to-t from-debut-400':         era === 'debut',
         'bg-gradient-to-t from-fearless-400':      era === 'fearless',
@@ -22,11 +22,12 @@ const { era , src } = Astro.props;
         'bg-gradient-to-t from-midnights-400':     era === 'midnights',
         'bg-gradient-to-t from-TTPD-400':          era === 'TTPD',
         'bg-gradient-to-t from-mashup-400':        era === 'surprise songs',
+        
         'hidden': era === 'folkmore'
     }
     ]}/>
-    <div class:list={["w-full h-full flex justify-center rounded-xl absolute mix-blend-multiply z-20 bg-gradient-to-tr from-folklore-400",{'hidden': era!=='folkmore'}]} />
-    <div class:list={["w-full h-full flex justify-center rounded-xl absolute mix-blend-multiply z-20 bg-gradient-to-tl from-evermore-400",{'hidden': era!=='folkmore'}]} />
+    <div class:list={["group-hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 h-full flex justify-center rounded-xl absolute mix-blend-multiply z-20 bg-gradient-to-tr from-folklore-400",{'hidden': era!=='folkmore'}]} />
+    <div class:list={["group-hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 h-full flex justify-center rounded-xl absolute mix-blend-multiply z-20 bg-gradient-to-tl from-evermore-400",{'hidden': era!=='folkmore'}]} />
     <img class="group-hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full z-10" 
     src={src}
     alt=`Taylor en la era ${era}`

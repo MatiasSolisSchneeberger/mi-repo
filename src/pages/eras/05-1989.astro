@@ -1,7 +1,8 @@
 ---
+import {eras} from "../../data/songs.json"
+
 import Layout from "../../layouts/Layout.astro"
 import TablaCanciones from "../../sections/TablaCanciones.astro"
-import {eras} from "../../data/songs.json"
 import HeroImage from "../../sections/HeroImage.astro"
 import Notas from "../../components/Notas.astro"
 
@@ -20,16 +21,283 @@ if (!eraData) return null
 
         {
             eraData.notas?.length > 0 && <Notas era={era} titulo="Notas">
-            <ul class="list-disc text-title-medium list-inside">
-                {
-                    eraData.notas?.map(({nota}) => {
-                        return (
-                            <li>{nota}</li>
-                        )
-                    })
-                }
-            </ul>
-        </Notas>
+                <ul class="list-disc text-title-medium list-inside">
+                    {
+                        eraData.notas?.map(({nota}) => {
+                            return (
+                                <li>{nota}</li>
+                            )
+                        })
+                    }
+                </ul>
+            </Notas>
         }
+        <section class="text-1989-900 w-full">
+            <h2 class="text-display-small relative self-stretch">
+                1989 Set
+            </h2>
+            <p class = " text-title-medium relative self-stretch"
+            style = "letter-spacing: var(--title-medium-letter-spacing, 0.15px)">
+                Estos son todas las convinaciones de el nuevo outfit de 1989
+            </p>
+            <table class="bg-1989-400 rounded-3xl p-2.5 flex flex-col gap-2 gap-y-0 items-start justify-start self-stretch shrink-0 relative overflow-hidden table-auto space-y-2.5">
+                <thead class="w-full flex flex-row gap-2">
+                    <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
+                        <th class="text-1989-100 text-center text-headline-small relative w-full">
+                            
+                        </th>
+                    </tr>
+                    <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
+                        <th class="text-1989-100 text-center text-headline-small relative w-full">
+                            Rosa
+                        </th>
+                    </tr>
+                    <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
+                        <th class="text-1989-100 text-center text-headline-small relative w-full">
+                            Naranja
+                        </th>
+                    </tr>
+                    <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
+                        <th class="text-1989-100 text-center text-headline-small relative w-full">
+                            Amarillo
+                        </th>
+                    </tr>
+                    <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
+                        <th class="text-1989-100 text-center text-headline-small relative w-full">
+                            Verde
+                        </th>
+                    </tr>
+                    <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
+                        <th class="text-1989-100 text-center text-headline-small relative w-full">
+                            Celeste
+                        </th>
+                    </tr>
+                    <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
+                        <th class="text-1989-100 text-center text-headline-small relative w-full">
+                            Violeta
+                        </th>
+                    </tr>
+                </thead>
+                <tbody  class=`text-1989-800 w-full flex flex-col gap-1 rounded-2xl items-start justify-start self-stretch shrink-0 relative overflow-hidden`>
+                    <tr class="bg-1989-500 gap-2 rounded-2xl p-2.5 flex items-center justify-center w-full">
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            Rosa
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full" 
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewPink-Pink.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewPink-Orange.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewPink-Gold.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewPink-Green.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewPink-Aqua.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewPink-Purple.jpg"/>
+                        </td>
+                    </tr>
+                    
+                    <tr class="bg-1989-500 gap-2 rounded-2xl p-2.5 flex items-center justify-center w-full">
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            Naranja
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full" 
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewOrange-Pink.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewOrange-Orange.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewOrange-Gold.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewOrange-Green.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewOrange-Aqua.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewOrange-Purple.jpg"/>
+                        </td>
+                    </tr>
+                    
+                    <tr class="bg-1989-500 gap-2 rounded-2xl p-2.5 flex items-center justify-center w-full">
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            Amarillo
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full" 
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewGold-Pink.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewGold-Orange.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewGold-Gold.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewGold-Green.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewGold-Aqua.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewGold-Purple.jpg"/>
+                        </td>
+                    </tr>
+                    
+                    <tr class="bg-1989-500 gap-2 rounded-2xl p-2.5 flex items-center justify-center w-full">
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            Verde
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full" 
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewGreen-Pink.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewGreen-Orange.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <div
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                />
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <div
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                />
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewGreen-Aqua.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewGreen-Purple.jpg"/>
+                        </td>
+                    </tr>
+                    
+                    <tr class="bg-1989-500 gap-2 rounded-2xl p-2.5 flex items-center justify-center w-full">
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            Celeste
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full" 
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewAqua-Pink.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewAqua-Orange.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewAqua-Gold.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewAqua-Green.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewAqua-Aqua.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewAqua-Purple.jpg"/>
+                        </td>
+                    </tr>
+                    
+                    <tr class="bg-1989-500 gap-2 rounded-2xl p-2.5 flex items-center justify-center w-full">
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            Violeta
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full" 
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewPurple-Pink.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewPurple-Orange.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewPurple-Gold.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewPurple-Green.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewPurple-Aqua.jpg"/>
+                        </td>
+                        <td class="text-1989-100 text-center text-headline-small relative w-full">
+                            <img
+                                class="hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full"
+                                src="/swifties-eras-tour/images/Outfits/05-1989/New/NewPurple-Purple.jpg"/>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+        </section>
     </main>
 </Layout>
