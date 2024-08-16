@@ -5,6 +5,7 @@ import Layout from "../../layouts/Layout.astro"
 import TablaCanciones from "../../sections/TablaCanciones.astro"
 import HeroImage from "../../sections/HeroImage.astro"
 import Notas from "../../components/Notas.astro"
+import Subtitle from "../../components/Subtitle.astro"
 
 const era = '1989'
 const eraData = eras.find(e => e.albums === era);
@@ -12,7 +13,7 @@ if (!eraData) return null
 
 ---
 <Layout title = `${era} | Swifties Eras Tour` era = {era}>
-    <main  class=`bg-${era}-100 py-12 px-8 md:px-32 space-y-6 flex flex-col gap-2.5 gap-y-0 items-start justify-start self-stretch shrink-0 relative`>
+    <main  class=`bg-${era}-100 py-12 px-8 md:px-14 space-y-6 flex flex-col gap-2.5 gap-y-0 items-start justify-start self-stretch shrink-0 relative`>
         <div class="w-full rounded-3xl overflow-hidden">
             <HeroImage era={era} boton={false} pagAnt={eraData?.anterior} pagSig={eraData?.siguiente}/>
         </div>
@@ -40,16 +41,19 @@ if (!eraData) return null
             style = "letter-spacing: var(--title-medium-letter-spacing, 0.15px)">
                 Estos son todas las convinaciones de el nuevo outfit de 1989
             </p>
-            <table class="bg-1989-400 rounded-3xl p-2.5 flex flex-col gap-2 gap-y-0 items-start justify-start self-stretch shrink-0 relative overflow-hidden table-auto space-y-2.5">
+            <table class="bg-1989-400 hidden md:flex rounded-3xl p-2.5 flex-col gap-2 gap-y-0 items-start justify-start self-stretch shrink-0 relative overflow-hidden table-auto space-y-2.5">
                 <thead class="w-full flex flex-row gap-2">
-                    <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
+                    <tr class="bg-1989-500 rounded-2xl p-2.5 gap-0 items-center justify-center  w-full">
                         <th class="text-1989-100 text-center text-headline-small relative w-full">
                             
                         </th>
                     </tr>
                     <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
-                        <th class="text-1989-100 text-center text-headline-small relative w-full">
+                        <th class="text-1989-100 text-center text-headline-small relative w-full ">
                             Rosa
+                        </th>
+                        <th class="text-1989-100 text-center text-headline-small relative w-full sm:hidden flex">
+                            <div class="bg-pink-400 size-3"/>
                         </th>
                     </tr>
                     <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
@@ -297,7 +301,10 @@ if (!eraData) return null
                     
                 </tbody>
             </table>
-
+            <article class="md:hidden block">
+                <Subtitle titulo="Top Rosa" era={era} texto="Todas las convinaciones que tiene el top rosa. Ya se usaron con todas las polleras"/>
+                
+            </article>
         </section>
     </main>
 </Layout>
