@@ -1,56 +1,56 @@
-#
+# Swifties Eras Tour
 
-# Astro Starter Kit: Basics
+![Logo de la Página](<public/images/Portadas-Paginas/Frame 49.png>)
 
-```sh
-npm create astro@latest -- --template basics
-```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Descripción
+Swifties Eras Tour es una página web dedicada a documentar información importante sobre el Eras Tour de Taylor Swift. En ella, los fans pueden encontrar detalles sobre las canciones sorpresa que Taylor ha interpretado, el setlist completo de la gira, y las fechas de todos los conciertos.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Tecnologías Utilizadas
+- Astro - Framework principal utilizado para la construcción de la página.
+- Tailwind CSS - Utilizado para el diseño y la maquetación.
+- JavaScript - Implementación de la funcionalidad interactiva.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Características
+- Página Principal: Muestra todas las canciones de cada disco, señalizadas con emojis para indicar si fueron cantadas, si están en el setlist, o si no fueron cantadas.
+- Más Información: Al hacer clic en "más info", se accede a una página especializada para cada disco, que incluye detalles sobre cuándo y dónde se cantaron las canciones.
+- Conciertos: Sección dedicada a mostrar todas las fechas de los conciertos del Eras Tour.
+- Setlist: Muestra el setlist completo de la gira.
 
-## 🚀 Project Structure
+## Estado del Proyecto
+Este proyecto sigue en desarrollo. Se están agregando nuevas funcionalidades y mejorando las existentes.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Instalación y Configuración
+Para clonar el repositorio e instalar las dependencias necesarias, sigue estos pasos:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+1- Clona el repositorio:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+`git clone https://github.com/tu-usuario/swifties-eras-tour.git`
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+2- Navega al directorio del proyecto:
 
-Any static assets, like images, can be placed in the `public/` directory.
+`cd swifties-eras-tour`
 
-## 🧞 Commands
+3- Instala las dependencias:
 
-All commands are run from the root of the project, from a terminal:
+`npm install`
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+4- Inicia el proyecto en modo de desarrollo:
 
-## 👀 Want to learn more?
+`npm run dev`
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Contribuciones
+Actualmente no tenemos un proceso definido para contribuciones. Si estás interesado en colaborar, por favor ponte en contacto a través de los medios mencionados en la sección de Contacto.
+
+## Licencia
+Este proyecto no tiene una licencia. Si esto es un problema o tienes sugerencias, no dudes en contactarnos.
+
+## Capturas de Pantalla
+### Versión de Escritorio
+
+### Versión Móvil
+
+## Contacto
+- GitHub: tu-usuario
+- Correo: tu-correo@example.com
+- LinkedIn: tu-linkedin
