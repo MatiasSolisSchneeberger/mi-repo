@@ -8,6 +8,11 @@ interface Props {
 	era: string;
 }
 
+const { era } = Astro.props;
+
+const eras = ["debut", "fearless", "speakNow", "red", "1989", "reputation", "lover", "folklore", "evermore", "midnights", "TTPD"]
+const maxFechasToShow = 6;  // Número máximo de fechas a mostrar inicialmente
+
 
 ---
 
@@ -260,3 +265,32 @@ interface Props {
                 Ocultar
             </p>
         </button> 
+
+<!-- creo que ya se como hacer para que no se muestren las fechas -->
+<script>
+    document.getElementById('btn-ver-fut')?.addEventListener('click', ()=>(
+        document.getElementById('masFechas-fut')?.classList.remove('hidden'),
+        document.getElementById('btn-ver-fut')?.classList.add('hidden'),
+        document.getElementById('btn-ocul-fut')?.classList.remove('hidden')
+    )
+    )
+    document.getElementById('btn-ocul-fut')?.addEventListener('click', ()=>(
+        document.getElementById('masFechas-fut')?.classList.add('hidden'),
+        document.getElementById('btn-ver-fut')?.classList.remove('hidden'),
+        document.getElementById('btn-ocul-fut')?.classList.add('hidden')
+    )
+    )
+    
+    document.getElementById('btn-ver-past')?.addEventListener('click', ()=>(
+        document.getElementById('masFechas-past')?.classList.remove('hidden'),
+        document.getElementById('btn-ver-past')?.classList.add('hidden'),
+        document.getElementById('btn-ocul-past')?.classList.remove('hidden')
+    )
+    )
+    document.getElementById('btn-ocul-past')?.addEventListener('click', ()=>(
+        document.getElementById('masFechas-past')?.classList.add('hidden'),
+        document.getElementById('btn-ver-past')?.classList.remove('hidden'),
+        document.getElementById('btn-ocul-past')?.classList.add('hidden')
+    )
+    )
+</script>
