@@ -1,7 +1,7 @@
 # Swifties Eras Tour
 
-![Logo de la Página](<public/images/Portadas-Paginas/Frame 49.png>)
-
+![logo de la página](public/images/MuckUP/Logo-Midnights.png)
+![Portada](<public/images/MuckUP/Frame 49.png>)
 
 ## Descripción
 Swifties Eras Tour es una página web dedicada a documentar información importante sobre el Eras Tour de Taylor Swift. En ella, los fans pueden encontrar detalles sobre las canciones sorpresa que Taylor ha interpretado, el setlist completo de la gira, y las fechas de todos los conciertos.
@@ -24,20 +24,25 @@ Este proyecto sigue en desarrollo. Se están agregando nuevas funcionalidades y 
 Para clonar el repositorio e instalar las dependencias necesarias, sigue estos pasos:
 
 1- Clona el repositorio:
-
-`git clone https://github.com/tu-usuario/swifties-eras-tour.git`
+~~~
+git clone https://github.com/tu-usuario/swifties-eras-tour.git
+~~~
 
 2- Navega al directorio del proyecto:
-
-`cd swifties-eras-tour`
-
+~~~
+cd swifties-eras-tour
+~~~
 3- Instala las dependencias:
 
-`npm install`
+~~~
+npm install
+~~~
 
 4- Inicia el proyecto en modo de desarrollo:
 
-`npm run dev`
+~~~
+npm run dev
+~~~
 
 ## Contribuciones
 Actualmente no tenemos un proceso definido para contribuciones. Si estás interesado en colaborar, por favor ponte en contacto a través de los medios mencionados en la sección de Contacto.
@@ -46,11 +51,16 @@ Actualmente no tenemos un proceso definido para contribuciones. Si estás intere
 Este proyecto no tiene una licencia. Si esto es un problema o tienes sugerencias, no dudes en contactarnos.
 
 ## Capturas de Pantalla
+
+
 ### Versión de Escritorio
 
+**Pagina de la era Taylor Swift**
+![alt text](public/images/MuckUP/pagina-debut.png)
 ### Versión Móvil
 
 ## Contacto
-- GitHub: tu-usuario
-- Correo: tu-correo@example.com
-- LinkedIn: tu-linkedin
+- GitHub: MatiasSolisSchneeberger
+- Correo: Matias.Solis.Sch@gmail.com
+- LinkedIn: 
+

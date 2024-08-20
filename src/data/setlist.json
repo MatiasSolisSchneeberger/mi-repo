@@ -1,0 +1,496 @@
+{
+    "setlist":[
+        {
+            "parte": "Mar-23 / Mar-24",
+            "sets": [
+                {
+                    "era": "lover",
+                    "disco": "Lover",
+                    "canciones": [
+                        {
+                            "canción": "Intro",
+                            "nota": "(Contiene elementos de 'Fearless', 'End Game', 'Speak Now', 'evermore', 'gold rush', 'Red', 'Lavender Haze', 'Lover', 'Bejeweled')"
+                        },
+                        {
+                            "canción": "Miss Americana & the Heartbreak Prince",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "Cruel Summer",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "The Man",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "You Need to Calm Down",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "Lover",
+                            "nota": "(Intro hablada)"
+                        },
+                        {
+                            "canción": "The Archer",
+                            "nota": "(Outro extendida)"
+                        }
+                    ]
+                },
+                {
+                    "era": "fearless",
+                    "disco": "Fearless",
+                    "canciones": [
+                        {
+                            "canción": "Fearless",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "You Belong With Me",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Love Story",
+                            "nota": ""
+                        }
+                    ]
+                },
+                {
+                    "era": "evermore",
+                    "disco": "Evermore",
+                    "canciones": [
+                        {
+                            "canción": "'tis the damn season",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "willow",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "marjorie",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "champagne problems",
+                            "nota": "Intro hablada; Ovación del público"
+                        },
+                        {
+                            "canción": "tolerate it",
+                            "nota": "(Intro extendida con teclados, segundo verso omitido)"
+                        }
+                    ]
+                },
+                {
+                    "era": "reputation",
+                    "disco": "Reputation",
+                    "canciones": [
+                        {
+                            "canción": "...Ready for It?",
+                            "nota": "(Intro extendida)"
+                        },
+                        {
+                            "canción": "Delicate",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Don't Blame Me",
+                            "nota": "(Intro acústica; Outro extendida)"
+                        },
+                        {
+                            "canción": "Look What You Made Me Do",
+                            "nota": "(Outro extendida)"
+                        }
+                    ]
+                },
+                {
+                    "era": "speakNow",
+                    "disco": "Speak Now",
+                    "canciones": [
+                        {
+                            "canción": "Enchanted",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Long Live",
+                            "nota": "(Desde el 7 de Julio)"
+                        }
+                    ]
+                },
+                {
+                    "era": "red",
+                    "disco": "Red",
+                    "canciones": [
+                        {
+                            "canción": "Intro",
+                            "nota": "(Contiene elementos de 'State of Grace', 'Everything Has Changed' y 'Red')"
+                        },
+                        {
+                            "canción": "22",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "We Are Never Ever Getting Back Together",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "I Knew You Were Trouble",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "All Too Well (10 Minute Version)",
+                            "nota": "(Intro hablada)"
+                        }
+                    ]
+                },
+                {
+                    "era": "folklore",
+                    "disco": "Folklore",
+                    "canciones": [
+                        {
+                            "canción": "seven",
+                            "nota": "versión hablada; contiene elementos de 'Wildest Dreams'"
+                        },
+                        {
+                            "canción": "invisible string",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "betty",
+                            "nota": "Intro hablada"
+                        },
+                        {
+                            "canción": "the last great american dynasty",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "august",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "illicit affairs",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "my tears ricochet",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "cardigan",
+                            "nota": "(Outro extendida)"
+                        }
+                    ]
+                },
+                {
+                    "era": "1989",
+                    "disco": "1989",
+                    "canciones": [
+                        {
+                            "canción": "Style",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "Blank Space",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Shake It Off",
+                            "nota": "(Outro extendida)"
+                        },
+                        {
+                            "canción": "Wildest Dreams",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "Bad Blood",
+                            "nota": "(Acortada; Outro extendida)"
+                        }
+                    ]
+                },
+                {
+                    "era": "midnights",
+                    "disco": "Midnights",
+                    "canciones": [
+                        {
+                            "canción": "Lavender Haze",
+                            "nota": "(Intro extendida)"
+                        },
+                        {
+                            "canción": "Anti-Hero",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Midnight Rain",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Vigilante Shit",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Bejeweled",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Mastermind",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Karma",
+                            "nota": "(Outro extendida)"
+                        }
+                    ]
+                }
+            ]
+            
+        },
+        {
+            "parte": "May-24 / Dic-24",
+            "sets": [
+                {
+                    "era": "lover",
+                    "disco": "Lover",
+                    "canciones": [
+                        {
+                            "canción": "Intro",
+                            "nota": "(Contiene elementos de 'The Alchemy', 'Fearless', 'End Game', 'Speak Now', 'gold rush', 'TTPD', 'evermore', 'Red', 'Lavender Haze', 'Lover', 'Bejeweled')"
+                        },
+                        {
+                            "canción": "Miss Americana & the Heartbreak Prince",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "Cruel Summer",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "The Man",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "You Need to Calm Down",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "Lover",
+                            "nota": "Intro hablada"
+                        }
+                    ]
+                },
+                {
+                    "era": "fearless",
+                    "disco": "Fearless",
+                    "canciones": [
+                        {
+                            "canción": "Fearless",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "You Belong With Me",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Love Story",
+                            "nota": ""
+                        }
+                    ]
+                },
+                {
+                    "era": "red",
+                    "disco": "Red",
+                    "canciones": [
+                        {
+                            "canción": "Intro",
+                            "nota": "(Contiene elementos de 'State of Grace', 'Everything Has Changed' y 'Red')"
+                        },
+                        {
+                            "canción": "22",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "We Are Never Ever Getting Back Together",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "I Knew You Were Trouble",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "All Too Well (10 Minute Version)",
+                            "nota": "(Intro hablada)"
+                        }
+                    ]
+                },
+                {
+                    "era": "speakNow",
+                    "disco": "Speak Now",
+                    "canciones": [
+                        {
+                            "canción": "Intro",
+                            "nota": "(Contiene elementos de 'Castles Crumbling')"
+                        },
+                        {
+                            "canción": "Enchanted",
+                            "nota": ""
+                        }
+                    ]
+                },
+                {
+                    "era": "reputation",
+                    "disco": "Reputation",
+                    "canciones": [
+                        {
+                            "canción": "...Ready for It?",
+                            "nota": "(Intro extendida)"
+                        },
+                        {
+                            "canción": "Delicate",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Don't Blame Me",
+                            "nota": "(Intro acústica; Outro extendida)"
+                        },
+                        {
+                            "canción": "Look What You Made Me Do",
+                            "nota": "(Outro extendida)"
+                        }
+                    ]
+                },
+                {
+                    "era": "folkmore",
+                    "disco": "Folklore/Evermore",
+                    "canciones": [
+                        {
+                            "canción": "cardigan",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "betty",
+                            "nota": "(Intro hablada; Acortado)"
+                        },
+                        {
+                            "canción": "champagne problems",
+                            "nota": "(Intro hablada; Ovación del público)"
+                        },
+                        {
+                            "canción": "august",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "illicit affairs",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "my tears ricochet",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "marjorie",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "willow",
+                            "nota": "(Outro extendida)"
+                        }
+                    ]
+                },
+                {
+                    "era": "1989",
+                    "disco": "1989",
+                    "canciones": [
+                        {
+                            "canción": "Style",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "Blank Space",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Shake It Off",
+                            "nota": "(Outro extendida)"
+                        },
+                        {
+                            "canción": "Wildest Dreams",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "Bad Blood",
+                            "nota": "(Acortada; Outro extendida)"
+                        }
+                    ]
+                },
+                {
+                    "era": "TTPD",
+                    "disco": "TTPD",
+                    "canciones": [
+                        {
+                            "canción": "Intro",
+                            "nota": "(Contiene elementos de 'MBOBHFT', 'WAOLOM', 'loml', 'So Long, London' and 'BDILH')"
+                        },
+                        {
+                            "canción": "But Daddy I Love Him / So High School",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Who's Afraid of Little Old Me?",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "Down Bad",
+                            "nota": "(Acortada; Outro con elementos de 'Fortnight')"
+                        },
+                        {
+                            "canción": "Fortnight",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "The Smallest Man Who Ever Lived",
+                            "nota": "(Acortada)"
+                        },
+                        {
+                            "canción": "I Can Do It With a Broken Heart",
+                            "nota": "(Intro extendida)"
+                        }
+                    ]
+                },
+
+                {
+                    "era": "midnights",
+                    "disco": "Midnights",
+                    "canciones": [
+                        {
+                            "canción": "Lavender Haze",
+                            "nota": "(Intro extendida)"
+                        },
+                        {
+                            "canción": "Anti-Hero",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Midnight Rain",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Vigilante Shit",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Bejeweled",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Mastermind",
+                            "nota": ""
+                        },
+                        {
+                            "canción": "Karma",
+                            "nota": "(Outro extendida)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -8,27 +8,27 @@ interface Props {
 const { era } = Astro.props;
 ---
 <header  class:list = {[
-        "z-10 pt-4 pb-4 flex flex-row items-center self-stretch shrink-0 h-auto w-full justify-center sm:justify-between px-10 ",
-        {
-            "bg-debut-900":      era === "debut",
-            "bg-fearless-900":   era === "fearless",
-            "bg-speakNow-900":   era === "speakNow",
-            "bg-red-900":        era === "red",
-            "bg-1989-900":       era === "1989",
-            "bg-reputation-900": era === "reputation",
-            "bg-lover-900":      era === "lover",
-            "bg-folklore-900":   era === "folklore",
-            "bg-evermore-900":   era === "evermore",
-            "bg-midnights-900":  era === "midnights",
-            "bg-TTPD-900":       era === "TTPD",
-            "bg-mashup-900":     era === "mashup",
+    "z-10 py-4 flex gap-2.5 flex-row items-center self-stretch shrink-0 h-auto w-full justify-between px-3 sm:px-10 ",
+    {
+        "bg-debut-900":      era === "debut",
+        "bg-fearless-900":   era === "fearless",
+        "bg-speakNow-900":   era === "speakNow",
+        "bg-red-900":        era === "red",
+        "bg-1989-900":       era === "1989",
+        "bg-reputation-900": era === "reputation",
+        "bg-lover-900":      era === "lover",
+        "bg-folklore-900":   era === "folklore",
+        "bg-evermore-900":   era === "evermore",
+        "bg-midnights-900":  era === "midnights",
+        "bg-TTPD-900":       era === "TTPD",
+        "bg-mashup-900":     era === "mashup",
 
-        }
+    }
     ]}>
     
     <Logo era = {era} />
 
-    <nav class = "hidden sm:flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
+    <nav class = "flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
         <ButtonPrimario era = {era} href = "/swifties-eras-tour/outfits" icono={null}>
             Outfits
         </ButtonPrimario>
