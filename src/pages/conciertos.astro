@@ -13,10 +13,10 @@ const maxFechasToShow = 6;  // Número máximo de fechas a mostrar inicialmente
 
 ---
 <Layout era={era} title="Conciertos | Swifties Eras Tour">
-    <main class="py-12 px-8 sm:px-32 space-y-6 gap-y-0 justify-center  w-full flex flex-col gap-6 self-stretch shrink-0 relative items-center">
+    <main class="relative flex flex-col items-center self-stretch justify-center w-full gap-6 px-8 py-12 space-y-6 sm:px-32 gap-y-0 shrink-0">
         <Title era={era} titulo="Fechas de Concierto" texto=""/>
         <Subtitle era={era} titulo="Proximas Fechas" texto={null}/>
-        <div class="flex flex-col sm:flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+        <div class="relative flex flex-col flex-wrap items-start self-stretch justify-start gap-6 sm:flex-row shrink-0 h-min">
             {
                 concerts.futuro.slice(0,maxFechasToShow).map(({ fecha , lugar , telonero }, index) => {
                     const eraFecha = eras[index % eras.length];  // Alterna entre las eras
@@ -77,8 +77,8 @@ const maxFechasToShow = 6;  // Número máximo de fechas a mostrar inicialmente
             </p>
         </button>
 
-        <div id="masFechas-fut" class="transition-  hidden gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
-            <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+        <div id="masFechas-fut" class="relative flex-wrap items-start self-stretch justify-start hidden gap-6 transition- shrink-0 h-min">
+            <div class="relative flex flex-col flex-wrap items-start self-stretch justify-start gap-6 sm:flex-row shrink-0 h-min">
                 {
                     concerts.futuro.slice(maxFechasToShow).map(({ fecha , lugar , telonero }, index) => {
                         const eraFecha = eras[index % eras.length];  // Alterna entre las eras
@@ -141,7 +141,7 @@ const maxFechasToShow = 6;  // Número máximo de fechas a mostrar inicialmente
         </button>           
 
         <Subtitle era={era} titulo="Fechas Pasadas" texto={null}/>
-        <div class="flex flex-col sm:flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+        <div class="relative flex flex-col flex-wrap items-start self-stretch justify-start gap-6 sm:flex-row shrink-0 h-min">
             {
                 concerts.pasados.slice(0,maxFechasToShow).map(({ fecha , lugar , telonero }, index) => {
                     const eraFecha = eras[index % eras.length];  // Alterna entre las eras
@@ -202,8 +202,8 @@ const maxFechasToShow = 6;  // Número máximo de fechas a mostrar inicialmente
             </p>
         </button>
 
-        <div id="masFechas-past" class="hidden gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
-            <div class="flex flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+        <div id="masFechas-past" class="relative flex-wrap items-start self-stretch justify-start hidden gap-6 shrink-0 h-min">
+            <div class="relative flex flex-col flex-wrap items-start self-stretch justify-start gap-6 sm:flex-row shrink-0 h-min">
                 {
                     concerts.pasados.slice(maxFechasToShow).map(({ fecha , lugar , telonero }, index) => {
                         const eraFecha = eras[index % eras.length];  // Alterna entre las eras

@@ -57,7 +57,9 @@ Este proyecto no tiene una licencia. Si esto es un problema o tienes sugerencias
 
 **Pagina de la era Taylor Swift**
 ![alt text](public/images/MuckUP/pagina-debut.png)
+
 ### Versión Móvil
+![alt text](public/images/MuckUP/index-debut-mobil.png)
 
 ## Contacto
 - GitHub: MatiasSolisSchneeberger
