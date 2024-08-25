@@ -7,23 +7,26 @@ interface Props {
 const { era }  =  Astro.props;
 ---
 
-<div id="button-up" class="shadow-sm hover:shadow-lg fixed bottom-2 right-2 opacity-0 transition-opacity">
-    <button aria-label="Boton ir arriba" id="scroll-to-top" style="box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
-        0px 4px 8px 3px rgba(0, 0, 0, 0.15)" class:list={[
-        "fixed bottom-2 right-2 p-2 flex cursor-default items-center justify-center rounded-lg text-primary  motion-safe:transition",
+<div id="button-up" class="shadow-sm hover:shadow-lg fixed bottom-2 right-2 opacity-0 transition-all duration-125 ease-in-out cursor-pointer">
+    <button
+        aria-label="Boton ir arriba"
+        style="box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+        0px 4px 8px 3px rgba(0, 0, 0, 0.15)" 
+        class:list={[
+        "fixed bottom-2 right-2 p-2 flex cursor-default items-center justify-center rounded-lg text-primary transition-opacity",
         {
-			"bg-debut-300": era === "debut",
-			"bg-fearless-300": era === "fearless",
-			"bg-speakNow-300": era === "speakNow",
-			"bg-red-300": era === "red",
-			"bg-1989-300": era === "1989",
-			"bg-reputation-300": era === "reputation",
-			"bg-lover-300": era === "lover",
-			"bg-folklore-300": era === "folklore",
-			"bg-evermore-300": era === "evermore",
-			"bg-midnights-300": era === "midnights",
-			"bg-TTPD-300": era === "TTPD",
-			"bg-mashup-300": era === "mashup",
+			"bg-debut-300 dark:bg-debut-600": era === "debut",
+			"bg-fearless-300 dark:bg-fearless-600": era === "fearless",
+			"bg-speakNow-300 dark:bg-speakNow-600": era === "speakNow",
+			"bg-red-300 dark:bg-red-600": era === "red",
+			"bg-1989-300 dark:bg-1989-600": era === "1989",
+			"bg-reputation-300 dark:bg-reputation-600": era === "reputation",
+			"bg-lover-300 dark:bg-lover-600": era === "lover",
+			"bg-folklore-300 dark:bg-folklore-600": era === "folklore",
+			"bg-evermore-300 dark:bg-evermore-600": era === "evermore",
+			"bg-midnights-300 dark:bg-midnights-600": era === "midnights",
+			"bg-TTPD-300 dark:bg-TTPD-600": era === "TTPD",
+			"bg-mashup-300 dark:bg-mashup-600": era === "mashup",
         }
         ]}>
         <ArrowUp era={era}/>

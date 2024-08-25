@@ -20,11 +20,10 @@ const imageLogo: { [key: string]: string } = {
     mashup:     "/swifties-eras-tour/images/Logos-Discos/12-Logo-Mashups.png",
 };
 
-const logo = imageLogo[era] || "/swifties-eras-tour/images/Emojis/cross-mark_274c.png";
+const logo = imageLogo[era];
 
 ---
 <img 
-    
     transition:name="logo-disco"
     class="bg-logo-debut self-stretch flex-1 relative h-full w-full object-contain"
     src={logo}

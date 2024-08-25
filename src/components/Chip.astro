@@ -8,11 +8,11 @@ const { icono , era } = Astro.props;
 ---
 <chip
     class:list = {[
-        "cursor-pointer hover:scale-105 rounded-lg border-solid  border flex flex-row gap-0 items-center justify-center shrink-0 h-8 relative overflow-hidden",
+        "cursor-pointer transition hover:ease-in-out hover:duration-125 hover:scale-105 rounded-lg border-solid  border flex flex-row gap-0 items-center justify-center shrink-0 h-8 relative overflow-hidden",
         {
             "bg-debut-200       border-debut-600":      era === "debut",
             "bg-fearless-200    border-fearless-600":   era === "fearless",
-            "bg-speakNow-200    border-speakNow-600":  era === "speakNow",
+            "bg-speakNow-200    border-speakNow-600":   era === "speakNow",
             "bg-red-200         border-red-600":        era === "red",
             "bg-1989-200        border-1989-600":       era === "1989",
             "bg-reputation-200  border-reputation-600": era === "reputation",

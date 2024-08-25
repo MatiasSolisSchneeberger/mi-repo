@@ -4,9 +4,11 @@ import HeroImage from '../sections/HeroImage.astro';
 import SectionCanciones from '../sections/SectionCanciones.astro';
 import SectionDates from '../sections/SectionDates.astro';
 import ButtonToUp from '../components/ButtonToUp.astro';
+import ButtonTheme from '../components/ButtonTheme.astro';
+
 
 const eras = ['debut', 'fearless', 'speakNow', 'red', '1989', 'reputation', 'lover', 'folklore', 'evermore', 'midnights', 'TTPD', 'mashup'];
-let eraIndex = 0; // Índice inicial
+let eraIndex = 9; // Índice inicial
 
 ---
 
@@ -14,5 +16,6 @@ let eraIndex = 0; // Índice inicial
 	<HeroImage era={eras[eraIndex]} boton={true} pagAnt='/swifties-eras-tour/' pagSig='/swifties-eras-tour/'/>
 	<SectionCanciones era={eras[eraIndex]}/>
 	<SectionDates era={eras[eraIndex]}/>
+	<!-- <ButtonTheme era={eras[eraIndex]}/> -->
 	<ButtonToUp era={eras[eraIndex]}/>
 </Layout>

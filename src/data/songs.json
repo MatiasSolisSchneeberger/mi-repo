@@ -413,7 +413,7 @@
         {
             "albums": "fearless",
             "logo": "/swifties-eras-tour/images/Logos-Discos/02-Logo-Fearless.png",
-            "foto":"",
+            "foto":"/swifties-eras-tour/images/Fotos/02-Fearless.png",
             "portada":"public/images/Portadas-Discos/02-Portada-Fearless.png",
             "emojie":"public/images/Emojis/02.fearless.png",
             "linkPage": "/swifties-eras-tour/eras/02-fearless",
@@ -1232,7 +1232,7 @@
         {
             "albums": "speakNow",
             "logo": "/swifties-eras-tour/images/Logos-Discos/03-Logo-SpeakNow.png",
-            "foto":"",
+            "foto":"/swifties-eras-tour/images/Fotos/03-SpeakNow.png",
             "portada":"",
             "emojie":"public/images/Emojis/03.speakNow.png",
             "linkPage": "/swifties-eras-tour/eras/03-speakNow",
@@ -1971,7 +1971,7 @@
         {
             "albums": "red",
             "logo": "/swifties-eras-tour/images/Logos-Discos/04-Logo-Red.png",
-            "foto":"",
+            "foto":"/swifties-eras-tour/images/Fotos/04-Red.png",
             "portada":"",
             "emojie":"public/images/Emojis/04.red.png",
             "linkPage": "/swifties-eras-tour/eras/04-red",
@@ -2963,7 +2963,7 @@
         {
             "albums": "1989",
             "logo": "/swifties-eras-tour/images/Logos-Discos/05-Logo-1989.png",
-            "foto":"",
+            "foto":"/swifties-eras-tour/images/Fotos/05-1989.png",
             "portada":"",
             "emojie":"public/images/Emojis/05.1989.png",
             "linkPage": "/swifties-eras-tour/eras/05-1989",
@@ -3729,7 +3729,7 @@
         {
             "albums": "reputation",
             "logo": "/swifties-eras-tour/images/Logos-Discos/06-Logo-Reputation.png",
-            "foto":"",
+            "foto":"/swifties-eras-tour/images/Fotos/06-Reputation.png",
             "portada":"",
             "emojie":"public/images/Emojis/06.reputation.png",
             "linkPage": "/swifties-eras-tour/eras/06-reputation",
@@ -4204,7 +4204,7 @@
         {
             "albums": "lover",
             "logo": "/swifties-eras-tour/images/Logos-Discos/07-Logo-Lover.png",
-            "foto":"",
+            "foto":"/swifties-eras-tour/images/Fotos/07-Lover.png",
             "portada":"",
             "emojie":"public/images/Emojis/07.lover.png",
             "linkPage": "/swifties-eras-tour/eras/07-lover",
@@ -4821,7 +4821,7 @@
         {
             "albums": "folklore",
             "logo": "/swifties-eras-tour/images/Logos-Discos/08-Logo-Folklore.png",
-            "foto":"",
+            "foto":"/swifties-eras-tour/images/Fotos/08-Folklore.png",
             "portada":"",
             "emojie":"public/images/Emojis/08.folklore.png",
             "linkPage": "/swifties-eras-tour/eras/08-folklore",
@@ -5337,7 +5337,7 @@
         {
             "albums": "evermore",
             "logo": "/swifties-eras-tour/images/Logos-Discos/09-Logo-Evermore.png",
-            "foto":"",
+            "foto":"/swifties-eras-tour/images/Fotos/09-Evermore.png",
             "portada":"",
             "emojie":"public/images/Emojis/09.evermore.png",
             "linkPage": "/swifties-eras-tour/eras/09-evermore",
@@ -5896,7 +5896,7 @@
         {
             "albums": "midnights",
             "logo": "/swifties-eras-tour/images/Logos-Discos/10-Logo-Midnights.png",
-            "foto":"",
+            "foto":"/swifties-eras-tour/images/Fotos/10-Midnights.png",
             "portada":"",
             "emojie":"public/images/Emojis/10.midnights.png",
             "linkPage": "/swifties-eras-tour/eras/10-midnights",
@@ -6739,7 +6739,7 @@
         {
             "albums": "TTPD",
             "logo": "/swifties-eras-tour/images/Logos-Discos/11-Logo-TTPD.png",
-            "foto":"",
+            "foto":"/swifties-eras-tour/images/Fotos/11-TTPD.png",
             "portada":"",
             "emojie":"/swifties-eras-tour/images/Emojis/11.TTPD.png",
             "linkPage": "/swifties-eras-tour/eras/11-TTPD",

@@ -7,6 +7,7 @@ import Cancion from "../components/Cancion.astro";
 import Emojie from "../components/Emojie.astro";
 
 import {eras} from "../data/songs.json"
+import Subtitle from "../components/Subtitle.astro";
 
 interface Props {
 	era: string;
@@ -17,30 +18,17 @@ const { era }  =  Astro.props;
 
 <article id="Canciones" class='py-12 px-8 sm:px-10 xl:px-28 space-y-6'>
     <!-- Titulo -->
-    <Title era={era} titulo = "Canciones Sorpresas" texto = "Estas fueron las canciones sorpresas que hubieron hasta ahora en “The Eras Tour”."/>
+    <Title era={era} titulo = "Canciones Sorpresas">
+        Estas fueron las canciones sorpresas que hubieron hasta ahora en “The Eras Tour”.
+    </Title>
+    
     <!-- Botontes/Etiquetas -->
     <section class = "flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
         <!-- Botones -->
         <div class="rounded-3xl flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative">
-            <h3 class:list  =  {[
-                "text-center text-headline-medium relative self-stretch",
-                {
-                    "text-debut-900":       era === "debut",
-                    "text-fearless-900":    era === "fearless",
-                    "text-speakNow-900":    era === "speakNow",
-                    "text-red-900":         era === "red",
-                    "text-1989-900":        era === "1989",
-                    "text-reputation-900":  era === "reputation",
-                    "text-lover-900":       era === "lover",
-                    "text-folklore-900":    era === "folklore",
-                    "text-evermore-900":    era === "evermore",
-                    "text-midnights-900":   era === "midnights",
-                    "text-TTPD-900":        era === "TTPD",
-                    "text-mashup-900":        era === "mashup",
-                }
-                ]}>
-                Eras
-            </h3>
+            <Subtitle era={era} titulo="Botones">
+                
+            </Subtitle>
             <!-- Botones de las eras -->
             <div class = "flex flex-row gap-3 items-center justify-center flex-wrap self-stretch shrink-0 relative">
                 <ButtonPrimario era="debut" href="#debut" icono="Izq"> 
@@ -107,25 +95,9 @@ const { era }  =  Astro.props;
         </div>
         <!-- Etiquetas -->
         <div class = "rounded-3xl flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative">
-            <h3 class:list  =  {[
-                "text-center text-headline-medium relative self-stretch",
-                {
-                    "text-debut-900":       era === "debut",
-                    "text-fearless-900":    era === "fearless",
-                    "text-speakNow-900":    era === "speakNow",
-                    "text-red-900":         era === "red",
-                    "text-1989-900":        era === "1989",
-                    "text-reputation-900":  era === "reputation",
-                    "text-lover-900":       era === "lover",
-                    "text-folklore-900":    era === "folklore",
-                    "text-evermore-900":    era === "evermore",
-                    "text-midnights-900":   era === "midnights",
-                    "text-TTPD-900":        era === "TTPD",
-                    "text-mashup-900":      era === "mashup",
-                }
-                ]}>
-            Etiquetas
-            </h3>
+            <Subtitle era={era} titulo="Etiquetas">
+                Con las etiquetas podes 
+            </Subtitle>
             <!-- Etiquetas -->
             <div class = "flex flex-row gap-3 items-center justify-center flex-wrap self-stretch shrink-0 relative">
                 <Chip era="red" icono="Izq">
@@ -159,9 +131,9 @@ const { era }  =  Astro.props;
     <!-- TarjetasCanciones -->
     <section class="flex flex-row gap-6 items-center justify-center flex-wrap self-stretch shrink-0 relative py-0">
         {
-            eras.map(({ albums , Spotify , canciones , extras , linkPage , YTMusic }) => {
+            eras.map(({ albums , foto , Spotify , canciones , extras , linkPage , YTMusic }) => {
                 return (
-                    <TarjetaCancion eraTarjeta={albums} spotify={Spotify} linkPage={linkPage} YTmusic={YTMusic}>
+                    <TarjetaCancion eraTarjeta={albums} taylor={foto} spotify={Spotify} linkPage={linkPage} YTmusic={YTMusic}>
                         {
                             canciones.map(({title , etiquetas}) =>{
                                     return (
