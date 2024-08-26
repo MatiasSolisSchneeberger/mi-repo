@@ -3,9 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import HeroImage from '../sections/HeroImage.astro';
 import SectionCanciones from '../sections/SectionCanciones.astro';
 import SectionDates from '../sections/SectionDates.astro';
-import ButtonToUp from '../components/ButtonToUp.astro';
-import ButtonTheme from '../components/ButtonTheme.astro';
-
 
 const eras = ['debut', 'fearless', 'speakNow', 'red', '1989', 'reputation', 'lover', 'folklore', 'evermore', 'midnights', 'TTPD', 'mashup'];
 let eraIndex = 9; // Índice inicial
@@ -17,5 +14,5 @@ let eraIndex = 9; // Índice inicial
 	<SectionCanciones era={eras[eraIndex]}/>
 	<SectionDates era={eras[eraIndex]}/>
 	<!-- <ButtonTheme era={eras[eraIndex]}/> -->
-	<ButtonToUp era={eras[eraIndex]}/>
+	
 </Layout>

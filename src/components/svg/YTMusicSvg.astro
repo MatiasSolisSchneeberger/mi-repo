@@ -5,58 +5,56 @@ interface Props {
 
 const { era } = Astro.props;
 
-const color: { [key: string]: string } = {
-    debut:      "#1D371F",
-    fearless:   "#6d241a",
-    speakNow:   "#5d3e5d",
-    red:        "#6f2c38",
-    "1989":     "#124d68",
-    reputation: "#3e3c3c",
-    lover:      "#801b35",
-    folklore:   "#4d4641",
-    evermore:   "#584036",
-    midnights:  "#354873",
-    TTPD:       "#493f3a",
-    mashup:    "#80261c",
-};
-
-const iconoColor = color[era] || "#000000";
 ---
 <div class="shrink-0 relative overflow-visible">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" xml:space="preserve" viewBox="0 0 192 192">
         <path fill="none" d="M0 0h192v192H0z"/>
-        <circle cx="96" cy="96" r="88" fill={iconoColor}/>
+        <circle cx="96" cy="96" r="88" 
+            class:list={{
+                "fill-debut-900 dark:fill-debut-200": era === 'debut',
+                "fill-fearless-900 dark:fill-fearless-200": era === 'fearless',
+                "fill-speakNow-900 dark:fill-speakNow-200": era === 'speakNow',
+                "fill-red-900 dark:fill-red-200": era === 'red',
+                "fill-1989-900 dark:fill-1989-200": era === '1989',
+                "fill-reputation-900 dark:fill-reputation-200": era === 'reputation',
+                "fill-lover-900 dark:fill-lover-200": era === 'lover',
+                "fill-folklore-900 dark:fill-folklore-200": era === 'folklore',
+                "fill-evermore-900 dark:fill-evermore-200": era === 'evermore',
+                "fill-midnights-900 dark:fill-midnights-200": era === 'midnights',
+                "fill-TTPD-900 dark:fill-TTPD-200": era === 'TTPD',
+                "fill-mashup-900 dark:fill-mashup-200": era === 'mashup',
+            }}/>
         <path class:list={[
             {
-                    'fill-debut-200':      era === 'debut',
-                    'fill-fearless-200':   era === 'fearless',
-                    'fill-speakNow-200':   era === 'speakNow',
-                    'fill-red-200':        era === 'red',
-                    'fill-1989-200':       era === '1989',
-                    'fill-reputation-200': era === 'reputation',
-                    'fill-lover-200':      era === 'lover',
-                    'fill-folklore-200':   era === 'folklore',
-                    'fill-evermore-200':   era === 'evermore',
-                    'fill-midnights-200':  era === 'midnights',
-                    'fill-TTPD-200':       era === 'TTPD',
-                    'fill-mashup-200':       era === 'mashup',
-                    
-                }]} d="M96 50.32c25.19 0 45.68 20.49 45.68 45.68S121.19 141.68 96 141.68 50.32 121.19 50.32 96 70.81 50.32 96 50.32m0-6.4c-28.76 0-52.08 23.32-52.08 52.08 0 28.76 23.32 52.08 52.08 52.08s52.08-23.32 52.08-52.08c0-28.76-23.32-52.08-52.08-52.08z"/>
+                'fill-debut-50 dark:fill-debut-700':      era === 'debut',
+                'fill-fearless-50 dark:fill-fearless-700':   era === 'fearless',
+                'fill-speakNow-50 dark:fill-speakNow-700':   era === 'speakNow',
+                'fill-red-50 dark:fill-red-700':        era === 'red',
+                'fill-1989-50 dark:fill-1989-700':       era === '1989',
+                'fill-reputation-50 dark:fill-reputation-700': era === 'reputation',
+                'fill-lover-50 dark:fill-lover-700':      era === 'lover',
+                'fill-folklore-50 dark:fill-folklore-700':   era === 'folklore',
+                'fill-evermore-50 dark:fill-evermore-700':   era === 'evermore',
+                'fill-midnights-50 dark:fill-midnights-700':  era === 'midnights',
+                'fill-TTPD-50 dark:fill-TTPD-700':       era === 'TTPD',
+                'fill-mashup-50 dark:fill-mashup-700':       era === 'mashup',
+            }]}
+            d="M96 50.32c25.19 0 45.68 20.49 45.68 45.68S121.19 141.68 96 141.68 50.32 121.19 50.32 96 70.81 50.32 96 50.32m0-6.4c-28.76 0-52.08 23.32-52.08 52.08 0 28.76 23.32 52.08 52.08 52.08s52.08-23.32 52.08-52.08c0-28.76-23.32-52.08-52.08-52.08z"/>
         <path class:list={[
             {
-                    'fill-debut-200':      era === 'debut',
-                    'fill-fearless-200':   era === 'fearless',
-                    'fill-speakNow-200':   era === 'speakNow',
-                    'fill-red-200':        era === 'red',
-                    'fill-1989-200':       era === '1989',
-                    'fill-reputation-200': era === 'reputation',
-                    'fill-lover-200':      era === 'lover',
-                    'fill-folklore-200':   era === 'folklore',
-                    'fill-evermore-200':   era === 'evermore',
-                    'fill-midnights-200':  era === 'midnights',
-                    'fill-TTPD-200':       era === 'TTPD',
-                    'fill-mashup-200':       era === 'mashup',
-                    
-                }]} d="m79 122 45-26-45-26z"/>
+                'fill-debut-50 dark:fill-debut-700':      era === 'debut',
+                'fill-fearless-50 dark:fill-fearless-700':   era === 'fearless',
+                'fill-speakNow-50 dark:fill-speakNow-700':   era === 'speakNow',
+                'fill-red-50 dark:fill-red-700':        era === 'red',
+                'fill-1989-50 dark:fill-1989-700':       era === '1989',
+                'fill-reputation-50 dark:fill-reputation-700': era === 'reputation',
+                'fill-lover-50 dark:fill-lover-700':      era === 'lover',
+                'fill-folklore-50 dark:fill-folklore-700':   era === 'folklore',
+                'fill-evermore-50 dark:fill-evermore-700':   era === 'evermore',
+                'fill-midnights-50 dark:fill-midnights-700':  era === 'midnights',
+                'fill-TTPD-50 dark:fill-TTPD-700':       era === 'TTPD',
+                'fill-mashup-50 dark:fill-mashup-700':       era === 'mashup',
+            }]}
+            d="m79 122 45-26-45-26z"/>
     </svg>
 </div>

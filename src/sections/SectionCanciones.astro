@@ -131,7 +131,7 @@ const { era }  =  Astro.props;
     <!-- TarjetasCanciones -->
     <section class="flex flex-row gap-6 items-center justify-center flex-wrap self-stretch shrink-0 relative py-0">
         {
-            eras.map(({ albums , foto , Spotify , canciones , extras , linkPage , YTMusic }) => {
+            eras.map(({ albums , portada , foto , Spotify , canciones , extras , linkPage , YTMusic }) => {
                 return (
                     <TarjetaCancion eraTarjeta={albums} taylor={foto} spotify={Spotify} linkPage={linkPage} YTmusic={YTMusic}>
                         {

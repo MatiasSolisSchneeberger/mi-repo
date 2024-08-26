@@ -8,7 +8,9 @@ const eraPagina = 'speakNow'
 ---
 <Layout era={eraPagina} title="Setlist | Swifties Eras Tour">
     <main class="py-12 px-8 sm:px-32 space-y-6 flex flex-col gap-2.5 gap-y-0 items-center justify-center self-stretch shrink-0 relative w-full">
-        <Title era={eraPagina} titulo="Setlist 2023/24" texto="Estos son los setlist de The Eras Tour, previo a la inclusión de TTPD al setlist y después de la inclusión"/>
+        <Title era={eraPagina} titulo="Setlist 2023/24">
+            Estos son los setlist de The Eras Tour, previo a la inclusión de TTPD al setlist y después de la inclusión
+        </Title>
         <section class="flex flex-col sm:flex-row gap-4 sm:gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden">
         {
             setlist.map(({parte, sets}) => {

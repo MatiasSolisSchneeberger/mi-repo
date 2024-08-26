@@ -10,18 +10,18 @@ const { href , era , icono }  =  Astro.props;
 <a href = {href} target="_blank" class:list = {[
 		"rounded-[100px] flex flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden",
 		{
-			"bg-debut-300 hover:bg-debut-400": era === "debut",
-			"bg-fearless-300 hover:bg-fearless-400": era === "fearless",
-			"bg-speakNow-300 hover:bg-speakNow-400": era === "speakNow",
-			"bg-red-300 hover:bg-red-400": era === "red",
-			"bg-1989-300 hover:bg-1989-400": era === "1989",
-			"bg-reputation-300 hover:bg-reputation-400": era === "reputation",
-			"bg-lover-300 hover:bg-lover-400": era === "lover",
-			"bg-folklore-300 hover:bg-folklore-400": era === "folklore",
-			"bg-evermore-300 hover:bg-evermore-400": era === "evermore",
-			"bg-midnights-300 hover:bg-midnights-400": era === "midnights",
-			"bg-TTPD-300 hover:bg-TTPD-400": era === "TTPD",
-			"bg-mashup-300 hover:bg-mashup-400": era === "mashup",
+			"dark:bg-debut-500 dark:hover:bg-debut-300 bg-debut-300 hover:bg-debut-400": era === "debut",
+			"dark:bg-fearless-500 dark:hover:bg-fearless-300 bg-fearless-300 hover:bg-fearless-400": era === "fearless",
+			"dark:bg-speakNow-500 dark:hover:bg-speakNow-300 bg-speakNow-300 hover:bg-speakNow-400": era === "speakNow",
+			"dark:bg-red-500 dark:hover:bg-red-300 bg-red-300 hover:bg-red-400": era === "red",
+			"dark:bg-1989-500 dark:hover:bg-1989-300 bg-1989-300 hover:bg-1989-400": era === "1989",
+			"dark:bg-reputation-500 dark:hover:bg-reputation-300 bg-reputation-300 hover:bg-reputation-400": era === "reputation",
+			"dark:bg-lover-500 dark:hover:bg-lover-300 bg-lover-300 hover:bg-lover-400": era === "lover",
+			"dark:bg-folklore-500 dark:hover:bg-folklore-300 bg-folklore-300 hover:bg-folklore-400": era === "folklore",
+			"dark:bg-evermore-500 dark:hover:bg-evermore-300 bg-evermore-300 hover:bg-evermore-400": era === "evermore",
+			"dark:bg-midnights-500 dark:hover:bg-midnights-300 bg-midnights-300 hover:bg-midnights-400": era === "midnights",
+			"dark:bg-TTPD-500 dark:hover:bg-TTPD-300 bg-TTPD-300 hover:bg-TTPD-400": era === "TTPD",
+			"dark:bg-mashup-500 dark:hover:bg-mashup-300 bg-mashup-300 hover:bg-mashup-400": era === "mashup",
 			
 		}
 	]}>
@@ -38,18 +38,18 @@ const { href , era , icono }  =  Astro.props;
 		<p  class:list = {[
 			"hidden sm:flex text-center text-title-small relative items-center justify-center",
 		{
-			"text-debut-800": 		era === "debut",
-			"text-fearless-800": 	era === "fearless",
-			"text-speakNow-800": 	era === "speakNow",
-			"text-red-800": 			era === "red",
-			"text-1989-800": 		era === "1989",
-			"text-reputation-800": 	era === "reputation",
-			"text-lover-800": 		era === "lover",
-			"text-folklore-800": 	era === "folklore",
-			"text-evermore-800": 	era === "evermore",
-			"text-midnights-800": 	era === "midnights",
-			"text-TTPD-800": 		era === "TTPD",
-			"text-mashup-800": 		era === "mashup",
+			"text-debut-800 dark:text-debut-100": 		era === "debut",
+			"text-fearless-800 dark:text-fearless-100": 	era === "fearless",
+			"text-speakNow-800 dark:text-speakNow-100": 	era === "speakNow",
+			"text-red-800 dark:text-red-100": 			era === "red",
+			"text-1989-800 dark:text-1989-100": 		era === "1989",
+			"text-reputation-800 dark:text-reputation-100": 	era === "reputation",
+			"text-lover-800 dark:text-lover-100": 		era === "lover",
+			"text-folklore-800 dark:text-folklore-100": 	era === "folklore",
+			"text-evermore-800 dark:text-evermore-100": 	era === "evermore",
+			"text-midnights-800 dark:text-midnights-100": 	era === "midnights",
+			"text-TTPD-800 dark:text-TTPD-100": 		era === "TTPD",
+			"text-mashup-800 dark:text-mashup-100": 		era === "mashup",
 		}
 		]}
 		style = "letter-spacing: var(--title-small-letter-spacing, 0.1px)">
