@@ -29,6 +29,7 @@ if (!eraData) return null
                     "text-evermore-100": era === "evermore",
                     "text-midnights-100": era === "midnights",
                     "text-TTPD-100": era === "TTPD",
+                    "text-mashup-100": era === "mashup",
                 }
             ]}>
                 Canciones
@@ -52,6 +53,7 @@ if (!eraData) return null
                     "text-evermore-100": era === "evermore",
                     "text-midnights-100": era === "midnights",
                     "text-TTPD-100": era === "TTPD",
+                    "text-mashup-100": era === "mashup",
                 }
             ]}>
                 Fechas
@@ -72,6 +74,7 @@ if (!eraData) return null
                     "text-evermore-100": era === "evermore",
                     "text-midnights-100": era === "midnights",
                     "text-TTPD-100": era === "TTPD",
+                    "text-mashup-100": era === "mashup",
                 }
             ]}>
                 Lugares
@@ -81,7 +84,7 @@ if (!eraData) return null
     <tbody  class=`text-${era}-800 w-full flex flex-col gap-1 rounded-2xl items-start justify-start self-stretch shrink-0 relative overflow-hidden`>
         <!-- canciones -->
         {
-            eraData?.canciones.map(({title , info , etiquetas}) =>{
+            eraData?.canciones.map(({title , info , etiquetas }) =>{
                     return (
                         <tr class="w-full flex-row gap-2 rounded-2xl p-2.5 flex items-center justify-center" 
                         class:list = {[
@@ -97,6 +100,7 @@ if (!eraData) return null
                                 "bg-evermore-200": era === "evermore",
                                 "bg-midnights-200": era === "midnights",
                                 "bg-TTPD-200": era === "TTPD",
+                                "bg-mashup-200": era === "mashup",
                             }
                         ]}>
                             <td class="flex gap-2 w-full rounded-2xl relative justify-center">
@@ -104,8 +108,9 @@ if (!eraData) return null
                                     {
                                         'hidden': etiquetas.principal !== "setlist",
                                     }
-                                    ]}><Emojie emojie="setlist"/></div>
-                                <p class:list={[
+                                    ]}><Emojie emojie="setlist"/>
+                                </div>
+                                <button data-modal-target="default-modal" class:list={[
                                     "text-title-medium text-center",
                                     {
                                         'text-debut-400': etiquetas.principal === "sinCantar" && era === 'debut',
@@ -122,11 +127,12 @@ if (!eraData) return null
                                         'text-mashup-400': etiquetas.principal === "sinCantar" && era === 'mashup',
                                     }]}>
                                     {title}
-                                </p>
+                                </button>
+                            <div><
                             </td>
                             <td class="flex flex-col w-full" class:list={[{'hidden': etiquetas.principal === 'sinCantar'}]}>
                                 {
-                                    info.map(({fecha , instrumento })=>{
+                                    info.map(({fecha , instrumento , cantSorp})=>{
                                         if (!instrumento) return null
                                         return(
                                             <div class="flex flex-row gap-3 justify-center" >
@@ -134,6 +140,9 @@ if (!eraData) return null
                                                     {fecha.dia}/{fecha.mes}/{fecha.año}
                                                 </p>
                                                 <Emojie emojie={instrumento}/>
+                                                {
+                                                    <p class="text-title-medium">{cantSorp}</p>
+                                                }
                                             </div>
                                             
                                         )
@@ -175,6 +184,7 @@ if (!eraData) return null
                     "bg-evermore-600": era === "evermore",
                     "bg-midnights-600": era === "midnights",
                     "bg-TTPD-600": era === "TTPD",
+                    "bg-mashup-600": era === "mashup",
                 }
             ]}>
             </tr>
@@ -196,6 +206,7 @@ if (!eraData) return null
                                 "bg-evermore-200": era === "evermore",
                                 "bg-midnights-200": era === "midnights",
                                 "bg-TTPD-200": era === "TTPD",
+                                "bg-mashup-200": era === "mashup",
                             }
                         ]}>
                             <td class=" w-full rounded-2xl relative">

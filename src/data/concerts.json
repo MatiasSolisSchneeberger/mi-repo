@@ -1625,9 +1625,7 @@
                     "estadio": "Ernst Happel Stadion"
                 },
                 "telonero": "Paramore"
-            }
-        ],
-        "ahora":[
+            },
             {
                 "fecha": {
                     "dia": "15",
@@ -1694,7 +1692,7 @@
                 "telonero": "Paramore"
             }
         ],
-        "futuro":[
+        "ahora":[
             {
                 "fecha": {
                     "dia": "18",
@@ -1707,7 +1705,10 @@
                     "estadio": "Hard Rock Stadium"
                 },
                 "telonero": "Gracie Abrams"
-            },
+            }
+        ],
+        "futuro":[
+            
             {
                 "fecha": {
                     "dia": "19",

@@ -10,18 +10,18 @@ const { era } = Astro.props;
 <header  class:list = {[
     "z-10 py-4 flex gap-2.5 flex-row items-center self-stretch shrink-0 h-auto w-full justify-between px-3 sm:px-10",
     {
-        "bg-debut-900":      era === "debut",
-        "bg-fearless-900":   era === "fearless",
-        "bg-speakNow-900":   era === "speakNow",
-        "bg-red-900":        era === "red",
-        "bg-1989-900":       era === "1989",
-        "bg-reputation-900": era === "reputation",
-        "bg-lover-900":      era === "lover",
-        "bg-folklore-900":   era === "folklore",
-        "bg-evermore-900":   era === "evermore",
-        "bg-midnights-900":  era === "midnights",
-        "bg-TTPD-900":       era === "TTPD",
-        "bg-mashup-900":     era === "mashup",
+        "dark:bg-debut-950 bg-debut-900":      era === "debut",
+        "dark:bg-fearless-950 bg-fearless-900":   era === "fearless",
+        "dark:bg-speakNow-950 bg-speakNow-900":   era === "speakNow",
+        "dark:bg-red-950 bg-red-900":        era === "red",
+        "dark:bg-1989-950 bg-1989-900":       era === "1989",
+        "dark:bg-reputation-950 bg-reputation-900": era === "reputation",
+        "dark:bg-lover-950 bg-lover-900":      era === "lover",
+        "dark:bg-folklore-950 bg-folklore-900":   era === "folklore",
+        "dark:bg-evermore-950 bg-evermore-900":   era === "evermore",
+        "dark:bg-midnights-950 bg-midnights-900":  era === "midnights",
+        "dark:bg-TTPD-950 bg-TTPD-900":       era === "TTPD",
+        "dark:bg-mashup-950 bg-mashup-900":     era === "mashup",
 
     }
     ]}>

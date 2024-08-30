@@ -14,14 +14,15 @@ const { title , era } = Astro.props;
 ---
 
 <!doctype html>
-<html id="html" class="dark" lang = "en">
+<html id="html" lang = "en">
 	<head>
 		<meta charset = "UTF-8" />
 		<meta name = "description" content = "Astro description" />
 		<meta name = "viewport" content = "width = device-width" />
 		<link rel = "icon" type = "image/svg+xml" href = "/swifties-eras-tour/src/components/svg/Frame.svg" />
 		<meta name = "generator" content = {Astro.generator} />
-		
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
 		<!-- Tipografías -->
 		<link rel = "preconnect" href = "https://fonts.googleapis.com">
 		<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
