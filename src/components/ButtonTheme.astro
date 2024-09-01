@@ -1,15 +1,61 @@
 ---
-/* interface Props {
+interface Props {
 	era: string;
 }
 
-const { era }  =  Astro.props;  */
+const { era }  =  Astro.props;
+
 ---
-<div id="button-theme" class="shadow-sm hover:shadow-lg fixed bottom-2 right-2 transition-transform">
-    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+
+<div id="button-theme" class="shadow-sm hover:shadow-lg fixed bottom-2 right-2 opacity-0 transition-all duration-125 ease-in-out cursor-pointer">
+    <button
+        aria-label="Boton para cambiar de tema"
+        style="box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+        0px 4px 8px 3px rgba(0, 0, 0, 0.15)" 
+        class:list={[
+        "fixed bottom-2 right-2 p-2 flex cursor-default items-center justify-center rounded-lg text-primary transition-opacity",
+        {
+			"bg-debut-300 dark:bg-debut-600": era === "debut",
+			"bg-fearless-300 dark:bg-fearless-600": era === "fearless",
+			"bg-speakNow-300 dark:bg-speakNow-600": era === "speakNow",
+			"bg-red-300 dark:bg-red-600": era === "red",
+			"bg-1989-300 dark:bg-1989-600": era === "1989",
+			"bg-reputation-300 dark:bg-reputation-600": era === "reputation",
+			"bg-lover-300 dark:bg-lover-600": era === "lover",
+			"bg-folklore-300 dark:bg-folklore-600": era === "folklore",
+			"bg-evermore-300 dark:bg-evermore-600": era === "evermore",
+			"bg-midnights-300 dark:bg-midnights-600": era === "midnights",
+			"bg-TTPD-300 dark:bg-TTPD-600": era === "TTPD",
+			"bg-mashup-300 dark:bg-mashup-600": era === "mashup",
+        }
+        ]}>
+        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  class:list={[
+            {
+                'stroke-debut-800':      era === 'debut',
+                'stroke-fearless-800':   era === 'fearless',
+                'stroke-speakNow-800':   era === 'speakNow',
+                'stroke-red-800':        era === 'red',
+                'stroke-1989-800':       era === '1989',
+                'stroke-reputation-800': era === 'reputation',
+                'stroke-lover-800':      era === 'lover',
+                'stroke-folklore-800':   era === 'folklore',
+                'stroke-evermore-800':   era === 'evermore',
+                'stroke-midnights-800':  era === 'midnights',
+                'stroke-TTPD-800':       era === 'TTPD',
+                'stroke-mashup-800':     era === 'mashup',
+            }
+        ]
+        }  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
     </button>
 </div>
 
+<script>
+
+    if(document.documentElement.scrollTop > 100){
+        document.getElementById('button-theme')?.classList.add('opacity-0')
+    }else{
+        document.getElementById('button-theme')?.classList.remove('opacity-0')
+    }
+
+</script>
 

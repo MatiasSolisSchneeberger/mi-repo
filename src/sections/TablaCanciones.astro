@@ -110,7 +110,7 @@ if (!eraData) return null
                                     }
                                     ]}><Emojie emojie="setlist"/>
                                 </div>
-                                <button data-modal-target="default-modal" class:list={[
+                                <p class:list={[
                                     "text-title-medium text-center",
                                     {
                                         'text-debut-400': etiquetas.principal === "sinCantar" && era === 'debut',
@@ -127,8 +127,8 @@ if (!eraData) return null
                                         'text-mashup-400': etiquetas.principal === "sinCantar" && era === 'mashup',
                                     }]}>
                                     {title}
-                                </button>
-                            <div><
+                                </p>
+                            
                             </td>
                             <td class="flex flex-col w-full" class:list={[{'hidden': etiquetas.principal === 'sinCantar'}]}>
                                 {
@@ -141,7 +141,10 @@ if (!eraData) return null
                                                 </p>
                                                 <Emojie emojie={instrumento}/>
                                                 {
-                                                    <p class="text-title-medium">{cantSorp}</p>
+                                                    cantSorp?.length != null && 
+                                                    <p class="text-title-medium">
+                                                        con {cantSorp}
+                                                    </p>
                                                 }
                                             </div>
                                             

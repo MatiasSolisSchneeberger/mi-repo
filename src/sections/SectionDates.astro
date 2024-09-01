@@ -5,6 +5,7 @@ import Subtitle from "../components/Subtitle.astro";
 import TarjetaFecha from "../components/TarjetaFecha.astro";
 import {concerts} from "../data/concerts.json"
 import ButtonPrimario from "../components/ButtonPrimario.astro";
+import Contador from "../components/Contador.astro";
 
 interface Props {
 	era: string;
@@ -46,12 +47,11 @@ const maxFechasToShow = 6;  // Número máximo de fechas a mostrar inicialmente
                 );
 
             })}
-            {
-                concerts.ahora?.length < 2 && <Subtitle era={era} titulo="No hay fechas en este momento">
-                    No hay mas fechas hasta el 18 de octubre.
-                </Subtitle>
-            }
+            <!-- {
+                concerts.ahora?.length < 2 && 
+            } -->
         </div>
+        <!-- <Contador client:visible?/> -->
         <ButtonPrimario icono={null} era={era} href='/swifties-eras-tour/canciones.astro'>
             Ver Mas Fechas
         </ButtonPrimario>

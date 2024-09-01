@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import HeroImage from '../sections/HeroImage.astro';
 import SectionCanciones from '../sections/SectionCanciones.astro';
 import SectionDates from '../sections/SectionDates.astro';
-
+import ButtonTheme from '../components/ButtonTheme.astro';
 const eras = ['debut', 'fearless', 'speakNow', 'red', '1989', 'reputation', 'lover', 'folklore', 'evermore', 'midnights', 'TTPD', 'mashup'];
 let eraIndex = 0; // Índice inicial
 
@@ -13,22 +13,9 @@ let eraIndex = 0; // Índice inicial
 	<HeroImage era={eras[eraIndex]} boton={true} pagAnt='/swifties-eras-tour/' pagSig='/swifties-eras-tour/'/>
 	<SectionCanciones era={eras[eraIndex]}/>
 	<SectionDates era={eras[eraIndex]}/>
-	<!-- <ButtonTheme era={eras[eraIndex]}/> -->
-	
+	<ButtonTheme era={eras[eraIndex]}/>
 </Layout>
 
 <script>
-	import { Modal } from 'flowbite'
-
-	// select the two elements that we'll work with
-	const $buttonElement: HTMLElement | null = document.querySelector('#button');
-	const $modalElement: HTMLElement | null = document.querySelector('#defaultModal');
-
-	// create a new modal component
-	const modal = new Modal($modalElement);
-
-	// toggle the visibility of the modal when clicking on the button
-	if ($buttonElement) {
-		$buttonElement.addEventListener('click', () => modal.toggle());
-	}
-  </script>
+	
+</script>

@@ -14,7 +14,7 @@ const { title , era } = Astro.props;
 ---
 
 <!doctype html>
-<html id="html" lang = "en">
+<html transition:persist id="html" lang = "en">
 	<head>
 		<meta charset = "UTF-8" />
 		<meta name = "description" content = "Astro description" />
@@ -31,16 +31,7 @@ const { title , era } = Astro.props;
 		<title>{title}</title>
 		
 		<ViewTransitions />
-
-		<!-- <script>
-			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-			if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-				document.documentElement.classList.add('dark');
-			} else {
-				document.documentElement.classList.remove('dark')
-			}
-		</script> -->
-
+		
 	</head>
 	<body class:list={[
 		"w-screem sm:w-full",
