@@ -7,7 +7,7 @@ interface Props {
 const { era }  =  Astro.props;
 ---
 
-<div id="button-up" class="shadow-sm hover:shadow-lg fixed bottom-2 right-2 hidden transition-all duration-125 ease-in-out cursor-pointer">
+<div id="button-up" class="shadow-sm hover:shadow-lg fixed bottom-2 right-2 opacity-0 transition-all duration-125 ease-in-out cursor-pointer">
     <button
         aria-label="Boton ir arriba"
         style="box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
@@ -36,9 +36,9 @@ const { era }  =  Astro.props;
 <script>
     window.onscroll = function(){
         if(document.documentElement.scrollTop > 100){
-            document.getElementById('button-up')?.classList.remove('hidden')
+            document.getElementById('button-up')?.classList.remove('opacity-0')
         }else{
-            document.getElementById('button-up')?.classList.add('hidden')
+            document.getElementById('button-up')?.classList.add('opacity-0')
         }
     }
 
