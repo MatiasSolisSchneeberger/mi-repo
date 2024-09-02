@@ -11,9 +11,11 @@ const era = '1989'
 const eraData = eras.find(e => e.albums === era);
 if (!eraData) return null
 
+
+
 ---
 <Layout title = `${era} | Swifties Eras Tour` era = {era}>
-    <main  class=`bg-${era}-100 py-12 px-8 md:px-14 space-y-6 flex flex-col gap-2.5 gap-y-0 items-start justify-start self-stretch shrink-0 relative`>
+    <main  class=`bg-${era}-100 py-12 px-8 md:px-32 space-y-6 flex flex-col gap-2.5 gap-y-0 items-start justify-start self-stretch shrink-0 relative`>
         <div class="w-full rounded-3xl overflow-hidden">
             <HeroImage era={era} boton={false} pagAnt={eraData?.anterior} pagSig={eraData?.siguiente}/>
         </div>
@@ -42,50 +44,50 @@ if (!eraData) return null
                 Estos son todas las convinaciones de el nuevo outfit de 1989
             </p>
             <table class="bg-1989-400 hidden md:flex rounded-3xl p-2.5 flex-col gap-2 gap-y-0 items-start justify-start self-stretch shrink-0 relative overflow-hidden table-auto space-y-2.5">
-                <thead class="w-full flex flex-row gap-2">
+                <thead class="w-full flex flex-row gap-2 h-12">
                     <tr class="bg-1989-500 rounded-2xl p-2.5 gap-0 items-center justify-center  w-full">
                         <th class="text-1989-100 text-center text-headline-small relative w-full">
                             
                         </th>
                     </tr>
                     <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
-                        <th class="text-1989-100 text-center text-headline-small relative w-full ">
-                            Rosa
-                        </th>
-                        <th class="text-1989-100 text-center text-headline-small relative w-full sm:hidden flex">
-                            <div class="bg-pink-400 size-3"/>
+                        <th class="text-1989-100 text-headline-small relative w-full flex justify-center items-center h-full">
+                            <div class="bg-pink-400 rounded-lg flex h-full w-full "/>
                         </th>
                     </tr>
                     <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
-                        <th class="text-1989-100 text-center text-headline-small relative w-full">
-                            Naranja
+                        <th class="text-1989-100 text-headline-small relative w-full flex justify-center items-center h-full">
+                            <div class="bg-orange-400 rounded-lg flex h-full w-full "/>
+                        </th>
+                    </tr>
+                    
+                    <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
+                        <th class="text-1989-100 text-headline-small relative w-full flex justify-center items-center h-full">
+                            <div class="bg-yellow-400 rounded-lg flex h-full w-full "/>
                         </th>
                     </tr>
                     <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
-                        <th class="text-1989-100 text-center text-headline-small relative w-full">
-                            Amarillo
+                        <th class="text-1989-100 text-headline-small relative w-full flex justify-center items-center h-full">
+                            <div class="bg-green-400 rounded-lg flex h-full w-full "/>
                         </th>
                     </tr>
                     <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
-                        <th class="text-1989-100 text-center text-headline-small relative w-full">
-                            Verde
+                        <th class="text-1989-100 text-headline-small relative w-full flex justify-center items-center h-full">
+                            <div class="bg-cyan-400 rounded-lg flex h-full w-full "/>
                         </th>
                     </tr>
                     <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
-                        <th class="text-1989-100 text-center text-headline-small relative w-full">
-                            Celeste
-                        </th>
-                    </tr>
-                    <tr class="bg-1989-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full">
-                        <th class="text-1989-100 text-center text-headline-small relative w-full">
-                            Violeta
+                        <th class="text-1989-100 text-headline-small relative w-full flex justify-center items-center h-full">
+                            <div class="bg-purple-400 rounded-lg flex h-full w-full "/>
                         </th>
                     </tr>
                 </thead>
                 <tbody  class=`text-1989-800 w-full flex flex-col gap-1 rounded-2xl items-start justify-start self-stretch shrink-0 relative overflow-hidden`>
                     <tr class="bg-1989-500 gap-2 rounded-2xl p-2.5 flex items-center justify-center w-full">
-                        <td class="text-1989-100 text-center text-headline-small relative w-full">
-                            Rosa
+                        <td class="text-1989-100 text-center text-headline-small  relative w-full">
+                            <div class="bg-pink-400 rounded-lg flex h-full w-full ">
+                                
+                            </div>
                         </td>
                         <td class="text-1989-100 text-center text-headline-small relative w-full">
                             <img
@@ -301,11 +303,77 @@ if (!eraData) return null
                     
                 </tbody>
             </table>
+            
             <article class="md:hidden block">
                 <Subtitle titulo="Top Rosa" era={era}>
                     "Todas las convinaciones que tiene el top rosa. Ya se usaron con todas las polleras"
                 </Subtitle>
+                
             </article>
         </section>
+
+        <button data-tooltip-target="tooltip-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Default tooltip</button>
+
+        <div id="tooltip-default" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+            Tooltip content
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+
+        <div id="default-carousel" class="relative w-full" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/swifties-eras-tour/images/Fondos/01.Debut.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/swifties-eras-tour/images/Fondos/02.Fearless.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+
+
     </main>
 </Layout>
+
+<script>
+    
+</script>

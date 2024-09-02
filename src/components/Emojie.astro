@@ -28,25 +28,16 @@ const imageEmojie: { [key: string]: string } = {
 
 const imagen = imageEmojie[emojie] || "/swifties-eras-tour/images/Emojis/19.nada.png"
 ---
-<button data-tooltip-target="tooltip-default" type="button" class="">
-    <img 
-        
-        src={imagen}
-        class:list = {[
-            "w-[18px] h-[18px] relative",
-            {
-                "hidden": imagen === "/swifties-eras-tour/images/Emojis/19.nada.png",
-                "opacity-0": imagen === "/swifties-eras-tour/images/Emojis/cross-mark_274c (1).png",
-            }
-        ]}
-    
-        alt={emojie}
-    />
-</button>
 
-<div id="tooltip-default" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-    Tooltip content
-    <div class="tooltip-arrow" data-popper-arrow></div>
-</div>
+<img 
+    src={imagen}
+    class:list = {[
+        "w-[18px] h-[18px] relative",
+        {
+            "hidden": imagen === "/swifties-eras-tour/images/Emojis/19.nada.png",
+            "opacity-0": imagen === "/swifties-eras-tour/images/Emojis/cross-mark_274c (1).png",
+        }
+    ]}
 
-
+    alt={emojie}
+/>

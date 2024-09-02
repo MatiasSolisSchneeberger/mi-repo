@@ -22,15 +22,13 @@ const maxFechasToShow = 6;  // Número máximo de fechas a mostrar inicialmente
 
 <article id="Conciertos" class = `py-12 px-8 sm:px-10 xl:px-28 space-y-6`>
     <Title era={era} titulo="Fecha de conciertos">
-        En esta seccion encontraras las fechas actuales, donde esta ahora mismo The Eras Tour. Tambien podes ver mas información como la ciudad, el pais y en que estadio es la presentacion, tambien el telonero. 
-        <br>
-        Y si haces click en el botón de abajo podes ver el resto de las fechas, las siguientes y las que ya pasaron.
+        "Estas son todas las fechas The Eras Tour, las pasadas, las actuales, y las futuras."
     </Title>
     <section class="flex flex-col gap-6 self-stretch shrink-0 relative items-center">
         <Subtitle era={era} titulo="Fechas Actuales"/>
-        <div class="flex flex-col sm:flex-row gap-6 items-center justify-center flex-wrap self-stretch shrink-0 h-min relative">
+        <div class="flex flex-col sm:flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
             {
-                concerts.ahora?.length > 2 && concerts.ahora.slice(0, maxFechasToShow).map(({ fecha, lugar, telonero }, index) => {
+            concerts.ahora.slice(0, maxFechasToShow).map(({ fecha, lugar, telonero }, index) => {
                 const eraFecha = eras[index % eras.length];  // Alterna entre las eras
                 return (
                     <TarjetaFecha 
@@ -45,22 +43,16 @@ const maxFechasToShow = 6;  // Número máximo de fechas a mostrar inicialmente
                         telonero={telonero}
                     />
                 );
-
             })}
-            <!-- {
-                concerts.ahora?.length < 2 && 
-            } -->
+            
         </div>
-        <!-- <Contador client:visible?/> -->
-        <ButtonPrimario icono={null} era={era} href='/swifties-eras-tour/canciones.astro'>
-            Ver Mas Fechas
-        </ButtonPrimario>
+        <ButtonPrimario icono={null} era={era} href='/swifties-eras-tour/canciones.astro'/>
         
     </section>
 </article>
 
+<!-- creo que ya se como hacer para que no se muestren las fechas -->
 <script>
-    // lo mas probable es que haya una forma mas eficiente para hacer esto pero ni idea
     document.getElementById('btn-ver-fut')?.addEventListener('click', ()=>(
         document.getElementById('masFechas-fut')?.classList.remove('hidden'),
         document.getElementById('btn-ver-fut')?.classList.add('hidden'),

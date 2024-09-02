@@ -6746,7 +6746,7 @@
             "Spotify": "https://open.spotify.com/album/1Mo4aZ8pdj6L1jx8zSwJnt?si=UXBJ5yJERz-J4i-Q9eA8eQ",
             "YTMusic": "https://music.youtube.com/playlist?list=OLAK5uy_m6rFWXAYFIFVIaeyn8w6kzM38Rj5D3trg&si=NF5hLtzQPVJYpsbE",
             "anterior": "/swifties-eras-tour/eras/10-midnights",
-            "siguiente": "/swifties-eras-tour/eras/12-mashup",
+            "siguiente": "/swifties-eras-tour/eras/01-debut",
             "canciones": [
                 {
                     "title": "Fortnight",
@@ -7549,11 +7549,11 @@
             "foto":"/swifties-eras-tour/images/Fotos/12-Mashup.png",
             "portada":"",
             "emojie":"/swifties-eras-tour/images/Emojis/12.MashUp.png",
-            "linkPage": "/swifties-eras-tour/eras/12-mashup",
+            "linkPage": "/swifties-eras-tour/eras/12-mashup.astro",
             "Spotify": "",
             "YTMusic": "",
-            "anterior": "/swifties-eras-tour/eras/11-TTPD",
-            "siguiente": "/swifties-eras-tour/eras/01-debut",
+            "anterior": "/swifties-eras-tour/eras/11-TTPD.astro",
+            "siguiente": "/swifties-eras-tour/eras/01-debut.astro",
             "canciones": [
                 {
                     "title": "Is It Over Now?/Out of the Woods",

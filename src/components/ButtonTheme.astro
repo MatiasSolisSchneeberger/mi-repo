@@ -6,56 +6,94 @@ interface Props {
 const { era }  =  Astro.props;
 
 ---
+<button 
+    id="themeToggle"
+    aria-label="Theme Icon"
+    class:list={[
+    "fixed p-2 hidden cursor-default items-center justify-center rounded-lg text-primary transition-opacity",
+    {
+        "bg-debut-300 dark:bg-debut-600": era === "debut",
+        "bg-fearless-300 dark:bg-fearless-600": era === "fearless",
+        "bg-speakNow-300 dark:bg-speakNow-600": era === "speakNow",
+        "bg-red-300 dark:bg-red-600": era === "red",
+        "bg-1989-300 dark:bg-1989-600": era === "1989",
+        "bg-reputation-300 dark:bg-reputation-600": era === "reputation",
+        "bg-lover-300 dark:bg-lover-600": era === "lover",
+        "bg-folklore-300 dark:bg-folklore-600": era === "folklore",
+        "bg-evermore-300 dark:bg-evermore-600": era === "evermore",
+        "bg-midnights-300 dark:bg-midnights-600": era === "midnights",
+        "bg-TTPD-300 dark:bg-TTPD-600": era === "TTPD",
+        "bg-mashup-300 dark:bg-mashup-600": era === "mashup",
+    }
+    ]}>
+    <svg  xmlns="http://www.w3.org/2000/svg" class="dark:hidden block" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
+    <svg  xmlns="http://www.w3.org/2000/svg" class="dark:block hidden" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
 
-<div id="button-theme" class="shadow-sm hover:shadow-lg fixed bottom-2 right-2 opacity-0 transition-all duration-125 ease-in-out cursor-pointer">
-    <button
-        aria-label="Boton para cambiar de tema"
-        style="box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
-        0px 4px 8px 3px rgba(0, 0, 0, 0.15)" 
-        class:list={[
-        "fixed bottom-2 right-2 p-2 flex cursor-default items-center justify-center rounded-lg text-primary transition-opacity",
-        {
-			"bg-debut-300 dark:bg-debut-600": era === "debut",
-			"bg-fearless-300 dark:bg-fearless-600": era === "fearless",
-			"bg-speakNow-300 dark:bg-speakNow-600": era === "speakNow",
-			"bg-red-300 dark:bg-red-600": era === "red",
-			"bg-1989-300 dark:bg-1989-600": era === "1989",
-			"bg-reputation-300 dark:bg-reputation-600": era === "reputation",
-			"bg-lover-300 dark:bg-lover-600": era === "lover",
-			"bg-folklore-300 dark:bg-folklore-600": era === "folklore",
-			"bg-evermore-300 dark:bg-evermore-600": era === "evermore",
-			"bg-midnights-300 dark:bg-midnights-600": era === "midnights",
-			"bg-TTPD-300 dark:bg-TTPD-600": era === "TTPD",
-			"bg-mashup-300 dark:bg-mashup-600": era === "mashup",
-        }
-        ]}>
-        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  class:list={[
-            {
-                'stroke-debut-800':      era === 'debut',
-                'stroke-fearless-800':   era === 'fearless',
-                'stroke-speakNow-800':   era === 'speakNow',
-                'stroke-red-800':        era === 'red',
-                'stroke-1989-800':       era === '1989',
-                'stroke-reputation-800': era === 'reputation',
-                'stroke-lover-800':      era === 'lover',
-                'stroke-folklore-800':   era === 'folklore',
-                'stroke-evermore-800':   era === 'evermore',
-                'stroke-midnights-800':  era === 'midnights',
-                'stroke-TTPD-800':       era === 'TTPD',
-                'stroke-mashup-800':     era === 'mashup',
-            }
-        ]
-        }  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
-    </button>
-</div>
+</button>
+
 
 <script>
+        if(document.documentElement.scrollTop < 100){
+            document.getElementById('themeToggle')?.classList.remove('hidden')
+        }else{
+            document.getElementById('themeToggle')?.classList.add('hidden')
+        }
+    document.addEventListener("astro:page-load", () => {
+    const theme = (() => {
+        if (
+        typeof localStorage !== "undefined" &&
+        localStorage.getItem("picoPreferredColorScheme")
+        ) {
+        return localStorage.getItem("picoPreferredColorScheme");
+        }
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        return "dark";
+        }
+        return "light";
+    })();
 
-    if(document.documentElement.scrollTop > 100){
-        document.getElementById('button-theme')?.classList.add('opacity-0')
-    }else{
-        document.getElementById('button-theme')?.classList.remove('opacity-0')
+    if (theme === "light") {
+        document.documentElement.setAttribute("data-theme", "light");
+        document.documentElement.classList.remove("dark");
+    } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+        document.documentElement.classList.add("dark");
     }
 
+    window.localStorage.setItem("picoPreferredColorScheme", theme as string);
+
+    const handleToggleClick = () => {
+        const element = document.documentElement;
+        element.classList.toggle("dark");
+
+        const isDark = element.classList.contains("dark");
+
+        if (isDark) {
+        element.setAttribute("data-theme", "dark");
+        } else {
+        element.setAttribute("data-theme", "light");
+        }
+
+        localStorage.setItem(
+        "picoPreferredColorScheme",
+        isDark ? "dark" : "light",
+        );
+    };
+
+    document
+        .getElementById("themeToggle")!
+        .addEventListener("click", handleToggleClick);
+    });
 </script>
 
+<script>
+    document.addEventListener("astro:after-swap", () => {
+    if (localStorage.getItem("picoPreferredColorScheme") === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+        document.documentElement.classList.add("dark");
+    } else {
+        document.documentElement.setAttribute("data-theme", "light");
+        document.documentElement.classList.remove("dark");
+    }
+    });
+</script>
