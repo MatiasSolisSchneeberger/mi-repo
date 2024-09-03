@@ -9,6 +9,6 @@ export default defineConfig({
   site: 'https:matiassolisschneeberger.github.io',
   base: 'swifties-eras-tour',
 
-  integrations: [tailwind(), react()],
+  integrations: [tailwind({applyBaseStyles: false,}), react()],
 
 });

@@ -9,8 +9,10 @@ const { era }  =  Astro.props;
 <button 
     id="themeToggle"
     aria-label="Theme Icon"
+    style="box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+        0px 4px 8px 3px rgba(0, 0, 0, 0.15)"
     class:list={[
-    "fixed p-2 bottom-2 left-2 cursor-default items-center justify-center rounded-lg text-primary transition-opacity",
+    "shadow-sm hover:shadow-lg fixed p-2 bottom-2 left-2 cursor-default items-center justify-center rounded-lg text-primary transition-opacity",
     {
         "bg-debut-300 dark:bg-debut-600": era === "debut",
         "bg-fearless-300 dark:bg-fearless-600": era === "fearless",

@@ -8,7 +8,7 @@ interface Props {
 const { href , era , icono }  =  Astro.props;
 ---
 <a href = {href} target="_blank" class:list = {[
-		"rounded-[100px] flex flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden",
+		"rounded-full flex flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden",
 		{
 			"dark:bg-debut-500 dark:hover:bg-debut-300 bg-debut-300 hover:bg-debut-400": era === "debut",
 			"dark:bg-fearless-500 dark:hover:bg-fearless-300 bg-fearless-300 hover:bg-fearless-400": era === "fearless",
@@ -26,7 +26,7 @@ const { href , era , icono }  =  Astro.props;
 		}
 	]}>
 	<div class:list = {[
-		"px-2.5 py-2.5 flex flex-row gap-2 items-center justify-center self-stretch flex-1 relative",
+		"px-4 py-4 flex flex-row gap-2 items-center justify-center self-stretch flex-1 relative",
 		{
 			"sm:pl-4 sm:pr-6": icono === "Izq",
 			"sm:px-6": icono === null,

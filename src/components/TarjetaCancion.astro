@@ -20,20 +20,20 @@ const { eraTarjeta , taylor , spotify , linkPage , YTmusic } = Astro.props;
 
 ---
 <article transition:name="tarjeta-tabla" id={eraTarjeta} class:list={[
-    "transition ease-in-out delay-0 duration-200 shadow-sm hover:shadow-md rounded-3xl flex-wrap self-start shrink-0 overflow-hidden flex flex-col gap-0 justify-center flex-1 min-w-[400px] max-w-[450px] relative px-2.5 space-y-2.5 py-2.5",
+    "transition ease-in-out delay-0 duration-200 shadow-sm hover:shadow-md rounded-3xl flex-wrap self-start shrink-0 overflow-hidden flex flex-col gap-0 justify-center flex-1 sm:min-w-[400px] w-full sm:max-w-[450px] relative px-2.5 space-y-2.5 py-2.5",
     {
-        'dark:bg-debut-700       dark:shadow-debut-950      dark:hover:shadow-debut-950      bg-debut-200       shadow-debut-600      hover:shadow-debut-600':       eraTarjeta === 'debut',
-        'dark:bg-fearless-700    dark:shadow-fearless-950   dark:hover:shadow-fearless-950   bg-fearless-200    shadow-fearless-600   hover:shadow-fearless-600':    eraTarjeta === 'fearless',
-        'dark:bg-speakNow-700    dark:shadow-speakNow-950   dark:hover:shadow-speakNow-950   bg-speakNow-200    shadow-speakNow-600   hover:shadow-speakNow-600':    eraTarjeta === 'speakNow',
-        'dark:bg-red-700         dark:shadow-red-950        dark:hover:shadow-red-950        bg-red-200         shadow-red-600        hover:shadow-red-600':         eraTarjeta === 'red',
-        'dark:bg-1989-700        dark:shadow-1989-950       dark:hover:shadow-1989-950       bg-1989-200        shadow-1989-600       hover:shadow-1989-600':        eraTarjeta === '1989',
-        'dark:bg-reputation-700  dark:shadow-reputation-950 dark:hover:shadow-reputation-950 bg-reputation-200  shadow-reputation-600 hover:shadow-reputation-600':  eraTarjeta === 'reputation',
-        'dark:bg-lover-700       dark:shadow-lover-950      dark:hover:shadow-lover-950      bg-lover-200       shadow-lover-600      hover:shadow-lover-600':       eraTarjeta === 'lover',
-        'dark:bg-folklore-700    dark:shadow-folklore-950   dark:hover:shadow-folklore-950   bg-folklore-200    shadow-folklore-600   hover:shadow-folklore-600':    eraTarjeta === 'folklore',
-        'dark:bg-evermore-700    dark:shadow-evermore-950   dark:hover:shadow-evermore-950   bg-evermore-200    shadow-evermore-600   hover:shadow-evermore-600':    eraTarjeta === 'evermore',
-        'dark:bg-midnights-700   dark:shadow-midnights-950  dark:hover:shadow-midnights-950  bg-midnights-200   shadow-midnights-600  hover:shadow-midnights-600':   eraTarjeta === 'midnights',
-        'dark:bg-TTPD-700        dark:shadow-TTPD-950       dark:hover:shadow-TTPD-950       bg-TTPD-200        shadow-TTPD-600       hover:shadow-TTPD-600':        eraTarjeta === 'TTPD',
-        'dark:bg-mashup-700      dark:shadow-mashup-950     dark:hover:shadow-mashup-950     bg-mashup-200      shadow-mashup-600     hover:shadow-mashup-600':      eraTarjeta === 'mashup',
+        'dark:bg-debut-600       dark:shadow-debut-950      dark:hover:shadow-debut-950      bg-debut-200       shadow-debut-600      hover:shadow-debut-600':       eraTarjeta === 'debut',
+        'dark:bg-fearless-600    dark:shadow-fearless-950   dark:hover:shadow-fearless-950   bg-fearless-200    shadow-fearless-600   hover:shadow-fearless-600':    eraTarjeta === 'fearless',
+        'dark:bg-speakNow-600    dark:shadow-speakNow-950   dark:hover:shadow-speakNow-950   bg-speakNow-200    shadow-speakNow-600   hover:shadow-speakNow-600':    eraTarjeta === 'speakNow',
+        'dark:bg-red-600         dark:shadow-red-950        dark:hover:shadow-red-950        bg-red-200         shadow-red-600        hover:shadow-red-600':         eraTarjeta === 'red',
+        'dark:bg-1989-600        dark:shadow-1989-950       dark:hover:shadow-1989-950       bg-1989-200        shadow-1989-600       hover:shadow-1989-600':        eraTarjeta === '1989',
+        'dark:bg-reputation-600  dark:shadow-reputation-950 dark:hover:shadow-reputation-950 bg-reputation-200  shadow-reputation-600 hover:shadow-reputation-600':  eraTarjeta === 'reputation',
+        'dark:bg-lover-600       dark:shadow-lover-950      dark:hover:shadow-lover-950      bg-lover-200       shadow-lover-600      hover:shadow-lover-600':       eraTarjeta === 'lover',
+        'dark:bg-folklore-600    dark:shadow-folklore-950   dark:hover:shadow-folklore-950   bg-folklore-200    shadow-folklore-600   hover:shadow-folklore-600':    eraTarjeta === 'folklore',
+        'dark:bg-evermore-600    dark:shadow-evermore-950   dark:hover:shadow-evermore-950   bg-evermore-200    shadow-evermore-600   hover:shadow-evermore-600':    eraTarjeta === 'evermore',
+        'dark:bg-midnights-600   dark:shadow-midnights-950  dark:hover:shadow-midnights-950  bg-midnights-200   shadow-midnights-600  hover:shadow-midnights-600':   eraTarjeta === 'midnights',
+        'dark:bg-TTPD-600        dark:shadow-TTPD-950       dark:hover:shadow-TTPD-950       bg-TTPD-200        shadow-TTPD-600       hover:shadow-TTPD-600':        eraTarjeta === 'TTPD',
+        'dark:bg-mashup-600      dark:shadow-mashup-950     dark:hover:shadow-mashup-950     bg-mashup-200      shadow-mashup-600     hover:shadow-mashup-600':      eraTarjeta === 'mashup',
     }
     ]}
 >

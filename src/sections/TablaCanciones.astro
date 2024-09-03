@@ -33,13 +33,13 @@ if (!eraData) return null
             ]}>
                 Canciones
             </th>
-            <th class="justify-items-center relative sm:hidden flex w-full">
-                <Emojie emojie="guitarra"/>
+            <th class="justify-center relative sm:hidden flex w-full">
+                <Emojie emojie="mashup"/>
             </th>
         </tr>
         <tr class={`bg-${era}-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full`}>
             <th class:list = {[
-                "text-center text-headline-small relative w-full",
+                "text-center hidden sm:block text-headline-small relative w-full",
                 {
                     "text-debut-100": era === "debut",
                     "text-fearless-100": era === "fearless",
@@ -56,10 +56,13 @@ if (!eraData) return null
             ]}>
                 Fechas
             </th>
+            <th class="justify-center relative sm:hidden flex w-full">
+                <Emojie emojie="calendario"/>
+            </th>
         </tr>
         <tr class={`bg-${era}-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full`}>
             <th class:list = {[
-                "text-center text-headline-small relative w-full",
+                "text-center hidden sm:block text-headline-small relative w-full",
                 {
                     "text-debut-100": era === "debut",
                     "text-fearless-100": era === "fearless",
@@ -74,7 +77,10 @@ if (!eraData) return null
                     "text-TTPD-100": era === "TTPD",
                 }
             ]}>
-                Lugares
+                Lugar
+            </th>
+            <th class="justify-center relative sm:hidden flex w-full">
+                <Emojie emojie="pin"/>
             </th>
         </tr>
     </thead>
@@ -131,11 +137,13 @@ if (!eraData) return null
                                     info.map(({fecha , instrumento , cantSorp})=>{
                                         if (!instrumento) return null
                                         return(
-                                            <div class="flex flex-row gap-3 justify-center" >
-                                                <p class="text-title-medium">
-                                                    {fecha.dia}/{fecha.mes}/{fecha.año}
-                                                </p>
-                                                <Emojie emojie={instrumento}/>
+                                            <div class="flex flex-col md:flex-row gap-3 justify-center" >
+                                                <div class="flex flex-row gap-3 justify-center" >
+                                                    <p class="text-title-medium">
+                                                        {fecha.dia}/{fecha.mes}/{fecha.año}
+                                                    </p>
+                                                    <Emojie emojie={instrumento}/>
+                                                </div>
                                                 {
                                                     cantSorp?.length != null && 
                                                     <p class="text-title-medium">
