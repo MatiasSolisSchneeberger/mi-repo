@@ -1,6 +1,7 @@
 ---
 import Logo from './Logo.astro';
 import ButtonPrimario from './ButtonPrimario.astro';
+import MenuSvg from './svg/MenuSvg.astro';
 interface Props {
 	era: string;
 }
@@ -8,27 +9,27 @@ interface Props {
 const { era } = Astro.props;
 ---
 <header  class:list = {[
-    "z-10 py-4 flex gap-2.5 flex-row items-center self-stretch shrink-0 h-auto w-full justify-between px-3 sm:px-10",
+    "z-10 py-4 flex gap-2.5 flex-row items-center self-stretch shrink-0 h-auto w-full justify-between px-10",
     {
-        "bg-debut-900":      era === "debut",
-        "bg-fearless-900":   era === "fearless",
-        "bg-speakNow-900":   era === "speakNow",
-        "bg-red-900":        era === "red",
-        "bg-1989-900":       era === "1989",
-        "bg-reputation-900": era === "reputation",
-        "bg-lover-900":      era === "lover",
-        "bg-folklore-900":   era === "folklore",
-        "bg-evermore-900":   era === "evermore",
-        "bg-midnights-900":  era === "midnights",
-        "bg-TTPD-900":       era === "TTPD",
-        "bg-mashup-900":     era === "mashup",
+        "bg-debut-900 dark:bg-debut-950":      era === "debut",
+        "bg-fearless-900 dark:bg-fearless-950":   era === "fearless",
+        "bg-speakNow-900 dark:bg-speakNow-950":   era === "speakNow",
+        "bg-red-900 dark:bg-red-950":        era === "red",
+        "bg-1989-900 dark:bg-1989-950":       era === "1989",
+        "bg-reputation-900 dark:bg-reputation-950": era === "reputation",
+        "bg-lover-900 dark:bg-lover-950":      era === "lover",
+        "bg-folklore-900 dark:bg-folklore-950":   era === "folklore",
+        "bg-evermore-900 dark:bg-evermore-950":   era === "evermore",
+        "bg-midnights-900 dark:bg-midnights-950":  era === "midnights",
+        "bg-TTPD-900 dark:bg-TTPD-950":       era === "TTPD",
+        "bg-mashup-900 dark:bg-mashup-950":     era === "mashup",
 
     }
     ]}>
     
     <Logo era = {era} />
 
-    <nav class = "flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
+    <nav class = "hidden sm:flex flex-row gap-2.5 items-center justify-center shrink-0 relative">
         <ButtonPrimario era = {era} href = "/swifties-eras-tour/outfits" icono={null}>
             Outfits
         </ButtonPrimario>
@@ -40,6 +41,68 @@ const { era } = Astro.props;
         <ButtonPrimario era = {era} href = "/swifties-eras-tour/conciertos" icono={null}>
             Conciertos
         </ButtonPrimario>
-
     </nav>
+    <button id="btn-nav" class:list={["p-2 rounded-md border-2 focus:ring-2 sm:hidden flex",
+        {
+        "border-debut-100":      era === "debut",
+        "border-fearless-100":   era === "fearless",
+        "border-speakNow-100":   era === "speakNow",
+        "border-red-100":        era === "red",
+        "border-1989-100":       era === "1989",
+        "border-reputation-100": era === "reputation",
+        "border-lover-100":      era === "lover",
+        "border-folklore-100":   era === "folklore",
+        "border-evermore-100":   era === "evermore",
+        "border-midnights-100":  era === "midnights",
+        "border-TTPD-100":       era === "TTPD",
+        "border-mashup-100":     era === "mashup",
+
+        }
+        ]}>
+        <MenuSvg era={era}/>
+    </button>
+    
 </header>
+<nav id="sm-nav" class:list = {[
+    "hidden text-body-large z-10 w-full absolute p-3 flex-col rounded-b-3xl gap-3 items-start flex justify-start",
+    {
+        "bg-debut-700 text-debut-100":      era === "debut",
+        "bg-fearless-700 text-fearless-100":   era === "fearless",
+        "bg-speakNow-700 text-speakNow-100":   era === "speakNow",
+        "bg-red-700 text-red-100":        era === "red",
+        "bg-1989-700 text-1989-100":       era === "1989",
+        "bg-reputation-700 text-reputation-100": era === "reputation",
+        "bg-lover-700 text-lover-100":      era === "lover",
+        "bg-folklore-700 text-folklore-100":   era === "folklore",
+        "bg-evermore-700 text-evermore-100":   era === "evermore",
+        "bg-midnights-700 text-midnights-100":  era === "midnights",
+        "bg-TTPD-700 text-TTPD-100":       era === "TTPD",
+        "bg-mashup-700 text-mashup-100":     era === "mashup",
+    }
+]}>
+    
+        <a href = "/swifties-eras-tour/outfits" class="w-full bg-mashup-800 p-3 rounded-xl">
+            Outfits
+        </a>
+    
+    
+        <a href = "/swifties-eras-tour/setlist" class="w-full bg-mashup-800 p-3 rounded-xl">
+            SetList
+        </a>
+    
+    
+        <a href = "/swifties-eras-tour/conciertos" class="w-full bg-mashup-800 p-3 rounded-xl">
+            Conciertos
+        </a>
+    
+</nav>
+
+<script>
+    const boton = document.querySelector('#btn-nav');
+    const nav = document.querySelector('#sm-nav');
+
+    boton?.addEventListener('click', () => {
+        console.log('click')
+        nav?.classList.toggle('hidden')
+    })
+</script>
