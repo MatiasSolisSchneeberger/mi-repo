@@ -12,8 +12,8 @@ const eraData = eras.find(e => e.albums === era);
 if (!eraData) return null
 
 ---
-<table class = `bg-${era}-400 rounded-3xl p-2.5 flex flex-col gap-2 gap-y-0 items-start justify-start self-stretch shrink-0 relative overflow-hidden table-auto space-y-2.5`>
-    <thead class="w-full flex flex-row gap-2">
+<table class = `bg-${era}-400 rounded-3xl p-2.5 flex flex-col gap-2 gap-y-0 items-start justify-start self-stretch shrink-0 relative overflow-hidden table-auto`>
+    <thead class="w-full hidden sm:flex flex-row gap-2 pb-2.5">
         <tr class={`bg-${era}-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full`}>
             <th class:list = {[
                 "text-center hidden sm:block text-headline-small relative w-full",
@@ -32,9 +32,6 @@ if (!eraData) return null
                 }
             ]}>
                 Canciones
-            </th>
-            <th class="justify-center relative sm:hidden flex w-full">
-                <Emojie emojie="mashup"/>
             </th>
         </tr>
         <tr class={`bg-${era}-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full`}>
@@ -56,9 +53,6 @@ if (!eraData) return null
             ]}>
                 Fechas
             </th>
-            <th class="justify-center relative sm:hidden flex w-full">
-                <Emojie emojie="calendario"/>
-            </th>
         </tr>
         <tr class={`bg-${era}-500 rounded-2xl p-2.5 flex gap-0 items-center justify-center w-full`}>
             <th class:list = {[
@@ -79,17 +73,14 @@ if (!eraData) return null
             ]}>
                 Lugar
             </th>
-            <th class="justify-center relative sm:hidden flex w-full">
-                <Emojie emojie="pin"/>
-            </th>
         </tr>
     </thead>
-    <tbody  class=`text-${era}-800 w-full flex flex-col gap-1 rounded-2xl items-start justify-start self-stretch shrink-0 relative overflow-hidden`>
+    <tbody  class=`text-${era}-800 w-full flex flex-col gap-1.5 rounded-2xl items-start justify-start self-stretch shrink-0 relative overflow-hidden`>
         <!-- canciones -->
         {
             eraData?.canciones.map(({title , info , etiquetas}) =>{
                     return (
-                        <tr class="w-full flex-row gap-2 rounded-2xl p-2.5 flex items-center justify-center" 
+                        <tr class="w-full flex-col sm:flex-row gap-2 rounded-2xl p-2.5 flex items-center justify-center" 
                         class:list = {[
                             {
                                 "bg-debut-200": era === "debut",
@@ -112,6 +103,9 @@ if (!eraData) return null
                                     }
                                     ]}><Emojie emojie="setlist"/>
                                 </div>
+                                <div class="block sm:hidden">
+                                    <Emojie emojie="mashup"/>
+                                </div>
                                 <p class:list={[
                                     "text-title-medium text-center",
                                     {
@@ -132,12 +126,16 @@ if (!eraData) return null
                                 </p>
                             
                             </td>
-                            <td class="flex flex-col w-full" class:list={[{'hidden': etiquetas.principal === 'sinCantar'}]}>
+                            <td class="flex items-center flex-col w-full" class:list={[{'hidden': etiquetas.principal === 'sinCantar'}]}>
+                                <div class="block sm:hidden">
+                                    <Emojie emojie="calendario"/>
+                                </div>
                                 {
                                     info.map(({fecha , instrumento , cantSorp})=>{
                                         if (!instrumento) return null
                                         return(
                                             <div class="flex flex-col md:flex-row gap-3 justify-center" >
+                                                
                                                 <div class="flex flex-row gap-3 justify-center" >
                                                     <p class="text-title-medium">
                                                         {fecha.dia}/{fecha.mes}/{fecha.año}
@@ -157,7 +155,10 @@ if (!eraData) return null
                                     )
                                 }
                             </td>
-                            <td class="flex-col w-full" class:list={[{'hidden': etiquetas.principal === 'sinCantar'}]}>
+                            <td class="flex flex-col items-center w-full" class:list={[{'hidden': etiquetas.principal === 'sinCantar'}]}>
+                                <div class="block sm:hidden">
+                                    <Emojie emojie="pin"/>
+                                </div>
                                 {
                                     info.map(({lugar})=>{
                                         return(
