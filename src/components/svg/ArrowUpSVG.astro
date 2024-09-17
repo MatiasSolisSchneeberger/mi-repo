@@ -1,0 +1,41 @@
+---
+interface Props {
+	era: string;
+}
+
+const { era } = Astro.props;
+---
+
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	class:list={["group-hover:-translate-y-1 transition-all",
+		{
+			"stroke-debut-800      dark:stroke-debut-100": era === "debut",
+			"stroke-fearless-800   dark:stroke-fearless-100": era === "fearless",
+			"stroke-speakNow-800   dark:stroke-speakNow-100": era === "speakNow",
+			"stroke-red-800        dark:stroke-red-100": era === "red",
+			"stroke-1989-800       dark:stroke-1989-100": era === "1989",
+			"stroke-reputation-800 dark:stroke-reputation-100": era === "reputation",
+			"stroke-lover-800      dark:stroke-lover-100": era === "lover",
+			"stroke-folklore-800   dark:stroke-folklore-100": era === "folklore",
+			"stroke-evermore-800   dark:stroke-evermore-100": era === "evermore",
+			"stroke-midnights-800  dark:stroke-midnights-100": era === "midnights",
+			"stroke-TTPD-800       dark:stroke-TTPD-100": era === "TTPD",
+			"stroke-mashup-800     dark:stroke-mashup-100": era === "mashup",
+		},
+	]}
+	stroke-width="2"
+	stroke-linecap="round"
+	stroke-linejoin="round"
+	class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+	<path d="M12 5l0 14"></path>
+	<path d="M18 11l-6 -6"></path>
+	<path d="M6 11l6 -6"></path>
+</svg>
+
+<!--  -->

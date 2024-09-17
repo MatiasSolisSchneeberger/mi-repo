@@ -4,6 +4,7 @@ import Emojie from './Emojie.astro';
 interface Props {
 	eraTarjeta: string;
 	cancion: string;
+	indice: number;
 	emojiePrincipal: string;
 	emojie2: string;
 	emojie3: string;
@@ -12,7 +13,7 @@ interface Props {
 	emojie6: string;
 }
 
-const { eraTarjeta , cancion , emojiePrincipal , emojie2 , emojie3 , emojie4 , emojie5 , emojie6 }  =  Astro.props;
+const { eraTarjeta , cancion , indice , emojiePrincipal , emojie2 , emojie3 , emojie4 , emojie5 , emojie6 }  =  Astro.props;
 
 ---
 <div class="pt-1 pb-1 flex flex-row items-center justify-start self-stretch shrink-0 relative overflow-hidden space-x-2 h-min">
@@ -37,7 +38,7 @@ const { eraTarjeta , cancion , emojiePrincipal , emojie2 , emojie3 , emojie4 , e
 		}
 	]}></div>
     <!-- Cancion -->
-    <p class:list={[
+    <div class:list={[
 		"text-left text-title-medium relative",
 		{
 			"text-debut-900 dark:text-debut-100":       eraTarjeta === "debut",
@@ -54,8 +55,13 @@ const { eraTarjeta , cancion , emojiePrincipal , emojie2 , emojie3 , emojie4 , e
 			"text-mashup-900 dark:text-mashup-100":      eraTarjeta === "mashup",
 		}
 		]}>
-		{cancion}
-	</p>
+		<p class="inline">
+			{cancion} 
+			<sup class:list={indice !== 1 ? "inline" : "hidden"}>
+				(x{indice})
+			</sup>
+		</p>
+	</div>
 
 	<!-- Emojie Adicionales -->
 	<Emojie emojie={emojie2}/>

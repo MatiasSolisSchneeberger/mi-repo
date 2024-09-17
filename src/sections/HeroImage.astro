@@ -1,150 +1,174 @@
 ---
-import ButtonPrimario from '../components/ButtonPrimario.astro';
-import ArrowLeft from '../components/svg/ArrowLeft.astro';
-import ArrowRight from '../components/svg/ArrowRight.astro';
+import ButtonPrimario from "../components/ButtonPrimario.astro";
+import ArrowLeft from "../components/svg/ChevronLeftSVG.astro";
+import ArrowRight from "../components/svg/ChevronRightSVG.astro";
 interface Props {
 	era: string;
-    boton: boolean;
-    pagAnt: string;
-    pagSig: string;
+	boton: boolean;
+	pagAnt: string;
+	pagSig: string;
+	flechas: boolean;
 }
 
-const { era , boton , pagAnt , pagSig }  =  Astro.props;
+const { era, boton, flechas, pagAnt, pagSig } = Astro.props;
 
 const albumes: { [key: string]: string } = {
-    debut:      "Taylor Swift",
-    fearless:   "Fearless",
-    speakNow:   "Speak Now",
-    red:        "Red",
-    "1989":     "1989",
-    reputation: "Reputation",
-    lover:      "Lover",
-    folklore:   "Folklore",
-    evermore:   "Evermore",
-    midnights:  "Midnights",
-    TTPD:       "The Tortured Poets Department",
-    mashup:     "Suprise Songs",
-}
+	debut: "Taylor Swift",
+	fearless: "Fearless",
+	speakNow: "Speak Now",
+	red: "Red",
+	"1989": "1989",
+	reputation: "Reputation",
+	lover: "Lover",
+	folklore: "Folklore",
+	evermore: "Evermore",
+	midnights: "Midnights",
+	TTPD: "The Tortured Poets Department",
+	mashup: "Suprise Songs",
+};
 
 const album = albumes[era] || "";
-
 ---
 
-<div transition:name="hero-image" id="Inicio" class:list = {[
-    "px-14 py-32 sm:py-40 sm:px-32 flex flex-col items-center justify-center self-stretch shrink-0 relative space-y-8 bg-cover bg-center w-full",
-    {
-        'bg-fondos-debut bg-left': era === 'debut',
-        'bg-fondos-fearless': era === 'fearless',
-        'bg-fondos-speakNow': era === 'speakNow',
-        'bg-fondos-red': era === 'red',
-        'bg-fondos-1989': era === '1989',
-        'bg-fondos-reputation': era === 'reputation',
-        'bg-fondos-lover': era === 'lover',
-        'bg-fondos-folklore': era === 'folklore',
-        'bg-fondos-evermore': era === 'evermore',
-        'bg-fondos-midnights': era === 'midnights',
-        'bg-fondos-TTPD': era === 'TTPD',
-        'bg-fondos-mashup bg-left': era === 'mashup'
-    },
-    {
-        'py-28': boton === false
-    }
-    ]}>
+<div
+	transition:name="hero-image"
+	id="Inicio"
+	class:list={[
+		"px-14 py-32 sm:py-40 sm:px-32 flex flex-col items-center justify-center self-stretch shrink-0 relative space-y-8 bg-cover bg-center w-full",
+		{
+			"bg-fondos-debut bg-left": era === "debut",
+			"bg-fondos-fearless": era === "fearless",
+			"bg-fondos-speakNow": era === "speakNow",
+			"bg-fondos-red": era === "red",
+			"bg-fondos-1989": era === "1989",
+			"bg-fondos-reputation": era === "reputation",
+			"bg-fondos-lover": era === "lover",
+			"bg-fondos-folklore": era === "folklore",
+			"bg-fondos-evermore": era === "evermore",
+			"bg-fondos-midnights": era === "midnights",
+			"bg-fondos-TTPD": era === "TTPD",
+			"bg-fondos-mashup bg-left": era === "mashup",
+		},
+		{
+			"py-28": boton === false,
+		},
+	]}>
+	<!-- derechos de las imagenes  -->
+	<p
+		class:list={[
+			"text-center text-body-large absolute left-[30px] bottom-[30px]",
+			{
+				"text-debut-400": era === "debut",
+				"text-fearless-400": era === "fearless",
+				"text-speakNow-400": era === "speakNow",
+				"text-red-400": era === "red",
+				"text-1989-400": era === "1989",
+				"text-reputation-400": era === "reputation",
+				"text-lover-400": era === "lover",
+				"text-folklore-400": era === "folklore",
+				"text-evermore-400": era === "evermore",
+				"text-midnights-400": era === "midnights",
+				"text-TTPD-400": era === "TTPD",
+				"text-mashup-400": era === "mashup",
+			},
+			{
+				hidden: era === "TTPD",
+			},
+		]}>
+		© Disney. All rights reserved.
+	</p>
 
-    <!-- derechos de las imagenes  -->
-    <p class:list={[
-        'text-center text-body-large absolute left-[30px] bottom-[30px]',
-            {
-                'text-debut-400': era === 'debut',
-                'text-fearless-400': era === 'fearless',
-                'text-speakNow-400': era === 'speakNow',
-                'text-red-400': era === 'red',
-                'text-1989-400': era === '1989',
-                'text-reputation-400': era === 'reputation',
-                'text-lover-400': era === 'lover',
-                'text-folklore-400': era === 'folklore',
-                'text-evermore-400': era === 'evermore',
-                'text-midnights-400': era === 'midnights',
-                'text-TTPD-400': era === 'TTPD',
-                'text-mashup-400': era === 'mashup',
-            },
-            {
-                "hidden": era === 'TTPD'
-            }
-        ]}>
-        © Disney. All rights reserved.
-    </p>
+	<p
+		class:list={[
+			"text-center text-body-large absolute left-[30px] bottom-[30px]",
+			{
+				"text-debut-400": era === "debut",
+				"text-fearless-400": era === "fearless",
+				"text-speakNow-400": era === "speakNow",
+				"text-red-400": era === "red",
+				"text-1989-400": era === "1989",
+				"text-reputation-400": era === "reputation",
+				"text-lover-400": era === "lover",
+				"text-folklore-400": era === "folklore",
+				"text-evermore-400": era === "evermore",
+				"text-midnights-400": era === "midnights",
+				"text-TTPD-400": era === "TTPD",
+				"text-mashup-400": era === "mashup",
+			},
+			{
+				hidden: era !== "TTPD",
+			},
+		]}>
+		© Taylor Swift, from her official YouTube channel.
+	</p>
 
-    <p class:list={[
-        'text-center text-body-large absolute left-[30px] bottom-[30px]',
-            {
-                'text-debut-400': era === 'debut',
-                'text-fearless-400': era === 'fearless',
-                'text-speakNow-400': era === 'speakNow',
-                'text-red-400': era === 'red',
-                'text-1989-400': era === '1989',
-                'text-reputation-400': era === 'reputation',
-                'text-lover-400': era === 'lover',
-                'text-folklore-400': era === 'folklore',
-                'text-evermore-400': era === 'evermore',
-                'text-midnights-400': era === 'midnights',
-                'text-TTPD-400': era === 'TTPD',
-                'text-mashup-400': era === 'mashup',
-            },
-            {
-                "hidden": era !== 'TTPD'
-            }
-        ]}>
-        © Taylor Swift, from her official YouTube channel.
-    </p>
-
-
-    <!-- Titulo -->
-    <div class = "flex flex-col gap-space-200 items-center justify-center shrink-0 relative space-y-2 overflow-hidden">
-        <div class:list = {[
-            "text-center text-display-small sm:text-display-large relative self-stretch",
-            {
-                'text-debut-400': era === 'debut',
-                'text-fearless-400': era === 'fearless',
-                'text-speakNow-400': era === 'speakNow',
-                'text-red-400': era === 'red',
-                'text-1989-400': era === '1989',
-                'text-reputation-400': era === 'reputation',
-                'text-lover-400': era === 'lover',
-                'text-folklore-400': era === 'folklore',
-                'text-evermore-400': era === 'evermore',
-                'text-midnights-400': era === 'midnights',
-                'text-TTPD-400': era === 'TTPD',
-                'text-mashup-400': era === 'mashup',
-            }
-            ]},
-            style = "letter-spacing: var(--display-large-letter-spacing, -1px)">
-        Swifties Eras Tour
-        </div>
-        <div class=`text-center text-headline-small relative self-stretch flex items-center justify-center capitalize text-${era}-400`, style = "mix-blend-mode: color-dodge">
-        {album}
-        </div>
-    </div>
-    <a id="btn-izq" class="absolute left-4 y-1/2" href={pagAnt}>
-        <ArrowLeft era={era}/>
-    </a>
-    <a id="btn-der" class="absolute right-4 y-1/2" href={pagSig}>
-        <ArrowRight era={era}/>
-    </a>
-    <!-- botones CTA -->
-    <div class:list = {[
-        "flex-row gap-space-400 items-center justify-center shrink-0 relative space-x-4 hidden",
-        {
-            'sm:flex': boton === true
-        }
-    ]}>
-        <ButtonPrimario era = {era} href="#Canciones" icono={null}>
-            Canciones
-        </ButtonPrimario>
-        <ButtonPrimario era = {era} href="#Conciertos" icono={null}>
-            Conciertos
-        </ButtonPrimario>
-    </div>
+	<!-- Titulo -->
+	<div
+		class="flex flex-col gap-space-200 items-center justify-center shrink-0 relative space-y-2 overflow-hidden">
+		<div
+			class:list={[
+				"text-center text-display-small sm:text-display-large relative self-stretch",
+				{
+					"text-debut-400": era === "debut",
+					"text-fearless-400": era === "fearless",
+					"text-speakNow-400": era === "speakNow",
+					"text-red-400": era === "red",
+					"text-1989-400": era === "1989",
+					"text-reputation-400": era === "reputation",
+					"text-lover-400": era === "lover",
+					"text-folklore-400": era === "folklore",
+					"text-evermore-400": era === "evermore",
+					"text-midnights-400": era === "midnights",
+					"text-TTPD-400": era === "TTPD",
+					"text-mashup-400": era === "mashup",
+				},
+			]}
+			,
+			style="letter-spacing: var(--display-large-letter-spacing, -1px)">
+			Swifties Eras Tour
+		</div>
+		<div
+			class=`text-center text-headline-small relative self-stretch flex items-center justify-center capitalize text-${era}-400`
+			,
+			style="mix-blend-mode: color-dodge">
+			{album}
+		</div>
+	</div>
+	<a
+		id="btn-izq"
+		class:list={[
+			"absolute left-4 y-1/2",
+			{
+				hidden: flechas === false,
+			},
+		]}
+		href={pagAnt}>
+		<ArrowLeft era={era} />
+	</a>
+	<a
+		id="btn-der"
+		class:list={[
+			"absolute right-4 y-1/2",
+			{
+				hidden: flechas === false,
+			},
+		]}
+		href={pagSig}>
+		<ArrowRight era={era} />
+	</a>
+	<!-- botones CTA -->
+	<div
+		class:list={[
+			"flex-row gap-space-400 items-center justify-center shrink-0 relative space-x-4 hidden",
+			{
+				"sm:flex": boton === true,
+			},
+		]}>
+		<ButtonPrimario era={era} href="#Canciones" icono={null}>
+			Canciones
+		</ButtonPrimario>
+		<ButtonPrimario era={era} href="#Conciertos" icono={null}>
+			Conciertos
+		</ButtonPrimario>
+	</div>
 </div>
-
-

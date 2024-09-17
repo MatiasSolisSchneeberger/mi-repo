@@ -81,17 +81,56 @@ const { era } = Astro.props;
     }
 ]}>
     
-        <a href = "/swifties-eras-tour/outfits" class="w-full bg-mashup-800 p-3 rounded-xl">
+        <a href = "/swifties-eras-tour/outfits" class:list={["w-full p-3 rounded-xl", {
+            "bg-debut-800 text-debut-100":      era === "debut",
+            "bg-fearless-800 text-fearless-100":   era === "fearless",
+            "bg-speakNow-800 text-speakNow-100":   era === "speakNow",
+            "bg-red-800 text-red-100":        era === "red",
+            "bg-1989-800 text-1989-100":       era === "1989",
+            "bg-reputation-800 text-reputation-100": era === "reputation",
+            "bg-lover-800 text-lover-100":      era === "lover",
+            "bg-folklore-800 text-folklore-100":   era === "folklore",
+            "bg-evermore-800 text-evermore-100":   era === "evermore",
+            "bg-midnights-800 text-midnights-100":  era === "midnights",
+            "bg-TTPD-800 text-TTPD-100":       era === "TTPD",
+            "bg-mashup-800 text-mashup-100":     era === "mashup",
+        }]}>
             Outfits
         </a>
     
     
-        <a href = "/swifties-eras-tour/setlist" class="w-full bg-mashup-800 p-3 rounded-xl">
+        <a href = "/swifties-eras-tour/setlist" class:list={["w-full p-3 rounded-xl", {
+            "bg-debut-800 text-debut-100":      era === "debut",
+            "bg-fearless-800 text-fearless-100":   era === "fearless",
+            "bg-speakNow-800 text-speakNow-100":   era === "speakNow",
+            "bg-red-800 text-red-100":        era === "red",
+            "bg-1989-800 text-1989-100":       era === "1989",
+            "bg-reputation-800 text-reputation-100": era === "reputation",
+            "bg-lover-800 text-lover-100":      era === "lover",
+            "bg-folklore-800 text-folklore-100":   era === "folklore",
+            "bg-evermore-800 text-evermore-100":   era === "evermore",
+            "bg-midnights-800 text-midnights-100":  era === "midnights",
+            "bg-TTPD-800 text-TTPD-100":       era === "TTPD",
+            "bg-mashup-800 text-mashup-100":     era === "mashup",
+        }]}>
             SetList
         </a>
     
     
-        <a href = "/swifties-eras-tour/conciertos" class="w-full bg-mashup-800 p-3 rounded-xl">
+        <a href = "/swifties-eras-tour/conciertos" class:list={["w-full p-3 rounded-xl", {
+            "bg-debut-800 text-debut-100":      era === "debut",
+            "bg-fearless-800 text-fearless-100":   era === "fearless",
+            "bg-speakNow-800 text-speakNow-100":   era === "speakNow",
+            "bg-red-800 text-red-100":        era === "red",
+            "bg-1989-800 text-1989-100":       era === "1989",
+            "bg-reputation-800 text-reputation-100": era === "reputation",
+            "bg-lover-800 text-lover-100":      era === "lover",
+            "bg-folklore-800 text-folklore-100":   era === "folklore",
+            "bg-evermore-800 text-evermore-100":   era === "evermore",
+            "bg-midnights-800 text-midnights-100":  era === "midnights",
+            "bg-TTPD-800 text-TTPD-100":       era === "TTPD",
+            "bg-mashup-800 text-mashup-100":     era === "mashup",
+        }]}>
             Conciertos
         </a>
     

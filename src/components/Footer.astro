@@ -16,18 +16,18 @@ const { era } = Astro.props;
 <footer class:list={[
     'px-8 md:px-24 py-16 flex flex-col md:gap-14 md:flex-row gap-8 items-start justify-start relative overflow-hidden',
     {
-        'bg-debut-900 text-debut-200': era === 'debut',
-        'bg-fearless-900 text-fearless-200': era === 'fearless',
-        'bg-speakNow-900 text-speakNow-200': era === 'speakNow',
-        'bg-red-900 text-red-200': era === 'red',
-        'bg-1989-900 text-1989-200': era === '1989',
-        'bg-reputation-900 text-reputation-200': era === 'reputation',
-        'bg-lover-900 text-lover-200': era === 'lover',
-        'bg-folklore-900 text-folklore-200': era === 'folklore',
-        'bg-evermore-900 text-evermore-200': era === 'evermore',
-        'bg-midnights-900 text-midnights-200': era === 'midnights',
-        'bg-TTPD-900 text-TTPD-200': era === 'TTPD',
-        'bg-mashup-900 text-mashup-200': era === 'mashup',
+        'bg-debut-900      dark:bg-debut-950      text-debut-100':      era === 'debut',
+        'bg-fearless-900   dark:bg-fearless-950   text-fearless-100':   era === 'fearless',
+        'bg-speakNow-900   dark:bg-speakNow-950   text-speakNow-100':   era === 'speakNow',
+        'bg-red-900        dark:bg-red-950        text-red-100':        era === 'red',
+        'bg-1989-900       dark:bg-1989-950       text-1989-100':       era === '1989',
+        'bg-reputation-900 dark:bg-reputation-950 text-reputation-100': era === 'reputation',
+        'bg-lover-900      dark:bg-lover-950      text-lover-100':      era === 'lover',
+        'bg-folklore-900   dark:bg-folklore-950   text-folklore-100':   era === 'folklore',
+        'bg-evermore-900   dark:bg-evermore-950   text-evermore-100':   era === 'evermore',
+        'bg-midnights-900  dark:bg-midnights-950  text-midnights-100':  era === 'midnights',
+        'bg-TTPD-900       dark:bg-TTPD-950       text-TTPD-100':       era === 'TTPD',
+        'bg-mashup-900     dark:bg-mashup-950     text-mashup-100':     era === 'mashup',
     }
     ]}>
     <article class="text-pretty flex flex-col gap-4  items-start w-full md:2/3">

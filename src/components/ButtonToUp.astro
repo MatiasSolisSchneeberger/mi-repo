@@ -1,52 +1,57 @@
 ---
-import ArrowUp from './svg/ArrowUp.astro';
+import ArrowUpSVG from './svg/ArrowUpSVG.astro';
+
 interface Props {
 	era: string;
 }
 
-const { era }  =  Astro.props;
+const { era } = Astro.props;
 ---
 
-<div id="button-up" class="z-50 shadow-sm hover:shadow-lg fixed bottom-2 right-2 opacity-0 transition-all duration-125 ease-in-out cursor-pointer">
+<div id="scrollToTop" class="group z-50 shadow-sm hover:shadow-lg fixed bottom-2 right-2 transition-all duration-125 ease-in-out cursor-pointer">
     <button
-        aria-label="Boton ir arriba"
-        style="box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
-        0px 4px 8px 3px rgba(0, 0, 0, 0.15)" 
-        class:list={[
-        "shadow-sm flex hover:shadow-lg fixed size-14 bottom-2 right-2 cursor-default items-center justify-center rounded-2xl",
-        {
-			"bg-debut-300 dark:bg-debut-600": era === "debut",
-			"bg-fearless-300 dark:bg-fearless-600": era === "fearless",
-			"bg-speakNow-300 dark:bg-speakNow-600": era === "speakNow",
-			"bg-red-300 dark:bg-red-600": era === "red",
-			"bg-1989-300 dark:bg-1989-600": era === "1989",
-			"bg-reputation-300 dark:bg-reputation-600": era === "reputation",
-			"bg-lover-300 dark:bg-lover-600": era === "lover",
-			"bg-folklore-300 dark:bg-folklore-600": era === "folklore",
-			"bg-evermore-300 dark:bg-evermore-600": era === "evermore",
-			"bg-midnights-300 dark:bg-midnights-600": era === "midnights",
-			"bg-TTPD-300 dark:bg-TTPD-600": era === "TTPD",
-			"bg-mashup-300 dark:bg-mashup-600": era === "mashup",
-        }
-        ]}>
-        <ArrowUp era={era}/>
+    aria-label="Scroll to Top Icon"
+    class:list={[
+    "shadow-sm flex hover:shadow-lg fixed size-14 bottom-2 right-2 cursor-default items-center justify-center rounded-2xl",
+    {
+        "bg-debut-300 hover:bg-debut-400 dark:bg-debut-600 hover:dark:bg-debut-500": era === "debut",
+        "bg-fearless-300 hover:bg-fearless-400 dark:bg-fearless-600 hover:dark:bg-fearless-500": era === "fearless",
+        "bg-speakNow-300 hover:bg-speakNow-400 dark:bg-speakNow-600 hover:dark:bg-speakNow-500": era === "speakNow",
+        "bg-red-300 hover:bg-red-400 dark:bg-red-600 hover:dark:bg-red-500": era === "red",
+        "bg-1989-300 hover:bg-1989-400 dark:bg-1989-600 hover:dark:bg-1989-500": era === "1989",
+        "bg-reputation-300 hover:bg-reputation-400 dark:bg-reputation-600 hover:dark:bg-reputation-500": era === "reputation",
+        "bg-lover-300 hover:bg-lover-400 dark:bg-lover-600 hover:dark:bg-lover-500": era === "lover",
+        "bg-folklore-300 hover:bg-folklore-400 dark:bg-folklore-600 hover:dark:bg-folklore-500": era === "folklore",
+        "bg-evermore-300 hover:bg-evermore-400 dark:bg-evermore-600 hover:dark:bg-evermore-500": era === "evermore",
+        "bg-midnights-300 hover:bg-midnights-400 dark:bg-midnights-600 hover:dark:bg-midnights-500": era === "midnights",
+        "bg-TTPD-300 hover:bg-TTPD-400 dark:bg-TTPD-600 hover:dark:bg-TTPD-500": era === "TTPD",
+        "bg-mashup-300 hover:bg-mashup-400 dark:bg-mashup-600 hover:dark:bg-mashup-500": era === "mashup",
+    }
+    ]}>
+        <ArrowUpSVG era={era}/>
     </button>
 </div>
 
 <script>
-    window.onscroll = function(){
-        if(document.documentElement.scrollTop > 100){
-            document.getElementById('button-up')?.classList.remove('opacity-0')
-        }else{
-            document.getElementById('button-up')?.classList.add('opacity-0')
-        }
-    }
+    document.addEventListener("astro:page-load", () => {
+        const scrollToTopButton = document.getElementById("scrollToTop");
 
-    document.getElementById('button-up')?.addEventListener('click', ()=>(
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
-    ))
+        const toggleVisibility = () => {
+            if (window.scrollY > 200) { // Mostrar después de scrollear 200px
+                scrollToTopButton?.classList.remove('hidden');
+            } else {
+                scrollToTopButton?.classList.add('hidden');
+            }
+        };
+
+        const handleScrollToTop = () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+
+        window.addEventListener('scroll', toggleVisibility);
+        scrollToTopButton?.addEventListener("click", handleScrollToTop);
+    });
 </script>
-

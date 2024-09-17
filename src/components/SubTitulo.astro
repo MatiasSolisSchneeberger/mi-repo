@@ -6,7 +6,7 @@ interface Props {
 
 const { era , titulo } = Astro.props;
 ---
-<section class:list = {["flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative",
+<section class:list = {["flex flex-col w-full gap-3 items-start justify-start self-stretch shrink-0 relative",
     {
         "text-debut-900 dark:text-debut-100": era === "debut",
         "text-fearless-900 dark:text-fearless-100": era === "fearless",
@@ -25,7 +25,7 @@ const { era , titulo } = Astro.props;
     <h2 class='text-center text-headline-large relative self-stretch'>
         {titulo}
     </h2>
-    <p class='text-title-medium relative self-stretch'>
+    <p class='text-body-large text-center relative text-pretty self-stretch'>
         <slot/>
     </p>
 </section>

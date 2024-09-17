@@ -15,7 +15,7 @@ const { title , era } = Astro.props;
 ---
 
 <!doctype html>
-<html id="html" lang = "en">
+<html lang = "en">
 	<head>
 		<meta charset = "UTF-8" />
 		<meta name = "description" content = "Astro description" />
@@ -30,24 +30,12 @@ const { title , era } = Astro.props;
 		
 		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 
-		<!-- <script>
-			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
-			if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-				document.documentElement.classList.add('dark');
-			} else {
-				document.documentElement.classList.remove('dark')
-			}
-
-			
-
-		</script> -->
-
 		<title>{title}</title>
 		
 		<ViewTransitions />
 		
 	</head>
-	<body class:list={[
+	<body transition:name="body" transition:animate="fade" class:list={[
 		"w-screem sm:w-full",
 		{
 			"dark:bg-debut-900 bg-debut-50": era === 'debut',
@@ -69,11 +57,20 @@ const { title , era } = Astro.props;
 			<slot/>
 		</main>
 		<Footer era = {era}/>
-		<ButtonToUp era={era}/>
+		<ButtonToUp  era={era}/>
 		<ButtonTheme era={era}/>
 	</body>
 </html>
+
+
+
+
 <style is:global>
+
+	html{
+		scroll-behavior: smooth;
+	}
+
 	.no-scrollbar::-webkit-scrollbar {
 		display: none; 
 	} 

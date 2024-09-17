@@ -20,14 +20,16 @@ interface eras {
 
 interface canciones{
     title: string
+    estado: string
     info: Array<info>
     cantado: boolean
     etiquetas: Array<etiquetas>
 }
 interface extras{
     title: string
+    estado: string
     info: Array<info>
-    fechas: Array<fechas>
+    cantado: boolean
     etiquetas: Array<etiquetas>
 }
 
@@ -45,9 +47,10 @@ interface etiquetas{
 }
 
 interface info{
-    tipo: string | null
+    tipo: number | null
     fecha: Array<fecha>
     cantSorp: string | null
+    mashupCon: string | null
     instrumento: string | null
     lugar: string | null
 }

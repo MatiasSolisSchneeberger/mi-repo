@@ -29,6 +29,7 @@
         "Hamburgo",
         "Happel",
         "Hayley",
+        "imgonnagetyouback",
         "Indianápolis",
         "Johan",
         "Letzigrund",
@@ -51,12 +52,15 @@
         "Paradisea",
         "Paramore",
         "Paycor",
+        "pelicula",
         "setlist",
+        "Sheeran",
         "Sídney",
         "Solna",
         "Sorp",
         "Stadion",
         "Superdome",
+        "swifties",
         "tailwindcss",
         "taylorswift",
         "TTPD",
@@ -84,5 +88,13 @@
             "parser": "markdown"
         }
     },
-    "svg.preview.background": "white"
+    "svg.preview.background": "white",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#083516",
+        "titleBar.activeBackground": "#0B4A1F",
+        "titleBar.activeForeground": "#F0FDF4"
+    },
+    "cSpell.ignoreWords": [
+        "Dessner"
+    ]
 }

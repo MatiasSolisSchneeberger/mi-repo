@@ -1625,9 +1625,7 @@
                     "estadio": "Ernst Happel Stadion"
                 },
                 "telonero": "Paramore"
-            }
-        ],
-        "ahora":[
+            },
             {
                 "fecha": {
                     "dia": "15",
@@ -1693,6 +1691,9 @@
                 },
                 "telonero": "Paramore"
             }
+        ],
+        "ahora":[
+            
         ],
         "futuro":[
             {

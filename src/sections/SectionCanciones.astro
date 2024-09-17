@@ -1,13 +1,13 @@
 ---
 import ButtonPrimario from "../components/ButtonPrimario.astro";
-import Title from "../components/Title.astro";
+import Title from "../components/Titulo.astro";
 import Chip from "../components/Chip.astro";
 import TarjetaCancion from "../components/TarjetaCancion.astro";
 import Cancion from "../components/Cancion.astro";
 import Emojie from "../components/Emojie.astro";
 
 import {eras} from "../data/songs.json"
-import Subtitle from "../components/Subtitle.astro";
+import Subtitle from "../components/SubTitulo.astro";
 
 interface Props {
 	era: string;
@@ -19,15 +19,16 @@ const { era }  =  Astro.props;
 <article id="Canciones" class='py-12 px-8 sm:px-10 xl:px-28 space-y-6'>
     <!-- Titulo -->
     <Title era={era} titulo = "Canciones Sorpresas">
-        Estas fueron las canciones sorpresas que hubieron hasta ahora en “The Eras Tour”.
+        A lo largo del icónico "The Eras Tour", Taylor Swift nos ha sorprendido con actuaciones inolvidables, regalándonos momentos únicos con canciones inesperadas. Aquí tienes una lista de todas las canciones sorpresa interpretadas hasta ahora, cada una con su propio toque mágico y especial, que solo un verdadero fanático puede apreciar. ¡Descubre si tu favorita fue parte del setlist sorpresa!
     </Title>
+    
     
     <!-- Botontes/Etiquetas -->
     <section class = "flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative">
         <!-- Botones -->
         <div class="rounded-3xl flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative">
-            <Subtitle era={era} titulo="Botones">
-                
+            <Subtitle era={era} titulo="Eras">
+                Selecciona una era para ver las canciones que hicieron historia en cada concierto.
             </Subtitle>
             <!-- Botones de las eras -->
             <div class = "flex flex-row gap-3 items-center justify-center flex-wrap self-stretch shrink-0 relative">
@@ -96,7 +97,7 @@ const { era }  =  Astro.props;
         <!-- Etiquetas -->
         <div class = "rounded-3xl flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative">
             <Subtitle era={era} titulo="Etiquetas">
-                Con las etiquetas podes 
+                Estos íconos representan detalles clave de cada canción, como el instrumento o si hubo un mashup.
             </Subtitle>
             <!-- Etiquetas -->
             <div class = "flex flex-row gap-3 items-center justify-center flex-wrap self-stretch shrink-0 relative">
@@ -131,15 +132,16 @@ const { era }  =  Astro.props;
     <!-- TarjetasCanciones -->
     <section class="flex sm:flex-row flex-col gap-6 items-center justify-center flex-wrap self-stretch shrink-0 relative py-0">
         {
-            eras.map(({ albums , portada , foto , Spotify , canciones , extras , linkPage , YTMusic }) => {
+            eras.map(({ albums, foto , Spotify , canciones , extras , linkPage , YTMusic }) => {
                 return (
                     <TarjetaCancion eraTarjeta={albums} taylor={foto} spotify={Spotify} linkPage={linkPage} YTmusic={YTMusic}>
                         {
-                            canciones.map(({title , etiquetas}) =>{
+                            canciones.map(({title , info , etiquetas}) =>{
                                     return (
                                         <Cancion
                                         eraTarjeta={albums}
                                         cancion={title}
+                                        indice={info.length}
                                         emojiePrincipal={etiquetas.principal}
                                         emojie2={etiquetas.segundo}
                                         emojie3={etiquetas.tercer}
@@ -170,11 +172,12 @@ const { era }  =  Astro.props;
                             ]}/>
                         }
                         {
-                            extras.map(({ title, etiquetas }) => {
+                            extras.map(({ title, info , etiquetas }) => {
                                 return (
                                 <Cancion
                                     eraTarjeta={albums}
                                     cancion={title}
+                                    indice={info.length}
                                     emojiePrincipal={etiquetas.principal}
                                     emojie2={etiquetas.segundo}
                                     emojie3={etiquetas.tercer}

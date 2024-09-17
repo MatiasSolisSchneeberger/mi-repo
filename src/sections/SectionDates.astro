@@ -1,7 +1,7 @@
 ---
 
-import Title from "../components/Title.astro";
-import Subtitle from "../components/Subtitle.astro";
+import Titulo from "../components/Titulo.astro";
+import Subtitle from "../components/SubTitulo.astro";
 import TarjetaFecha from "../components/TarjetaFecha.astro";
 import {concerts} from "../data/concerts.json"
 import ButtonPrimario from "../components/ButtonPrimario.astro";
@@ -21,31 +21,34 @@ const maxFechasToShow = 6;  // Número máximo de fechas a mostrar inicialmente
 ---
 
 <article id="Conciertos" class = `py-12 px-8 sm:px-10 xl:px-28 space-y-6`>
-    <Title era={era} titulo="Fecha de conciertos">
+    <Titulo era={era} titulo="Fecha de conciertos">
         "Estas son todas las fechas The Eras Tour, las pasadas, las actuales, y las futuras."
-    </Title>
+    </Titulo>
     <section class="flex flex-col gap-6 self-stretch shrink-0 relative items-center">
         <Subtitle era={era} titulo="Fechas Actuales"/>
-        <div class="flex flex-col sm:flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
-            {
-            concerts.ahora.slice(0, maxFechasToShow).map(({ fecha, lugar, telonero }, index) => {
-                const eraFecha = eras[index % eras.length];  // Alterna entre las eras
-                return (
-                    <TarjetaFecha 
-                        estado="ahora"
-                        eraFecha={eraFecha}
-                        dia={fecha.dia}
-                        mes={fecha.mes}
-                        año={fecha.año}
-                        pais={lugar.pais}
-                        ciudad={lugar.ciudad}
-                        estadio={lugar.estadio}
-                        telonero={telonero}
-                    />
-                );
-            })}
-            
-        </div>
+        
+            <!-- {
+                concerts.ahora.length > 0 && <div class="flex flex-col sm:flex-row gap-6 items-start justify-start flex-wrap self-stretch shrink-0 h-min relative">
+                    {
+                    concerts.ahora.slice(0, maxFechasToShow).map(({ fecha, lugar, telonero }, index) => {
+                        const eraFecha = eras[index % eras.length];  // Alterna entre las eras
+                        return (
+                            <TarjetaFecha 
+                                estado="ahora"
+                                eraFecha={eraFecha}
+                                dia={fecha.dia}
+                                mes={fecha.mes}
+                                año={fecha.año}
+                                pais={lugar.pais}
+                                ciudad={lugar.ciudad}
+                                estadio={lugar.estadio}
+                                telonero={telonero}
+                            />
+                        );
+                    })}
+                    
+                </div>
+            } -->
         <ButtonPrimario icono={null} era={era} href='/swifties-eras-tour/conciertos'>
             Ver mas fechas
         </ButtonPrimario>

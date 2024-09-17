@@ -1,0 +1,38 @@
+---
+interface Props {
+	era: string
+}
+
+const { era } = Astro.props
+---
+
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width="24"
+	height="24"
+	viewBox="0 0 24 24"
+	fill="none"
+	class:list={[
+		{
+			"stroke-debut-900": era === "debut",
+			"stroke-fearless-900": era === "fearless",
+			"stroke-speakNow-900": era === "speakNow",
+			"stroke-red-900": era === "red",
+			"stroke-1989-900": era === "1989",
+			"stroke-reputation-900": era === "reputation",
+			"stroke-lover-900": era === "lover",
+			"stroke-folklore-900": era === "folklore",
+			"stroke-evermore-900": era === "evermore",
+			"stroke-midnights-900": era === "midnights",
+			"stroke-TTPD-900": era === "TTPD",
+			"stroke-mashup-900": era === "mashup",
+		},
+	]}
+	stroke-width="2"
+	stroke-linecap="round"
+	stroke-linejoin="round"
+	class="icon icon-tabler icons-tabler-outline icon-tabler-circle-caret-right">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+	<path d="M15 12l-4 -4v8z"></path>
+	<path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+</svg>

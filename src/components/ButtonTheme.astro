@@ -1,127 +1,174 @@
 ---
 interface Props {
-	era: string;
+	era: string
 }
 
-const { era }  =  Astro.props;
-
+const { era } = Astro.props
 ---
-<div id="themeToggle" class="z-50 shadow-sm hover:shadow-lg fixed bottom-2 left-2 transition-all duration-125 ease-in-out cursor-pointer">
-    <button 
-    aria-label="Theme Icon"
-    style="box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
-        0px 4px 8px 3px rgba(0, 0, 0, 0.15)"
-    class:list={[
-    "shadow-sm flex hover:shadow-lg fixed size-14 bottom-2 left-2 cursor-default items-center justify-center rounded-2xl",
-    {
-        "bg-debut-300 dark:bg-debut-600": era === "debut",
-        "bg-fearless-300 dark:bg-fearless-600": era === "fearless",
-        "bg-speakNow-300 dark:bg-speakNow-600": era === "speakNow",
-        "bg-red-300 dark:bg-red-600": era === "red",
-        "bg-1989-300 dark:bg-1989-600": era === "1989",
-        "bg-reputation-300 dark:bg-reputation-600": era === "reputation",
-        "bg-lover-300 dark:bg-lover-600": era === "lover",
-        "bg-folklore-300 dark:bg-folklore-600": era === "folklore",
-        "bg-evermore-300 dark:bg-evermore-600": era === "evermore",
-        "bg-midnights-300 dark:bg-midnights-600": era === "midnights",
-        "bg-TTPD-300 dark:bg-TTPD-600": era === "TTPD",
-        "bg-mashup-300 dark:bg-mashup-600": era === "mashup",
-    }
-    ]}>
-        <svg xmlns="http://www.w3.org/2000/svg" class:list={["dark:hidden block",
-        {
-            'stroke-debut-800      dark:stroke-debut-100':      era === 'debut',
-            'stroke-fearless-800   dark:stroke-fearless-100':   era === 'fearless',
-            'stroke-speakNow-800   dark:stroke-speakNow-100':   era === 'speakNow',
-            'stroke-red-800        dark:stroke-red-100':        era === 'red',
-            'stroke-1989-800       dark:stroke-1989-100':       era === '1989',
-            'stroke-reputation-800 dark:stroke-reputation-100': era === 'reputation',
-            'stroke-lover-800      dark:stroke-lover-100':      era === 'lover',
-            'stroke-folklore-800   dark:stroke-folklore-100':   era === 'folklore',
-            'stroke-evermore-800   dark:stroke-evermore-100':   era === 'evermore',
-            'stroke-midnights-800  dark:stroke-midnights-100':  era === 'midnights',
-            'stroke-TTPD-800       dark:stroke-TTPD-100':       era === 'TTPD',
-            'stroke-mashup-800     dark:stroke-mashup-100':     era === 'mashup',
-        }
-        ]} width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class:list={["dark:block hidden",
-        {
-            'stroke-debut-800      dark:stroke-debut-100':      era === 'debut',
-            'stroke-fearless-800   dark:stroke-fearless-100':   era === 'fearless',
-            'stroke-speakNow-800   dark:stroke-speakNow-100':   era === 'speakNow',
-            'stroke-red-800        dark:stroke-red-100':        era === 'red',
-            'stroke-1989-800       dark:stroke-1989-100':       era === '1989',
-            'stroke-reputation-800 dark:stroke-reputation-100': era === 'reputation',
-            'stroke-lover-800      dark:stroke-lover-100':      era === 'lover',
-            'stroke-folklore-800   dark:stroke-folklore-100':   era === 'folklore',
-            'stroke-evermore-800   dark:stroke-evermore-100':   era === 'evermore',
-            'stroke-midnights-800  dark:stroke-midnights-100':  era === 'midnights',
-            'stroke-TTPD-800       dark:stroke-TTPD-100':       era === 'TTPD',
-            'stroke-mashup-800     dark:stroke-mashup-100':     era === 'mashup',
-        }
-        ]} width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
-    </button>
+
+<div
+	id="themeToggle"
+	class="z-50 shadow-sm hover:shadow-lg fixed bottom-2 left-2 transition-all duration-125 ease-in-out cursor-pointer">
+	<button
+		aria-label="Theme Icon"
+		class:list={[
+			"shadow-sm flex hover:shadow-lg fixed size-14 bottom-2 left-2 cursor-default items-center justify-center rounded-2xl",
+			{
+				"bg-debut-300 hover:bg-debut-400 dark:bg-debut-600 hover:dark:bg-debut-500":
+					era === "debut",
+				"bg-fearless-300 hover:bg-fearless-400 dark:bg-fearless-600 hover:dark:bg-fearless-500":
+					era === "fearless",
+				"bg-speakNow-300 hover:bg-speakNow-400 dark:bg-speakNow-600 hover:dark:bg-speakNow-500":
+					era === "speakNow",
+				"bg-red-300 hover:bg-red-400 dark:bg-red-600 hover:dark:bg-red-500":
+					era === "red",
+				"bg-1989-300 hover:bg-1989-400 dark:bg-1989-600 hover:dark:bg-1989-500":
+					era === "1989",
+				"bg-reputation-300 hover:bg-reputation-400 dark:bg-reputation-600 hover:dark:bg-reputation-500":
+					era === "reputation",
+				"bg-lover-300 hover:bg-lover-400 dark:bg-lover-600 hover:dark:bg-lover-500":
+					era === "lover",
+				"bg-folklore-300 hover:bg-folklore-400 dark:bg-folklore-600 hover:dark:bg-folklore-500":
+					era === "folklore",
+				"bg-evermore-300 hover:bg-evermore-400 dark:bg-evermore-600 hover:dark:bg-evermore-500":
+					era === "evermore",
+				"bg-midnights-300 hover:bg-midnights-400 dark:bg-midnights-600 hover:dark:bg-midnights-500":
+					era === "midnights",
+				"bg-TTPD-300 hover:bg-TTPD-400 dark:bg-TTPD-600 hover:dark:bg-TTPD-500":
+					era === "TTPD",
+				"bg-mashup-300 hover:bg-mashup-400 dark:bg-mashup-600 hover:dark:bg-mashup-500":
+					era === "mashup",
+			},
+		]}>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			class:list={[
+				"dark:hidden block",
+				{
+					"stroke-debut-800      dark:stroke-debut-100": era === "debut",
+					"stroke-fearless-800   dark:stroke-fearless-100": era === "fearless",
+					"stroke-speakNow-800   dark:stroke-speakNow-100": era === "speakNow",
+					"stroke-red-800        dark:stroke-red-100": era === "red",
+					"stroke-1989-800       dark:stroke-1989-100": era === "1989",
+					"stroke-reputation-800 dark:stroke-reputation-100":
+						era === "reputation",
+					"stroke-lover-800      dark:stroke-lover-100": era === "lover",
+					"stroke-folklore-800   dark:stroke-folklore-100": era === "folklore",
+					"stroke-evermore-800   dark:stroke-evermore-100": era === "evermore",
+					"stroke-midnights-800  dark:stroke-midnights-100":
+						era === "midnights",
+					"stroke-TTPD-800       dark:stroke-TTPD-100": era === "TTPD",
+					"stroke-mashup-800     dark:stroke-mashup-100": era === "mashup",
+				},
+			]}
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			class="icon icon-tabler icons-tabler-outline icon-tabler-sun"
+			><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+				d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path><path
+				d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+			></path></svg
+		>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			class:list={[
+				"dark:block hidden",
+				{
+					"stroke-debut-800      dark:stroke-debut-100": era === "debut",
+					"stroke-fearless-800   dark:stroke-fearless-100": era === "fearless",
+					"stroke-speakNow-800   dark:stroke-speakNow-100": era === "speakNow",
+					"stroke-red-800        dark:stroke-red-100": era === "red",
+					"stroke-1989-800       dark:stroke-1989-100": era === "1989",
+					"stroke-reputation-800 dark:stroke-reputation-100":
+						era === "reputation",
+					"stroke-lover-800      dark:stroke-lover-100": era === "lover",
+					"stroke-folklore-800   dark:stroke-folklore-100": era === "folklore",
+					"stroke-evermore-800   dark:stroke-evermore-100": era === "evermore",
+					"stroke-midnights-800  dark:stroke-midnights-100":
+						era === "midnights",
+					"stroke-TTPD-800       dark:stroke-TTPD-100": era === "TTPD",
+					"stroke-mashup-800     dark:stroke-mashup-100": era === "mashup",
+				},
+			]}
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			class="icon icon-tabler icons-tabler-outline icon-tabler-moon"
+			><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+				d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+			></path></svg
+		>
+	</button>
 </div>
 
 <script>
-    document.addEventListener("astro:page-load", () => {
-    const theme = (() => {
-        if (
-        typeof localStorage !== "undefined" &&
-        localStorage.getItem("picoPreferredColorScheme")
-        ) {
-        return localStorage.getItem("picoPreferredColorScheme");
-        }
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        return "dark";
-        }
-        return "light";
-    })();
+	document.addEventListener("astro:page-load", () => {
+		const theme = (() => {
+			if (
+				typeof localStorage !== "undefined" &&
+				localStorage.getItem("picoPreferredColorScheme")
+			) {
+				return localStorage.getItem("picoPreferredColorScheme")
+			}
+			if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+				return "dark"
+			}
+			return "light"
+		})()
 
-    if (theme === "light") {
-        document.documentElement.setAttribute("data-theme", "light");
-        document.documentElement.classList.remove("dark");
-    } else {
-        document.documentElement.setAttribute("data-theme", "dark");
-        document.documentElement.classList.add("dark");
-    }
+		if (theme === "light") {
+			document.documentElement.setAttribute("data-theme", "light")
+			document.documentElement.classList.remove("dark")
+		} else {
+			document.documentElement.setAttribute("data-theme", "dark")
+			document.documentElement.classList.add("dark")
+		}
 
-    window.localStorage.setItem("picoPreferredColorScheme", theme as string);
+		window.localStorage.setItem("picoPreferredColorScheme", theme as string)
 
-    const handleToggleClick = () => {
-        const element = document.documentElement;
-        element.classList.toggle("dark");
+		const handleToggleClick = () => {
+			const element = document.documentElement
+			element.classList.toggle("dark")
 
-        const isDark = element.classList.contains("dark");
+			const isDark = element.classList.contains("dark")
 
-        if (isDark) {
-            element.setAttribute("data-theme", "dark");
-        } else {
-            element.setAttribute("data-theme", "light");
-        }
+			if (isDark) {
+				element.setAttribute("data-theme", "dark")
+			} else {
+				element.setAttribute("data-theme", "light")
+			}
 
-        localStorage.setItem(
-            "picoPreferredColorScheme",
-            isDark ? "dark" : "light",
-        );
-    };
+			localStorage.setItem(
+				"picoPreferredColorScheme",
+				isDark ? "dark" : "light"
+			)
+		}
 
-    document
-        .getElementById("themeToggle")!
-        .addEventListener("click", handleToggleClick);
-    });
+		document
+			.getElementById("themeToggle")!
+			.addEventListener("click", handleToggleClick)
+	})
 </script>
 
 <script>
-    
-
-    document.addEventListener("astro:after-swap", () => {
-    if (localStorage.getItem("picoPreferredColorScheme") === "dark") {
-        document.documentElement.setAttribute("data-theme", "dark");
-        document.documentElement.classList.add("dark");
-    } else {
-        document.documentElement.setAttribute("data-theme", "light");
-        document.documentElement.classList.remove("dark");
-    }
-    });
+	document.addEventListener("astro:after-swap", () => {
+		if (localStorage.getItem("picoPreferredColorScheme") === "dark") {
+			document.documentElement.setAttribute("data-theme", "dark")
+			document.documentElement.classList.add("dark")
+		} else {
+			document.documentElement.setAttribute("data-theme", "light")
+			document.documentElement.classList.remove("dark")
+		}
+	})
 </script>

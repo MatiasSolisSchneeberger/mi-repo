@@ -1,124 +1,161 @@
 ---
-import ButtonPrimario from "./ButtonPrimario.astro";
-import ButtonSecundario from "./ButtonSecundario.astro";
-import LogoDiscos from "./LogoDiscos.astro";
-import InfoSvg from "./svg/InfoSvg.astro";
-import SpotifySvg from "./svg/SpotifySvg.astro";
-import YTMusicSvg from "./svg/YTMusicSvg.astro";
+import ButtonPrimario from "./ButtonPrimario.astro"
+import ButtonSecundario from "./ButtonSecundario.astro"
+import LogoDiscos from "./LogoDiscos.astro"
+import InfoSvg from "./svg/InfoSvg.astro"
+import SpotifySvg from "./svg/SpotifySvg.astro"
+import YTMusicSvg from "./svg/YTMusicSvg.astro"
 
 interface Props {
-	eraTarjeta: string;
-	taylor: string;
-    spotify: string;
-    linkPage: string;
-    YTmusic: string;
+	eraTarjeta: string
+	taylor: string
+	spotify: string
+	linkPage: string
+	YTmusic: string
 }
 
-const { eraTarjeta , taylor , spotify , linkPage , YTmusic } = Astro.props;
+const { eraTarjeta, taylor, spotify, linkPage, YTmusic } = Astro.props
 
 // Obtener la imagen correspondiente al eraTarjeta
-
 ---
-<article transition:name="tarjeta-tabla" id={eraTarjeta} class:list={[
-    "transition ease-in-out delay-0 duration-200 shadow-sm hover:shadow-md rounded-3xl flex-wrap self-start shrink-0 overflow-hidden flex flex-col gap-0 justify-center flex-1 sm:min-w-[400px] w-full sm:max-w-[450px] relative px-2.5 space-y-2.5 py-2.5",
-    {
-        'dark:bg-debut-600       dark:shadow-debut-950      dark:hover:shadow-debut-950      bg-debut-200       shadow-debut-600      hover:shadow-debut-600':       eraTarjeta === 'debut',
-        'dark:bg-fearless-600    dark:shadow-fearless-950   dark:hover:shadow-fearless-950   bg-fearless-200    shadow-fearless-600   hover:shadow-fearless-600':    eraTarjeta === 'fearless',
-        'dark:bg-speakNow-600    dark:shadow-speakNow-950   dark:hover:shadow-speakNow-950   bg-speakNow-200    shadow-speakNow-600   hover:shadow-speakNow-600':    eraTarjeta === 'speakNow',
-        'dark:bg-red-600         dark:shadow-red-950        dark:hover:shadow-red-950        bg-red-200         shadow-red-600        hover:shadow-red-600':         eraTarjeta === 'red',
-        'dark:bg-1989-600        dark:shadow-1989-950       dark:hover:shadow-1989-950       bg-1989-200        shadow-1989-600       hover:shadow-1989-600':        eraTarjeta === '1989',
-        'dark:bg-reputation-600  dark:shadow-reputation-950 dark:hover:shadow-reputation-950 bg-reputation-200  shadow-reputation-600 hover:shadow-reputation-600':  eraTarjeta === 'reputation',
-        'dark:bg-lover-600       dark:shadow-lover-950      dark:hover:shadow-lover-950      bg-lover-200       shadow-lover-600      hover:shadow-lover-600':       eraTarjeta === 'lover',
-        'dark:bg-folklore-600    dark:shadow-folklore-950   dark:hover:shadow-folklore-950   bg-folklore-200    shadow-folklore-600   hover:shadow-folklore-600':    eraTarjeta === 'folklore',
-        'dark:bg-evermore-600    dark:shadow-evermore-950   dark:hover:shadow-evermore-950   bg-evermore-200    shadow-evermore-600   hover:shadow-evermore-600':    eraTarjeta === 'evermore',
-        'dark:bg-midnights-600   dark:shadow-midnights-950  dark:hover:shadow-midnights-950  bg-midnights-200   shadow-midnights-600  hover:shadow-midnights-600':   eraTarjeta === 'midnights',
-        'dark:bg-TTPD-600        dark:shadow-TTPD-950       dark:hover:shadow-TTPD-950       bg-TTPD-200        shadow-TTPD-600       hover:shadow-TTPD-600':        eraTarjeta === 'TTPD',
-        'dark:bg-mashup-600      dark:shadow-mashup-950     dark:hover:shadow-mashup-950     bg-mashup-200      shadow-mashup-600     hover:shadow-mashup-600':      eraTarjeta === 'mashup',
-    }
-    ]}
->
-    <header class="w-full flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative space-y-2.5">
-        <!-- logo -->
-        <div  class:list={[
-            "rounded-2xl p-2 flex flex-col gap-0 items-center justify-center self-stretch shrink-0 h-[72px] relative",
-            {
-                'bg-debut-400 dark:bg-debut-500':         eraTarjeta === 'debut',
-                'bg-fearless-400 dark:bg-fearless-500':      eraTarjeta === 'fearless',
-                'bg-speakNow-400 dark:bg-speakNow-500':      eraTarjeta === 'speakNow',
-                'bg-red-400 dark:bg-red-500':           eraTarjeta === 'red',
-                'bg-1989-400 dark:bg-1989-500':          eraTarjeta === '1989',
-                'bg-reputation-400 dark:bg-reputation-500':    eraTarjeta === 'reputation',
-                'bg-lover-400 dark:bg-lover-500':         eraTarjeta === 'lover',
-                'bg-folklore-400 dark:bg-folklore-500':      eraTarjeta === 'folklore',
-                'bg-evermore-400 dark:bg-evermore-500':      eraTarjeta === 'evermore',
-                'bg-midnights-400 dark:bg-midnights-500':     eraTarjeta === 'midnights',
-                'bg-TTPD-400 dark:bg-TTPD-500':          eraTarjeta === 'TTPD',
-                'bg-mashup-400 dark:bg-mashup-500':        eraTarjeta === 'mashup',
-            }
-            ]}>
-            <LogoDiscos era={eraTarjeta}/>
-        </div>
-        <!-- Taylor -->
-        <div class='group transition rounded-xl ease-in-out delay-0 duration-200 h-[350px] bg-cover bg-center  flex flex-col items-center justify-end self-stretch shrink-0 relative overflow-hidden' class:list={ {
-            "bg-[url('/swifties-eras-tour/images/Portadas-Discos/01-Portada-TaylorSwift.png')]": eraTarjeta === 'debut',
-            "bg-[url('/swifties-eras-tour/images/Portadas-Discos/02-Portada-Fearless.png')]":    eraTarjeta === 'fearless',
-            "bg-[url('/swifties-eras-tour/images/Portadas-Discos/03-Portada-SpeakNow.png')]":    eraTarjeta === 'speakNow',
-            "bg-[url('/swifties-eras-tour/images/Portadas-Discos/04-Portada-Red.png')]":         eraTarjeta === 'red',
-            "bg-[url('/swifties-eras-tour/images/Portadas-Discos/05-Portada-1989.png')]":        eraTarjeta === '1989',
-            "bg-[url('/swifties-eras-tour/images/Portadas-Discos/06-Portada-Reputation.png')]":  eraTarjeta === 'reputation',
-            "bg-[url('/swifties-eras-tour/images/Portadas-Discos/07-Portada-Lover.png')]":       eraTarjeta === 'lover',
-            "bg-[url('/swifties-eras-tour/images/Portadas-Discos/08-Portada-Folklore.png')]":    eraTarjeta === 'folklore',
-            "bg-[url('/swifties-eras-tour/images/Portadas-Discos/09-Portada-Evermore.png')]":    eraTarjeta === 'evermore',
-            "bg-[url('/swifties-eras-tour/images/Portadas-Discos/10-Portada-Midnights.png')]":   eraTarjeta === 'midnights',
-            "bg-[url('/swifties-eras-tour/images/Portadas-Discos/11-Portada-TTPD.png')]":        eraTarjeta === 'TTPD',
-            "bg-[url('/swifties-eras-tour/images/Portadas-Discos/12-Portada-Mashup.png')]":      eraTarjeta === 'mashup',
-        } }>
-            <div class:list={[
-                "w-full h-full flex overflow-hidden rounded-xl justify-center absolute mix-blend-multiply z-20",
-            {
-                'bg-debut-400':         eraTarjeta === 'debut',
-                'bg-fearless-400':      eraTarjeta === 'fearless',
-                'bg-speakNow-400':      eraTarjeta === 'speakNow',
-                'bg-red-400':           eraTarjeta === 'red',
-                'bg-1989-400':          eraTarjeta === '1989',
-                'bg-reputation-400':    eraTarjeta === 'reputation',
-                'bg-lover-400':         eraTarjeta === 'lover',
-                'bg-folklore-400':      eraTarjeta === 'folklore',
-                'bg-evermore-400':      eraTarjeta === 'evermore',
-                'bg-midnights-400':     eraTarjeta === 'midnights',
-                'bg-TTPD-400':          eraTarjeta === 'TTPD',
-                'bg-mashup-400':        eraTarjeta === 'mashup',
-            }
-            ]}/>
-            <img class="group-hover:scale-110 rounded-xl overflow-hidden transition ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative h-full z-10" 
-            src={taylor}
-            alt=`Taylor en la era ${eraTarjeta}`
-            style="mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);"
-            >
-            <div class=" overflow-hidden rounded-xl backdrop-blur-[2px] w-full h-full flex justify-center absolute mix-blend-multiply z-1"/>
-        </div>
-    </header>
-    <!-- Canciones -->
-    <section class="flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative w-full">
-        <slot/>
-    </section>
-    <!-- seccion de botones -->
-    <section class="w-full flex justify-end space-x-2.5">
-        <ButtonSecundario era = {eraTarjeta} href={spotify} icono="Izq">
-            <SpotifySvg era={eraTarjeta} slot="before"/>
-            Spotify
-        </ButtonSecundario>
-            
-        
-        <ButtonSecundario era = {eraTarjeta} href={YTmusic} icono="Izq">
-            <YTMusicSvg era={eraTarjeta} slot="before"/>
-            YTMusic
-        </ButtonSecundario>
 
-        <ButtonPrimario era={eraTarjeta} href={linkPage} icono="Izq">
-            <InfoSvg era={eraTarjeta} slot="before"/>
-            Mas info
-        </ButtonPrimario>
+<article
+	transition:name="tarjeta-tabla"
+	id={eraTarjeta}
+	class:list={[
+		"transition ease-in-out delay-0 duration-200 shadow-sm hover:shadow-md rounded-3xl flex-wrap self-start shrink-0 overflow-hidden flex flex-col gap-0 justify-center flex-1 sm:min-w-[400px] w-full sm:max-w-[450px] relative px-2.5 space-y-2.5 py-2.5",
+		{
+			"dark:bg-debut-500       dark:shadow-debut-950      dark:hover:shadow-debut-950      bg-debut-200       shadow-debut-600      hover:shadow-debut-600":
+				eraTarjeta === "debut",
+			"dark:bg-fearless-500    dark:shadow-fearless-950   dark:hover:shadow-fearless-950   bg-fearless-200    shadow-fearless-600   hover:shadow-fearless-600":
+				eraTarjeta === "fearless",
+			"dark:bg-speakNow-500    dark:shadow-speakNow-950   dark:hover:shadow-speakNow-950   bg-speakNow-200    shadow-speakNow-600   hover:shadow-speakNow-600":
+				eraTarjeta === "speakNow",
+			"dark:bg-red-500         dark:shadow-red-950        dark:hover:shadow-red-950        bg-red-200         shadow-red-600        hover:shadow-red-600":
+				eraTarjeta === "red",
+			"dark:bg-1989-500        dark:shadow-1989-950       dark:hover:shadow-1989-950       bg-1989-200        shadow-1989-600       hover:shadow-1989-600":
+				eraTarjeta === "1989",
+			"dark:bg-reputation-500  dark:shadow-reputation-950 dark:hover:shadow-reputation-950 bg-reputation-200  shadow-reputation-600 hover:shadow-reputation-600":
+				eraTarjeta === "reputation",
+			"dark:bg-lover-500       dark:shadow-lover-950      dark:hover:shadow-lover-950      bg-lover-200       shadow-lover-600      hover:shadow-lover-600":
+				eraTarjeta === "lover",
+			"dark:bg-folklore-500    dark:shadow-folklore-950   dark:hover:shadow-folklore-950   bg-folklore-200    shadow-folklore-600   hover:shadow-folklore-600":
+				eraTarjeta === "folklore",
+			"dark:bg-evermore-500    dark:shadow-evermore-950   dark:hover:shadow-evermore-950   bg-evermore-200    shadow-evermore-600   hover:shadow-evermore-600":
+				eraTarjeta === "evermore",
+			"dark:bg-midnights-500   dark:shadow-midnights-950  dark:hover:shadow-midnights-950  bg-midnights-200   shadow-midnights-600  hover:shadow-midnights-600":
+				eraTarjeta === "midnights",
+			"dark:bg-TTPD-500        dark:shadow-TTPD-950       dark:hover:shadow-TTPD-950       bg-TTPD-200        shadow-TTPD-600       hover:shadow-TTPD-600":
+				eraTarjeta === "TTPD",
+			"dark:bg-mashup-500      dark:shadow-mashup-950     dark:hover:shadow-mashup-950     bg-mashup-200      shadow-mashup-600     hover:shadow-mashup-600":
+				eraTarjeta === "mashup",
+		},
+	]}>
+	<header
+		class="w-full flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative space-y-2.5">
+		<!-- logo -->
+		<div
+			class:list={[
+				"rounded-2xl p-2 flex flex-col gap-0 items-center justify-center self-stretch shrink-0 h-[72px] relative",
+				{
+					"bg-debut-400 dark:bg-debut-300": eraTarjeta === "debut",
+					"bg-fearless-400 dark:bg-fearless-300": eraTarjeta === "fearless",
+					"bg-speakNow-400 dark:bg-speakNow-300": eraTarjeta === "speakNow",
+					"bg-red-400 dark:bg-red-300": eraTarjeta === "red",
+					"bg-1989-400 dark:bg-1989-300": eraTarjeta === "1989",
+					"bg-reputation-400 dark:bg-reputation-300":
+						eraTarjeta === "reputation",
+					"bg-lover-400 dark:bg-lover-300": eraTarjeta === "lover",
+					"bg-folklore-400 dark:bg-folklore-300": eraTarjeta === "folklore",
+					"bg-evermore-400 dark:bg-evermore-300": eraTarjeta === "evermore",
+					"bg-midnights-400 dark:bg-midnights-300": eraTarjeta === "midnights",
+					"bg-TTPD-400 dark:bg-TTPD-300": eraTarjeta === "TTPD",
+					"bg-mashup-400 dark:bg-mashup-300": eraTarjeta === "mashup",
+				},
+			]}>
+			<LogoDiscos era={eraTarjeta} />
+		</div>
+		<!-- Taylor -->
+		<div
+			class:list={[
+				"group transition rounded-xl ease-in-out delay-0 duration-200 h-[350px] bg-cover bg-center  flex flex-col items-center justify-end self-stretch shrink-0 relative overflow-hidden",
+				{
+					"bg-[url('/swifties-eras-tour/images/Portadas-Discos/01-Portada-TaylorSwift.png')]":
+						eraTarjeta === "debut",
+					"bg-[url('/swifties-eras-tour/images/Portadas-Discos/02-Portada-Fearless.png')]":
+						eraTarjeta === "fearless",
+					"bg-[url('/swifties-eras-tour/images/Portadas-Discos/03-Portada-SpeakNow.png')]":
+						eraTarjeta === "speakNow",
+					"bg-[url('/swifties-eras-tour/images/Portadas-Discos/04-Portada-Red.png')]":
+						eraTarjeta === "red",
+					"bg-[url('/swifties-eras-tour/images/Portadas-Discos/05-Portada-1989.png')]":
+						eraTarjeta === "1989",
+					"bg-[url('/swifties-eras-tour/images/Portadas-Discos/06-Portada-Reputation.png')]":
+						eraTarjeta === "reputation",
+					"bg-[url('/swifties-eras-tour/images/Portadas-Discos/07-Portada-Lover.png')]":
+						eraTarjeta === "lover",
+					"bg-[url('/swifties-eras-tour/images/Portadas-Discos/08-Portada-Folklore.png')]":
+						eraTarjeta === "folklore",
+					"bg-[url('/swifties-eras-tour/images/Portadas-Discos/09-Portada-Evermore.png')]":
+						eraTarjeta === "evermore",
+					"bg-[url('/swifties-eras-tour/images/Portadas-Discos/10-Portada-Midnights.png')]":
+						eraTarjeta === "midnights",
+					"bg-[url('/swifties-eras-tour/images/Portadas-Discos/11-Portada-TTPD.png')]":
+						eraTarjeta === "TTPD",
+					"bg-[url('/swifties-eras-tour/images/Portadas-Discos/12-Portada-Mashup.png')]":
+						eraTarjeta === "mashup",
+				},
+			]}>
+			<div
+				class:list={[
+					"w-full h-full flex rounded-xl overflow-hidden justify-center absolute mix-blend-multiply z-20",
+					{
+						"bg-debut-300": eraTarjeta === "debut",
+						"bg-fearless-300": eraTarjeta === "fearless",
+						"bg-speakNow-300": eraTarjeta === "speakNow",
+						"bg-red-300": eraTarjeta === "red",
+						"bg-1989-300": eraTarjeta === "1989",
+						"bg-reputation-300": eraTarjeta === "reputation",
+						"bg-lover-300": eraTarjeta === "lover",
+						"bg-folklore-300": eraTarjeta === "folklore",
+						"bg-evermore-300": eraTarjeta === "evermore",
+						"bg-midnights-300": eraTarjeta === "midnights",
+						"bg-TTPD-300": eraTarjeta === "TTPD",
+						"bg-mashup-300": eraTarjeta === "mashup",
+					},
+				]}>
+			</div>
+			<img
+				class="group-hover:scale-110 overflow-hidden transition ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative h-full z-10"
+				src={taylor}
+				alt=`Taylor en la era ${eraTarjeta}`
+				style="mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);"
+			/>
+			<div
+				class="overflow-hidden rounded-xl backdrop-blur-[2px] w-full h-full flex justify-center absolute mix-blend-multiply z-1">
+			</div>
+		</div>
+	</header>
+	<!-- Canciones -->
+	<section
+		class="flex flex-col gap-3 items-start justify-start self-stretch shrink-0 relative w-full">
+		<slot />
+	</section>
+	<!-- seccion de botones -->
+	<section class="w-full flex justify-end space-x-2.5">
+		<ButtonSecundario era={eraTarjeta} href={spotify} icono="Izq">
+			<SpotifySvg era={eraTarjeta} slot="before" />
+			Spotify
+		</ButtonSecundario>
 
-    </section>
+		<ButtonSecundario era={eraTarjeta} href={YTmusic} icono="Izq">
+			<YTMusicSvg era={eraTarjeta} slot="before" />
+			YTMusic
+		</ButtonSecundario>
+
+		<ButtonPrimario era={eraTarjeta} href={linkPage} icono="Izq">
+			<InfoSvg era={eraTarjeta} slot="before" />
+			Mas info
+		</ButtonPrimario>
+	</section>
 </article>
