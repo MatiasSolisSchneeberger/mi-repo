@@ -1,101 +1,2808 @@
-Lugar: Melbourne, Australia - Fecha: (mes: 2 dia: 17) -Instrumento: guitarra - canción: 'Getaway Car/August/The Other Side of the Door'
-Lugar: Melbourne, Australia - Fecha: (mes: 2 dia: 18) -Instrumento: guitarra - canción: 'Come Back...Be Here/Daylight'
-Lugar: Sídney, Australia - Fecha: (mes: 2 dia: 23) -Instrumento: Piano - canción: 'White Horse/Coney Island' - cantante sorpresa: Sabrina Carpenter
-Lugar: Sídney, Australia - Fecha: (mes: 2 dia: 24) -Instrumento: guitarra - canción: 'Should've Said No/You're Not Sorry'
-Lugar: Sídney, Australia - Fecha: (mes: 2 dia: 24) -Instrumento: Piano - canción: 'New Year's Day/Peace'
-Lugar: Sídney, Australia - Fecha: (mes: 2 dia: 25) -Instrumento: guitarra - canción: 'Is It Over Now?/I Wish You Would'
-Lugar: Sídney, Australia - Fecha: (mes: 2 dia: 25) -Instrumento: Piano - canción: 'Haunted/Exile'
-Lugar: Sídney, Australia - Fecha: (mes: 2 dia: 26) -Instrumento: guitarra - canción: 'Would've Could've Should've/Ivy'
-Lugar: Sídney, Australia - Fecha: (mes: 2 dia: 26) -Instrumento: Piano - canción: 'Forever & Always/Maroon'
-Lugar: Singapur, Singapur - Fecha: (mes: 3 dia: 2) -Instrumento: guitarra - canción: 'Mine/Starlight'
-Lugar: Singapur, Singapur - Fecha: (mes: 3 dia: 2) -Instrumento: Piano - canción: 'I Don't Wanna Live Forever/Dress'
-Lugar: Singapur, Singapur - Fecha: (mes: 3 dia: 3) -Instrumento: guitarra - canción: 'Long Story Short/The Story of Us'
-Lugar: Singapur, Singapur - Fecha: (mes: 3 dia: 3) -Instrumento: Piano - canción: 'Clean/Evermore'
-Lugar: Singapur, Singapur - Fecha: (mes: 3 dia: 4) -Instrumento: guitarra - canción: 'Foolish One/Tell Me Why'
-Lugar: Singapur, Singapur - Fecha: (mes: 3 dia: 4) -Instrumento: Piano - canción: 'This Love/Call It What You Want'
-Lugar: Singapur, Singapur - Fecha: (mes: 3 dia: 7) -Instrumento: guitarra - canción: 'Death By A Thousand Cuts/Babe'
-Lugar: Singapur, Singapur - Fecha: (mes: 3 dia: 7) -Instrumento: Piano - canción: 'Fifteen/You're On Your Own, Kid'
-Lugar: Singapur, Singapur - Fecha: (mes: 3 dia: 8) -Instrumento: guitarra - canción: 'Sparks Fly/Gold Rush'
-Lugar: Singapur, Singapur - Fecha: (mes: 3 dia: 8) -Instrumento: Piano - canción: 'False God/"Slut!"'
-Lugar: Singapur, Singapur - Fecha: (mes: 3 dia: 9) -Instrumento: guitarra - canción: 'Tim McGraw/Cowboy Like Me'
-Lugar: Singapur, Singapur - Fecha: (mes: 3 dia: 9) -Instrumento: Piano - canción: 'Mirrorball/Epiphany'
-Lugar: Paris, Francia - Fecha: (mes: 5 dia: 10) -Instrumento: guitarra - canción: 'Is It Over Now?/Out Of The Woods'
-Lugar: Paris, Francia - Fecha: (mes: 5 dia: 12) -Instrumento: guitarra - canción: 'The Alchemy/Treacherous'
-Lugar: Paris, Francia - Fecha: (mes: 5 dia: 12) -Instrumento: Piano - canción: 'Begin Again/Paris'
-Lugar: Estocolmo, Suecia - Fecha: (mes: 5 dia: 17) -Instrumento: guitarra - canción: 'I Think He Knows/Gorgeous'
-Lugar: Estocolmo, Suecia - Fecha: (mes: 5 dia: 18) -Instrumento: Piano - canción: 'Say Don't Go/Welcome To New York/Clean'
-Lugar: Estocolmo, Suecia - Fecha: (mes: 5 dia: 19) -Instrumento: guitarra - canción: 'Message In A Bottle/How You Get The Girl/New Romantics'
-Lugar: Lisbon, Portugal - Fecha: (mes: 5 dia: 24) -Instrumento: guitarra - canción: 'Come Back...Be Here/The Way I Loved You/The Other Side of the Door'
-Lugar: Lisbon, Portugal - Fecha: (mes: 5 dia: 24) -Instrumento: Piano - canción: 'Fresh Out The Slammer/High Infidelity'
-Lugar: Lisbon, Portugal - Fecha: (mes: 5 dia: 25) -Instrumento: guitarra - canción: 'The Tortured Poets Department/Now That We Don't Talk'
-Lugar: Lisbon, Portugal - Fecha: (mes: 5 dia: 25) -Instrumento: Piano - canción: 'You're On Your Own, Kid/Long Live'
-Lugar: Madrid, España - Fecha: (mes: 5 dia: 29) -Instrumento: guitarra - canción: 'Sparks Fly/I Can Fix Him (No Really I Can)'
-Lugar: Madrid, España - Fecha: (mes: 5 dia: 29) -Instrumento: Piano - canción: 'I Look In People's Windows/Snow on the Beach'
-Lugar: Madrid, España - Fecha: (mes: 5 dia: 30) -Instrumento: guitarra - canción: 'Our Song/Jump Then Fall'
-Lugar: Lyon, Francia - Fecha: (mes: 6 dia: 2) -Instrumento: guitarra - canción: 'The Prophecy/Long Story Short'
-Lugar: Lyon, Francia - Fecha: (mes: 6 dia: 2) -Instrumento: Piano - canción: 'Fifteen/You're On Your Own, Kid'
-Lugar: Lyon, Francia - Fecha: (mes: 6 dia: 3) -Instrumento: guitarra - canción: 'Glitch/Everything Has Changed'
-Lugar: Edimburgo, Escocia - Fecha: (mes: 6 dia: 7) -Instrumento: guitarra - canción: 'Would've, Could've, Should've/I Know Places'
-Lugar: Edimburgo, Escocia - Fecha: (mes: 6 dia: 7) -Instrumento: Piano - canción: ''Tis The Damn Season/Daylight'
-Lugar: Edimburgo, Escocia - Fecha: (mes: 6 dia: 8) -Instrumento: guitarra - canción: 'The Bolter/Getaway Car'
-Lugar: Edimburgo, Escocia - Fecha: (mes: 6 dia: 8) -Instrumento: Piano - canción: 'All Of The Girls You Loved Before/Crazier'
-Lugar: Edimburgo, Escocia - Fecha: (mes: 6 dia: 9) -Instrumento: guitarra - canción: 'It's Nice To Have A Friend/Dorothea'
-Lugar: Edimburgo, Escocia - Fecha: (mes: 6 dia: 9) -Instrumento: Piano - canción: 'Haunted/Exile'
-Lugar: Liverpool, Inglaterra - Fecha: (mes: 6 dia: 13) -Instrumento: guitarra - canción: 'I Can See You/Mine'
-Lugar: Liverpool, Inglaterra - Fecha: (mes: 6 dia: 13) -Instrumento: Piano - canción: 'Cornelia Street/Maroon'
-Lugar: Liverpool, Inglaterra - Fecha: (mes: 6 dia: 14) -Instrumento: guitarra - canción: 'This Is What You Came For/Gold Rush'
-Lugar: Liverpool, Inglaterra - Fecha: (mes: 6 dia: 14) -Instrumento: Piano - canción: 'The Great War/You're Losing Me'
-Lugar: Liverpool, Inglaterra - Fecha: (mes: 6 dia: 15) -Instrumento: guitarra - canción: 'Carolina/No Body, No Crime'
-Lugar: Liverpool, Inglaterra - Fecha: (mes: 6 dia: 15) -Instrumento: Piano - canción: 'The Manuscript/Red'
-Lugar: Cardiff, Gales - Fecha: (mes: 6 dia: 18) -Instrumento: guitarra - canción: 'I Forgot That You Existed/This Is Why We Can't Have Nice Things'
-Lugar: Cardiff, Gales - Fecha: (mes: 6 dia: 18) -Instrumento: Piano - canción: 'I Hate It Here/the lakes'
-Lugar: Londres, Inglaterra - Fecha: (mes: 6 dia: 21) -Instrumento: guitarra - canción: 'Hits Different/Death By A Thousand Cuts'
-Lugar: Londres, Inglaterra - Fecha: (mes: 6 dia: 21) -Instrumento: Piano - canción: 'The Black Dog/Come Back...Be Here/Maroon'
-Lugar: Londres, Inglaterra - Fecha: (mes: 6 dia: 22) -Instrumento: guitarra - canción: 'thanK you aIMee/Mean'
-Lugar: Londres, Inglaterra - Fecha: (mes: 6 dia: 23) -Instrumento: Piano - canción: 'Out of the Woods/Is It Over Now?/Clean'
-Lugar: Dublin, Irlanda - Fecha: (mes: 6 dia: 28) -Instrumento: guitarra - canción: 'State of Grace/You're On Your Own, Kid'
-Lugar: Dublin, Irlanda - Fecha: (mes: 6 dia: 28) -Instrumento: Piano - canción: 'Sweet Nothing/Hoax'
-Lugar: Dublin, Irlanda - Fecha: (mes: 6 dia: 29) -Instrumento: guitarra - canción: 'The Albatross/Dancing With Our Hands Tied'
-Lugar: Dublin, Irlanda - Fecha: (mes: 6 dia: 29) -Instrumento: Piano - canción: 'This Love/Ours'
-Lugar: Dublin, Irlanda - Fecha: (mes: 6 dia: 30) -Instrumento: guitarra - canción: 'Clara Bow/The Lucky One'
-Lugar: Amsterdam, Países Bajos - Fecha: (mes: 7 dia: 4) -Instrumento: guitarra - canción: 'Guilty As Sin?/Untouchable'
-Lugar: Amsterdam, Países Bajos - Fecha: (mes: 7 dia: 4) -Instrumento: Piano - canción: 'The Archer/Question...?'
-Lugar: Amsterdam, Países Bajos - Fecha: (mes: 7 dia: 5) -Instrumento: guitarra - canción: 'imgonnagetyouback/Dress'
-Lugar: Amsterdam, Países Bajos - Fecha: (mes: 7 dia: 5) -Instrumento: Piano - canción: 'You Are In Love/Cowboy Like Me'
-Lugar: Amsterdam, Países Bajos - Fecha: (mes: 7 dia: 6) -Instrumento: guitarra - canción: 'Sweeter Than Fiction/Holy Ground'
-Lugar: Amsterdam, Países Bajos - Fecha: (mes: 7 dia: 6) -Instrumento: Piano - canción: 'Mary's Song (Oh My My My)/So High School/Everything Has Changed'
-Lugar: Zúrich, Suiza - Fecha: (mes: 7 dia: 9) -Instrumento: guitarra - canción: 'Right Where You Left Me/All You Had To Do Was Stay'
-Lugar: Zúrich, Suiza - Fecha: (mes: 7 dia: 9) -Instrumento: Piano - canción: 'Last Kiss/Sad Beautiful Tragic'
-Lugar: Zúrich, Suiza - Fecha: (mes: 7 dia: 10) -Instrumento: guitarra - canción: 'Closure/A Perfectly Good Heart'
-Lugar: Zúrich, Suiza - Fecha: (mes: 7 dia: 10) -Instrumento: Piano - canción: 'Robin/Never Grow Up'
-Lugar: Milan, Italia - Fecha: (mes: 7 dia: 13) -Instrumento: guitarra - canción: 'The 1/Wonderland'
-Lugar: Milan, Italia - Fecha: (mes: 7 dia: 13) -Instrumento: Piano - canción: 'I Almost Do/The Moment I Knew'
-Lugar: Milan, Italia - Fecha: (mes: 7 dia: 14) -Instrumento: guitarra - canción: 'Mr. Perfectly Fine/Red'
-Lugar: Milan, Italia - Fecha: (mes: 7 dia: 14) -Instrumento: Piano - canción: 'Getaway Car/Out of the Woods'
-Lugar: Gelsenkirchen, Alemania - Fecha: (mes: 7 dia: 17) -Instrumento: guitarra - canción: 'Superstar/Invisible String'
-Lugar: Gelsenkirchen, Alemania - Fecha: (mes: 7 dia: 17) -Instrumento: Piano - canción: '"Slut!"/False God'
-Lugar: Gelsenkirchen, Alemania - Fecha: (mes: 7 dia: 18) -Instrumento: guitarra - canción: 'Speak Now/Hey Stephen'
-Lugar: Gelsenkirchen, Alemania - Fecha: (mes: 7 dia: 18) -Instrumento: Piano - canción: 'This Is Me Trying/Labyrinth'
-Lugar: Gelsenkirchen, Alemania - Fecha: (mes: 7 dia: 19) -Instrumento: guitarra - canción: 'Paper Rings/Stay Stay Stay'
-Lugar: Gelsenkirchen, Alemania - Fecha: (mes: 7 dia: 19) -Instrumento: Piano - canción: 'it's time to go/Better Man'
-Lugar: Hamburgo, Alemania - Fecha: (mes: 7 dia: 23) -Instrumento: guitarra - canción: 'Teardrops On My Guitar/The Last Time'
-Lugar: Hamburgo, Alemania - Fecha: (mes: 7 dia: 23) -Instrumento: Piano - canción: 'We Were Happy/Happiness'
-Lugar: Hamburgo, Alemania - Fecha: (mes: 7 dia: 24) -Instrumento: guitarra - canción: 'The Last Great American Dynasty/Run'
-Lugar: Hamburgo, Alemania - Fecha: (mes: 7 dia: 24) -Instrumento: Piano - canción: 'Nothing New/Dear Reader'
-Lugar: Munich, Alemania - Fecha: (mes: 7 dia: 27) -Instrumento: guitarra - canción: 'Fresh Out The Slammer/You Are In Love'
-Lugar: Munich, Alemania - Fecha: (mes: 7 dia: 27) -Instrumento: Piano - canción: 'Ivy/Call It What You Want'
-Lugar: Munich, Alemania - Fecha: (mes: 7 dia: 28) -Instrumento: guitarra - canción: 'I Don't Wanna Live Forever/imgonnagetyouback'
-Lugar: Munich, Alemania - Fecha: (mes: 7 dia: 28) -Instrumento: Piano - canción: 'loml/Don't You'
-Lugar: Varsovia, Polonia - Fecha: (mes: 8 dia: 1) -Instrumento: guitarra - canción: 'Mirrorball/Clara Bow'
-Lugar: Varsovia, Polonia - Fecha: (mes: 8 dia: 1) -Instrumento: Piano - canción: 'Suburban Legends/New Year's Day'
-Lugar: Varsovia, Polonia - Fecha: (mes: 8 dia: 2) -Instrumento: guitarra - canción: 'I Can Fix Him (No Really I Can)/I Can See You'
-Lugar: Varsovia, Polonia - Fecha: (mes: 8 dia: 2) -Instrumento: Piano - canción: 'Red/Maroon'
-Lugar: Varsovia, Polonia - Fecha: (mes: 8 dia: 3) -Instrumento: guitarra - canción: 'Today Was A Fairytale/I Think He Knows'
-Lugar: Varsovia, Polonia - Fecha: (mes: 8 dia: 3) -Instrumento: Piano - canción: 'The Black Dog/Exile'
-Lugar: Londres, Inglaterra - Fecha: (mes: 8 dia: 15) -Instrumento: guitarra - canción: 'Everything Has Changed/End Game/Thinking Out Loud' - cantante sorpresa: Ed Sheeran'
-Lugar: Londres, Inglaterra - Fecha: (mes: 8 dia: 15) -Instrumento: Piano - canción:  'King Of My Heart/The Alchemy'
-Lugar: Londres, Inglaterra - Fecha: (mes: 8 dia: 16) -Instrumento: Piano - canción: 'Dear John/Sad Beautiful Tragic'
-Lugar: Londres, Inglaterra - Fecha: (mes: 8 dia: 17) -Instrumento: Piano - canción: 'My Boy Only Breaks His Favourite Toys/Coney Island'
-Lugar: Londres, Inglaterra - Fecha: (mes: 8 dia: 19) -Instrumento: guitarra - canción: 'Long Live/Change'
-Lugar: Londres, Inglaterra - Fecha: (mes: 8 dia: 19) -Instrumento: Piano - canción: 'The Archer/You're On Your Own, Kid'
-Lugar: Londres, Inglaterra - Fecha: (mes: 8 dia: 20) -Instrumento: guitarra - canción: 'Death By A Thousand Cuts/Getaway Car' - cantante sorpresa: Jack Antonoff
+Lugar: Buenos Aires, Argentina - Fecha: dia: 11  mes: 11 año: 2023  - Canción: 'Is It Over Now?/Out of the Woods'                                   - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+
+Lugar: Melbourne, Australia    - Fecha: dia: 17  mes: 2 año: 2024   - Canción: 'Getaway Car/August/The Other Side of the Door'                      - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+
+Lugar: Melbourne, Australia    - Fecha: dia: 18  mes: 2 año: 2024   - Canción: 'Come Back...Be Here/Daylight'                                       - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Sidney, Australia       - Fecha: dia: 23  mes: 2 año: 2024   - Canción: 'White Horse/Coney Island'                                           - Instrumento: Piano    - mashup - Cantante Sorpresa: Sabrina Carpenter
+
+Lugar: Sidney, Australia       - Fecha: dia: 24  mes: 2 año: 2024   - Canción: 'Should've Said No/You're Not Sorry'                                 - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Sidney, Australia       - Fecha: dia: 24  mes: 2 año: 2024   - Canción: 'New Year's Day/Peace'                                               - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Sidney, Australia       - Fecha: dia: 25  mes: 2 año: 2024   - Canción: 'Is It Over Now?/I Wish You Would'                                   - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Sidney, Australia       - Fecha: dia: 25  mes: 2 año: 2024   - Canción: 'Haunted/Exile'                                                      - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Sidney, Australia       - Fecha: dia: 26  mes: 2 año: 2024   - Canción: 'Would've Could've Should've/Ivy'                                    - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Sidney, Australia       - Fecha: dia: 26  mes: 2 año: 2024   - Canción: 'Forever & Always/Maroon'                                            - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Singapur, Singapur      - Fecha: dia: 2   mes: 3 año: 2024   - Canción: 'Mine/Starlight'                                                     - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Singapur, Singapur      - Fecha: dia: 2   mes: 3 año: 2024   - Canción: 'I Don't Wanna Live Forever/Dress'                                   - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Singapur, Singapur      - Fecha: dia: 3   mes: 3 año: 2024   - Canción: 'Long Story Short/The Story of Us'                                   - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Singapur, Singapur      - Fecha: dia: 3   mes: 3 año: 2024   - Canción: 'Clean/Evermore'                                                     - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Singapur, Singapur      - Fecha: dia: 4   mes: 3 año: 2024   - Canción: 'Foolish One/Tell Me Why'                                            - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Singapur, Singapur      - Fecha: dia: 4   mes: 3 año: 2024   - Canción: 'This Love/Call It What You Want'                                    - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Singapur, Singapur      - Fecha: dia: 7   mes: 3 año: 2024   - Canción: 'Death By A Thousand Cuts/Babe'                                      - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Singapur, Singapur      - Fecha: dia: 7   mes: 3 año: 2024   - Canción: 'Fifteen/You're On Your Own, Kid'                                    - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Singapur, Singapur      - Fecha: dia: 8   mes: 3 año: 2024   - Canción: 'Sparks Fly/Gold Rush'                                               - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Singapur, Singapur      - Fecha: dia: 8   mes: 3 año: 2024   - Canción: 'False God/"Slut!"'                                                  - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Singapur, Singapur      - Fecha: dia: 9   mes: 3 año: 2024   - Canción: 'Tim McGraw/Cowboy Like Me'                                          - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Singapur, Singapur      - Fecha: dia: 9   mes: 3 año: 2024   - Canción: 'Mirrorball/Epiphany'                                                - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: París, Francia          - Fecha: dia: 10  mes: 5 año: 2024   - Canción: 'Is It Over Now?/Out Of The Woods'                                   - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+
+Lugar: París, Francia          - Fecha: dia: 12  mes: 5 año: 2024   - Canción: 'The Alchemy/Treacherous'                                            - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: París, Francia          - Fecha: dia: 12  mes: 5 año: 2024   - Canción: 'Begin Again/Paris'                                                  - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Estocolmo, Suecia       - Fecha: dia: 17  mes: 5 año: 2024   - Canción: 'I Think He Knows/Gorgeous'                                          - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Estocolmo, Suecia       - Fecha: dia: 18  mes: 5 año: 2024   - Canción: 'Say Don't Go/Welcome To New York/Clean'                             - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Estocolmo, Suecia       - Fecha: dia: 19  mes: 5 año: 2024   - Canción: 'Message In A Bottle/How You Get The Girl/New Romantics'             - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+
+Lugar: Lisboa, Portugal        - Fecha: dia: 24  mes: 5 año: 2024   - Canción: 'Come Back...Be Here/The Way I Loved You/The Other Side of the Door' - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Lisboa, Portugal        - Fecha: dia: 24  mes: 5 año: 2024   - Canción: 'Fresh Out The Slammer/High Infidelity'                              - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Lisboa, Portugal        - Fecha: dia: 25  mes: 5 año: 2024   - Canción: 'The Tortured Poets Department/Now That We Don't Talk'               - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Lisboa, Portugal        - Fecha: dia: 25  mes: 5 año: 2024   - Canción: 'You're On Your Own, Kid/Long Live'                                  - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Madrid, España          - Fecha: dia: 29  mes: 5 año: 2024   - Canción: 'Sparks Fly/I Can Fix Him (No Really I Can)'                         - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Madrid, España          - Fecha: dia: 29  mes: 5 año: 2024   - Canción: 'I Look In People's Windows/Snow on the Beach'                       - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Madrid, España          - Fecha: dia: 30  mes: 5 año: 2024   - Canción: 'Our Song/Jump Then Fall'                                            - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+
+Lugar: Lyon, Francia           - Fecha: dia: 2   mes: 6 año: 2024   - Canción: 'The Prophecy/Long Story Short'                                      - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Lyon, Francia           - Fecha: dia: 2   mes: 6 año: 2024   - Canción: 'Fifteen/You're On Your Own, Kid'                                    - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Lyon, Francia           - Fecha: dia: 3   mes: 6 año: 2024   - Canción: 'Glitch/Everything Has Changed'                                      - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+
+Lugar: Edimburgo, Escocia      - Fecha: dia: 7   mes: 6 año: 2024   - Canción: 'Would've, Could've, Should've/I Know Places'                        - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Edimburgo, Escocia      - Fecha: dia: 7   mes: 6 año: 2024   - Canción: ''Tis The Damn Season/Daylight'                                      - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Edimburgo, Escocia      - Fecha: dia: 8   mes: 6 año: 2024   - Canción: 'The Bolter/Getaway Car'                                             - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Edimburgo, Escocia      - Fecha: dia: 8   mes: 6 año: 2024   - Canción: 'All Of The Girls You Loved Before/Crazier'                          - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Edimburgo, Escocia      - Fecha: dia: 9   mes: 6 año: 2024   - Canción: 'It's Nice To Have A Friend/Dorothea'                                - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Edimburgo, Escocia      - Fecha: dia: 9   mes: 6 año: 2024   - Canción: 'Haunted/Exile'                                                      - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Liverpool, Inglaterra   - Fecha: dia: 13  mes: 6 año: 2024   - Canción: 'I Can See You/Mine'                                                 - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Liverpool, Inglaterra   - Fecha: dia: 13  mes: 6 año: 2024   - Canción: 'Cornelia Street/Maroon'                                             - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Liverpool, Inglaterra   - Fecha: dia: 14  mes: 6 año: 2024   - Canción: 'This Is What You Came For/Gold Rush'                                - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Liverpool, Inglaterra   - Fecha: dia: 14  mes: 6 año: 2024   - Canción: 'The Great War/You're Losing Me'                                     - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Liverpool, Inglaterra   - Fecha: dia: 15  mes: 6 año: 2024   - Canción: 'Carolina/No Body, No Crime'                                         - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Liverpool, Inglaterra   - Fecha: dia: 15  mes: 6 año: 2024   - Canción: 'The Manuscript/Red'                                                 - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Cardiff, Gales          - Fecha: dia: 18  mes: 6 año: 2024   - Canción: 'I Forgot That You Existed/This Is Why We Can't Have Nice Things'    - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Cardiff, Gales          - Fecha: dia: 18  mes: 6 año: 2024   - Canción: 'I Hate It Here/the lakes'                                           - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Londres, Inglaterra     - Fecha: dia: 21  mes: 6 año: 2024   - Canción: 'Hits Different/Death By A Thousand Cuts'                            - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Londres, Inglaterra     - Fecha: dia: 21  mes: 6 año: 2024   - Canción: 'The Black Dog/Come Back...Be Here/Maroon'                           - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Londres, Inglaterra     - Fecha: dia: 22  mes: 6 año: 2024   - Canción: 'thanK you aIMee/Mean'                                               - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Londres, Inglaterra     - Fecha: dia: 23  mes: 6 año: 2024   - Canción: 'Out of the Woods/Is It Over Now?/Clean'                             - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Dublin, Irlanda         - Fecha: dia: 28  mes: 6 año: 2024   - Canción: 'State of Grace/You're On Your Own, Kid'                             - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Dublin, Irlanda         - Fecha: dia: 28  mes: 6 año: 2024   - Canción: 'Sweet Nothing/Hoax'                                                 - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Dublin, Irlanda         - Fecha: dia: 29  mes: 6 año: 2024   - Canción: 'The Albatross/Dancing With Our Hands Tied'                          - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Dublin, Irlanda         - Fecha: dia: 29  mes: 6 año: 2024   - Canción: 'This Love/Ours'                                                     - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Dublin, Irlanda         - Fecha: dia: 30  mes: 6 año: 2024   - Canción: 'Clara Bow/The Lucky One'                                            - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+
+Lugar: Amsterdam, Países Bajos - Fecha: dia: 4   mes: 7 año: 2024   - Canción: 'Guilty As Sin?/Untouchable'                                         - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Amsterdam, Países Bajos - Fecha: dia: 4   mes: 7 año: 2024   - Canción: 'The Archer/Question...?'                                            - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Amsterdam, Países Bajos - Fecha: dia: 5   mes: 7 año: 2024   - Canción: 'imgonnagetyouback/Dress'                                            - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Amsterdam, Países Bajos - Fecha: dia: 5   mes: 7 año: 2024   - Canción: 'You Are In Love/Cowboy Like Me'                                     - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Amsterdam, Países Bajos - Fecha: dia: 6   mes: 7 año: 2024   - Canción: 'Sweeter Than Fiction/Holy Ground'                                   - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Amsterdam, Países Bajos - Fecha: dia: 6   mes: 7 año: 2024   - Canción:'Mary's Song (Oh My My My)/So High School/Everything Has Changed'     - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Zúrich, Suiza           - Fecha: dia: 9   mes: 7 año: 2024   - Canción: 'Right Where You Left Me/All You Had To Do Was Stay'                 - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Zúrich, Suiza           - Fecha: dia: 9   mes: 7 año: 2024   - Canción: 'Last Kiss/Sad Beautiful Tragic'                                     - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Zúrich, Suiza           - Fecha: dia: 10  mes: 7 año: 2024   - Canción: 'Closure/A Perfectly Good Heart'                                     - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Zúrich, Suiza           - Fecha: dia: 10  mes: 7 año: 2024   - Canción: 'Robin/Never Grow Up'                                                - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Milán, Italia           - Fecha: dia: 13  mes: 7 año: 2024   - Canción: 'The 1/Wonderland'                                                   - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Milán, Italia           - Fecha: dia: 13  mes: 7 año: 2024   - Canción: 'I Almost Do/The Moment I Knew'                                      - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Milán, Italia           - Fecha: dia: 14  mes: 7 año: 2024   - Canción: 'Mr. Perfectly Fine/Red'                                             - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Milán, Italia           - Fecha: dia: 14  mes: 7 año: 2024   - Canción: 'Getaway Car/Out of the Woods'                                       - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Gelsenkirchen, Alemania - Fecha: dia: 17  mes: 7 año: 2024   - Canción: 'Superstar/Invisible String'                                         - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Gelsenkirchen, Alemania - Fecha: dia: 17  mes: 7 año: 2024   - Canción: '"Slut!"/False God'                                                  - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Gelsenkirchen, Alemania - Fecha: dia: 18  mes: 7 año: 2024   - Canción: 'Speak Now/Hey Stephen'                                              - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Gelsenkirchen, Alemania - Fecha: dia: 18  mes: 7 año: 2024   - Canción: 'This Is Me Trying/Labyrinth'                                        - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Gelsenkirchen, Alemania - Fecha: dia: 19  mes: 7 año: 2024   - Canción: 'Paper Rings/Stay Stay Stay'                                         - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Gelsenkirchen, Alemania - Fecha: dia: 19  mes: 7 año: 2024   - Canción: 'it's time to go/Better Man'                                         - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Hamburgo, Alemania      - Fecha: dia: 23  mes: 7 año: 2024   - Canción: 'Teardrops On My Guitar/The Last Time'                               - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Hamburgo, Alemania      - Fecha: dia: 23  mes: 7 año: 2024   - Canción: 'We Were Happy/Happiness'                                            - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Hamburgo, Alemania      - Fecha: dia: 24  mes: 7 año: 2024   - Canción: 'The Last Great American Dynasty/Run'                                - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Hamburgo, Alemania      - Fecha: dia: 24  mes: 7 año: 2024   - Canción: 'Nothing New/Dear Reader'                                            - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Munich, Alemania        - Fecha: dia: 27  mes: 7 año: 2024   - Canción: 'Fresh Out The Slammer/You Are In Love'                              - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Munich, Alemania        - Fecha: dia: 27  mes: 7 año: 2024   - Canción: 'Ivy/Call It What You Want'                                          - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Munich, Alemania        - Fecha: dia: 28  mes: 7 año: 2024   - Canción: 'I Don't Wanna Live Forever/imgonnagetyouback'                       - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Munich, Alemania        - Fecha: dia: 28  mes: 7 año: 2024   - Canción: 'loml/Don't You'                                                     - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Varsovia, Polonia       - Fecha: dia: 1   mes: 8 año: 2024   - Canción: 'Mirrorball/Clara Bow'                                               - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Varsovia, Polonia       - Fecha: dia: 1   mes: 8 año: 2024   - Canción: 'Suburban Legends/New Year's Day'                                    - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Varsovia, Polonia       - Fecha: dia: 2   mes: 8 año: 2024   - Canción: 'I Can Fix Him (No Really I Can)/I Can See You'                      - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Varsovia, Polonia       - Fecha: dia: 2   mes: 8 año: 2024   - Canción: 'Red/Maroon'                                                         - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Varsovia, Polonia       - Fecha: dia: 3   mes: 8 año: 2024   - Canción: 'Today Was A Fairytale/I Think He Knows'                             - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Varsovia, Polonia       - Fecha: dia: 3   mes: 8 año: 2024   - Canción: 'The Black Dog/Exile'                                                - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Londres, Inglaterra     - Fecha: dia: 15  mes: 8 año: 2024   - Canción: 'Everything Has Changed/End Game/Thinking Out Loud'                  - Instrumento: Guitarra - mashup - Cantante Sorpresa: Ed Sheeran 
+Lugar: Londres, Inglaterra     - Fecha: dia: 15  mes: 8 año: 2024   - Canción: 'King Of My Heart/The Alchemy'                                       - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+Lugar: Londres, Inglaterra     - Fecha: dia: 16  mes: 8 año: 2024   - Canción: 'Dear John/Sad Beautiful Tragic'                                     - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+Lugar: Londres, Inglaterra     - Fecha: dia: 17  mes: 8 año: 2024   - Canción: 'My Boy Only Breaks His Favourite Toys/Coney  Island'                - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Londres, Inglaterra     - Fecha: dia: 19  mes: 8 año: 2024   - Canción: 'Long Live/Change'                                                   - Instrumento: Guitarra - mashup - Cantante Sorpresa: null
+Lugar: Londres, Inglaterra     - Fecha: dia: 19  mes: 8 año: 2024   - Canción: 'The Archer/You're On Your Own, Kid'                                 - Instrumento: Piano    - mashup - Cantante Sorpresa: null
+
+Lugar: Londres, Inglaterra     - Fecha: dia: 20  mes: 8 año: 2024   - Canción: 'Death By A Thousand Cuts/Getaway Car'                               - Instrumento: Guitarra - mashup - Cantante Sorpresa: Jack Antonoff
+
+{
+    "title": "Is It Over Now?/Out of the Woods",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 11,
+                "mes": 11,
+                "año": 2023 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Buenos Aires, Argentina"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Getaway Car/August/The Other Side of the Door",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 17,
+                "mes": 2,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Melbourne, Australia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Come Back...Be Here/Daylight",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 18,
+                "mes": 2,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Melbourne, Australia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "White Horse/Coney Island",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 23,
+                "mes": 2,
+                "año": 2024 
+            },
+            "cantSorp": "Sabrina Carpenter",
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Sidney, Australia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "cantante",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Should've Said No/You're Not Sorry",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 24,
+                "mes": 2,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Sidney, Australia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "New Year's Day/Peace",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 24,
+                "mes": 2,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Sidney, Australia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Is It Over Now?/I Wish You Would",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 25,
+                "mes": 2,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Sidney, Australia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Haunted/Exile",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 25,
+                "mes": 2,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Sidney, Australia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Would've Could've Should've/Ivy",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 26,
+                "mes": 2,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Sidney, Australia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Forever & Always/Maroon",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 26,
+                "mes": 2,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Sidney, Australia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Mine/Starlight",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 2,
+                "mes": 3,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Singapur, Singapur"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "I Don't Wanna Live Forever/Dress",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 2,
+                "mes": 3,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Singapur, Singapur"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Long Story Short/The Story of Us",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 3,
+                "mes": 3,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Singapur, Singapur"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Clean/Evermore",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 3,
+                "mes": 3,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Singapur, Singapur"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Foolish One/Tell Me Why",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 4,
+                "mes": 3,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Singapur, Singapur"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "This Love/Call It What You Want",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 4,
+                "mes": 3,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Singapur, Singapur"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Death By A Thousand Cuts/Babe",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 7,
+                "mes": 3,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Singapur, Singapur"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Fifteen/You're On Your Own, Kid",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 7,
+                "mes": 3,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Singapur, Singapur"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Sparks Fly/Gold Rush",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 8,
+                "mes": 3,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Singapur, Singapur"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "False God/"Slut",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 8,
+                "mes": 3,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Singapur, Singapur"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Tim McGraw/Cowboy Like Me",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 9,
+                "mes": 3,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Singapur, Singapur"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Mirrorball/Epiphany",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 9,
+                "mes": 3,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Singapur, Singapur"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Is It Over Now?/Out Of The Woods",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 10,
+                "mes": 5,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "París, Francia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "The Alchemy/Treacherous",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 12,
+                "mes": 5,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "París, Francia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Begin Again/Paris",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 12,
+                "mes": 5,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "París, Francia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "I Think He Knows/Gorgeous",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 17,
+                "mes": 5,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Estocolmo, Suecia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Say Don't Go/Welcome To New York/Clean",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 18,
+                "mes": 5,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Estocolmo, Suecia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Message In A Bottle/How You Get The Girl/New Romantics",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 19,
+                "mes": 5,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Estocolmo, Suecia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Come Back...Be Here/The Way I Loved You/The Other Side of the Door",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 24,
+                "mes": 5,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Lisboa, Portugal"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Fresh Out The Slammer/High Infidelity",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 24,
+                "mes": 5,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Lisboa, Portugal"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "The Tortured Poets Department/Now That We Don't Talk",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 25,
+                "mes": 5,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Lisboa, Portugal"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "You're On Your Own, Kid/Long Live",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 25,
+                "mes": 5,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Lisboa, Portugal"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Sparks Fly/I Can Fix Him (No Really I Can",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 29,
+                "mes": 5,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Madrid, España"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "I Look In People's Windows/Snow on the Beach",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 29,
+                "mes": 5,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Madrid, España"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Our Song/Jump Then Fall",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 30,
+                "mes": 5,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Madrid, España"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "The Prophecy/Long Story Short",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 2,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Lyon, Francia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Fifteen/You're On Your Own, Kid",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 2,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Lyon, Francia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Glitch/Everything Has Changed",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 3,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Lyon, Francia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Would've, Could've, Should've/I Know Places",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 7,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Edimburgo, Escocia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "'Tis The Damn Season/Daylight",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 7,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Edimburgo, Escocia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "The Bolter/Getaway Car",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 8,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Edimburgo, Escocia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "All Of The Girls You Loved Before/Crazier",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 8,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Edimburgo, Escocia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "It's Nice To Have A Friend/Dorothea",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 9,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Edimburgo, Escocia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Haunted/Exile",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 9,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Edimburgo, Escocia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "I Can See You/Mine",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 13,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Liverpool, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Cornelia Street/Maroon",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 13,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Liverpool, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "This Is What You Came For/Gold Rush",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 14,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Liverpool, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "The Great War/You're Losing Me",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 14,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Liverpool, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Carolina/No Body, No Crime",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 15,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Liverpool, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "The Manuscript/Red",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 15,
+                "mes": 6,
+                "año": 2024 
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Liverpool, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "I Forgot That You Existed/This Is Why We Can't Have Nice Things",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 18,
+                "mes": 6,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Cardiff, Gales"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "I Hate It Here/the lakes",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 18,
+                "mes": 6,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Cardiff, Gales"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Hits Different/Death By A Thousand Cuts",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 21,
+                "mes": 6,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Londres, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "The Black Dog/Come Back...Be Here/Maroon",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 21,
+                "mes": 6,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Londres, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "thanK you aIMee/Mean",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 22,
+                "mes": 6,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Londres, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Out of the Woods/Is It Over Now?/Clean",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 23,
+                "mes": 6,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Londres, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "State of Grace/You're On Your Own, Kid",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 28,
+                "mes": 6,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Dublin, Irlanda"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Sweet Nothing/Hoax",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 28,
+                "mes": 6,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Dublin, Irlanda"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "The Albatross/Dancing With Our Hands Tied",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 29,
+                "mes": 6,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Dublin, Irlanda"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "This Love/Ours",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 29,
+                "mes": 6,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Dublin, Irlanda"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Clara Bow/The Lucky One",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 30,
+                "mes": 6,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Dublin, Irlanda"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Guilty As Sin?/Untouchable",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 4,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Amsterdam, Países Bajos"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "The Archer/Question",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 4,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Amsterdam, Países Bajos"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "imgonnagetyouback/Dress",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 5,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Amsterdam, Países Bajos"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "You Are In Love/Cowboy Like Me",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 5,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Amsterdam, Países Bajos"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Sweeter Than Fiction/Holy Ground",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 6,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Amsterdam, Países Bajos"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "ary's Song (Oh My My My)/So High School/Everything Has Changed",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 6,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Amsterdam, Países Bajos"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Right Where You Left Me/All You Had To Do Was Stay",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 9,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Zúrich, Suiza"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Last Kiss/Sad Beautiful Tragic",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 9,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Zúrich, Suiza"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Closure/A Perfectly Good Heart",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 10,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Zúrich, Suiza"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Robin/Never Grow Up",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 10,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Zúrich, Suiza"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "The 1/Wonderland",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 13,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Milán, Italia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "I Almost Do/The Moment I Knew",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 13,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Milán, Italia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Mr. Perfectly Fine/Red",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 14,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Milán, Italia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Getaway Car/Out of the Woods",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 14,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Milán, Italia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Superstar/Invisible String",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 17,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Gelsenkirchen, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": ""Slut!"/False God",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 17,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Gelsenkirchen, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Speak Now/Hey Stephen",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 18,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Gelsenkirchen, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "This Is Me Trying/Labyrinth",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 18,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Gelsenkirchen, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Paper Rings/Stay Stay Stay",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 19,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Gelsenkirchen, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "it's time to go/Better Man",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 19,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Gelsenkirchen, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Teardrops On My Guitar/The Last Time",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 23,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Hamburgo, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "We Were Happy/Happiness",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 23,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Hamburgo, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "The Last Great American Dynasty/Run",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 24,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Hamburgo, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Nothing New/Dear Reader",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 24,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Hamburgo, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Fresh Out The Slammer/You Are In Love",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 27,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Munich, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Ivy/Call It What You Want",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 27,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Munich, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "I Don't Wanna Live Forever/imgonnagetyouback",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 28,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Munich, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "loml/Don't You",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 28,
+                "mes": 7,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Munich, Alemania"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Mirrorball/Clara Bow",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 1,
+                "mes": 8,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Varsovia, Polonia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Suburban Legends/New Year's Day",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 1,
+                "mes": 8,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Varsovia, Polonia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "I Can Fix Him (No Really I Can)/I Can See You",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 2,
+                "mes": 8,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Varsovia, Polonia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Red/Maroon",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 2,
+                "mes": 8,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Varsovia, Polonia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Today Was A Fairytale/I Think He Knows",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 3,
+                "mes": 8,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Varsovia, Polonia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "The Black Dog/Exile",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 3,
+                "mes": 8,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Varsovia, Polonia"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Everything Has Changed/End Game/Thinking Out Loud",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 15,
+                "mes": 8,
+                "año": 2024
+            },
+            "cantSorp": "Ed Sheeran",
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Londres, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "cantante",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "King Of My Heart/The Alchemy",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 15,
+                "mes": 8,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Londres, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Dear John/Sad Beautiful Tragic",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 16,
+                "mes": 8,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Londres, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "My Boy Only Breaks His Favourite Toys/Coney  Island",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 17,
+                "mes": 8,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Londres, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Long Live/Change",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 19,
+                "mes": 8,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Londres, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "The Archer/You're On Your Own, Kid",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 19,
+                "mes": 8,
+                "año": 2024
+            },
+            "cantSorp": null,
+            "mashupCon": null,
+            "instrumento": "Piano",
+            "lugar": "Londres, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "piano",
+        "segundo": "mashup",
+        "tercer": "N/A",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
+{
+    "title": "Death By A Thousand Cuts/Getaway Car",
+    "estado": "Cantado",
+    "info": [
+        {
+            "tipo": 1,
+            "fecha": {
+                "dia": 20,
+                "mes": 8,
+                "año": 2024
+            },
+            "cantSorp": "Jack Antonoff",
+            "mashupCon": null,
+            "instrumento": "Guitarra",
+            "lugar": "Londres, Inglaterra"
+        }
+    ],
+    "etiquetas": {
+        "principal": "guitarra",
+        "segundo": "mashup",
+        "tercer": "cantante",
+        "cuarto": "N/A",
+        "quinto": "N/A",
+        "sexto": "N/A"
+    }
+},
