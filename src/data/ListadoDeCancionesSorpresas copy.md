@@ -169,32 +169,32 @@ Lugar: Mexico City, Mexico     - Fecha: dia: 26  mes: 8 año: 2023   - Canción:
 Lugar: Mexico City, Mexico     - Fecha: dia: 27  mes: 8 año: 2023   - Canción: 'Afterglow'                                                          - Instrumento: Guitarra 
 Lugar: Mexico City, Mexico     - Fecha: dia: 27  mes: 8 año: 2023   - Canción: 'Maroon'                                                             - Instrumento: Piano    
 
-Lugar: Buenos Aires, Argentina - Fecha: dia: 9   mes: 11 año: 2023   - Canción: 'The Very First Night'                                               - Instrumento: Guitarra 
-Lugar: Buenos Aires, Argentina - Fecha: dia: 9   mes: 11 año: 2023   - Canción: 'Labyrinth'                                                          - Instrumento: Piano    
+Lugar: Buenos Aires, Argentina - Fecha: dia: 9   mes: 8 año: 2023   - Canción: 'The Very First Night'                                               - Instrumento: Guitarra 
+Lugar: Buenos Aires, Argentina - Fecha: dia: 9   mes: 8 año: 2023   - Canción: 'Labyrinth'                                                          - Instrumento: Piano    
 
-Lugar: Buenos Aires, Argentina - Fecha: dia: 11  mes: 11 año: 2023   - Canción: 'Is It Over Now?/Out of the Woods'                                   - Instrumento: Guitarra - mashup
-Lugar: Buenos Aires, Argentina - Fecha: dia: 11  mes: 11 año: 2023   - Canción: 'End Game'                                                           - Instrumento: Piano    
+Lugar: Buenos Aires, Argentina - Fecha: dia: 11  mes: 8 año: 2023   - Canción: 'Is It Over Now?/Out of the Woods'                                   - Instrumento: Guitarra - mashup
+Lugar: Buenos Aires, Argentina - Fecha: dia: 11  mes: 8 año: 2023   - Canción: 'End Game'                                                           - Instrumento: Piano    
 
-Lugar: Buenos Aires, Argentina - Fecha: dia: 12  mes: 11 año: 2023   - Canción: 'Better Than Revenge'                                                - Instrumento: Guitarra 
-Lugar: Buenos Aires, Argentina - Fecha: dia: 12  mes: 11 año: 2023   - Canción: '"Slut!"'                                                            - Instrumento: Piano    
+Lugar: Buenos Aires, Argentina - Fecha: dia: 12  mes: 8 año: 2023   - Canción: 'Better Than Revenge'                                                - Instrumento: Guitarra 
+Lugar: Buenos Aires, Argentina - Fecha: dia: 12  mes: 8 año: 2023   - Canción: '"Slut!"'                                                            - Instrumento: Piano    
 
-Lugar: Río De Janeiro, Brasil  - Fecha: dia: 17  mes: 11 año: 2023   - Canción: 'Stay Beautiful'                                                     - Instrumento: Guitarra 
-Lugar: Río De Janeiro, Brasil  - Fecha: dia: 17  mes: 11 año: 2023   - Canción: 'Suburban Legends'                                                   - Instrumento: Piano    
+Lugar: Río De Janeiro, Brasil  - Fecha: dia: 17  mes: 8 año: 2023   - Canción: 'Stay Beautiful'                                                     - Instrumento: Guitarra 
+Lugar: Río De Janeiro, Brasil  - Fecha: dia: 17  mes: 8 año: 2023   - Canción: 'Suburban Legends'                                                   - Instrumento: Piano    
 
-Lugar: Río De Janeiro, Brasil  - Fecha: dia: 19  mes: 11 año: 2023   - Canción: 'Dancing With Our Hands Tied'                                        - Instrumento: Guitarra 
-Lugar: Río De Janeiro, Brasil  - Fecha: dia: 19  mes: 11 año: 2023   - Canción: 'Bigger Than The Whole Sky'                                          - Instrumento: Piano    
+Lugar: Río De Janeiro, Brasil  - Fecha: dia: 19  mes: 8 año: 2023   - Canción: 'Dancing With Our Hands Tied'                                        - Instrumento: Guitarra 
+Lugar: Río De Janeiro, Brasil  - Fecha: dia: 19  mes: 8 año: 2023   - Canción: 'Bigger Than The Whole Sky'                                          - Instrumento: Piano    
 
-Lugar: Río De Janeiro, Brasil  - Fecha: dia: 20  mes: 11 año: 2023   - Canción: 'ME!'                                                                - Instrumento: Guitarra 
-Lugar: Río De Janeiro, Brasil  - Fecha: dia: 20  mes: 11 año: 2023   - Canción: 'So It Goes...'                                                      - Instrumento: Piano    
+Lugar: Río De Janeiro, Brasil  - Fecha: dia: 20  mes: 8 año: 2023   - Canción: 'ME!'                                                                - Instrumento: Guitarra 
+Lugar: Río De Janeiro, Brasil  - Fecha: dia: 20  mes: 8 año: 2023   - Canción: 'So It Goes...'                                                      - Instrumento: Piano    
 
-Lugar: São Paulo, Brasil       - Fecha: dia: 24  mes: 11 año: 2023   - Canción: 'Now That We Don't Talk'                                             - Instrumento: Guitarra 
-Lugar: São Paulo, Brasil       - Fecha: dia: 24  mes: 11 año: 2023   - Canción: 'Innocent'                                                           - Instrumento: Piano    
+Lugar: São Paulo, Brasil       - Fecha: dia: 24  mes: 8 año: 2023   - Canción: 'Now That We Don't Talk'                                             - Instrumento: Guitarra 
+Lugar: São Paulo, Brasil       - Fecha: dia: 24  mes: 8 año: 2023   - Canción: 'Innocent'                                                           - Instrumento: Piano    
 
-Lugar: São Paulo, Brasil       - Fecha: dia: 25  mes: 11 año: 2023   - Canción: 'Safe & Sound'                                                       - Instrumento: Guitarra 
-Lugar: São Paulo, Brasil       - Fecha: dia: 25  mes: 11 año: 2023   - Canción: 'Untouchable'                                                        - Instrumento: Piano    
+Lugar: São Paulo, Brasil       - Fecha: dia: 25  mes: 8 año: 2023   - Canción: 'Safe & Sound'                                                       - Instrumento: Guitarra 
+Lugar: São Paulo, Brasil       - Fecha: dia: 25  mes: 8 año: 2023   - Canción: 'Untouchable'                                                        - Instrumento: Piano    
 
-Lugar: São Paulo, Brasil       - Fecha: dia: 26  mes: 11 año: 2023   - Canción: 'Say Don't Go'                                                       - Instrumento: Guitarra 
-Lugar: São Paulo, Brasil       - Fecha: dia: 26  mes: 11 año: 2023   - Canción: 'it's time to go                                                     - Instrumento: Piano    
+Lugar: São Paulo, Brasil       - Fecha: dia: 26  mes: 8 año: 2023   - Canción: 'Say Don't Go'                                                       - Instrumento: Guitarra 
+Lugar: São Paulo, Brasil       - Fecha: dia: 26  mes: 8 año: 2023   - Canción: 'it's time to go                                                     - Instrumento: Piano    
 
 Lugar: Tokyo, Japón            - Fecha: dia: 7   mes: 2 año: 2024   - Canción: 'Dear Reader'                                                        - Instrumento: Guitarra 
 Lugar: Tokyo, Japón            - Fecha: dia: 7   mes: 2 año: 2024   - Canción: 'Holy Ground'                                                        - Instrumento: Piano    
@@ -390,5 +390,3 @@ Lugar: Londres, Inglaterra     - Fecha: dia: 19  mes: 8 año: 2024   - Canción:
 
 Lugar: Londres, Inglaterra     - Fecha: dia: 20  mes: 8 año: 2024   - Canción: 'Death By A Thousand Cuts/Getaway Car'                               - Instrumento: Guitarra - mashup - Cantante Sorpresa: Jack Antonoff
 Lugar: Londres, Inglaterra     - Fecha: dia: 20  mes: 8 año: 2024   - Canción: 'So Long, London'                                                    - Instrumento: Piano    
-
-
