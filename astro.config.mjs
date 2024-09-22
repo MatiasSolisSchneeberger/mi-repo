@@ -10,9 +10,9 @@ export default defineConfig({
   integrations: [tailwind(), react()],
   output: "server",
   adapter: vercel({
-    webAnalytics: {
+    /* webAnalytics: {
       enabled: true,
     },
-    maxDuration: 8,
+    maxDuration: 8, */
   }),
 });
