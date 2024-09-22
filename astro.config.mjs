@@ -10,5 +10,10 @@ export default defineConfig({
   base: 'swifties-eras-tour',
   integrations: [tailwind(), react()],
   output: "server",
-  adapter: vercel()
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+    maxDuration: 8,
+  }),
 });
