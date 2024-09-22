@@ -2,20 +2,19 @@
 
 import Titulo from "../components/Titulo.astro";
 import Subtitle from "../components/SubTitulo.astro";
-import TarjetaFecha from "../components/TarjetaFecha.astro";
-import {concerts} from "../data/concerts.json"
+/* import TarjetaFecha from "../components/TarjetaFecha.astro";
+import {concerts} from "../data/concerts.json" */
 import ButtonPrimario from "../components/ButtonPrimario.astro";
-import Contador from "../components/Contador.astro";
 
 interface Props {
 	era: string;
 }
 
-const eras = ["debut", "fearless", "speakNow", "red", "1989", "reputation", "lover", "folklore", "evermore", "midnights", "TTPD"]
-const { era } = Astro.props;
+/* const eras = ["debut", "fearless", "speakNow", "red", "1989", "reputation", "lover", "folklore", "evermore", "midnights", "TTPD"]
+ */const { era } = Astro.props;
 
-const maxFechasToShow = 6;  // Número máximo de fechas a mostrar inicialmente
-
+/* const maxFechasToShow = 6;  // Número máximo de fechas a mostrar inicialmente
+ */
 
 
 ---
