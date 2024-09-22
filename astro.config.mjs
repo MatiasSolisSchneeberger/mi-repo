@@ -8,11 +8,10 @@ export default defineConfig({
   site: 'https:matiassolisschneeberger.github.io',
   base: 'swifties-eras-tour',
   integrations: [tailwind(), react()],
-  output: "server",
+  output: 'server',
   adapter: vercel({
     webAnalytics: {
       enabled: true,
     },
-    maxDuration: 8,
   }),
 });
