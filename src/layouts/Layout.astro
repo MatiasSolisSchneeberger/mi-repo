@@ -79,13 +79,16 @@ const { title , era } = Astro.props;
 	
 	.text-display-large{
 		@apply font-display-large-font-family text-display-large-font-size leading-display-large-line-height font-display-large-font-weight;
+		letter-spacing: var(--display-large-letter-spacing, -1px)
 	}
 	.text-display-medium{
-		@apply font-display-medium-font-family text-display-medium-font-size leading-display-medium-line-height font-display-medium-font-weight;
+		@apply  font-display-medium-font-family text-display-medium-font-size leading-display-medium-line-height font-display-medium-font-weight;
 	}
 	.text-display-small{
-		@apply font-display-small-font-family text-display-small-font-size leading-display-small-line-height font-display-small-font-weight;
+		@apply font-display-small-font-family text-display-small-font-size leading-display-small-line-height font-display-small-font-weight ;
 	}
+
+
 
 	.text-headline-large{
 		@apply font-headline-large-font-family text-headline-large-font-size leading-headline-large-line-height font-headline-large-font-weight;
@@ -97,24 +100,46 @@ const { title , era } = Astro.props;
 		@apply font-headline-small-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight;
 	}
 
+
+
 	.text-title-large{
 		@apply font-title-large-font-family text-title-large-font-size leading-title-large-line-height font-title-large-font-weight;
 	}
 	.text-title-medium{
 		@apply font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight;
+		letter-spacing: var(--title-medium-letter-spacing, 0.15px)
 	}
 	.text-title-small{
 		@apply font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight;
+		letter-spacing: var(--title-small-letter-spacing, 0.1px)
+	}
+
+
+
+	.text-label-large{
+		@apply font-label-large-font-family text-label-large-font-size leading-label-large-line-height font-label-large-font-weight;
+		letter-spacing: var(--label-large-letter-spacing, 0.1px)
+	}
+	.text-label-medium{
+		@apply font-label-medium-font-family text-label-medium-font-size leading-label-medium-line-height font-label-medium-font-weight;
+		letter-spacing: var(--label-medium-letter-spacing, 0.5px)
+	}
+	.text-label-small{
+		@apply font-label-small-font-family text-label-small-font-size leading-label-small-line-height font-label-small-font-weight;
+		letter-spacing: var(--label-small-letter-spacing, 0.5px)
 	}
 
 	.text-body-large{
 		@apply font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight;
+		letter-spacing: var(--body-large-letter-spacing, 0.5px)
 	}
 	.text-body-medium{
 		@apply font-body-medium-font-family text-body-medium-font-size leading-body-medium-line-height font-body-medium-font-weight;
+		letter-spacing: var(--body-medium-letter-spacing, 0.25px)
 	}
 	.text-body-small{
 		@apply font-body-small-font-family text-body-small-font-size leading-body-small-line-height font-body-small-font-weight;
+		letter-spacing: var(--body-small-letter-spacing, 0.4px)
 	}
 </style>
 

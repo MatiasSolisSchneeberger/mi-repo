@@ -174,11 +174,12 @@ export default {
 				'mashup-800': '#9a271a',
 				'mashup-900': '#80261c',
 				'mashup-950': '#460f09',
-
+				
 				/* Ahora */
 				"schemes-error": "#b3261e",
 				"schemes-error-container": "#f9dedc",
 			},
+			/* ---- Fuentes ---- */
 			fontFamily: {
 				"display-large-font-family": "Rubik Variable, sans-serif",
 				"display-medium-font-family": "Rubik Variable, sans-serif",
@@ -192,42 +193,49 @@ export default {
 				"title-medium-font-family": "Rubik Variable, sans-serif",
 				"title-small-font-family": "Rubik Variable, sans-serif",
 
+				"label-large-font-family": "Rubik Variable, sans-serif",
+				"label-medium-font-family": "Rubik Variable, sans-serif",
+				"label-small-font-family": "Rubik Variable, sans-serif",
+
 				"body-large-font-family": "Rubik Variable, sans-serif",
 				"body-medium-font-family": "Rubik Variable, sans-serif",
 				"body-small-font-family": "Rubik Variable, sans-serif",
+		
 			},
 			fontSize: {
 				"display-large-font-size": "72px",
 				"display-medium-font-size": "45px",
 				"display-small-font-size": "36px",
-
+				"display-medium-size": "45px",
+				"display-small-size": "36px",
+				
 				"headline-large-font-size": "32px",
 				"headline-medium-font-size": "28px",
 				"headline-small-font-size": "24px",
-
-				"title-large-font-size": "22px",
-				"title-medium-font-size": "16px",
-				"title-small-font-size": "14px",
-
-				"body-large-font-size": "16px",
-				"body-medium-font-size": "14px",
-				"body-small-font-size": "12px",
-
-				"display-medium-size": "45px",
-				"display-small-size": "36px",
-
 				"headline-large-size": "32px",
 				"headline-medium-size": "28px",
 				"headline-small-size": "24px",
 
+				"title-large-font-size": "22px",
+				"title-medium-font-size": "16px",
+				"title-small-font-size": "14px",
 				"title-large-size": "22px",
 				"title-medium-size": "16px",
 				"title-small-size": "14px",
-
 				"label-large-size": "14px",
 				"label-medium-size": "12px",
 				"label-small-size": "11px",
 
+				"label-large-font-size": "14px",
+				"label-medium-font-size": "12px",
+				"label-small-font-size": "11px",
+				"label-large-size": "14px",
+				"label-medium-size": "12px",
+				"label-small-size": "11px",
+
+				"body-large-font-size": "16px",
+				"body-medium-font-size": "14px",
+				"body-small-font-size": "12px",
 				"body-large-size": "16px",
 				"body-medium-size": "14px",
 				"body-small-size": "12px",
@@ -236,7 +244,7 @@ export default {
 				"display-large-font-weight": "700",
 				"display-medium-font-weight": "700",
 				"display-small-font-weight": "700",
-
+				
 				"headline-large-font-weight": "500",
 				"headline-medium-font-weight": "500",
 				"headline-small-font-weight": "500",
@@ -244,6 +252,10 @@ export default {
 				"title-large-font-weight": "500",
 				"title-medium-font-weight": "500",
 				"title-small-font-weight": "500",
+
+				"label-large-font-weight": "500",
+				"label-medium-font-weight": "500",
+				"label-small-font-weight": "500",
 
 				"body-large-font-weight": "400",
 				"body-medium-font-weight": "400",
@@ -253,7 +265,13 @@ export default {
 				"display-large-line-height": "64px",
 				"display-medium-line-height": "52px",
 				"display-small-line-height": "44px",
-
+				"display-large-line-height": "64px",
+				"display-medium-line-height": "52px",
+				"display-small-line-height": "44px",
+				
+				"headline-large-line-height": "40px",
+				"headline-medium-line-height": "36px",
+				"headline-small-line-height": "32px",
 				"headline-large-line-height": "40px",
 				"headline-medium-line-height": "36px",
 				"headline-small-line-height": "32px",
@@ -261,19 +279,6 @@ export default {
 				"title-large-line-height": "28px",
 				"title-medium-line-height": "24px",
 				"title-small-line-height": "20px",
-
-				"body-large-line-height": "24px",
-				"body-medium-line-height": "20px",
-				"body-small-line-height": "16px",
-
-				"display-large-line-height": "64px",
-				"display-medium-line-height": "52px",
-				"display-small-line-height": "44px",
-
-				"headline-large-line-height": "40px",
-				"headline-medium-line-height": "36px",
-				"headline-small-line-height": "32px",
-
 				"title-large-line-height": "28px",
 				"title-medium-line-height": "24px",
 				"title-small-line-height": "20px",
@@ -281,14 +286,20 @@ export default {
 				"label-large-line-height": "20px",
 				"label-medium-line-height": "16px",
 				"label-small-line-height": "16px",
+				"label-large-line-height": "20px",
+				"label-medium-line-height": "16px",
+				"label-small-line-height": "16px",
 
+				"body-large-line-height": "24px",
+				"body-medium-line-height": "20px",
+				"body-small-line-height": "16px",
 				"body-large-line-height": "24px",
 				"body-medium-line-height": "20px",
 				"body-small-line-height": "16px",
 			},
 			letterSpacing: {
 				"display-medium-tracking": "",
-
+				
 				"headline-large-tracking": "",
 				"headline-small-tracking": "",
 
@@ -299,7 +310,7 @@ export default {
 				"label-large-tracking": "0.1px",
 				"label-medium-tracking": "0.5px",
 				"label-small-tracking": "0.5px",
-				
+
 				"body-large-tracking": "0.5px",
 				"body-medium-tracking": "0.25px",
 				"body-small-tracking": "0.4px",

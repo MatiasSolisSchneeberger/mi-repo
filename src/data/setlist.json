@@ -208,6 +208,20 @@
                     ]
                 },
                 {
+                    "era": "mashup",
+                    "disco": "Canciones Sorpresas",
+                    "canciones": [
+                        {
+                            "canción": "Canción Sorpresa 1",
+                            "nota": "(Guitarra)"
+                        },
+                        {
+                            "canción": "Canción Sorpresa 2",
+                            "nota": "(Piano)"
+                        }
+                    ]
+                },
+                {
                     "era": "midnights",
                     "disco": "Midnights",
                     "canciones": [
@@ -455,7 +469,20 @@
                         }
                     ]
                 },
-
+                {
+                    "era": "mashup",
+                    "disco": "Canciones Sorpresas",
+                    "canciones": [
+                        {
+                            "canción": "Canción Sorpresa 1",
+                            "nota": "(Guitarra)"
+                        },
+                        {
+                            "canción": "Canción Sorpresa 2",
+                            "nota": "(Piano)"
+                        }
+                    ]
+                },
                 {
                     "era": "midnights",
                     "disco": "Midnights",

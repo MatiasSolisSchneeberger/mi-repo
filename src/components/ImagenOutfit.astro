@@ -6,7 +6,7 @@ interface Props {
 
 const { era , src } = Astro.props;
 ---
-<div class="group rounded-xl flex-1 h-[450px] min-w-[264px] sm:max-w-[360px] relative" >
+<div class="group rounded-xl flex-1 h-[450px] min-w-[264px] sm:max-w-[360px] relative shadow-lg hover:shadow-xl" >
     <div class:list={[
         "group-hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 h-full flex justify-center rounded-xl absolute mix-blend-multiply z-20",
     {
@@ -28,7 +28,7 @@ const { era , src } = Astro.props;
     ]}/>
     <div class:list={["group-hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 h-full flex justify-center rounded-xl absolute mix-blend-multiply z-20 bg-gradient-to-tr from-folklore-400",{'hidden': era!=='folkmore'}]} />
     <div class:list={["group-hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 h-full flex justify-center rounded-xl absolute mix-blend-multiply z-20 bg-gradient-to-tl from-evermore-400",{'hidden': era!=='folkmore'}]} />
-    <img class="group-hover:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full z-10" 
+    <img class="group-hover:scale-105 group-focus:scale-105 w-full transition object-cover ease-in-out delay-0 duration-200 self-center relativeself-stretch shrink-0 relative rounded-xl h-full z-10" 
     src={src}
     alt=`Taylor en la era ${era}`
     >
