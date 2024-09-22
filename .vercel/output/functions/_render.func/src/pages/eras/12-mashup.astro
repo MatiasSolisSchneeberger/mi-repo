@@ -1,0 +1,369 @@
+---
+import { mashup } from "../../data/mashups.json"
+
+import Layout from "../../layouts/Layout.astro"
+import Titulo from "../../components/Titulo.astro"
+import CalendarSVG from "../../components/svg/CalendarSVG.astro"
+import CicleCaretRightSVG from "../../components/svg/CircleCaretRightSVG.astro"
+import HeroImage from "../../sections/HeroImage.astro"
+import Notas from "../../components/Notas.astro"
+import MapPinSVG from "../../components/svg/MapPinSVG.astro"
+import MicrofonoSvg from "../../components/svg/MicrofonoSvg.astro"
+import StarSVG from "../../components/svg/StarSVG.astro"
+import CircleXSVGCopy from "../../components/svg/CircleXSVG copy.astro"
+
+const erasArreglo = [
+	"debut",
+	"fearless",
+	"speakNow",
+	"red",
+	"1989",
+	"reputation",
+	"lover",
+	"folklore",
+	"evermore",
+	"midnights",
+	"TTPD",
+	"mashup",
+]
+let era = erasArreglo[11]
+/* nose porque pero tengo que hacer esto para que funcione. en el resto de paginas no hace falta */
+const MashCanciones = mashup[0].canciones
+const MashNotas = mashup[0].notas
+---
+
+<Layout title=`${era} | Swifties Eras Tour` era={era}>
+	<main
+			class="py-12 px-8 md:px-32 space-y-6 flex flex-col gap-2.5 gap-y-0 items-start justify-start self-stretch shrink-0 relative">
+		<div class="w-full rounded-3xl overflow-hidden">
+			<HeroImage
+				era={era}
+				flechas={true}
+				boton={false}
+				pagAnt="/swifties-eras-tour/eras/11-TTPD",
+				pagSig="/swifties-eras-tour/eras/01-debut"
+			/>
+		</div>
+		<Titulo titulo=`Mashups` era={era}>
+			Aquí encontrarás <strong>todas las canciones</strong> que Taylor las combinó, cada una con su propia historia en "The Eras Tour". Algunas ya han sido interpretadas en vivo, otras forman parte del setlist regular, y algunas todavía están esperando su momento. En cada tarjeta, podrás ver detalles importantes: <strong>la fecha</strong> en que fue cantada,<strong>el instrumento</strong> que la acompañó <em>(¿guitarra o piano?)</em>, y el lugar donde tuvo lugar la actuación. Además, si hubo un <strong>mashup</strong> épico o <strong>un invitado sorpresa especial</strong> , también estará indicado.
+			<br>
+			¡Descubre todos los detalles y revive los momentos más icónicos del tour!
+		</Titulo>
+		
+		<section class="flex w-full gap-6 items-start justify-center flex-wrap content-start self-stretch shrink-0 relative">
+		{
+			MashCanciones.map(({ title, info, estado }, index) => {
+				return (
+				<div
+					class="rounded-3xl p-3 flex flex-col gap-2.5 items-center justify-start relative overflow-hidden w-full max-w-sm bg-mashup-400">
+					<header
+						class="w-full rounded-xl p-3 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative bg-mashup-800">
+						<h4
+							class=
+								"w-full text-pretty text-center text-title-large relative flex-1 text-mashup-100">
+							{`${index + 1}) ${title} `}{" "}
+							{
+								info.length > 1 && (
+								<span>{`(x${info[info.length - 1]?.tipo})`}</span>
+								)
+							}
+						</h4>
+					</header>
+					<div
+						class:list={[
+							"px-2 py-2 w-full gap-2 rounded-xl items-center justify-center self-center shrink-0 relative overflow-hidden bg-mashup-600",
+							estado === "Setlist" ? "flex flex-row" : "hidden",
+						]}>
+						<StarSVG era={era} />
+						<p class="text-left text-title-medium relative text-mashup-100">
+							Set list
+						</p>
+					</div>
+					<div
+						class:list={[
+							"px-2 py-2 w-full gap-2 rounded-xl items-center justify-center self-center shrink-0 relative overflow-hidden bg-mashup-600",
+							estado === "No Cantado" ? "flex flex-row" : "hidden",
+						]}>
+						<CircleXSVGCopy era={era} />
+						<p class="text-left text-title-medium relative text-mashup-100">
+							Sin Cantar Todavia
+						</p>
+					</div>
+					{info.map(
+						({ fecha, tipo, cantSorp, instrumento, lugar }) => {
+							return (
+								<div
+									class:list={[
+										"rounded-xl flex flex-row gap-0 items-center justify-start self-stretch shrink-0 relative overflow-hidden",
+										{ hidden: instrumento === null },
+										{
+											"bg-debut-200": era === "debut",
+											"bg-fearless-200": era === "fearless",
+											"bg-speakNow-200": era === "speakNow",
+											"bg-red-200": era === "red",
+											"bg-1989-200": era === "1989",
+											"bg-reputation-200": era === "reputation",
+											"bg-lover-200": era === "lover",
+											"bg-folklore-200": era === "folklore",
+											"bg-evermore-200": era === "evermore",
+											"bg-midnights-200": era === "midnights",
+											"bg-TTPD-200": era === "TTPD",
+											"bg-mashup-200": era === "mashup",
+										},
+									]}>
+									<div
+										class:list={[
+											" flex items-center justify-center self-stretch relative",
+											{
+												"bg-debut-600": era === "debut",
+												"bg-fearless-600": era === "fearless",
+												"bg-speakNow-600": era === "speakNow",
+												"bg-red-600": era === "red",
+												"bg-1989-600": era === "1989",
+												"bg-reputation-600": era === "reputation",
+												"bg-lover-600": era === "lover",
+												"bg-folklore-600": era === "folklore",
+												"bg-evermore-600": era === "evermore",
+												"bg-midnights-600": era === "midnights",
+												"bg-TTPD-600": era === "TTPD",
+												"bg-mashup-600": era === "mashup",
+											},
+										]}>
+										<p
+											class:list={[
+												"text-pretty text-center text-title-medium relative -rotate-90",
+												{
+													"text-debut-100": era === "debut",
+													"text-fearless-100": era === "fearless",
+													"text-speakNow-100": era === "speakNow",
+													"text-red-100": era === "red",
+													"text-1989-100": era === "1989",
+													"text-reputation-100": era === "reputation",
+													"text-lover-100": era === "lover",
+													"text-folklore-100": era === "folklore",
+													"text-evermore-100": era === "evermore",
+													"text-midnights-100": era === "midnights",
+													"text-TTPD-100": era === "TTPD",
+													"text-mashup-100": era === "mashup",
+												},
+											]}>
+											Dia {tipo}
+										</p>
+									</div>
+									<div class="px-2 py-2.5 flex flex-col gap-2 items-start justify-center self-stretch flex-1 relative">
+										<div class="flex flex-row gap-2.5 items-center justify-start shrink-0 relative">
+											<CalendarSVG era={era} />
+											<p
+												class:list={[
+													"text-left text-title-medium relative flex-1",
+													{
+														"text-debut-600": era === "debut",
+														"text-fearless-600": era === "fearless",
+														"text-speakNow-600": era === "speakNow",
+														"text-red-600": era === "red",
+														"text-1989-600": era === "1989",
+														"text-reputation-600": era === "reputation",
+														"text-lover-600": era === "lover",
+														"text-folklore-600": era === "folklore",
+														"text-evermore-600": era === "evermore",
+														"text-midnights-600": era === "midnights",
+														"text-TTPD-600": era === "TTPD",
+														"text-mashup-600": era === "mashup",
+													},
+												]}>
+												{fecha?.dia}/{fecha?.mes}/{fecha?.año}
+											</p>
+										</div>
+										<div class="flex flex-row gap-2.5 items-center justify-start shrink-0 relative">
+											<MapPinSVG era={era} estado="ahora" />
+											<p
+												class:list={[
+													"text-left text-title-medium relative flex-1",
+													{
+														"text-debut-600": era === "debut",
+														"text-fearless-600": era === "fearless",
+														"text-speakNow-600": era === "speakNow",
+														"text-red-600": era === "red",
+														"text-1989-600": era === "1989",
+														"text-reputation-600": era === "reputation",
+														"text-lover-600": era === "lover",
+														"text-folklore-600": era === "folklore",
+														"text-evermore-600": era === "evermore",
+														"text-midnights-600": era === "midnights",
+														"text-TTPD-600": era === "TTPD",
+														"text-mashup-600": era === "mashup",
+													},
+												]}>
+												{lugar}
+											</p>
+										</div>
+										<div class="flex flex-row gap-2.5 items-center justify-start shrink-0 relative">
+											<CicleCaretRightSVG era={era} />
+											<p
+												class:list={[
+													"text-left text-title-medium relative flex-1",
+													{
+														"text-debut-600": era === "debut",
+														"text-fearless-600": era === "fearless",
+														"text-speakNow-600": era === "speakNow",
+														"text-red-600": era === "red",
+														"text-1989-600": era === "1989",
+														"text-reputation-600": era === "reputation",
+														"text-lover-600": era === "lover",
+														"text-folklore-600": era === "folklore",
+														"text-evermore-600": era === "evermore",
+														"text-midnights-600": era === "midnights",
+														"text-TTPD-600": era === "TTPD",
+														"text-mashup-600": era === "mashup",
+													},
+												]}
+												style="letter-spacing: var(--body-small-letter-spacing, 0.4px)">
+												{instrumento}
+											</p>
+										</div>
+										<div
+											class:list={[
+												"flex flex-row gap-2.5 items-center justify-start shrink-0 relative",
+												{ hidden: cantSorp === null },
+											]}>
+											<MicrofonoSvg era={era} estado="ahora" />
+											<p
+												class:list={[
+													"text-left text-title-medium relative flex-1",
+													{
+														"text-debut-600": era === "debut",
+														"text-fearless-600": era === "fearless",
+														"text-speakNow-600": era === "speakNow",
+														"text-red-600": era === "red",
+														"text-1989-600": era === "1989",
+														"text-reputation-600": era === "reputation",
+														"text-lover-600": era === "lover",
+														"text-folklore-600": era === "folklore",
+														"text-evermore-600": era === "evermore",
+														"text-midnights-600": era === "midnights",
+														"text-TTPD-600": era === "TTPD",
+														"text-mashup-600": era === "mashup",
+													},
+												]}>
+												{cantSorp}
+											</p>
+										</div>
+									</div>
+								</div>
+								<button data-modal-target={title} data-modal-toggle={title} class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+									letra
+								</button>
+		
+								<article id={title} tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+									<div class="relative p-4 w-full max-w-2xl max-h-full">
+										<div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+											<header class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+												<h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+													{title}
+												</h3>
+												<button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide={title}>
+													<svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+														<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+													</svg>
+													<span class="sr-only">Close</span>
+												</button>
+											</header>
+											<div class="p-4 md:p-5 space-y-4">
+												{
+													info.map(({ letra }) => {
+														return (
+														<div>
+															{
+																letra?.map((linea) => (
+																	<p>{linea}</p>
+																))
+															}
+														</div>
+														)
+													})
+												}
+											</div>
+										</div>
+									</div>
+								</article>
+										
+									
+								
+							)
+						}
+					)}
+				</div>
+				)
+			})
+		}
+		</section>
+		{
+			MashNotas.length > 0 && (
+				<Notas era={era} titulo="Notas">
+					<ul class="list-disc text-title-medium list-inside">
+						{
+							MashNotas.map(({ nota }) => {
+								return <li>{nota}</li>
+							})
+						}
+					</ul>
+				</Notas>
+			)
+		}
+		<!-- {
+			Mashup.map(({canciones}) => {
+				return(
+					<div class="flex w-full gap-6 items-start justify-center flex-wrap content-start self-stretch shrink-0 relative">
+						{
+							canciones.map(({title, info}) => {
+								return(
+								<button data-modal-target={title} data-modal-toggle={title} class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+									{title}
+								</button>
+		
+								<article id={title} tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+									<div class="relative p-4 w-full max-w-2xl max-h-full">
+										<div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+											<header class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+												<h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+													{title}
+												</h3>
+												<button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide={title}>
+													<svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+														<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+													</svg>
+													<span class="sr-only">Close</span>
+												</button>
+											</header>
+											<div class="p-4 md:p-5 space-y-4">
+												{
+													info.map(({ letra }) => {
+														return (
+														<div>
+															{
+																letra?.map((linea) => (
+																	<p>{linea}</p>
+																))
+															}
+														</div>
+														)
+													})
+												}
+											</div>
+										</div>
+									</div>
+								</article>
+								)
+							})
+						}
+						</div>
+						<div class="flex w-full gap-6 items-start justify-center flex-wrap content-start self-stretch shrink-0 relative">
+						
+						</div>
+					)
+				}
+				)
+		} -->
+		
+	</main>
+</Layout>

@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Title from "../components/Titulo.astro";
+import OutfitEra from "../components/OutfitEra.astro";
+
+const era = 'red'
+
+
+---
+<Layout title="Outfits | Swifties Eras Tour" era={era}>
+<main class="py-12 px-8 sm:px-32 space-y-6 flex flex-col gap-2.5 gap-y-0 items-center justify-center self-stretch shrink-0 relative w-full">
+    <Title era={era} titulo="Outfits Eras Tour">
+        Estos son todos los vestidos que usa Taylor
+    </Title>
+    <OutfitEra era="lover"/>
+</main>
+</Layout>

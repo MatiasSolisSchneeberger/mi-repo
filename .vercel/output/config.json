@@ -1,0 +1,92 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^\\/_image$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/404\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/conciertos\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/eras\\/01-debut\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/eras\\/02-fearless\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/eras\\/03-speakNow\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/eras\\/04-red\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/eras\\/05-1989\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/eras\\/06-reputation\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/eras\\/07-lover\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/eras\\/08-folklore\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/eras\\/09-evermore\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/eras\\/10-midnights\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/eras\\/11-TTPD\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/eras\\/12-mashup\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/outfits\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/setlist\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/$",
+			"dest": "_render"
+		},
+		{
+			"src": "/.*",
+			"dest": "_render",
+			"status": 404
+		}
+	]
+}

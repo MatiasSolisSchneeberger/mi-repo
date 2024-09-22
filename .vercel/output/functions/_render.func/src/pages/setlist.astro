@@ -1,0 +1,145 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Title from "../components/Titulo.astro";
+import {setlist} from "../data/setlist.json"
+
+const eraPagina = 'debut'
+
+---
+<Layout era={eraPagina} title="Setlist | Swifties Eras Tour">
+    <main class="py-12 px-8 sm:px-32 space-y-6 flex flex-col gap-2.5 gap-y-0 items-center justify-center self-stretch shrink-0 relative w-full">
+        <Title era={eraPagina} titulo="Setlist 2023/24">
+            Estos son los setlist de The Eras Tour, previo a la inclusión de TTPD al setlist y después de la inclusión
+        </Title>
+        <section class="flex flex-col lg:flex-row gap-4 lg:gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden">
+        {
+            setlist.map(({parte, sets}) => {
+                return(
+                    <article class="bg-debut-400 lg:w-1/2 rounded-3xl p-3 flex flex-col gap-2.5  items-center justify-start relative overflow-hidden">
+                        <header class="bg-debut-800 rounded-xl p-3 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+                            <h4 class="text-debut-100 text-center font-title-large-font-family text-title-large-font-size leading-title-large-line-height font-title-large-font-weight relative flex-1">
+                                {parte}
+                            </h4>
+                        </header>
+                        {
+                            sets.map(({era, disco , canciones})=>{
+                                return(
+                                    <section class:list={["rounded-xl flex flex-row gap-0 items-center justify-start self-stretch shrink-0 relative overflow-hidden",
+                                        {
+                                            "bg-debut-200": era === "debut",
+                                            "bg-fearless-200": era === "fearless",
+                                            "bg-speakNow-200": era === "speakNow",
+                                            "bg-red-200": era === "red",
+                                            "bg-1989-200": era === "1989",
+                                            "bg-reputation-200": era === "reputation",
+                                            "bg-lover-200": era === "lover",
+                                            "bg-folklore-200": era === "folklore",
+                                            "bg-evermore-200": era === "evermore",
+                                            "bg-midnights-200": era === "midnights",
+                                            "bg-TTPD-200": era === "TTPD",
+                                            "bg-mashup-200": era === "mashup",
+                                            "bg-gradient-to-r from-folklore-200 to-evermore-200": era === "folkmore",
+                                        }
+                                    ]}>
+                                        <div class:list={["flex w-8 flex-col gap-2.5 items-center justify-center shrink-0 relative self-stretch",
+                                            {
+                                                
+                                                "bg-debut-600 text-debut-200": era === "debut",
+                                                "bg-fearless-600 text-fearless-200": era === "fearless",
+                                                "bg-speakNow-600 text-speakNow-200 w-min": era === "speakNow",
+                                                "bg-red-600 text-red-200": era === "red",
+                                                "bg-1989-600 text-1989-200": era === "1989",
+                                                "bg-reputation-600 text-reputation-200": era === "reputation",
+                                                "bg-lover-600 text-lover-200": era === "lover",
+                                                "bg-folklore-600 text-folklore-200": era === "folklore",
+                                                "bg-evermore-600 text-evermore-200": era === "evermore",
+                                                "bg-midnights-600 text-midnights-200": era === "midnights",
+                                                "bg-TTPD-600 text-TTPD-200": era === "TTPD",
+                                                "bg-mashup-600 text-mashup-200 w-min": era === "mashup",
+                                                "bg-folklore-600 text-evermore-200": era === "folkmore",
+                                            }
+                                        ]}>
+                                            <p class:list={["text-center text-title-medium relative -rotate-90 self-stretch flex justify-center items-center",
+                                            ]}
+                                            >
+                                                {disco}
+                                            </p>
+                                        </div>
+
+                                        <div class="pt-2 pr-2.5 pb-2 pl-2.5 flex flex-col gap-[7px] items-start justify-center flex-1 relative">
+                                            
+                                            {
+                                                canciones.map(({canción, nota})=>{
+                                                    return(
+                                                        <div class="flex flex-row gap-1 items-start justify-start self-stretch shrink-0 relative">
+                                                            {/* divisor */}
+                                                            <div class:list={[
+                                                                "w-0.5 rounded-sm h-6",
+                                                                {
+                                                                    "bg-debut-600":         era === "debut",
+                                                                    "bg-fearless-600":      era === "fearless",
+                                                                    "bg-speakNow-600":     	era === "speakNow",
+                                                                    "bg-red-600":           era === "red",
+                                                                    "bg-1989-600":          era === "1989",
+                                                                    "bg-reputation-600":    era === "reputation",
+                                                                    "bg-lover-600":         era === "lover",
+                                                                    "bg-folklore-600":      era === "folklore",
+                                                                    "bg-evermore-600":      era === "evermore",
+                                                                    "bg-midnights-600":     era === "midnights",
+                                                                    "bg-TTPD-600":          era === "TTPD",
+                                                                    "bg-mashup-600":        era === "mashup",
+                                                                    "bg-gradient-to-b from-folklore-600 to-evermore-600":        era === "folkmore",
+                                                                }
+                                                            ]}></div>
+                                                            <div class:list={["flex flex-col gap-0.5 items-start justify-start flex-1 relative",
+                                                                {
+                                                                    "text-debut-800": era === 'debut',
+                                                                    "text-fearless-800": era === 'fearless',
+                                                                    "text-speakNow-800": era === 'speakNow',
+                                                                    "text-red-800": era === 'red',
+                                                                    "text-1989-800": era === '1989',
+                                                                    "text-reputation-800": era === 'reputation',
+                                                                    "text-lover-800": era === 'lover',
+                                                                    "text-folklore-800": era === 'folklore',
+                                                                    "text-evermore-800": era === 'evermore',
+                                                                    "text-midnights-800": era === 'midnights',
+                                                                    "text-TTPD-800": era === 'TTPD',
+                                                                    "text-mashup-800": era === 'mashup',
+                                                                    
+                                                                }
+                                                            ]}>
+                                                                <p
+                                                                    class:list={[" text-left text-title-medium relative self-stretch",
+                                                                        {'text-transparent bg-clip-text bg-gradient-to-r from-folklore-800 to-evermore-800': era === 'folkmore'}
+                                                                    ]}
+                                                                >
+                                                                    {canción}
+                                                                </p>
+                                                                <p
+                                                                    class:list={[" text-left text-body-small relative self-stretch",
+                                                                        {'text-transparent bg-clip-text bg-gradient-to-r from-folklore-800 to-evermore-800': era === 'folkmore'}
+                                                                    ]}
+                                                                >
+                                                                    {nota}
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                    </section>
+                                )
+                            })
+                        }
+                        
+                    
+                    </article>
+                                        
+                )
+            }
+            )
+        }
+        </section>
+    </main>
+</Layout>

@@ -1,0 +1,785 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import Titulo from "../../components/Titulo.astro"
+import CalendarSVG from "../../components/svg/CalendarSVG.astro"
+import CicleCaretRightSVG from "../../components/svg/CircleCaretRightSVG.astro"
+import MusicSVG from "../../components/svg/MusicSVG.astro"
+import { eras } from "../../data/songs.json"
+import HeroImage from "../../sections/HeroImage.astro"
+import Notas from "../../components/Notas.astro"
+import MapPinSVG from "../../components/svg/MapPinSVG.astro"
+import MicrofonoSvg from "../../components/svg/MicrofonoSvg.astro"
+import SubTitulo from "../../components/SubTitulo.astro"
+import StarSVG from "../../components/svg/StarSVG.astro"
+import CircleXSVGCopy from "../../components/svg/CircleXSVG copy.astro"
+
+const erasArreglo = [
+	"debut",
+	"fearless",
+	"speakNow",
+	"red",
+	"1989",
+	"reputation",
+	"lover",
+	"folklore",
+	"evermore",
+	"midnights",
+	"TTPD",
+	"mashup",
+]
+let era = erasArreglo[9]
+const eraData = eras.find((e) => e.albums === era)
+if (!eraData) return null
+
+const albumes: { [key: string]: string } = {
+	debut: "Taylor Swift",
+	fearless: "Fearless",
+	speakNow: "Speak Now",
+	red: "Red",
+	"1989": "1989",
+	reputation: "Reputation",
+	lover: "Lover",
+	folklore: "Folklore",
+	evermore: "Evermore",
+	midnights: "Midnights",
+	TTPD: "The Tortured Poets Department",
+	mashup: "Suprise Songs",
+}
+
+const album = albumes[era] || ""
+---
+
+<Layout title=`${era} | Swifties Eras Tour` era={era}>
+	<main
+			class="py-12 px-8 md:px-32 space-y-6 flex flex-col gap-2.5 gap-y-0 items-start justify-start self-stretch shrink-0 relative">
+		<div class="w-full rounded-3xl overflow-hidden">
+			<HeroImage
+				era={era}
+				flechas={true}
+				boton={false}
+				pagAnt={eraData?.anterior}
+				pagSig={eraData?.siguiente}
+			/>
+		</div>
+		<Titulo titulo=`Canciones de ${album}` era={era}>
+			Aquí encontrarás <strong>todas las canciones</strong> de este disco, cada una
+			con su propia historia en "The Eras Tour". Algunas ya han sido interpretadas
+			en vivo, otras forman parte del setlist regular, y algunas todavía están esperando
+			su momento. En cada tarjeta, podrás ver detalles importantes: <strong
+				>la fecha</strong
+			> en que fue cantada,<strong>el instrumento</strong> que la acompañó <em
+				>(¿guitarra o piano?)</em
+			>, y el lugar donde tuvo lugar la actuación. Además, si hubo un <strong
+				>mashup</strong
+			> épico o <strong>un invitado sorpresa especial</strong> , también estará indicado.
+			¡Descubre todos los detalles y revive los momentos más icónicos del tour!
+		</Titulo>
+		<section
+			class="flex w-full gap-6 items-start justify-center flex-wrap content-start self-stretch shrink-0 relative">
+			{
+				eraData?.canciones.map(({ title, info, estado }, index) => {
+					return (
+						<div
+							class:list={[
+								"rounded-3xl p-3 flex flex-col gap-2.5 items-center justify-start relative overflow-hidden w-full max-w-sm",
+								{
+									"bg-debut-400": era === "debut",
+									"bg-fearless-400": era === "fearless",
+									"bg-speakNow-400": era === "speakNow",
+									"bg-red-400": era === "red",
+									"bg-1989-400": era === "1989",
+									"bg-reputation-400": era === "reputation",
+									"bg-lover-400": era === "lover",
+									"bg-folklore-400": era === "folklore",
+									"bg-evermore-400": era === "evermore",
+									"bg-midnights-400": era === "midnights",
+									"bg-TTPD-400": era === "TTPD",
+									"bg-mashup-400": era === "mashup",
+								},
+							]}>
+							<header
+								class:list={[
+									"w-full rounded-xl p-3 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative",
+									{
+										"bg-debut-800": era === "debut",
+										"bg-fearless-800": era === "fearless",
+										"bg-speakNow-800": era === "speakNow",
+										"bg-red-800": era === "red",
+										"bg-1989-800": era === "1989",
+										"bg-reputation-800": era === "reputation",
+										"bg-lover-800": era === "lover",
+										"bg-folklore-800": era === "folklore",
+										"bg-evermore-800": era === "evermore",
+										"bg-midnights-800": era === "midnights",
+										"bg-TTPD-800": era === "TTPD",
+										"bg-mashup-800": era === "mashup",
+									},
+								]}>
+								<h4
+									class:list={[
+										"w-full text-pretty text-center text-title-large relative flex-1",
+										{
+											"text-debut-100": era === "debut",
+											"text-fearless-100": era === "fearless",
+											"text-speakNow-100": era === "speakNow",
+											"text-red-100": era === "red",
+											"text-1989-100": era === "1989",
+											"text-reputation-100": era === "reputation",
+											"text-lover-100": era === "lover",
+											"text-folklore-100": era === "folklore",
+											"text-evermore-100": era === "evermore",
+											"text-midnights-100": era === "midnights",
+											"text-TTPD-100": era === "TTPD",
+											"text-mashup-100": era === "mashup",
+										},
+									]}>
+									{`${index + 1}) ${title} `}{" "}
+									{info.length > 1 && (
+										<span>{`(x${info[info.length - 1]?.tipo})`}</span>
+									)}
+								</h4>
+							</header>
+							<div
+								class:list={[
+									"px-2 py-2 w-full gap-2 rounded-xl items-center justify-center self-center shrink-0 relative overflow-hidden",
+
+									estado === "Setlist" ? "flex flex-row" : "hidden",
+
+									{
+										"bg-debut-600": era === "debut",
+										"bg-fearless-600": era === "fearless",
+										"bg-speakNow-600": era === "speakNow",
+										"bg-red-600": era === "red",
+										"bg-1989-600": era === "1989",
+										"bg-reputation-600": era === "reputation",
+										"bg-lover-600": era === "lover",
+										"bg-folklore-600": era === "folklore",
+										"bg-evermore-600": era === "evermore",
+										"bg-midnights-600": era === "midnights",
+										"bg-TTPD-600": era === "TTPD",
+										"bg-mashup-600": era === "mashup",
+									},
+								]}>
+								<StarSVG era={era} />
+								<p class:list={["text-left text-title-medium relative",
+									{
+										"text-debut-100": era === "debut",
+										"text-fearless-100": era === "fearless",
+										"text-speakNow-100": era === "speakNow",
+										"text-red-100": era === "red",
+										"text-1989-100": era === "1989",
+										"text-reputation-100": era === "reputation",
+										"text-lover-100": era === "lover",
+										"text-folklore-100": era === "folklore",
+										"text-evermore-100": era === "evermore",
+										"text-midnights-100": era === "midnights",
+										"text-TTPD-100": era === "TTPD",
+										"text-mashup-100": era === "mashup",
+									}
+								]}>
+									Set list
+								</p>
+							</div>
+							<div
+								class:list={[
+									"px-2 py-2 w-full gap-2 rounded-xl items-center justify-center self-center shrink-0 relative overflow-hidden",
+
+									estado === "No Cantado" ? "flex flex-row" : "hidden",
+
+									{
+										"bg-debut-600": era === "debut",
+										"bg-fearless-600": era === "fearless",
+										"bg-speakNow-600": era === "speakNow",
+										"bg-red-600": era === "red",
+										"bg-1989-600": era === "1989",
+										"bg-reputation-600": era === "reputation",
+										"bg-lover-600": era === "lover",
+										"bg-folklore-600": era === "folklore",
+										"bg-evermore-600": era === "evermore",
+										"bg-midnights-600": era === "midnights",
+										"bg-TTPD-600": era === "TTPD",
+										"bg-mashup-600": era === "mashup",
+									},
+								]}>
+								<CircleXSVGCopy era={era} />
+								<p
+									class:list={[
+										"text-left text-title-medium relative",
+										{
+											"text-debut-100": era === "debut",
+											"text-fearless-100": era === "fearless",
+											"text-speakNow-100": era === "speakNow",
+											"text-red-100": era === "red",
+											"text-1989-100": era === "1989",
+											"text-reputation-100": era === "reputation",
+											"text-lover-100": era === "lover",
+											"text-folklore-100": era === "folklore",
+											"text-evermore-100": era === "evermore",
+											"text-midnights-100": era === "midnights",
+											"text-TTPD-100": era === "TTPD",
+											"text-mashup-100": era === "mashup",
+										},
+									]}>
+									Sin Cantar Todavia
+								</p>
+							</div>
+							{info.map(
+								({ fecha, tipo, cantSorp, mashupCon, instrumento, lugar }) => {
+									return (
+										<div
+											class:list={[
+												"rounded-xl flex flex-row gap-0 items-center justify-start self-stretch shrink-0 relative overflow-hidden",
+												{ hidden: instrumento === null },
+												{
+													"bg-debut-200": era === "debut",
+													"bg-fearless-200": era === "fearless",
+													"bg-speakNow-200": era === "speakNow",
+													"bg-red-200": era === "red",
+													"bg-1989-200": era === "1989",
+													"bg-reputation-200": era === "reputation",
+													"bg-lover-200": era === "lover",
+													"bg-folklore-200": era === "folklore",
+													"bg-evermore-200": era === "evermore",
+													"bg-midnights-200": era === "midnights",
+													"bg-TTPD-200": era === "TTPD",
+													"bg-mashup-200": era === "mashup",
+												},
+											]}>
+											<div
+												class:list={[
+													" flex items-center justify-center self-stretch relative",
+													{
+														"bg-debut-600": era === "debut",
+														"bg-fearless-600": era === "fearless",
+														"bg-speakNow-600": era === "speakNow",
+														"bg-red-600": era === "red",
+														"bg-1989-600": era === "1989",
+														"bg-reputation-600": era === "reputation",
+														"bg-lover-600": era === "lover",
+														"bg-folklore-600": era === "folklore",
+														"bg-evermore-600": era === "evermore",
+														"bg-midnights-600": era === "midnights",
+														"bg-TTPD-600": era === "TTPD",
+														"bg-mashup-600": era === "mashup",
+													},
+												]}>
+												<p
+													class:list={[
+														"text-pretty text-center text-title-medium relative -rotate-90",
+														{
+															"text-debut-100": era === "debut",
+															"text-fearless-100": era === "fearless",
+															"text-speakNow-100": era === "speakNow",
+															"text-red-100": era === "red",
+															"text-1989-100": era === "1989",
+															"text-reputation-100": era === "reputation",
+															"text-lover-100": era === "lover",
+															"text-folklore-100": era === "folklore",
+															"text-evermore-100": era === "evermore",
+															"text-midnights-100": era === "midnights",
+															"text-TTPD-100": era === "TTPD",
+															"text-mashup-100": era === "mashup",
+														},
+													]}>
+													Dia {tipo}
+												</p>
+											</div>
+											<div class="px-2 py-2.5 flex flex-col gap-2 items-start justify-center self-stretch flex-1 relative">
+												<div class="flex flex-row gap-2.5 items-center justify-start shrink-0 relative">
+													<CalendarSVG era={era} />
+													<p
+														class:list={[
+															"text-left text-title-medium relative flex-1",
+															{
+																"text-debut-600": era === "debut",
+																"text-fearless-600": era === "fearless",
+																"text-speakNow-600": era === "speakNow",
+																"text-red-600": era === "red",
+																"text-1989-600": era === "1989",
+																"text-reputation-600": era === "reputation",
+																"text-lover-600": era === "lover",
+																"text-folklore-600": era === "folklore",
+																"text-evermore-600": era === "evermore",
+																"text-midnights-600": era === "midnights",
+																"text-TTPD-600": era === "TTPD",
+																"text-mashup-600": era === "mashup",
+															},
+														]}>
+														{fecha?.dia}/{fecha?.mes}/{fecha?.año}
+													</p>
+												</div>
+												<div class="flex flex-row gap-2.5 items-center justify-start shrink-0 relative">
+													<MapPinSVG era={era} estado="ahora" />
+													<p
+														class:list={[
+															"text-left text-title-medium relative flex-1",
+															{
+																"text-debut-600": era === "debut",
+																"text-fearless-600": era === "fearless",
+																"text-speakNow-600": era === "speakNow",
+																"text-red-600": era === "red",
+																"text-1989-600": era === "1989",
+																"text-reputation-600": era === "reputation",
+																"text-lover-600": era === "lover",
+																"text-folklore-600": era === "folklore",
+																"text-evermore-600": era === "evermore",
+																"text-midnights-600": era === "midnights",
+																"text-TTPD-600": era === "TTPD",
+																"text-mashup-600": era === "mashup",
+															},
+														]}>
+														{lugar}
+													</p>
+												</div>
+												<div class="flex flex-row gap-2.5 items-center justify-start shrink-0 relative">
+													<CicleCaretRightSVG era={era} />
+													<p
+														class:list={[
+															"text-left text-title-medium relative flex-1",
+															{
+																"text-debut-600": era === "debut",
+																"text-fearless-600": era === "fearless",
+																"text-speakNow-600": era === "speakNow",
+																"text-red-600": era === "red",
+																"text-1989-600": era === "1989",
+																"text-reputation-600": era === "reputation",
+																"text-lover-600": era === "lover",
+																"text-folklore-600": era === "folklore",
+																"text-evermore-600": era === "evermore",
+																"text-midnights-600": era === "midnights",
+																"text-TTPD-600": era === "TTPD",
+																"text-mashup-600": era === "mashup",
+															},
+														]}
+														style="letter-spacing: var(--body-small-letter-spacing, 0.4px)">
+														{instrumento}
+													</p>
+												</div>
+												<div
+													class:list={[
+														"flex flex-row gap-2.5 items-center justify-start shrink-0 relative",
+														{ hidden: cantSorp === null },
+													]}>
+													<MicrofonoSvg era={era} estado="ahora" />
+													<p
+														class:list={[
+															"text-left text-title-medium relative flex-1",
+															{
+																"text-debut-600": era === "debut",
+																"text-fearless-600": era === "fearless",
+																"text-speakNow-600": era === "speakNow",
+																"text-red-600": era === "red",
+																"text-1989-600": era === "1989",
+																"text-reputation-600": era === "reputation",
+																"text-lover-600": era === "lover",
+																"text-folklore-600": era === "folklore",
+																"text-evermore-600": era === "evermore",
+																"text-midnights-600": era === "midnights",
+																"text-TTPD-600": era === "TTPD",
+																"text-mashup-600": era === "mashup",
+															},
+														]}>
+														{cantSorp}
+													</p>
+												</div>
+												<div
+													class:list={[
+														"flex flex-row gap-2.5 items-center justify-start shrink-0 relative",
+														{ hidden: mashupCon === null },
+													]}>
+													<MusicSVG era={era} />
+													<p
+														class:list={[
+															" text-left text-body-large relative text-pretty",
+															{
+																"text-debut-600": era === "debut",
+																"text-fearless-600": era === "fearless",
+																"text-speakNow-600": era === "speakNow",
+																"text-red-600": era === "red",
+																"text-1989-600": era === "1989",
+																"text-reputation-600": era === "reputation",
+																"text-lover-600": era === "lover",
+																"text-folklore-600": era === "folklore",
+																"text-evermore-600": era === "evermore",
+																"text-midnights-600": era === "midnights",
+																"text-TTPD-600": era === "TTPD",
+																"text-mashup-600": era === "mashup",
+															},
+														]}>
+														Mashup con: {mashupCon}
+													</p>
+												</div>
+											</div>
+										</div>
+									)
+								}
+							)}
+						</div>
+					)
+				})
+			}
+			{
+				eraData?.extras.length > 0 && (
+				<SubTitulo era={era} titulo="Canciones Extras">
+					Estas son las <strong> que no forman parte del disco original</strong>, pero que fueron lanzadas como <strong>singles</strong> o en <strong>colaboraciones</strong> durante la misma época. Aunque no están en el álbum principal, tienen una fuerte conexión con esta era y son piezas clave del legado musical que Taylor Swift construyó en ese momento.
+				</SubTitulo>
+
+				)
+			}
+			{
+				eraData?.extras.map(({ title, info, estado }, index) => {
+					return (
+						<div
+							class:list={[
+								"rounded-3xl p-3 flex flex-col gap-2.5 items-center justify-start relative overflow-hidden w-full max-w-sm",
+								{
+									"bg-debut-400": era === "debut",
+									"bg-fearless-400": era === "fearless",
+									"bg-speakNow-400": era === "speakNow",
+									"bg-red-400": era === "red",
+									"bg-1989-400": era === "1989",
+									"bg-reputation-400": era === "reputation",
+									"bg-lover-400": era === "lover",
+									"bg-folklore-400": era === "folklore",
+									"bg-evermore-400": era === "evermore",
+									"bg-midnights-400": era === "midnights",
+									"bg-TTPD-400": era === "TTPD",
+									"bg-mashup-400": era === "mashup",
+								},
+							]}>
+							<header
+								class:list={[
+									"w-full rounded-xl p-3 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative",
+									{
+										"bg-debut-800": era === "debut",
+										"bg-fearless-800": era === "fearless",
+										"bg-speakNow-800": era === "speakNow",
+										"bg-red-800": era === "red",
+										"bg-1989-800": era === "1989",
+										"bg-reputation-800": era === "reputation",
+										"bg-lover-800": era === "lover",
+										"bg-folklore-800": era === "folklore",
+										"bg-evermore-800": era === "evermore",
+										"bg-midnights-800": era === "midnights",
+										"bg-TTPD-800": era === "TTPD",
+										"bg-mashup-800": era === "mashup",
+									},
+								]}>
+								<h4
+									class:list={[
+										"w-full text-pretty text-center text-title-large relative flex-1",
+										{
+											"text-debut-100": era === "debut",
+											"text-fearless-100": era === "fearless",
+											"text-speakNow-100": era === "speakNow",
+											"text-red-100": era === "red",
+											"text-1989-100": era === "1989",
+											"text-reputation-100": era === "reputation",
+											"text-lover-100": era === "lover",
+											"text-folklore-100": era === "folklore",
+											"text-evermore-100": era === "evermore",
+											"text-midnights-100": era === "midnights",
+											"text-TTPD-100": era === "TTPD",
+											"text-mashup-100": era === "mashup",
+										},
+									]}>
+									{`${index + 1}) ${title} `}{" "}
+									{info.length > 1 && (
+										<span>{`(x${info[info.length - 1]?.tipo})`}</span>
+									)}
+								</h4>
+							</header>
+							<div
+								class:list={[
+									"px-2 py-2 w-full gap-2 rounded-xl items-center justify-center self-center shrink-0 relative overflow-hidden",
+
+									estado === "Setlist" ? "flex flex-row" : "hidden",
+
+									{
+										"bg-debut-600": era === "debut",
+										"bg-fearless-600": era === "fearless",
+										"bg-speakNow-600": era === "speakNow",
+										"bg-red-600": era === "red",
+										"bg-1989-600": era === "1989",
+										"bg-reputation-600": era === "reputation",
+										"bg-lover-600": era === "lover",
+										"bg-folklore-600": era === "folklore",
+										"bg-evermore-600": era === "evermore",
+										"bg-midnights-600": era === "midnights",
+										"bg-TTPD-600": era === "TTPD",
+										"bg-mashup-600": era === "mashup",
+									},
+								]}>
+								<StarSVG era={era} />
+								<p class:list={["text-left text-title-medium relative",
+									{
+										"text-debut-100": era === "debut",
+										"text-fearless-100": era === "fearless",
+										"text-speakNow-100": era === "speakNow",
+										"text-red-100": era === "red",
+										"text-1989-100": era === "1989",
+										"text-reputation-100": era === "reputation",
+										"text-lover-100": era === "lover",
+										"text-folklore-100": era === "folklore",
+										"text-evermore-100": era === "evermore",
+										"text-midnights-100": era === "midnights",
+										"text-TTPD-100": era === "TTPD",
+										"text-mashup-100": era === "mashup",
+									}
+								]}>
+									Set list
+								</p>
+							</div>
+							<div
+								class:list={[
+									"px-2 py-2 w-full gap-2 rounded-xl items-center justify-center self-center shrink-0 relative overflow-hidden",
+
+									estado === "No Cantado" ? "flex flex-row" : "hidden",
+
+									{
+										"bg-debut-600": era === "debut",
+										"bg-fearless-600": era === "fearless",
+										"bg-speakNow-600": era === "speakNow",
+										"bg-red-600": era === "red",
+										"bg-1989-600": era === "1989",
+										"bg-reputation-600": era === "reputation",
+										"bg-lover-600": era === "lover",
+										"bg-folklore-600": era === "folklore",
+										"bg-evermore-600": era === "evermore",
+										"bg-midnights-600": era === "midnights",
+										"bg-TTPD-600": era === "TTPD",
+										"bg-mashup-600": era === "mashup",
+									},
+								]}>
+								<CircleXSVGCopy era={era} />
+								<p
+									class:list={[
+										"text-left text-title-medium relative",
+										{
+											"text-debut-100": era === "debut",
+											"text-fearless-100": era === "fearless",
+											"text-speakNow-100": era === "speakNow",
+											"text-red-100": era === "red",
+											"text-1989-100": era === "1989",
+											"text-reputation-100": era === "reputation",
+											"text-lover-100": era === "lover",
+											"text-folklore-100": era === "folklore",
+											"text-evermore-100": era === "evermore",
+											"text-midnights-100": era === "midnights",
+											"text-TTPD-100": era === "TTPD",
+											"text-mashup-100": era === "mashup",
+										},
+									]}>
+									Sin Cantar Todavia
+								</p>
+							</div>
+							{info.map(
+								({ fecha, tipo, cantSorp, mashupCon, instrumento, lugar }) => {
+									return (
+										<div
+											class:list={[
+												"rounded-xl flex flex-row gap-0 items-center justify-start self-stretch shrink-0 relative overflow-hidden",
+												{ hidden: instrumento === null },
+												{
+													"bg-debut-200": era === "debut",
+													"bg-fearless-200": era === "fearless",
+													"bg-speakNow-200": era === "speakNow",
+													"bg-red-200": era === "red",
+													"bg-1989-200": era === "1989",
+													"bg-reputation-200": era === "reputation",
+													"bg-lover-200": era === "lover",
+													"bg-folklore-200": era === "folklore",
+													"bg-evermore-200": era === "evermore",
+													"bg-midnights-200": era === "midnights",
+													"bg-TTPD-200": era === "TTPD",
+													"bg-mashup-200": era === "mashup",
+												},
+											]}>
+											<div
+												class:list={[
+													" flex items-center justify-center self-stretch relative",
+													{
+														"bg-debut-600": era === "debut",
+														"bg-fearless-600": era === "fearless",
+														"bg-speakNow-600": era === "speakNow",
+														"bg-red-600": era === "red",
+														"bg-1989-600": era === "1989",
+														"bg-reputation-600": era === "reputation",
+														"bg-lover-600": era === "lover",
+														"bg-folklore-600": era === "folklore",
+														"bg-evermore-600": era === "evermore",
+														"bg-midnights-600": era === "midnights",
+														"bg-TTPD-600": era === "TTPD",
+														"bg-mashup-600": era === "mashup",
+													},
+												]}>
+												<p
+													class:list={[
+														"text-pretty text-center text-title-medium relative -rotate-90",
+														{
+															"text-debut-100": era === "debut",
+															"text-fearless-100": era === "fearless",
+															"text-speakNow-100": era === "speakNow",
+															"text-red-100": era === "red",
+															"text-1989-100": era === "1989",
+															"text-reputation-100": era === "reputation",
+															"text-lover-100": era === "lover",
+															"text-folklore-100": era === "folklore",
+															"text-evermore-100": era === "evermore",
+															"text-midnights-100": era === "midnights",
+															"text-TTPD-100": era === "TTPD",
+															"text-mashup-100": era === "mashup",
+														},
+													]}>
+													Dia {tipo}
+												</p>
+											</div>
+											<div class="px-2 py-2.5 flex flex-col gap-2 items-start justify-center self-stretch flex-1 relative">
+												<div class="flex flex-row gap-2.5 items-center justify-start shrink-0 relative">
+													<CalendarSVG era={era} />
+													<p
+														class:list={[
+															"text-left text-title-medium relative flex-1",
+															{
+																"text-debut-600": era === "debut",
+																"text-fearless-600": era === "fearless",
+																"text-speakNow-600": era === "speakNow",
+																"text-red-600": era === "red",
+																"text-1989-600": era === "1989",
+																"text-reputation-600": era === "reputation",
+																"text-lover-600": era === "lover",
+																"text-folklore-600": era === "folklore",
+																"text-evermore-600": era === "evermore",
+																"text-midnights-600": era === "midnights",
+																"text-TTPD-600": era === "TTPD",
+																"text-mashup-600": era === "mashup",
+															},
+														]}>
+														{fecha?.dia}/{fecha?.mes}/{fecha?.año}
+													</p>
+												</div>
+												<div class="flex flex-row gap-2.5 items-center justify-start shrink-0 relative">
+													<MapPinSVG era={era} estado="ahora" />
+													<p
+														class:list={[
+															"text-left text-title-medium relative flex-1",
+															{
+																"text-debut-600": era === "debut",
+																"text-fearless-600": era === "fearless",
+																"text-speakNow-600": era === "speakNow",
+																"text-red-600": era === "red",
+																"text-1989-600": era === "1989",
+																"text-reputation-600": era === "reputation",
+																"text-lover-600": era === "lover",
+																"text-folklore-600": era === "folklore",
+																"text-evermore-600": era === "evermore",
+																"text-midnights-600": era === "midnights",
+																"text-TTPD-600": era === "TTPD",
+																"text-mashup-600": era === "mashup",
+															},
+														]}>
+														{lugar}
+													</p>
+												</div>
+												<div class="flex flex-row gap-2.5 items-center justify-start shrink-0 relative">
+													<CicleCaretRightSVG era={era} />
+													<p
+														class:list={[
+															"text-left text-title-medium relative flex-1",
+															{
+																"text-debut-600": era === "debut",
+																"text-fearless-600": era === "fearless",
+																"text-speakNow-600": era === "speakNow",
+																"text-red-600": era === "red",
+																"text-1989-600": era === "1989",
+																"text-reputation-600": era === "reputation",
+																"text-lover-600": era === "lover",
+																"text-folklore-600": era === "folklore",
+																"text-evermore-600": era === "evermore",
+																"text-midnights-600": era === "midnights",
+																"text-TTPD-600": era === "TTPD",
+																"text-mashup-600": era === "mashup",
+															},
+														]}
+														style="letter-spacing: var(--body-small-letter-spacing, 0.4px)">
+														{instrumento}
+													</p>
+												</div>
+												<div
+													class:list={[
+														"flex flex-row gap-2.5 items-center justify-start shrink-0 relative",
+														{ hidden: cantSorp === null },
+													]}>
+													<MicrofonoSvg era={era} estado="ahora" />
+													<p
+														class:list={[
+															"text-left text-title-medium relative flex-1",
+															{
+																"text-debut-600": era === "debut",
+																"text-fearless-600": era === "fearless",
+																"text-speakNow-600": era === "speakNow",
+																"text-red-600": era === "red",
+																"text-1989-600": era === "1989",
+																"text-reputation-600": era === "reputation",
+																"text-lover-600": era === "lover",
+																"text-folklore-600": era === "folklore",
+																"text-evermore-600": era === "evermore",
+																"text-midnights-600": era === "midnights",
+																"text-TTPD-600": era === "TTPD",
+																"text-mashup-600": era === "mashup",
+															},
+														]}>
+														{cantSorp}
+													</p>
+												</div>
+												<div
+													class:list={[
+														"flex flex-row gap-2.5 items-center justify-start shrink-0 relative",
+														{ hidden: mashupCon === null },
+													]}>
+													<MusicSVG era={era} />
+													<p
+														class:list={[
+															" text-left text-body-large relative text-pretty",
+															{
+																"text-debut-600": era === "debut",
+																"text-fearless-600": era === "fearless",
+																"text-speakNow-600": era === "speakNow",
+																"text-red-600": era === "red",
+																"text-1989-600": era === "1989",
+																"text-reputation-600": era === "reputation",
+																"text-lover-600": era === "lover",
+																"text-folklore-600": era === "folklore",
+																"text-evermore-600": era === "evermore",
+																"text-midnights-600": era === "midnights",
+																"text-TTPD-600": era === "TTPD",
+																"text-mashup-600": era === "mashup",
+															},
+														]}>
+														Mashup con: {mashupCon}
+													</p>
+												</div>
+											</div>
+										</div>
+									)
+								}
+							)}
+						</div>
+					)
+				})
+			}
+		</section>
+
+		{
+			eraData.notas?.length > 0 && (
+				<Notas era={era} titulo="Notas">
+					<ul class="list-disc text-title-medium list-inside">
+						{eraData.notas?.map(({ nota }) => {
+							return <li>{nota}</li>
+						})}
+					</ul>
+				</Notas>
+			)
+		}
+	</main>
+</Layout>
