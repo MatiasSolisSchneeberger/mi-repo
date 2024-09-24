@@ -8,7 +8,7 @@ interface Props {
 const { href , era , icono }  =  Astro.props;
 ---
 <a href = {href} class:list = {[
-		"hover:shadow-sm rounded-[100px] flex flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden",
+		"hover:shadow-sm rounded-[100px] active:scale-95 transition-all duration-125 ease-in-out flex flex-col gap-2 items-center justify-center shrink-0 h-10 relative overflow-hidden",
 		{
 			"bg-debut-600 hover:shadow-debut-900 hover:bg-debut-500 dark:bg-debut-200 dark:hover:shadow-debut-950 dark:hover:bg-debut-300": era === "debut",
 			"bg-fearless-600 hover:shadow-fearless-900 hover:bg-fearless-500 dark:bg-fearless-200 dark:hover:shadow-fearless-950 dark:hover:bg-fearless-300": era === "fearless",

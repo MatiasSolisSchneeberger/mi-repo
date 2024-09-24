@@ -250,7 +250,24 @@ const MashNotas = mashup[0].notas
 										</div>
 									</div>
 								</div>
-								<button data-modal-target={title} data-modal-toggle={title} class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+								<button data-modal-target={title} data-modal-toggle={title} class:list = {[
+									"hover:shadow-sm py-2.5  flex flex-row gap-2 items-center justify-center self-stretch flex-1 relative active:scale-95 rounded-[100px] transition-all shrink-0 h-10 overflow-hidden",
+									{
+										"bg-debut-600 hover:shadow-debut-900 hover:bg-debut-500 dark:bg-debut-200 dark:hover:shadow-debut-950 dark:hover:bg-debut-300": era === "debut",
+										"bg-fearless-600 hover:shadow-fearless-900 hover:bg-fearless-500 dark:bg-fearless-200 dark:hover:shadow-fearless-950 dark:hover:bg-fearless-300": era === "fearless",
+										"bg-speakNow-600 hover:shadow-speakNow-900 hover:bg-speakNow-500 dark:bg-speakNow-200 dark:hover:shadow-speakNow-950 dark:hover:bg-speakNow-300": era === "speakNow",
+										"bg-red-600 hover:shadow-red-900 hover:bg-red-500 dark:bg-red-200 dark:hover:shadow-red-950 dark:hover:bg-red-300": era === "red",
+										"bg-1989-600 hover:shadow-1989-900 hover:bg-1989-500 dark:bg-1989-200 dark:hover:shadow-1989-950 dark:hover:bg-1989-300": era === "1989",
+										"bg-reputation-600 hover:shadow-reputation-900 hover:bg-reputation-500 dark:bg-reputation-200 dark:hover:shadow-reputation-950 dark:hover:bg-reputation-300": era === "reputation",
+										"bg-lover-600 hover:shadow-lover-900 hover:bg-lover-500 dark:bg-lover-200 dark:hover:shadow-lover-950 dark:hover:bg-lover-300": era === "lover",
+										"bg-folklore-600 hover:shadow-folklore-900 hover:bg-folklore-500 dark:bg-folklore-200 dark:hover:shadow-folklore-950 dark:hover:bg-folklore-300": era === "folklore",
+										"bg-evermore-600 hover:shadow-evermore-900 hover:bg-evermore-500 dark:bg-evermore-200 dark:hover:shadow-evermore-950 dark:hover:bg-evermore-300": era === "evermore",
+										"bg-midnights-600 hover:shadow-midnights-900 hover:bg-midnights-500 dark:bg-midnights-200 dark:hover:shadow-midnights-950 dark:hover:bg-midnights-300": era === "midnights",
+										"bg-TTPD-600 hover:shadow-TTPD-900 hover:bg-TTPD-500 dark:bg-TTPD-200 dark:hover:shadow-TTPD-950 dark:hover:bg-TTPD-300": era === "TTPD",
+										"bg-mashup-600 hover:shadow-mashup-900 hover:bg-mashup-500 dark:bg-mashup-200 dark:hover:shadow-mashup-950 dark:hover:bg-mashup-300": era === "mashup",
+										
+									}
+								]} type="button">
 									letra
 								</button>
 		
